@@ -1,0 +1,67 @@
+dataset_name,model_name,condition,seed,step,lr_before_step,lr_used,lr_after_step,scheduler_step_called,optimizer_step_called,note
+dbpedia_14,medium-4,stable_with_guard,42,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,medium-4,stable_with_guard,42,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,medium-4,stable_with_guard,123,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,medium-4,stable_with_guard,123,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,medium-4,stable_with_guard,456,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,medium-4,stable_with_guard,456,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,medium-4,fixed_order_with_guard,42,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,fixed_order_with_guard,42,2,1.2352647110032733e-07,2.4705294220065465e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,fixed_order_with_guard,123,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,fixed_order_with_guard,123,2,1.2352647110032733e-07,2.4705294220065465e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,fixed_order_with_guard,456,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,fixed_order_with_guard,456,2,1.2352647110032733e-07,2.4705294220065465e-07,2.4705294220065465e-07,,,
+dbpedia_14,large-6,stable_with_guard,42,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,large-6,stable_with_guard,42,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,large-6,stable_with_guard,123,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,large-6,stable_with_guard,123,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,large-6,stable_with_guard,456,1,0.0001,1.2500000000000001e-08,1.2500000000000001e-08,,,
+dbpedia_14,large-6,stable_with_guard,456,2,1.2500000000000001e-08,2.5000000000000002e-08,2.5000000000000002e-08,,,
+dbpedia_14,large-6,fixed_order_with_guard,42,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,fixed_order_with_guard,42,2,8.734640537108554e-08,1.7469281074217108e-07,1.7469281074217108e-07,,,
+dbpedia_14,large-6,fixed_order_with_guard,123,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,fixed_order_with_guard,123,2,8.734640537108554e-08,1.7469281074217108e-07,1.7469281074217108e-07,,,
+dbpedia_14,large-6,fixed_order_with_guard,456,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,fixed_order_with_guard,456,2,8.734640537108554e-08,1.7469281074217108e-07,1.7469281074217108e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,42,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,42,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,123,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,123,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,456,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_no_guard,456,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,buggy_failfast_guard,42,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_failfast_guard,123,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_failfast_guard,456,1,1.0,1.0,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,42,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,42,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,123,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,123,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,456,1,1.0,1.2352647110032733e-07,1.2352647110032733e-07,,,
+dbpedia_14,medium-4,buggy_rescue_guard,456,2,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07,,,
+dbpedia_14,medium-4,single_bad_first_step_then_stable,42,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,medium-4,single_bad_first_step_then_stable,42,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,medium-4,single_bad_first_step_then_stable,123,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,medium-4,single_bad_first_step_then_stable,123,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,medium-4,single_bad_first_step_then_stable,456,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,medium-4,single_bad_first_step_then_stable,456,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,buggy_no_guard,42,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_no_guard,42,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,buggy_no_guard,123,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_no_guard,123,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,buggy_no_guard,456,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_no_guard,456,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,buggy_failfast_guard,42,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_failfast_guard,123,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_failfast_guard,456,1,1.0,1.0,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_rescue_guard,42,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_rescue_guard,42,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,buggy_rescue_guard,123,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_rescue_guard,123,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,buggy_rescue_guard,456,1,1.0,8.734640537108554e-08,8.734640537108554e-08,,,
+dbpedia_14,large-6,buggy_rescue_guard,456,2,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07,,,
+dbpedia_14,large-6,single_bad_first_step_then_stable,42,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,single_bad_first_step_then_stable,42,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,single_bad_first_step_then_stable,123,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,single_bad_first_step_then_stable,123,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,single_bad_first_step_then_stable,456,1,1.0,1.0,1.2500000000000001e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"
+dbpedia_14,large-6,single_bad_first_step_then_stable,456,2,1.0,2.5000000000000002e-08,2.5000000000000002e-08,,,"single_bad condition uses unsafe first step, then switches to stable schedule from step 2"

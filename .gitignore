@@ -1,0 +1,20 @@
+*.zip
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+artifacts/raw/
+artifacts/extracted/
+.DS_Store
+
+# Large reproducibility evidence stored outside Git history
+artifacts/complete/
+artifacts/extracted/
+artifacts/source_archives/
+*.zip
+
+# Generated/cache files
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/

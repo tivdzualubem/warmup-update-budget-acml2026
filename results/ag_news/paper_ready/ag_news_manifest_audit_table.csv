@@ -1,0 +1,26 @@
+field,value
+dataset_name,ag_news
+run_tag,agnews_warmup_safety_gate_v2_calibrated
+run_mode,full
+models,"['medium-4', 'large-6']"
+conditions,"['buggy_no_guard', 'buggy_failfast_guard', 'buggy_rescue_guard', 'stable_with_guard', 'fixed_order_with_guard', 'single_bad_first_step_then_stable']"
+calibration_conditions,"['stable_with_guard', 'fixed_order_with_guard']"
+post_calibration_conditions,"['buggy_no_guard', 'buggy_failfast_guard', 'buggy_rescue_guard', 'single_bad_first_step_then_stable']"
+seeds,"[42, 123, 456]"
+train_fraction,1.0
+base_lr,0.0001
+legacy_initial_lr,1.0
+warmup_steps,8000
+total_steps,50000
+guard_window_steps,100
+diagnostic_steps,300
+threshold,0.020043868104189393
+threshold_source,calibrated_10x_safe_max
+threshold_multiplier,10.0
+safe_max_update_ratio,0.0020043868104189393
+threshold_calibration_conditions,"['stable_with_guard', 'fixed_order_with_guard']"
+threshold_calibration_rule,threshold = 10 * max(max_early_update_ratio over stable_with_guard and fixed_order_with_guard)
+max_length,128
+batch_size,32
+num_epochs,30
+device,cuda

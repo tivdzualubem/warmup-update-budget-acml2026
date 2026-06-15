@@ -1,0 +1,7 @@
+condition,meaning,post_threshold_guarded_deployment
+stable_with_guard,Safe calibration/run condition. Used to estimate safe update-ratio envelope.,"No; calibration safe run, not a failure intervention."
+fixed_order_with_guard,Corrected scheduler-order condition. Used with stable condition for threshold calibration.,"No; calibration safe run, not a failure intervention."
+buggy_no_guard,Legacy buggy warmup with unsafe first optimizer step and no protection.,No.
+buggy_failfast_guard,Detector condition. Stops when unsafe update-ratio violation is detected.,Detects and stops; not a trained final model.
+buggy_rescue_guard,Intervention condition. Detects unsafe first update and rescues by replacing unsafe step behavior.,Yes; this is the trained rescue intervention.
+single_bad_first_step_then_stable,"Causal ablation. Applies one unsafe first step, then switches to stable schedule from step 2.",No; demonstrates sufficiency of one bad update.

@@ -1,0 +1,7 @@
+condition,unsafe_lr_used_step1,rescue_lr_used_step1,guard_action,paper_note
+buggy_no_guard,1.0,,none,The unsafe optimizer update is applied at step 1.
+buggy_failfast_guard,1.0,,detect_and_stop,The guard detects the unsafe update-ratio violation at step 1 and stops; this is not a trained model.
+buggy_rescue_guard,1.0,1.2500000000000001e-08,detect_and_rescue,The guard detects the unsafe step-1 condition and applies the safe warmup-scale update instead.
+single_bad_first_step_then_stable,1.0,,none,"Step 1 intentionally uses lr=1.0; from step 2 onward the run follows the stable schedule. The step-2 trace may retain lr_before_step=1.0, but lr_used is the stable warmup value."
+stable_with_guard,,1.2500000000000001e-08,calibration_safe_run,Used to calibrate the safe update-ratio envelope; not a post-threshold guarded deployment.
+fixed_order_with_guard,,1.2500000000000001e-08,calibration_safe_run,Used together with stable runs to calibrate the safe update-ratio envelope.

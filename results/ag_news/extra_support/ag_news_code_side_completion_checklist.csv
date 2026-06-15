@@ -1,0 +1,10 @@
+item,status,remaining
+Terminology/table repair,covered by paper-ready table cell,No
+first_step_update_ratio / max_guard_window_ratio / max_training_ratio,partly covered; max_training_ratio only if full-training logs exist,Document max_training_ratio as unavailable unless full logs exist
+Canonical scheduler first-two-step table,covered by paper-ready table cell,No
+Paired seed deltas and descriptive intervals,covered by paper-ready table cell,No p-values needed
+Guard semantics,covered by paper-ready table cell,No
+Toy Adam first-step simulation,covered by this extra cell,Only write interpretation in paper
+Pretrained baseline summary,covered if pretrained result files were uploaded,Upload pretrained raw result folder/zip if scan finds nothing
+Representation/cosine drift probe,only covered if saved drift/representation files exist,Optional; do not force if files are absent
+Adam first-step derivation,theory/writing only,Write in paper

@@ -1,0 +1,13 @@
+Required before final artifact release:
+1. Exact training-code commit hash or frozen source version identifier.
+2. Python version.
+3. PyTorch version.
+4. CUDA toolkit/runtime version.
+5. GPU model and memory.
+6. CPU model and system RAM, if available.
+7. Operating system.
+8. Exact command(s) used to launch AG News and DBpedia calibrated runs.
+9. Confirmation of validation split construction and vocabulary source.
+10. Final anonymous release license and contact instructions, if required by ACML.
+
+Do not invent missing values. Obtain them from the professor's execution environment, repository, or run logs.

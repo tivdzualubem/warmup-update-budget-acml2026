@@ -1,0 +1,15 @@
+{
+  "total_files": 393,
+  "per_seed_json_files_detected": 72,
+  "scheduler_related_files_detected": 74,
+  "guard_related_files_detected": 256,
+  "early_diagnostic_files_detected": 72,
+  "conference_pdfs": [
+    "conference_pdfs/main_paper.pdf",
+    "conference_pdfs/supplement.pdf"
+  ],
+  "notebooks": [
+    "notebooks/Transformer_Artifacts(AGNEWS).ipynb",
+    "notebooks/Transformer_Artifacts(DBPEDIA).ipynb"
+  ]
+}

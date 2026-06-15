@@ -1,0 +1,34 @@
+DBPEDIA CALIBRATED WARMUP SAFETY GATE CONFIG
+=============================================
+
+DATASET_NAME = "dbpedia_14"
+RUN_TAG = "dbpedia_warmup_safety_gate_v2_calibrated"
+
+RUN_MODE = "full"
+
+SEEDS = [42, 123, 456]
+MODEL_NAMES = ["medium-4", "large-6"]
+
+THRESHOLD_SOURCE = "calibrated_10x_safe_max"
+THRESHOLD_MULTIPLIER = 10.0
+THRESHOLD_CALIBRATION_CONDITIONS = ["stable_with_guard", "fixed_order_with_guard"]
+
+CONDITIONS = [
+    "buggy_no_guard",
+    "buggy_failfast_guard",
+    "buggy_rescue_guard",
+    "stable_with_guard",
+    "fixed_order_with_guard",
+    "single_bad_first_step_then_stable",
+]
+
+TRAIN_FRACTION = 1.0
+MAX_LENGTH = 128
+BATCH_SIZE = 32
+NUM_EPOCHS = 30
+BASE_LR = 1e-4
+LEGACY_INITIAL_LR = 1.0
+WARMUP_STEPS = 8000
+TOTAL_STEPS = 50000
+GUARD_WINDOW_STEPS = 100
+DIAGNOSTIC_STEPS = 300

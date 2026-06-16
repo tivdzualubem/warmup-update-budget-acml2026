@@ -12,7 +12,7 @@
 - Python: `3.12.3`
 - Python build: `main, Mar 23 2026, 19:04:32`
 - Compiler: `GCC 13.3.0`
-- Python executable: `/home/server/torchfix/bin/python3`
+- Python executable: `python3` from a dedicated virtual environment (absolute path omitted for anonymity)
 - PyTorch version: pending confirmation
 - PyTorch CUDA build: `13.0`
 - cuDNN: `91501`

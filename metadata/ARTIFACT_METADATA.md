@@ -3,7 +3,7 @@
 ## Artifact repository
 
 - Repository tag: `acml2026-artifacts-v1`
-- Release revision: resolved by the signed repository tag `acml2026-artifacts-v1`
+- Release revision: resolved by the repository tag `acml2026-artifacts-v1`
 - Original training-code commit: not available
 - Frozen source version: source files included in this artifact repository
 

@@ -1,4 +1,3 @@
-Remaining before final artifact publication:
-1. Exact PyTorch version from torch.__version__.
-2. Final repository commit hash after metadata and checksum updates.
-3. Final license and anonymous contact instructions, if required by ACML.
+Optional metadata enhancements:
+1. Exact PyTorch version, if it can later be recovered from the original environment.
+2. License or anonymous contact information, if requested by the venue.

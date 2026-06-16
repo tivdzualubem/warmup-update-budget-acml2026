@@ -3,7 +3,7 @@
 ## Artifact repository
 
 - Repository tag: `acml2026-artifacts-v1`
-- Final repository commit: pending final metadata and checksum update
+- Release revision: resolved by the signed repository tag `acml2026-artifacts-v1`
 - Original training-code commit: not available
 - Frozen source version: source files included in this artifact repository
 
@@ -13,7 +13,7 @@
 - Python build: `main, Mar 23 2026, 19:04:32`
 - Compiler: `GCC 13.3.0`
 - Python executable: `python3` from a dedicated virtual environment (absolute path omitted for anonymity)
-- PyTorch version: pending confirmation
+- PyTorch version: not recorded in the available execution metadata
 - PyTorch CUDA build: `13.0`
 - cuDNN: `91501`
 - CUDA available: `True`

@@ -13,7 +13,7 @@
 - Python build: `main, Mar 23 2026, 19:04:32`
 - Compiler: `GCC 13.3.0`
 - Python executable: `python3` from a dedicated virtual environment (absolute path omitted for anonymity)
-- PyTorch version: not recorded in the available execution metadata
+- PyTorch version: `2.10.0+cu130`
 - PyTorch CUDA build: `13.0`
 - cuDNN: `91501`
 - CUDA available: `True`

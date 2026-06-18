@@ -1,3 +1,2 @@
-Optional metadata enhancements:
-1. Exact PyTorch version, if it can later be recovered from the original environment.
-2. License or anonymous contact information, if requested by the venue.
+Optional metadata enhancement:
+1. License or anonymous contact information, if requested by the venue.

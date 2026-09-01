@@ -1,0 +1,3 @@
+source_dataset,target_dataset,kappa,calibration_safe_max,threshold,safe_total,safe_false_positives,safe_false_positive_rate,unsafe_total,unsafe_detected,unsafe_detection_rate
+ag_news,dbpedia_14,10.0,3.0295997708220813e-05,0.0003029599770822081,12,0,0.0,24,24,1.0
+dbpedia_14,ag_news,10.0,3.472303038485647e-05,0.0003472303038485647,12,0,0.0,24,24,1.0

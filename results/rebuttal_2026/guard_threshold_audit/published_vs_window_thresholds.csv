@@ -1,0 +1,3 @@
+dataset,window_steps,window_safe_max,window_safe_max_model,window_safe_max_condition,window_safe_max_seed,window_safe_max_step,window_threshold_kappa10,archived_safe_max,archived_threshold,archived_threshold_multiplier
+ag_news,100,3.0295997708220813e-05,large-6,fixed_order_with_guard,456,90,0.0003029599770822081,0.0020043868104189393,0.020043868104189393,10.0
+dbpedia_14,100,3.472303038485647e-05,large-6,fixed_order_with_guard,123,99,0.0003472303038485647,0.001794732970324924,0.01794732970324924,10.0

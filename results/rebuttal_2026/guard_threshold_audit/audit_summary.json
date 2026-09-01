@@ -1,0 +1,55 @@
+{
+  "guard_window_steps": 100,
+  "safe_conditions": [
+    "stable_with_guard",
+    "fixed_order_with_guard"
+  ],
+  "unsafe_conditions": [
+    "buggy_no_guard",
+    "buggy_failfast_guard",
+    "buggy_rescue_guard",
+    "single_bad_first_step_then_stable"
+  ],
+  "datasets": {
+    "ag_news": {
+      "safe_run_count": 12,
+      "unsafe_run_count": 24,
+      "first_100_safe_max": 3.0295997708220813e-05,
+      "first_100_safe_max_source": {
+        "model": "large-6",
+        "condition": "fixed_order_with_guard",
+        "seed": 456,
+        "step": 90
+      },
+      "first_100_threshold_kappa10": 0.0003029599770822081,
+      "unsafe_first_step_ratio_min": 5.076113987968168,
+      "unsafe_first_step_ratio_max": 11.004383542847531,
+      "archived_safe_max": 0.0020043868104189393,
+      "archived_threshold": 0.020043868104189393
+    },
+    "dbpedia_14": {
+      "safe_run_count": 12,
+      "unsafe_run_count": 24,
+      "first_100_safe_max": 3.472303038485647e-05,
+      "first_100_safe_max_source": {
+        "model": "large-6",
+        "condition": "fixed_order_with_guard",
+        "seed": 123,
+        "step": 99
+      },
+      "first_100_threshold_kappa10": 0.0003472303038485647,
+      "unsafe_first_step_ratio_min": 5.0747600248618046,
+      "unsafe_first_step_ratio_max": 11.000147042372891,
+      "archived_safe_max": 0.001794732970324924,
+      "archived_threshold": 0.01794732970324924
+    }
+  },
+  "outputs": [
+    "threshold_window_audit.csv",
+    "published_vs_window_thresholds.csv",
+    "kappa_sensitivity.csv",
+    "leave_one_seed_out.csv",
+    "model_transfer.csv",
+    "cross_dataset_transfer.csv"
+  ]
+}

@@ -1,0 +1,7 @@
+dataset,held_out_seed,kappa,calibration_safe_max,calibration_source_model,calibration_source_condition,calibration_source_seed,threshold,safe_total,safe_false_positives,safe_false_positive_rate,unsafe_total,unsafe_detected,unsafe_detection_rate
+ag_news,42,10.0,3.0295997708220813e-05,large-6,fixed_order_with_guard,456,0.0003029599770822081,4,0,0.0,8,8,1.0
+ag_news,123,10.0,3.0295997708220813e-05,large-6,fixed_order_with_guard,456,0.0003029599770822081,4,0,0.0,8,8,1.0
+ag_news,456,10.0,2.988141056706598e-05,large-6,fixed_order_with_guard,123,0.0002988141056706598,4,0,0.0,8,8,1.0
+dbpedia_14,42,10.0,3.472303038485647e-05,large-6,fixed_order_with_guard,123,0.0003472303038485647,4,0,0.0,8,8,1.0
+dbpedia_14,123,10.0,3.338828085859012e-05,large-6,fixed_order_with_guard,42,0.0003338828085859012,4,0,0.0,8,8,1.0
+dbpedia_14,456,10.0,3.472303038485647e-05,large-6,fixed_order_with_guard,123,0.0003472303038485647,4,0,0.0,8,8,1.0

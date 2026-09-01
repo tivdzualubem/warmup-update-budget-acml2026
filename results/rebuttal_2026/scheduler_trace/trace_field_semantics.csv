@@ -1,0 +1,5 @@
+old_field,actual_meaning,replacement
+lr_before_step,optimizer LR stored at entry to the training-step block,entry_lr
+lr_used,"candidate LR in ordinary runs, but overwritten by replay LR after rescue",candidate_lr_consumed + committed_lr_consumed
+lr_after_step,computed/scheduled target; not necessarily optimizer LR actually stored on block exit,actual_exit_lr
+(implicit),scheduler/guard transition between entry and optimizer update,scheduler_guard_action

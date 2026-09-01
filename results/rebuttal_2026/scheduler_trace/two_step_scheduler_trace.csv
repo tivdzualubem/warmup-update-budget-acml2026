@@ -1,0 +1,25 @@
+model,condition,step,entry_lr,scheduler_guard_action,candidate_lr_consumed,committed_lr_consumed,actual_exit_lr
+medium-4,buggy_no_guard,1,1.0,candidate step first; install legacy schedule after step,1.0,1.0,1.2352647110032733e-07
+medium-4,buggy_no_guard,2,1.2352647110032733e-07,candidate step first; install legacy schedule after step,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07
+medium-4,buggy_failfast_guard,1,1.0,candidate step first; install legacy schedule; guard detects unsafe committed candidate and stops,1.0,1.0,1.2352647110032733e-07
+medium-4,buggy_failfast_guard,2,N/A,run already stopped after step-1 fail-fast detection,N/A,N/A,N/A
+medium-4,buggy_rescue_guard,1,1.0,candidate step first; guard detects unsafe candidate; restore model+optimizer; install corrected legacy LR; replay,1.0,1.2352647110032733e-07,1.2352647110032733e-07
+medium-4,buggy_rescue_guard,2,1.2352647110032733e-07,candidate step first; no guard trigger in evaluated runs; install next legacy LR after step,1.2352647110032733e-07,1.2352647110032733e-07,2.4705294220065465e-07
+medium-4,stable_with_guard,1,0.0001,install stable LR before candidate step; guard does not trigger,1.2500000000000001e-08,1.2500000000000001e-08,1.2500000000000001e-08
+medium-4,stable_with_guard,2,1.2500000000000001e-08,install stable LR before candidate step; guard does not trigger,2.5000000000000002e-08,2.5000000000000002e-08,2.5000000000000002e-08
+medium-4,fixed_order_with_guard,1,1.0,install corrected legacy LR before candidate step; guard does not trigger,1.2352647110032733e-07,1.2352647110032733e-07,1.2352647110032733e-07
+medium-4,fixed_order_with_guard,2,1.2352647110032733e-07,install corrected legacy LR before candidate step; guard does not trigger,2.4705294220065465e-07,2.4705294220065465e-07,2.4705294220065465e-07
+medium-4,single_bad_first_step_then_stable,1,1.0,deliberately commit one initial-LR transition; stable LR is computed but not installed after the step,1.0,1.0,1.0
+medium-4,single_bad_first_step_then_stable,2,1.0,install stable LR before candidate step,2.5000000000000002e-08,2.5000000000000002e-08,2.5000000000000002e-08
+large-6,buggy_no_guard,1,1.0,candidate step first; install legacy schedule after step,1.0,1.0,8.734640537108554e-08
+large-6,buggy_no_guard,2,8.734640537108554e-08,candidate step first; install legacy schedule after step,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07
+large-6,buggy_failfast_guard,1,1.0,candidate step first; install legacy schedule; guard detects unsafe committed candidate and stops,1.0,1.0,8.734640537108554e-08
+large-6,buggy_failfast_guard,2,N/A,run already stopped after step-1 fail-fast detection,N/A,N/A,N/A
+large-6,buggy_rescue_guard,1,1.0,candidate step first; guard detects unsafe candidate; restore model+optimizer; install corrected legacy LR; replay,1.0,8.734640537108554e-08,8.734640537108554e-08
+large-6,buggy_rescue_guard,2,8.734640537108554e-08,candidate step first; no guard trigger in evaluated runs; install next legacy LR after step,8.734640537108554e-08,8.734640537108554e-08,1.7469281074217108e-07
+large-6,stable_with_guard,1,0.0001,install stable LR before candidate step; guard does not trigger,1.2500000000000001e-08,1.2500000000000001e-08,1.2500000000000001e-08
+large-6,stable_with_guard,2,1.2500000000000001e-08,install stable LR before candidate step; guard does not trigger,2.5000000000000002e-08,2.5000000000000002e-08,2.5000000000000002e-08
+large-6,fixed_order_with_guard,1,1.0,install corrected legacy LR before candidate step; guard does not trigger,8.734640537108554e-08,8.734640537108554e-08,8.734640537108554e-08
+large-6,fixed_order_with_guard,2,8.734640537108554e-08,install corrected legacy LR before candidate step; guard does not trigger,1.7469281074217108e-07,1.7469281074217108e-07,1.7469281074217108e-07
+large-6,single_bad_first_step_then_stable,1,1.0,deliberately commit one initial-LR transition; stable LR is computed but not installed after the step,1.0,1.0,1.0
+large-6,single_bad_first_step_then_stable,2,1.0,install stable LR before candidate step,2.5000000000000002e-08,2.5000000000000002e-08,2.5000000000000002e-08

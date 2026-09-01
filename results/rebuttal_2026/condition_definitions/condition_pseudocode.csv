@@ -1,0 +1,7 @@
+paper_name,code_label,schedule_family,pseudocode
+Stable,stable_with_guard,stable linear-warmup/cosine,alpha=stable(t); set LR before step; candidate step; commit candidate
+Corrected,fixed_order_with_guard,legacy Transformer,alpha=legacy(t); set LR before step; candidate step; commit candidate
+Legacy/no guard,buggy_no_guard,legacy Transformer,candidate step using entry LR; set legacy(t) after step; commit candidate
+Fail-fast,buggy_failfast_guard,legacy Transformer,candidate step using entry LR; compute candidate r; set legacy(t) after candidate; if r>tau stop without rollback; otherwise continue
+Rescue,buggy_rescue_guard,legacy Transformer,"snapshot model+optimizer; candidate step using entry LR; compute candidate r; set legacy(t) after candidate; if r>tau restore model+optimizer, set legacy(t), replay same clipped gradient, commit replay; otherwise commit candidate"
+Single-bad,single_bad_first_step_then_stable,initial impulse then stable,t=1: commit LR=1.0 and exit at 1.0; t>=2: set stable(t) before step and commit

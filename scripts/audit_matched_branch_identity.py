@@ -40,6 +40,9 @@ CONDITIONS = (
 MODELS = ("medium-4", "large-6")
 SEEDS = (42, 123, 456)
 
+BASE_LR = 1e-4
+LEGACY_INITIAL_LR = 1.0
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -50,6 +53,12 @@ def parse_args():
         required=True,
     )
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--split-mode",
+        choices=("archived", "fixed42"),
+        required=True,
+        help="archived: split_seed=experiment seed; fixed42: split_seed=42",
+    )
     parser.add_argument(
         "--device",
         choices=("cpu", "cuda"),
@@ -131,6 +140,43 @@ def set_seed(seed):
         torch.cuda.manual_seed_all(seed)
 
 
+def optimizer_non_lr_hash(optimizer):
+    state_dict = optimizer.state_dict()
+    groups = []
+
+    for group in state_dict["param_groups"]:
+        clean = {
+            key: value
+            for key, value in group.items()
+            if key not in {"lr", "initial_lr"}
+        }
+        groups.append(clean)
+
+    payload = json.dumps(
+        groups,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+
+    return sha256_bytes(payload)
+
+
+def optimizer_step_counter_max(optimizer):
+    steps = []
+
+    for state in optimizer.state.values():
+        if "step" not in state:
+            continue
+
+        step = state["step"]
+        if torch.is_tensor(step):
+            step = step.item()
+
+        steps.append(float(step))
+
+    return max(steps, default=0.0)
+
+
 def main():
     args = parse_args()
 
@@ -157,13 +203,20 @@ def main():
     results = []
 
     for seed in SEEDS:
-        print(f"\nLoading {args.dataset} split for seed {seed} ...")
+        split_seed = seed if args.split_mode == "archived" else 42
+
+        print(
+            f"\nLoading {args.dataset} | experiment_seed={seed} "
+            f"| split_seed={split_seed} ..."
+        )
+
+        set_seed(seed)
 
         train_dataset, val_dataset, test_dataset, vocab, num_classes = (
             load_text_dataset(
                 args.dataset,
                 max_length=128,
-                split_seed=seed,
+                split_seed=split_seed,
                 train_fraction=1.0,
             )
         )
@@ -199,7 +252,23 @@ def main():
 
                 model.train()
 
+                init_lr = (
+                    BASE_LR
+                    if condition == "stable_with_guard"
+                    else LEGACY_INITIAL_LR
+                )
+
+                optimizer = torch.optim.Adam(
+                    model.parameters(),
+                    lr=init_lr,
+                    betas=(0.9, 0.98),
+                    eps=1e-9,
+                )
+
                 model_hash = hash_model(model)
+                optimizer_hash = optimizer_non_lr_hash(optimizer)
+                optimizer_state_empty = len(optimizer.state) == 0
+                optimizer_step_max = optimizer_step_counter_max(optimizer)
 
                 batch = next(iter(train_loader))
                 batch_hash = hash_batch(batch)
@@ -225,8 +294,13 @@ def main():
                         "dataset": args.dataset,
                         "model": model_name,
                         "seed": seed,
+                        "split_mode": args.split_mode,
+                        "split_seed": split_seed,
                         "condition": condition,
                         "model_hash": model_hash,
+                        "optimizer_non_lr_hash": optimizer_hash,
+                        "optimizer_state_empty": optimizer_state_empty,
+                        "optimizer_step_counter_max": optimizer_step_max,
                         "batch_hash": batch_hash,
                         "rng_before_forward_hash": rng_before_forward,
                         "logits_hash": hash_tensor(logits),
@@ -244,6 +318,7 @@ def main():
 
     fields = (
         "model_hash",
+        "optimizer_non_lr_hash",
         "batch_hash",
         "rng_before_forward_hash",
         "logits_hash",
@@ -276,9 +351,24 @@ def main():
 
                 check[f"{field}_identical"] = identical
 
-            check["all_identity_checks_pass"] = all(
-                check[f"{field}_identical"]
-                for field in fields
+            optimizer_states_empty = all(
+                row["optimizer_state_empty"] for row in subset
+            )
+            optimizer_steps_zero = all(
+                row["optimizer_step_counter_max"] == 0.0
+                for row in subset
+            )
+
+            check["optimizer_states_empty"] = optimizer_states_empty
+            check["optimizer_step_counters_zero"] = optimizer_steps_zero
+
+            check["all_identity_checks_pass"] = (
+                all(
+                    check[f"{field}_identical"]
+                    for field in fields
+                )
+                and optimizer_states_empty
+                and optimizer_steps_zero
             )
 
             checks.append(check)
@@ -286,6 +376,12 @@ def main():
     payload = {
         "dataset": args.dataset,
         "device": str(device),
+        "split_mode": args.split_mode,
+        "split_rule": (
+            "split_seed=experiment_seed"
+            if args.split_mode == "archived"
+            else "split_seed=42"
+        ),
         "conditions": list(CONDITIONS),
         "models": list(MODELS),
         "seeds": list(SEEDS),

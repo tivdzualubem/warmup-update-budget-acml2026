@@ -358,7 +358,11 @@ def macro_f1(
     return float(np.mean(values))
 
 
-def prepare_task(dataset: str):
+def prepare_task(
+    dataset: str,
+    *,
+    train_fraction: float = 1.0,
+):
     cfg = TASK_CONFIG[dataset]
 
     if cfg["task"] == "sequence":
@@ -370,6 +374,8 @@ def prepare_task(dataset: str):
             prepare_sequence_dataset(
                 dataset_name=dataset,
                 tokenizer=tokenizer,
+                train_fraction=train_fraction,
+                fraction_seed=FIXED_SPLIT_SEED,
             )
         )
 
@@ -380,6 +386,11 @@ def prepare_task(dataset: str):
         )
 
     elif cfg["task"] == "token":
+        if train_fraction != 1.0:
+            raise ValueError(
+                "WNUT pilot currently requires full training data"
+            )
+
         tokenizer = (
             load_distilbert_tokenizer()
         )
@@ -401,6 +412,11 @@ def prepare_task(dataset: str):
         )
 
     elif cfg["task"] == "image":
+        if train_fraction != 1.0:
+            raise ValueError(
+                "CIFAR pilot currently requires full training data"
+            )
+
         processor = load_deit_processor()
 
         prepared = (
@@ -676,6 +692,59 @@ def primary_metric_value(
     return float(metrics[key])
 
 
+def resolve_run_controls(
+    *,
+    pilot_mode: bool,
+    train_fraction: float,
+    epochs: int,
+    max_optimizer_steps: Optional[int],
+):
+    """Keep publication defaults immutable unless pilot mode is explicit."""
+
+    if not (0.0 < train_fraction <= 1.0):
+        raise ValueError(
+            "train_fraction must satisfy 0 < fraction <= 1"
+        )
+
+    if epochs < 1:
+        raise ValueError(
+            "epochs must be >= 1"
+        )
+
+    if (
+        max_optimizer_steps is not None
+        and max_optimizer_steps < 1
+    ):
+        raise ValueError(
+            "max_optimizer_steps must be >= 1"
+        )
+
+    if not pilot_mode:
+        if train_fraction != 1.0:
+            raise ValueError(
+                "reduced train_fraction requires --pilot-mode"
+            )
+
+        if epochs != NUM_EPOCHS:
+            raise ValueError(
+                "non-default epochs require --pilot-mode"
+            )
+
+        if max_optimizer_steps is not None:
+            raise ValueError(
+                "max optimizer steps requires --pilot-mode"
+            )
+
+    return {
+        "pilot_mode": bool(pilot_mode),
+        "train_fraction":
+            float(train_fraction),
+        "epochs": int(epochs),
+        "max_optimizer_steps":
+            max_optimizer_steps,
+    }
+
+
 def run_job(args) -> int:
     if args.dataset not in DATASETS:
         raise ValueError(
@@ -701,6 +770,15 @@ def run_job(args) -> int:
             "guarded condition requires "
             "--threshold"
         )
+
+    controls = resolve_run_controls(
+        pilot_mode=args.pilot_mode,
+        train_fraction=args.train_fraction,
+        epochs=args.epochs,
+        max_optimizer_steps=args.max_optimizer_steps,
+    )
+
+    run_epochs = controls["epochs"]
 
     cfg = TASK_CONFIG[
         args.dataset
@@ -760,7 +838,10 @@ def run_job(args) -> int:
     set_seed(args.seed)
 
     prepared, model = prepare_task(
-        args.dataset
+        args.dataset,
+        train_fraction=controls[
+            "train_fraction"
+        ],
     )
 
     model = model.to(device)
@@ -802,7 +883,7 @@ def run_job(args) -> int:
 
     total_steps = (
         len(train_loader)
-        * NUM_EPOCHS
+        * run_epochs
     )
 
     warmup_steps = max(
@@ -837,7 +918,7 @@ def run_job(args) -> int:
         "threshold": args.threshold,
         "split_seed":
             FIXED_SPLIT_SEED,
-        "epochs": NUM_EPOCHS,
+        "epochs": run_epochs,
         "gradient_accumulation":
             GRAD_ACCUMULATION,
         "gradient_clip":
@@ -865,6 +946,14 @@ def run_job(args) -> int:
         "eval_batch_size":
             cfg["eval_batch_size"],
         "device": str(device),
+        "scientific_results":
+            not controls["pilot_mode"],
+        "pilot_mode":
+            controls["pilot_mode"],
+        "train_fraction":
+            controls["train_fraction"],
+        "max_optimizer_steps":
+            controls["max_optimizer_steps"],
         "sources":
             sources,
     }
@@ -972,7 +1061,7 @@ def run_job(args) -> int:
 
     for epoch in range(
         start_epoch,
-        NUM_EPOCHS,
+        run_epochs,
     ):
         model.train()
 
@@ -1204,6 +1293,17 @@ def run_job(args) -> int:
                 )
                 break
 
+            if (
+                controls["max_optimizer_steps"]
+                is not None
+                and global_step
+                >= controls["max_optimizer_steps"]
+            ):
+                terminal_reason = (
+                    "pilot_max_steps"
+                )
+                break
+
         if terminal_reason is not None:
             break
 
@@ -1306,6 +1406,8 @@ def run_job(args) -> int:
     if terminal_reason is None:
         terminal_reason = (
             "completed_3_epochs"
+            if run_epochs == 3
+            else f"completed_{run_epochs}_epochs"
         )
 
     test_metrics = None
@@ -1369,6 +1471,16 @@ def run_job(args) -> int:
             args.condition,
         "threshold":
             args.threshold,
+        "scientific_results":
+            not controls["pilot_mode"],
+        "pilot_mode":
+            controls["pilot_mode"],
+        "train_fraction":
+            controls["train_fraction"],
+        "configured_epochs":
+            run_epochs,
+        "max_optimizer_steps":
+            controls["max_optimizer_steps"],
         "terminal_reason":
             terminal_reason,
         "global_steps":
@@ -1495,6 +1607,32 @@ def build_parser():
         "--num-workers",
         type=int,
         default=2,
+    )
+
+    parser.add_argument(
+        "--pilot-mode",
+        action="store_true",
+        help=(
+            "Enable explicitly non-scientific reduced-run controls."
+        ),
+    )
+
+    parser.add_argument(
+        "--train-fraction",
+        type=float,
+        default=1.0,
+    )
+
+    parser.add_argument(
+        "--epochs",
+        type=int,
+        default=NUM_EPOCHS,
+    )
+
+    parser.add_argument(
+        "--max-optimizer-steps",
+        type=int,
+        default=None,
     )
 
     parser.add_argument(

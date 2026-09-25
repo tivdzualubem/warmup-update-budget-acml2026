@@ -100,10 +100,47 @@ def tokenize_sequence_batch(
     return encoded
 
 
+def deterministic_dataset_fraction(
+    dataset,
+    *,
+    fraction: float,
+    seed: int = FIXED_SPLIT_SEED,
+):
+    """Deterministic training-only subset for non-scientific pilots."""
+
+    if not (0.0 < fraction <= 1.0):
+        raise ValueError(
+            "fraction must satisfy 0 < fraction <= 1"
+        )
+
+    if fraction == 1.0:
+        return dataset
+
+    n = len(dataset)
+    n_keep = max(
+        1,
+        int(n * fraction),
+    )
+
+    rng = np.random.RandomState(seed)
+
+    indices = rng.choice(
+        n,
+        size=n_keep,
+        replace=False,
+    )
+
+    return dataset.select(
+        indices.tolist()
+    )
+
+
 def prepare_sequence_dataset(
     *,
     dataset_name: str,
     tokenizer,
+    train_fraction: float = 1.0,
+    fraction_seed: int = FIXED_SPLIT_SEED,
 ):
     raw = load_frozen_dataset(dataset_name)
 
@@ -122,6 +159,12 @@ def prepare_sequence_dataset(
     train_ds = split["train"]
     val_ds = split["test"]
     test_ds = raw["test"]
+
+    train_ds = deterministic_dataset_fraction(
+        train_ds,
+        fraction=train_fraction,
+        seed=fraction_seed,
+    )
 
     remove_columns = train.column_names
 

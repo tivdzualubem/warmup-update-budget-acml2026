@@ -285,6 +285,7 @@ def load_scratch_hf_dataset(
     split_seed: int = FIXED_SPLIT_SEED,
     val_ratio: float = DEFAULT_VAL_RATIO,
     train_fraction: float = 1.0,
+    revision: str | None = None,
 ) -> PreparedScratchDataset:
     """Load official HF splits and apply the frozen scratch protocol.
 
@@ -301,7 +302,10 @@ def load_scratch_hf_dataset(
 
     spec = get_dataset_spec(dataset_name)
 
-    raw = load_dataset(spec["hf_name"])
+    raw = load_dataset(
+        spec["hf_name"],
+        revision=revision,
+    )
 
     official_train = raw["train"]
     official_test = raw["test"]
@@ -339,6 +343,8 @@ def load_scratch_hf_dataset(
     )
 
     # Record dataset fingerprints when exposed by datasets.
+    prepared.manifest["hf_revision_requested"] = revision
+
     prepared.manifest["hf_fingerprints"] = {
         split_name: getattr(
             raw[split_name],

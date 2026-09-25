@@ -294,3 +294,66 @@ class PreparedDatasetTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RevisionPinTests(unittest.TestCase):
+    def test_real_loader_forwards_explicit_revision(self):
+        from unittest.mock import patch
+
+        from publication_expansion.src.scratch_dataset_adapter import (
+            load_scratch_hf_dataset,
+        )
+
+        class FakeSplit(list):
+            _fingerprint = "fake-fingerprint"
+
+        train = FakeSplit(
+            [
+                {
+                    "text": f"common common example{i}",
+                    "label": i % 4,
+                }
+                for i in range(20)
+            ]
+        )
+
+        test = FakeSplit(
+            [
+                {
+                    "text": "common common test",
+                    "label": 0,
+                }
+            ]
+        )
+
+        fake_raw = {
+            "train": train,
+            "test": test,
+        }
+
+        revision = (
+            "eb185aade064a813bc0b7f42de02595523103ca4"
+        )
+
+        with patch(
+            "datasets.load_dataset",
+            return_value=fake_raw,
+        ) as mocked:
+            prepared = load_scratch_hf_dataset(
+                "ag_news",
+                split_seed=42,
+                val_ratio=0.20,
+                revision=revision,
+            )
+
+        mocked.assert_called_once_with(
+            "fancyzhx/ag_news",
+            revision=revision,
+        )
+
+        self.assertEqual(
+            prepared.manifest[
+                "hf_revision_requested"
+            ],
+            revision,
+        )

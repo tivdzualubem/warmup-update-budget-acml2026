@@ -161,6 +161,17 @@ class KagglePilotTests(
             1.0,
         )
 
+        fractions = {
+            job["dataset"]:
+                job["train_fraction"]
+            for job in severity_jobs()
+        }
+
+        self.assertEqual(
+            fractions,
+            TRAIN_FRACTIONS,
+        )
+
     def test_threshold_uses_only_four_nonheldout_seeds(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

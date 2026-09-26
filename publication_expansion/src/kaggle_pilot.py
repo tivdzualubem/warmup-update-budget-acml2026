@@ -365,6 +365,8 @@ def severity_jobs():
         {
             "dataset": dataset,
             "seed": HELDOUT_SEED,
+            "train_fraction":
+                TRAIN_FRACTIONS[dataset],
         }
         for dataset in DATASETS
     ]
@@ -463,6 +465,8 @@ def severity_command(
         device,
         "--num-workers",
         str(num_workers),
+        "--train-fraction",
+        str(job["train_fraction"]),
     ]
 
 

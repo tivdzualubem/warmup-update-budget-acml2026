@@ -169,6 +169,15 @@ def run_severity(args) -> int:
             "unsupported dataset"
         )
 
+    if not (
+        0.0
+        < args.train_fraction
+        <= 1.0
+    ):
+        raise ValueError(
+            "train_fraction must satisfy 0 < fraction <= 1"
+        )
+
     if args.seed not in {
         42,
         123,
@@ -223,7 +232,8 @@ def run_severity(args) -> int:
     set_seed(args.seed)
 
     prepared, model = prepare_task(
-        args.dataset
+        args.dataset,
+        train_fraction=args.train_fraction,
     )
 
     model = model.to(device)
@@ -418,6 +428,8 @@ def run_severity(args) -> int:
             "first_transition_lr_severity",
         "dataset":
             args.dataset,
+        "train_fraction":
+            float(args.train_fraction),
         "task":
             cfg["task"],
         "seed":
@@ -528,6 +540,12 @@ def build_parser():
         "--num-workers",
         type=int,
         default=2,
+    )
+
+    parser.add_argument(
+        "--train-fraction",
+        type=float,
+        default=1.0,
     )
 
     parser.add_argument(

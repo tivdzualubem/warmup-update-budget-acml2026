@@ -99,7 +99,7 @@ Executed learning rates, shared-step learning progress and positive-rate budgets
 
 ### Research support
 
-This research used resources provided by Innopolis University.
+This research received no financial funding. It used resources provided by Innopolis University.
 
 ### Competing interests
 
@@ -111,7 +111,7 @@ Tivdzua Lubem Noah developed the implementation, analysed the results, and draft
 
 ### Data and code availability
 
-The code, configurations, retained experimental records, tests, execution logs and editable manuscript sources are available in the [versioned research repository](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18) (version `computing-submission-2026-11-18`). The repository preserves the earlier experiment and rebuttal code; `computing/` contains the materials for this article.
+The code, configurations, retained experimental records, tests, execution logs and editable manuscript sources are available in the [versioned research repository](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18-r2) (version `computing-submission-2026-11-18-r2`). The repository preserves the earlier experiment and rebuttal code; `computing/` contains the materials for this article.
 
 Online Resource 1 is the supplementary PDF containing the complete seed-level endpoint results, recorded training trajectories, budgets, provenance and evaluation limitations. Online Resource 2 is the reproducibility package containing the code and retained records used to regenerate the reported tables and figures. The larger prediction and retained-state archives for the configured-peak pair are stored separately and can be requested from the authors; their filenames and SHA-256 hashes are registered in the package. Historical candidate-epoch weights and matching validation predictions were not recovered and cannot be supplied. The public dataset sources are [AG News](https://huggingface.co/datasets/fancyzhx/ag_news), [DBpedia](https://huggingface.co/datasets/fancyzhx/dbpedia_14), [WNUT-17](https://huggingface.co/datasets/flaitenberger/wnut_17) and [CIFAR-10](https://huggingface.co/datasets/uoft-cs/cifar10). Exact revisions, split definitions and hashes are retained in the configurations and provenance records.
 
@@ -124,7 +124,7 @@ Online Resource 1 is the supplementary PDF containing the complete seed-level en
         'Corresponding author: Tivdzua Lubem Noah, Innopolis University, Innopolis, Russia; '
         'l.tivdzua@innopolis.university.\n')
     first, rest = supp.split('\n', 1)
-    supplementary_identity += '\nResearch code, retained records and editable sources: [version computing-submission-2026-11-18](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18).\n'
+    supplementary_identity += '\nResearch code, retained records and editable sources: [version computing-submission-2026-11-18-r2](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18-r2).\n'
     supp = first + supplementary_identity + '\n' + rest
     assert main.splitlines()[0]==title
     (M/'Research_Manuscript.md').write_text(main,encoding='utf-8')

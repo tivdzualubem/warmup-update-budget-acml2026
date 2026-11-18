@@ -213,7 +213,7 @@ large-6  buggy_rescue_guard                 t=1 entry=[1.0] candidate=[1.0] comm
 large-6  buggy_rescue_guard                 t=2 entry=[8.734640537108554e-08] candidate=[8.734640537108554e-08] committed=[8.734640537108554e-08] exit=[1.7469281074217108e-07] calls=1 retained_counter=2.0
 large-6  buggy_failfast_guard               t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[8.734640537108554e-08] calls=1 retained_counter=1.0
 LR assertion: zero optimizer calls; zero LR: unchanged weights, changed moments/counter.
-Saved C:\Users\user\Documents\ChatGPT\ACML PAPER\working\computing_submission_fresh_check_20261118\ACML_Revision\evidence\verification\first_two_steps.json
+Saved C:\Users\user\Documents\ChatGPT\ACML PAPER\working\computing_submission_fresh_check_20261118_r2\ACML_Revision\evidence\verification\first_two_steps.json
 Reproduce: analyse_peak_pair.py
 {
   "status": "passed",
@@ -284,13 +284,13 @@ Reproduce: build_computing_latex.py
   "documents": [
     {
       "stem": "Research_Manuscript",
-      "tex_sha256": "b5d3e664c62398f66d8bfda4cd8e7d41eaa0c4d88059f406bb6175323d122230",
-      "pdf_sha256": "6f29fa9832b32ac3d12b25f4081bd7469ddce9289f2b0560c09b00a33291d81f"
+      "tex_sha256": "dfbdffe6a98c0e658570d90d947269550819a1207a6d113a13e3b43e864bb923",
+      "pdf_sha256": "f817600aa86692e7722c3c311ecbfe25d9e71ba1b26b1aaec508d275ea89832f"
     },
     {
       "stem": "All_Seed_Results_and_Provenance",
-      "tex_sha256": "ddedb1d888dde714edc1455c38800c5cf77e184056bc63cc5b6c335511cd852b",
-      "pdf_sha256": "fe0bf9f302d0a5a6f6b59e57b003a65534484ccc6538b66fe63a2373e6a85aa8"
+      "tex_sha256": "88ff734964d0965877e8873cc31275eb0a05ed678d77bf8148e671f0ad97a9e0",
+      "pdf_sha256": "8eb353800101961d6be7831894a946fcb13dffc446967766348c5e9e0d88fa6b"
     }
   ]
 }
@@ -391,7 +391,7 @@ test_incomplete_sampler_or_identity_is_rejected (test_submission_plan_v2.ResumeC
 test_stochastic_forward_and_mid_permutation_resume_match_cpu (test_submission_plan_v2.ResumeCPU.test_stochastic_forward_and_mid_permutation_resume_match_cpu) ... ok
 
 ----------------------------------------------------------------------
-Ran 51 tests in 5.711s
+Ran 51 tests in 4.283s
 
 OK
 

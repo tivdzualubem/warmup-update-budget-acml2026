@@ -4,7 +4,7 @@ Current article: **Separating First-Step Learning-Rate Faults from Scheduler Del
 
 Tivdzua Lubem Noah, Bader Rasheed, Dmitriy S. Vatolin. Prepared for submission to *Computing*; this repository does not imply journal acceptance or completed submission.
 
-Use the version **computing-submission-2026-11-18** for the paper. Start with [the research index](RESEARCH_INDEX.md), [current manuscript](computing/manuscript/Research_Manuscript.pdf), [supplement](computing/manuscript/All_Seed_Results_and_Provenance.pdf) and [reproduction instructions](computing/README_REPRODUCE.md).
+Use the version **computing-submission-2026-11-18-r2** for the paper. Start with [the research index](RESEARCH_INDEX.md), [current manuscript](computing/manuscript/Research_Manuscript.pdf), [supplement](computing/manuscript/All_Seed_Results_and_Provenance.pdf) and [reproduction instructions](computing/README_REPRODUCE.md).
 
 ```text
 cd computing

@@ -6,7 +6,7 @@ The title and archived checkpoint selections are unchanged. Main and supplement 
 
 ## Versioned repository
 
-https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18
+https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18-r2
 
 The `computing/` directory in that version is the current reproducibility package. The repository root also preserves the earlier calibrated, rebuttal and publication-expansion code. See the repository RESEARCH_INDEX.md for the cohort map and external evidence boundaries. From a Git checkout, change into `computing/` before using the commands below.
 

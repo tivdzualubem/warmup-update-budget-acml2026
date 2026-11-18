@@ -1,7 +1,7 @@
 {
   "date": "2026-11-18",
   "archive": "ESM_2.zip",
-  "archive_sha256": "7b3180d5a98cd7c545ef09d522f1fbf22e1483eb2268176b7ef2c2420f880f15",
+  "archive_sha256": "edef651ceff18bcf5f0d8ab35b0d52edd5f20c14fef8c1e613545ee380351903",
   "fresh_extraction_and_all_member_hashes_verified": true,
   "full_analysis_and_tests_rerun": true,
   "tests_passed": 51,
@@ -18,13 +18,13 @@
   "flat_source_rebuilds": [
     {
       "file": "Computing_Main_Source.zip",
-      "sha256": "3305ecfcce3b82139e5e63e2bd5916f3b9f7e738d277a418653b01130de47808",
+      "sha256": "10d837a8d53c9489e04efd79fcbf3fc78333dd3884264bbae946f448bdb5ea6d",
       "compile_passed": true,
       "text_and_pages_match": true
     },
     {
       "file": "Computing_Supplement_Source.zip",
-      "sha256": "1fe67fa7dc895e3c860065db6c32d0bf51f73c170f350c762a7aa2028bd2a469",
+      "sha256": "d64ccb8891786c16eab828f8377b438cb5dbbf88375a3c3e411ee0169cc26f44",
       "compile_passed": true,
       "text_and_pages_match": true
     }

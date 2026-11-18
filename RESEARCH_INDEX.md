@@ -25,4 +25,4 @@ All 51 current tests and 560 displayed numeric checks passed in a clean extracti
 
 ## Preserve this version
 
-The manuscript cites the tag computing-submission-2026-11-18. Future corrections should use a new version rather than moving this tag. The original acml2026-artifacts-v1 tag and earlier branches remain unchanged. Scientific cohort labels and historical selections must stay separate.
+The manuscript cites the tag computing-submission-2026-11-18-r2. Future corrections should use a new version rather than moving this tag. The original acml2026-artifacts-v1 tag and earlier branches remain unchanged. Scientific cohort labels and historical selections must stay separate.

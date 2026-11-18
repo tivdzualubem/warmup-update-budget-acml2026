@@ -1,34 +1,28 @@
 {
   "date": "2026-11-18",
-  "version": "computing-submission-2026-11-18",
-  "version_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18",
-  "checks": "passed",
-  "repository_upload": "verified separately after push",
+  "version": "computing-submission-2026-11-18-r2",
+  "version_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18-r2",
+  "status": "passed",
+  "change": "Explicit no-financial-funding statement consistent with user-selected portal declaration; version links updated. Scientific content unchanged.",
   "current_package_members_identical_to_ESM_2": 411,
-  "ESM_2_sha256": "7b3180d5a98cd7c545ef09d522f1fbf22e1483eb2268176b7ef2c2420f880f15",
-  "historical_code_records_mapped": 295,
-  "historical_archives_inspected": 23,
-  "historical_drive_files_registered": 133,
-  "documents": {
-    "Research_Manuscript.pdf": {
-      "pages": 22,
-      "sha256": "d9a23bc7dbe1d45a8a37100a8ffed162d52573786676865c710538ef06589076",
-      "repository_hyperlink_verified": true
-    },
-    "ESM_1.pdf": {
-      "pages": 19,
-      "sha256": "07f126ee41646584559285f9460bb26c92b4a597dcdf1ae428392693481a6005",
-      "repository_hyperlink_verified": true
-    }
-  },
-  "scientific_main_text_and_references_unchanged": true,
+  "ESM_2_sha256": "edef651ceff18bcf5f0d8ab35b0d52edd5f20c14fef8c1e613545ee380351903",
   "tests_passed": 51,
   "displayed_numeric_cells_checked": 560,
   "discrepancies": 0,
-  "frozen_original_files_verified": 107,
-  "source_archives_compile_and_reproduce": true,
-  "visual_review": "Changed main pages 20-22 and supplement page 1 visually reviewed; other 37 pages retain previously checked text, page positions checked by rendering. No clipped text or missing content observed.",
-  "no_new_training": true,
-  "large_companions": "unchanged hashes verified; full raw-prediction/state audit completed 17 November",
-  "journal_submission": false
+  "documents": {
+    "Research_Manuscript.pdf": {
+      "pages": 22,
+      "sha256": "c6cce8187f9c895adb4a313b0aea05a1a4ddad11614d8b3d2fed63062bda5374",
+      "version_link_verified": true
+    },
+    "ESM_1.pdf": {
+      "pages": 19,
+      "sha256": "6f2e96830d75c151fe7e78b7b85cc07afe8a1b768b511fb960f0bde1de173eea",
+      "version_link_verified": true
+    }
+  },
+  "visual_review": "Main changed pages 19 and 20 and supplement page 1 reviewed. Other pages retain checked text. Initial portal PDF separately checked on all 22 pages.",
+  "journal_submission": false,
+  "new_portal_generated_pdf_review": "pending after user replaces uploads",
+  "no_new_training": true
 }

@@ -1,0 +1,26 @@
+{
+  "entry_command": "python transformer_project/run_stage2_agnews.py",
+  "dataset": "ag_news",
+  "run_order": [
+    {
+      "name": "full_scratch",
+      "script": "run_empirical_scratch.py",
+      "expected_output": "transformer_project/results/scratch_empirical_ag_news_full_agnews_v1/"
+    },
+    {
+      "name": "ablation_shift",
+      "script": "run_ablation_shift_subset.py",
+      "expected_output": "transformer_project/results/scratch_empirical_ag_news_agnews_ablation_shift_v1/"
+    },
+    {
+      "name": "early_diagnostics_plus",
+      "script": "run_early_diagnostics_plus.py",
+      "expected_output": "transformer_project/results/early_diagnostics_plus_ag_news_agnews_earlydiag_plus_v1/"
+    },
+    {
+      "name": "initial_lr_sweep",
+      "script": "run_initial_lr_sweep.py",
+      "expected_output": "transformer_project/results/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/"
+    }
+  ]
+}

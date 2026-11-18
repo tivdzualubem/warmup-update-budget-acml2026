@@ -1,0 +1,30 @@
+note: Running TeX ...
+note: Running BibTeX on Research_Manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "Research_Manuscript.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `Research_Manuscript.pdf` (169.974609375 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)
+
+Fontconfig error: Cannot load default config file: No such file: (null)
+warning: Research_Manuscript.tex:49: Underfull \vbox (badness 2376) has occurred while \output is active
+warning: Research_Manuscript.tex:127: Underfull \hbox (badness 10000) in paragraph at lines 126--127
+warning: Research_Manuscript.tex:153: Underfull \hbox (badness 1038) in paragraph at lines 152--153
+warning: Research_Manuscript.tex:224: Underfull \hbox (badness 2057) in paragraph at lines 223--224
+warning: Research_Manuscript.tex:310: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: Research_Manuscript.tex:432: Underfull \vbox (badness 5802) has occurred while \output is active
+warning: Research_Manuscript.tex:49: Underfull \vbox (badness 2376) has occurred while \output is active
+warning: Research_Manuscript.tex:127: Underfull \hbox (badness 10000) in paragraph at lines 126--127
+warning: Research_Manuscript.tex:153: Underfull \hbox (badness 1038) in paragraph at lines 152--153
+warning: Research_Manuscript.tex:224: Underfull \hbox (badness 2057) in paragraph at lines 223--224
+warning: Research_Manuscript.tex:310: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: Research_Manuscript.tex:432: Underfull \vbox (badness 5802) has occurred while \output is active
+warning: Research_Manuscript.bbl:119: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: Research_Manuscript.tex:49: Underfull \vbox (badness 2376) has occurred while \output is active
+warning: Research_Manuscript.tex:127: Underfull \hbox (badness 10000) in paragraph at lines 126--127
+warning: Research_Manuscript.tex:153: Underfull \hbox (badness 1038) in paragraph at lines 152--153
+warning: Research_Manuscript.tex:224: Underfull \hbox (badness 2057) in paragraph at lines 223--224
+warning: Research_Manuscript.tex:310: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: Research_Manuscript.tex:432: Underfull \vbox (badness 5802) has occurred while \output is active
+warning: Research_Manuscript.bbl:119: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

@@ -1,0 +1,23 @@
+{
+  "study": "warmup-update-budget publication expansion",
+  "protocol_status": "pre-experiment design freeze",
+  "parent_branch": "rebuttal-2026",
+  "parent_commit": "b93a9507bf15feb31c1b632760ac9f77f89a3e75",
+  "working_branch": "publication-expansion",
+  "experiment_seeds": [42, 123, 456, 789, 2026],
+  "data_split_seed": 42,
+  "datasets": [
+    "ag_news",
+    "dbpedia_14",
+    "wnut_17",
+    "cifar10"
+  ],
+  "principles": {
+    "preserve_original_acml_artifacts": true,
+    "separate_split_and_experiment_seeds": true,
+    "matched_branch_anchors": true,
+    "freeze_protocol_before_full_runs": true,
+    "record_environment_and_checksums": true,
+    "retain_raw_results": true
+  }
+}

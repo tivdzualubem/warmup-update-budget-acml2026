@@ -1,0 +1,10 @@
+{
+  "audit_date": "2026-10-27",
+  "source_package": "C:\\Users\\user\\Documents\\ChatGPT\\ACML PAPER\\deliverables\\For_Professor_2026-10-26\\ACML_Manuscript_Analysis_and_Tests_2026-10-26.zip",
+  "source_sha256": "23a26af300c4c61ca399feaa01087cbf0db44eb5c70b9b7102b10595839d92b5",
+  "source_members": 320,
+  "all_manifest_hashes_verified": 319,
+  "zip_crc": "passed",
+  "extracted_from_actual_delivery": true,
+  "source_package_modified": false
+}

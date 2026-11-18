@@ -1,0 +1,2 @@
+Optional metadata enhancement:
+1. License or anonymous contact information, if requested by the venue.

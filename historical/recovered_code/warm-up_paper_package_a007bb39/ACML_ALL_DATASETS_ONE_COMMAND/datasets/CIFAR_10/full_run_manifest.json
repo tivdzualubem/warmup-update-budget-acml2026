@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study": "ACML publication expansion",
+  "source_commit": "bfcbc0bae87d6969fcd4d416cdc457de52c92048",
+  "source_bundle_sha256": "34392d6b2655b0c9152b6c6a2363e3e91dcd7a459e8cda278359148dbb13b19e",
+  "dataset": "cifar10",
+  "display_name": "CIFAR-10",
+  "entry_command": "python -u run_full_cifar10.py",
+  "optional_parallel_command": "python -u run_full_cifar10.py --gpus 0 1",
+  "experiment_seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "fixed_split_seed": 42,
+  "scratch_models": [],
+  "pretrained_model": "facebook/deit-tiny-patch16-224",
+  "expected_scratch_jobs": 0,
+  "expected_pretrained_jobs": 30,
+  "expected_pretrained_severity_jobs": 5,
+  "full_study_jobs": 30,
+  "full_study_including_severity": 35,
+  "run_order": [
+    "pretrained-safe",
+    "pretrained-thresholds",
+    "pretrained-nonguarded",
+    "pretrained-rescue",
+    "pretrained-diagnostic",
+    "pretrained-severity",
+    "pretrained-anchor-audit"
+  ],
+  "expected_output_paths": [
+    "publication_expansion/results/pretrained/cifar10/seed{seed}/{condition}/",
+    "publication_expansion/results/pretrained_severity/cifar10/seed{seed}/",
+    "publication_expansion/results/pretrained/loso_thresholds.json"
+  ],
+  "calibration": "fresh other-four-seed leave-one-out, kappa=10, first 100 safe steps",
+  "pilot_results_eligible_for_publication": false,
+  "reduced_test_status": "48/48 jobs, 8/8 matched anchor groups, zero audit errors (independent Kaggle validation)",
+  "scientific_training_run_in_this_package": false
+}

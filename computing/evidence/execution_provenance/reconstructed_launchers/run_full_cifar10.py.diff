@@ -1,0 +1,23 @@
+--- run_full_cifar10.py original
++++ run_full_cifar10.py reconstructed
+@@ -29,6 +29,11 @@
+ PRE_ROOT = 'publication_expansion/results/pretrained'
+ SEVERITY_ROOT = 'publication_expansion/results/pretrained_severity'
+ LOG_ROOT = Path('publication_expansion/results/full_run_logs')
++
++# Hotfix: scope the FROZEN matrix enumerators to this dataset before
++# guard-threshold lookup. Filtering AFTER build_jobs() is too late.
++scratch.DATASETS = (DATASET,)
++pre.DATASETS = (DATASET,)
+ 
+ SCRATCH_PHASES = (
+     'scratch-safe', 'scratch-thresholds', 'scratch-nonguarded',
+@@ -172,7 +177,7 @@
+     LOG_ROOT.mkdir(parents=True, exist_ok=True)
+     job_queue = queue.Queue()
+     for job in jobs:
+-        job_queue.put(job)
++        job_queue.put(job[0] if isinstance(job, tuple) else job)
+     errors = []
+     stop = threading.Event()
+     mutex = threading.Lock()

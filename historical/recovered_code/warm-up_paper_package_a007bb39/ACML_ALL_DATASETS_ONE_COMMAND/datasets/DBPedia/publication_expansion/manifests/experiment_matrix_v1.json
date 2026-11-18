@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "pre_experiment_frozen_design",
+  "experiment_seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "datasets": {
+    "ag_news": {
+      "task": "sequence_classification",
+      "modality": "text",
+      "split_policy": "official train/test; validation from train with fixed seed 42"
+    },
+    "dbpedia_14": {
+      "task": "sequence_classification",
+      "modality": "text",
+      "split_policy": "official train/test; validation from train with fixed seed 42"
+    },
+    "wnut_17": {
+      "task": "token_classification_ner",
+      "modality": "text",
+      "split_policy": "use official train/validation/test splits unchanged"
+    },
+    "cifar10": {
+      "task": "image_classification",
+      "modality": "vision",
+      "split_policy": "official train/test; stratified validation from train with fixed seed 42"
+    }
+  },
+  "scratch_controlled_study": {
+    "datasets": [
+      "ag_news",
+      "dbpedia_14"
+    ],
+    "models": [
+      "medium-4",
+      "large-6"
+    ],
+    "optimizer": "Adam",
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ],
+    "conditions": [
+      "stable_with_guard",
+      "fixed_order_with_guard",
+      "buggy_no_guard",
+      "buggy_failfast_guard",
+      "buggy_rescue_guard",
+      "single_bad_first_step_then_stable"
+    ],
+    "rerun_all_five_with_fixed_split_seed_42": true,
+    "purpose": "controlled replication and extension of original causal study"
+  },
+  "pretrained_generalization_study": {
+    "environments": [
+      {
+        "dataset": "ag_news",
+        "model": "distilbert/distilbert-base-uncased",
+        "optimizer": "AdamW"
+      },
+      {
+        "dataset": "dbpedia_14",
+        "model": "distilbert/distilbert-base-uncased",
+        "optimizer": "AdamW"
+      },
+      {
+        "dataset": "wnut_17",
+        "model": "distilbert/distilbert-base-uncased",
+        "optimizer": "AdamW"
+      },
+      {
+        "dataset": "cifar10",
+        "model": "facebook/deit-tiny-patch16-224",
+        "optimizer": "AdamW"
+      }
+    ],
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ],
+    "conditions": [
+      "safe_correct_order",
+      "late_schedule_no_guard",
+      "single_bad_then_correct",
+      "update_guard_failfast",
+      "update_guard_rescue",
+      "executed_lr_assertion"
+    ],
+    "purpose": "generalization across pretrained models, tasks, modality and realistic training environments"
+  },
+  "execution_policy": {
+    "full_training_conditions": [
+      "stable_with_guard",
+      "fixed_order_with_guard",
+      "buggy_no_guard",
+      "buggy_rescue_guard",
+      "single_bad_first_step_then_stable",
+      "safe_correct_order",
+      "late_schedule_no_guard",
+      "single_bad_then_correct",
+      "update_guard_rescue"
+    ],
+    "diagnostic_early_stop_conditions": [
+      "buggy_failfast_guard",
+      "update_guard_failfast",
+      "executed_lr_assertion"
+    ],
+    "trace_steps_dense": [
+      1,
+      300
+    ],
+    "guard_calibration_window": [
+      1,
+      100
+    ],
+    "full_runs_before_smoke_tests_pass": false
+  },
+  "primary_questions": [
+    "Does the scheduler-order failure replicate with five seeds under a fixed data split?",
+    "Does a realistic first-step warmup mismatch produce abnormal realized displacement in pretrained Transformers?",
+    "Does the phenomenon extend beyond scratch text classification?",
+    "Does update-ratio detection retain low false-positive and false-negative rates under held-out calibration?",
+    "Does rollback-and-replay rescue recover the unsafe transition without state contamination?",
+    "When is a direct executed-LR assertion sufficient, and when does realized-update monitoring provide complementary information?"
+  ]
+}

@@ -1,0 +1,2191 @@
+{
+  "scope": "All Python, notebook and shell code members in the recovered Drive ZIPs and earlier final training/one-script packages, plus the original October launcher. Full old-chat access and missing historical checkpoints are not claimed.",
+  "archives_scanned": [
+    {
+      "archive": "acml_artifacts_core.zip",
+      "sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "code_members": 6,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "ag_news_extra_paper_support.zip",
+      "sha256": "442fe4df114c82414e4e67acc350cf9c02ef2a64226e8c18b0f00993990e46cb",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "ag_news_final_paper_support.zip",
+      "sha256": "5016efa50fde339177b80d2ae957e9dcfa58b6ed91094fa13e690f3642c91ca8",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "ag_news_paper_ready_tables.zip",
+      "sha256": "1e647c923944dada4eff3b5f153df598af279101ba05d9a96342f09a0fc07b97",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "dbpedia_14_extra_paper_support.zip",
+      "sha256": "9c8e4d2831f225a02bd3f89231adae62fb8792aa4485e7c59dc098c4430418bb",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "dbpedia_14_final_paper_support.zip",
+      "sha256": "ea3af97047b1c07e9471a83d453bc2fdd275461d45416fe2893ce887ab0e1e8a",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "dbpedia_14_paper_ready_tables.zip",
+      "sha256": "4f277bb4bdcd4f910e742c55252a547c0f0b3e6f0259c8abd2d2f431765c0ed5",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "final_dbpedia_pretrained_package.zip",
+      "sha256": "f4ebe9d840d7765bcd93820dac885f4d70117b610f73ee3ebe156f2e70951937",
+      "code_members": 4,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "Lubem(1).zip",
+      "sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "code_members": 12,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "results_agnewa-no_ckp.zip",
+      "sha256": "69bbbe1fdeb4eb44444d08b626c39600522a51470d9b620ffc875947199b431a",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "acml_artifacts_core.zip",
+      "sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "same_archive_as": "acml_artifacts_core.zip"
+    },
+    {
+      "archive": "acml_artifacts_core_before_final_update.zip",
+      "sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "code_members": 6,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "acml_raw_agnews.zip",
+      "sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "code_members": 6,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "acml_raw_dbpedia_core.zip",
+      "sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "code_members": 6,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "acml_raw_dbpedia_scheduler_large6.zip",
+      "sha256": "d85f27662024f8842905fc790d5232eebbb1db0361197cf639de55bad05acc2d",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "acml_raw_dbpedia_scheduler_medium4.zip",
+      "sha256": "9b06aeaecbe24973cb772a60222733c358bc92a7a538493c3f8827383cd0fba2",
+      "code_members": 0,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "final_agnews_one_script_package (1).zip",
+      "sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "code_members": 9,
+      "new_code_package_added": true
+    },
+    {
+      "archive": "final_dbpedia_one_script_package (1).zip",
+      "sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "code_members": 9,
+      "new_code_package_added": true
+    },
+    {
+      "archive": "warm-up paper package.zip",
+      "sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "code_members": 217,
+      "new_code_package_added": true
+    },
+    {
+      "archive": "final_agnews_one_script_package (1).zip",
+      "sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "same_archive_as": "final_agnews_one_script_package (1).zip"
+    },
+    {
+      "archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "code_members": 6,
+      "new_code_package_added": false
+    },
+    {
+      "archive": "final_dbpedia_one_script_package (1).zip",
+      "sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "same_archive_as": "final_dbpedia_one_script_package (1).zip"
+    },
+    {
+      "archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "code_members": 6,
+      "new_code_package_added": false
+    }
+  ],
+  "code_mapping": [
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "notebooks/Transformer_Artifacts(AGNEWS).ipynb",
+      "sha256": "3ce58ad93775566cdec6028d3b0c0b1c4ca47ccd3f06104331dcedcfe0abe655",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/notebooks/Transformer_Artifacts(AGNEWS).ipynb"
+    },
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "notebooks/Transformer_Artifacts(DBPEDIA).ipynb",
+      "sha256": "2f3de0ed16bb507ce960218e7ef03e56a59264b0e8d2177bc71c0d9ee8f601b8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/notebooks/Transformer_Artifacts(DBPEDIA).ipynb"
+    },
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py",
+      "sha256": "bd270b88312e1a643499ebe0914d4650a1df9b4270b55df3dc213db4e430e392",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py",
+      "sha256": "97348f3098ee35911304a4c9934d2d8ce979f3893a30cf166c58012f09872b0c",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py",
+      "sha256": "c877a8722d06472fde41a1c9741c685c99eb03c45586077fa8eb923b892ff1f4",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core.zip",
+      "archive_sha256": "404ecc2ee8b251d4e8fa37f710475644233c3ebe366ca1eb10be01416e99109d",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py",
+      "sha256": "85dbca2267ac92186081edbbd46defe93bec3a708e6949fac3e16dd778706db2",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py"
+    },
+    {
+      "source_archive": "final_dbpedia_pretrained_package.zip",
+      "archive_sha256": "f4ebe9d840d7765bcd93820dac885f4d70117b610f73ee3ebe156f2e70951937",
+      "source_member": "transformer_project/run_experiment_pretrained.py",
+      "sha256": "97348f3098ee35911304a4c9934d2d8ce979f3893a30cf166c58012f09872b0c",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py"
+    },
+    {
+      "source_archive": "final_dbpedia_pretrained_package.zip",
+      "archive_sha256": "f4ebe9d840d7765bcd93820dac885f4d70117b610f73ee3ebe156f2e70951937",
+      "source_member": "transformer_project/data/data_loader_pretrained.py",
+      "sha256": "bd270b88312e1a643499ebe0914d4650a1df9b4270b55df3dc213db4e430e392",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py"
+    },
+    {
+      "source_archive": "final_dbpedia_pretrained_package.zip",
+      "archive_sha256": "f4ebe9d840d7765bcd93820dac885f4d70117b610f73ee3ebe156f2e70951937",
+      "source_member": "transformer_project/utils/trainer_pretrained.py",
+      "sha256": "85dbca2267ac92186081edbbd46defe93bec3a708e6949fac3e16dd778706db2",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py"
+    },
+    {
+      "source_archive": "final_dbpedia_pretrained_package.zip",
+      "archive_sha256": "f4ebe9d840d7765bcd93820dac885f4d70117b610f73ee3ebe156f2e70951937",
+      "source_member": "transformer_project/utils/metrics_pretrained.py",
+      "sha256": "c877a8722d06472fde41a1c9741c685c99eb03c45586077fa8eb923b892ff1f4",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "fc93216c8b48dd24caed4db0d7ac269942b4e368b42eca98a353375e1fdaa475",
+      "repository_location": "historical/recovered_code/Lubem_1__ebe3a104/Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "Lubem(1).zip",
+      "archive_sha256": "ebe3a104891cce4b4715b7334f5bf949c6369bb02d4db0875d4b76689378cb11",
+      "source_member": "Lubem/final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "notebooks/Transformer_Artifacts(AGNEWS).ipynb",
+      "sha256": "a6dbe301c35f60e26fc0888db16be89975eddd2c86fa20f8cc7da1ff9032eeda",
+      "repository_location": "computing/data/Transformer_Artifacts(AGNEWS).ipynb"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "notebooks/Transformer_Artifacts(DBPEDIA).ipynb",
+      "sha256": "e3352fee3bf21cf6f6106028bdc954dcb183be4d61486a945639ec590dd6fad3",
+      "repository_location": "computing/data/Transformer_Artifacts(DBPEDIA).ipynb"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py",
+      "sha256": "bd270b88312e1a643499ebe0914d4650a1df9b4270b55df3dc213db4e430e392",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py",
+      "sha256": "85dbca2267ac92186081edbbd46defe93bec3a708e6949fac3e16dd778706db2",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py",
+      "sha256": "c877a8722d06472fde41a1c9741c685c99eb03c45586077fa8eb923b892ff1f4",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py"
+    },
+    {
+      "source_archive": "acml_artifacts_core_before_final_update.zip",
+      "archive_sha256": "c1307fe9e084e4420fea230077110fb3712aefbb7dd734a92f343764a692416b",
+      "source_member": "raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py",
+      "sha256": "97348f3098ee35911304a4c9934d2d8ce979f3893a30cf166c58012f09872b0c",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/data/data_loader_scratch.py",
+      "sha256": "fc93216c8b48dd24caed4db0d7ac269942b4e368b42eca98a353375e1fdaa475",
+      "repository_location": "historical/recovered_code/Lubem_1__ebe3a104/Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_agnews.zip",
+      "archive_sha256": "483e5a01edfd42dc6a4aad6dfd333221bb4c2456bb36ea69eb606c3e288b5e90",
+      "source_member": "transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "acml_raw_dbpedia_core.zip",
+      "archive_sha256": "d5af98b99ecd92eadeaad32a0b0849b6ba5610eed021ad8e1cafcb2315883b31",
+      "source_member": "transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/run_stage2_agnews.py",
+      "sha256": "77e8bee97208371a075ba67f04fb4b4cb6ac2eeec35044d4325e36f0d7d8c649",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/run_stage2_agnews.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/run_initial_lr_sweep.py",
+      "sha256": "5109da50c301e306455d86fbb04f3f7f5c68314e841c5cdeef00c8d0b2a65128",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/run_initial_lr_sweep.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/run_ablation_shift_subset.py",
+      "sha256": "70cce36a692618d5d9d5d607890b7b8674b473eddb48faa22ba1e403a320b0c4",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/run_ablation_shift_subset.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/run_empirical_scratch.py",
+      "sha256": "7d35217d13b5e9750522454575b762eab8f2bbb6370cf8fad79c5f874e71c763",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/run_empirical_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/run_early_diagnostics_plus.py",
+      "sha256": "6dbd3e209c177508f6d74f7306824da66264b383eff9cac22eec0adbbde1f02f",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/run_early_diagnostics_plus.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "4fdfb5d44ad9de1d6bc51535392837dd8d62ef57a920d810d534cd7cc8a96274",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "final_agnews_one_script_package (1).zip",
+      "archive_sha256": "9ef7cf641cb21119812429328eb0a8a65425c9c6bdb48cd954b5047ddbbb49dc",
+      "source_member": "final_agnews_one_script_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "de1279b6a9774a581579fb15e9da1a681c4844970c1f11843b4629b1287aba1f",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/run_initial_lr_sweep.py",
+      "sha256": "0501223a4a68edfd79a898784faee7402907cdc4381a2f426398f7d218e765ba",
+      "repository_location": "computing/evidence/historical_warmup/dbpedia_14/run_initial_lr_sweep.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/run_ablation_shift_subset.py",
+      "sha256": "f9634333da98a0f58a2cac0c82b0d56a10789fe7157b7a0121539418aa9fc117",
+      "repository_location": "historical/recovered_code/final_dbpedia_one_script_package_1__74f57d98/final_dbpedia_one_script_package/transformer_project/run_ablation_shift_subset.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/run_empirical_scratch.py",
+      "sha256": "222490865a7b62dee9055e68833e4f1198f17bab946ca3dd6689f3a233c2bd5a",
+      "repository_location": "historical/recovered_code/final_dbpedia_one_script_package_1__74f57d98/final_dbpedia_one_script_package/transformer_project/run_empirical_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/run_early_diagnostics_plus.py",
+      "sha256": "fd8ca3f8916aa3859143f920a0206505e93ab09f0c02b59050e64dd2e6a8bba4",
+      "repository_location": "historical/recovered_code/final_dbpedia_one_script_package_1__74f57d98/final_dbpedia_one_script_package/transformer_project/run_early_diagnostics_plus.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/run_stage2_dbpedia.py",
+      "sha256": "17a1d48e62f3d49f826d253d1f0aeaebf8a1402eb908b23738429b530a7ef999",
+      "repository_location": "historical/recovered_code/final_dbpedia_one_script_package_1__74f57d98/final_dbpedia_one_script_package/transformer_project/run_stage2_dbpedia.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "4fdfb5d44ad9de1d6bc51535392837dd8d62ef57a920d810d534cd7cc8a96274",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "final_dbpedia_one_script_package (1).zip",
+      "archive_sha256": "74f57d982da30e34449fa1f612fc2070acc9f1670baf3ca9694f1f305ba787b9",
+      "source_member": "final_dbpedia_one_script_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "de1279b6a9774a581579fb15e9da1a681c4844970c1f11843b4629b1287aba1f",
+      "repository_location": "historical/recovered_code/final_agnews_one_script_package_1__9ef7cf64/final_agnews_one_script_package/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/audit_pretrained_anchors.py",
+      "sha256": "5ab6c4403f4251c7d51744a6cd8b6619a85f00848d11e619851f7d991b70786c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/audit_pretrained_anchors.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/build_pretrained_thresholds.py",
+      "sha256": "7f27af0efb7019455ab9fc2e31d321e20a8e0c17c1f5d80bc4c950dc43b44928",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_pretrained_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/build_scratch_thresholds.py",
+      "sha256": "699b934275a827ed19c1e39fd446c0a94cd7166169221078fa68383bb0303937",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_scratch_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_kaggle_pilot.py",
+      "sha256": "cb525fd8d4d9673025bbb34682d4704135123dba2a5d8c9f7596231a6193e520",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_kaggle_scratch_pilot.py",
+      "sha256": "43d56ada37ef9d5f17558921d2114e4304808302ef936e7713047de87c15b49b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_pretrained_job.py",
+      "sha256": "e0298fded29a70bf1ab3de699e490bb7b4c9d82ee0a52813f353522f456436be",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_pretrained_matrix.py",
+      "sha256": "4e4e8e46f1f40986ecd57674fe2110e255096e4e4917263be58c9d77a22000c3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_pretrained_severity.py",
+      "sha256": "b5d69d0af233edeb0779bfb99c05129ce576f1dbe09139c931f208ad3011ce5a",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_scratch_job.py",
+      "sha256": "59094ccb9e8f4adeaec0a9d2e184374ad73e922fedec1f12c25b23291a31fdb9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/run_scratch_matrix.py",
+      "sha256": "41f372d415296f7dec46da2f5326f2c9ce67fced8d3f19ef32608408fe7324b4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/scripts/verify_scratch_real_data.py",
+      "sha256": "f420996e518d11bf6eac964a00a584d21bb29714906a1bf9cfe9c36213c772b2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/verify_scratch_real_data.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/anchor.py",
+      "sha256": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/kaggle_pilot.py",
+      "sha256": "5700485a886c134f33613fc83537da5e093d41995d6f23bda3c67514ba8aeb03",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/kaggle_scratch_pilot.py",
+      "sha256": "2bb99fe9edfda8d04ee14403eb7e58d5175e41872855d6ff1f1bc6d7e3ae6dbe",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/pretrained_data_adapter.py",
+      "sha256": "35b7b7b2aa63f4324c63c728efecf103c4e4349144c08645cd896275f9d0d4d7",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/pretrained_job_runner.py",
+      "sha256": "4466b218e8a929610ec863e5d19d50182d4b88dc791b08c45f74e6f0510f570c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/pretrained_matrix.py",
+      "sha256": "2b834ff26272c0788724b4a5f3ed8c515f0121d8a0f1fe6a21e6aa8feaa3901f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/pretrained_model_adapter.py",
+      "sha256": "b0ed8b91018039ad86bca740c18c810b71a23c62419820f0dc5274ac69cc6ac0",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/pretrained_severity.py",
+      "sha256": "fb702776629b010eaf582bb43ec440058d3c9c86d21ca4721978bcf61037a589",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scheduler_semantics.py",
+      "sha256": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_data_contract.py",
+      "sha256": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_dataset_adapter.py",
+      "sha256": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_job_runner.py",
+      "sha256": "6621c26e5434c9c03cce7d78f9f01f6df3cab625700fc8bdd7d0c46c4cea358f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_matrix.py",
+      "sha256": "786ea35eb63b45f52e017ed7a27c8c825e4e6aaa9c720782b86bf1c0115ff08b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_model_adapter.py",
+      "sha256": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/transition_executor.py",
+      "sha256": "31112f27b89a557f56d7045eee22045f7b8698cd5f421d8c1d36595f5eef1475",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_anchor.py",
+      "sha256": "5f675106f250c16c194b8eb5efa9d3f64a3a818290cac23a91f4fbee7bbb0c43",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_kaggle_pilot.py",
+      "sha256": "c5fc22061fa893973601e52450be41d8e19de2306343391042fba82f12bda13b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_kaggle_scratch_pilot.py",
+      "sha256": "5d09602bf971aefeab689cff0466b38656f28fff1f3429c757baf55a21278ea4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_pretrained_data_adapter.py",
+      "sha256": "63f1a792848927cbbfe864866be3b09d20294283396291e0571ec6e03ba394a9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_pretrained_job_runner.py",
+      "sha256": "03d0c91bc4a3e8045c897fe2b0adadb5af62f7efc9d7d4eda15a6f3e0c7e8716",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_pretrained_matrix.py",
+      "sha256": "5cf1f3d9d9483cb7bcccb47543a2d23d091a4e5bfb5300218073181d208aec8c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_pretrained_model_adapter.py",
+      "sha256": "2f30fefdc6c10ea1169bbef3fd9cfa76edfca06322026e83c6d36859c9d45c1d",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_pretrained_severity.py",
+      "sha256": "c6b88c54b37eecf6ee0984b5de3c655db907b7bd521bed83cb80d10b33061ecb",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scheduler_semantics.py",
+      "sha256": "ab041829dc4b058252cfe5911946aa83ac11fc249f44ef3d318acaeeb39f7c01",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scratch_data_contract.py",
+      "sha256": "59c4ea77769fbd1c383ddf0d42e0ff556b4a05d93836dff94d9de4e655ab4871",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scratch_dataset_adapter.py",
+      "sha256": "65fec7a105fe01d086f927a10704666749cfd8a360c385d9bce2ba9ddb201228",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scratch_job_runner.py",
+      "sha256": "9312fa5bd5c028bd599546364fbc499c86560b99eec6eeae5e6d655a29d6c85b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scratch_matrix.py",
+      "sha256": "3262004c1ace30a7bedb25f8dccf0118f9fa8ed940568b45199773f96427af36",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_scratch_transformer_integration.py",
+      "sha256": "93e8975ff94a8502fab43ca76456d3536cd3b22748d2bd4b1f67876cbbaf2261",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_transformer_integration.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/tests/test_transition_executor.py",
+      "sha256": "7d1d03e2222716f4c5108a09faad50c642cb29f2247d7d1ca097b79753184e22",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py",
+      "sha256": "0442d9cfd6c819753ea83897cb94c11226de276ae0d9463c8344b1cd1f146249",
+      "repository_location": "historical/recovered_code/warm-up_paper_package_a007bb39/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/src/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/audit_pretrained_anchors.py",
+      "sha256": "5ab6c4403f4251c7d51744a6cd8b6619a85f00848d11e619851f7d991b70786c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/audit_pretrained_anchors.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/build_pretrained_thresholds.py",
+      "sha256": "7f27af0efb7019455ab9fc2e31d321e20a8e0c17c1f5d80bc4c950dc43b44928",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_pretrained_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/build_scratch_thresholds.py",
+      "sha256": "699b934275a827ed19c1e39fd446c0a94cd7166169221078fa68383bb0303937",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_scratch_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_kaggle_pilot.py",
+      "sha256": "cb525fd8d4d9673025bbb34682d4704135123dba2a5d8c9f7596231a6193e520",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_kaggle_scratch_pilot.py",
+      "sha256": "43d56ada37ef9d5f17558921d2114e4304808302ef936e7713047de87c15b49b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_pretrained_job.py",
+      "sha256": "e0298fded29a70bf1ab3de699e490bb7b4c9d82ee0a52813f353522f456436be",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_pretrained_matrix.py",
+      "sha256": "4e4e8e46f1f40986ecd57674fe2110e255096e4e4917263be58c9d77a22000c3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_pretrained_severity.py",
+      "sha256": "b5d69d0af233edeb0779bfb99c05129ce576f1dbe09139c931f208ad3011ce5a",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_scratch_job.py",
+      "sha256": "59094ccb9e8f4adeaec0a9d2e184374ad73e922fedec1f12c25b23291a31fdb9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/run_scratch_matrix.py",
+      "sha256": "41f372d415296f7dec46da2f5326f2c9ce67fced8d3f19ef32608408fe7324b4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/scripts/verify_scratch_real_data.py",
+      "sha256": "f420996e518d11bf6eac964a00a584d21bb29714906a1bf9cfe9c36213c772b2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/verify_scratch_real_data.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/anchor.py",
+      "sha256": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/kaggle_pilot.py",
+      "sha256": "5700485a886c134f33613fc83537da5e093d41995d6f23bda3c67514ba8aeb03",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/kaggle_scratch_pilot.py",
+      "sha256": "2bb99fe9edfda8d04ee14403eb7e58d5175e41872855d6ff1f1bc6d7e3ae6dbe",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/pretrained_data_adapter.py",
+      "sha256": "35b7b7b2aa63f4324c63c728efecf103c4e4349144c08645cd896275f9d0d4d7",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/pretrained_job_runner.py",
+      "sha256": "4466b218e8a929610ec863e5d19d50182d4b88dc791b08c45f74e6f0510f570c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/pretrained_matrix.py",
+      "sha256": "2b834ff26272c0788724b4a5f3ed8c515f0121d8a0f1fe6a21e6aa8feaa3901f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/pretrained_model_adapter.py",
+      "sha256": "b0ed8b91018039ad86bca740c18c810b71a23c62419820f0dc5274ac69cc6ac0",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/pretrained_severity.py",
+      "sha256": "fb702776629b010eaf582bb43ec440058d3c9c86d21ca4721978bcf61037a589",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scheduler_semantics.py",
+      "sha256": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scratch_data_contract.py",
+      "sha256": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scratch_dataset_adapter.py",
+      "sha256": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scratch_job_runner.py",
+      "sha256": "6621c26e5434c9c03cce7d78f9f01f6df3cab625700fc8bdd7d0c46c4cea358f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scratch_matrix.py",
+      "sha256": "786ea35eb63b45f52e017ed7a27c8c825e4e6aaa9c720782b86bf1c0115ff08b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/scratch_model_adapter.py",
+      "sha256": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/src/transition_executor.py",
+      "sha256": "31112f27b89a557f56d7045eee22045f7b8698cd5f421d8c1d36595f5eef1475",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_anchor.py",
+      "sha256": "5f675106f250c16c194b8eb5efa9d3f64a3a818290cac23a91f4fbee7bbb0c43",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_kaggle_pilot.py",
+      "sha256": "c5fc22061fa893973601e52450be41d8e19de2306343391042fba82f12bda13b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_kaggle_scratch_pilot.py",
+      "sha256": "5d09602bf971aefeab689cff0466b38656f28fff1f3429c757baf55a21278ea4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_pretrained_data_adapter.py",
+      "sha256": "63f1a792848927cbbfe864866be3b09d20294283396291e0571ec6e03ba394a9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_pretrained_job_runner.py",
+      "sha256": "03d0c91bc4a3e8045c897fe2b0adadb5af62f7efc9d7d4eda15a6f3e0c7e8716",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_pretrained_matrix.py",
+      "sha256": "5cf1f3d9d9483cb7bcccb47543a2d23d091a4e5bfb5300218073181d208aec8c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_pretrained_model_adapter.py",
+      "sha256": "2f30fefdc6c10ea1169bbef3fd9cfa76edfca06322026e83c6d36859c9d45c1d",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_pretrained_severity.py",
+      "sha256": "c6b88c54b37eecf6ee0984b5de3c655db907b7bd521bed83cb80d10b33061ecb",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scheduler_semantics.py",
+      "sha256": "ab041829dc4b058252cfe5911946aa83ac11fc249f44ef3d318acaeeb39f7c01",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scratch_data_contract.py",
+      "sha256": "59c4ea77769fbd1c383ddf0d42e0ff556b4a05d93836dff94d9de4e655ab4871",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scratch_dataset_adapter.py",
+      "sha256": "65fec7a105fe01d086f927a10704666749cfd8a360c385d9bce2ba9ddb201228",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scratch_job_runner.py",
+      "sha256": "9312fa5bd5c028bd599546364fbc499c86560b99eec6eeae5e6d655a29d6c85b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scratch_matrix.py",
+      "sha256": "3262004c1ace30a7bedb25f8dccf0118f9fa8ed940568b45199773f96427af36",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_scratch_transformer_integration.py",
+      "sha256": "93e8975ff94a8502fab43ca76456d3536cd3b22748d2bd4b1f67876cbbaf2261",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_transformer_integration.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/tests/test_transition_executor.py",
+      "sha256": "7d1d03e2222716f4c5108a09faad50c642cb29f2247d7d1ca097b79753184e22",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py",
+      "sha256": "6c3a582bf5299836bd4de65b23e905f662ab6f46f0b9ad0b80a3e2efeed84c1c",
+      "repository_location": "historical/recovered_code/warm-up_paper_package_a007bb39/ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/src/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/audit_pretrained_anchors.py",
+      "sha256": "5ab6c4403f4251c7d51744a6cd8b6619a85f00848d11e619851f7d991b70786c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/audit_pretrained_anchors.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/build_pretrained_thresholds.py",
+      "sha256": "7f27af0efb7019455ab9fc2e31d321e20a8e0c17c1f5d80bc4c950dc43b44928",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_pretrained_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/build_scratch_thresholds.py",
+      "sha256": "699b934275a827ed19c1e39fd446c0a94cd7166169221078fa68383bb0303937",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_scratch_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_kaggle_pilot.py",
+      "sha256": "cb525fd8d4d9673025bbb34682d4704135123dba2a5d8c9f7596231a6193e520",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_kaggle_scratch_pilot.py",
+      "sha256": "43d56ada37ef9d5f17558921d2114e4304808302ef936e7713047de87c15b49b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_pretrained_job.py",
+      "sha256": "e0298fded29a70bf1ab3de699e490bb7b4c9d82ee0a52813f353522f456436be",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_pretrained_matrix.py",
+      "sha256": "4e4e8e46f1f40986ecd57674fe2110e255096e4e4917263be58c9d77a22000c3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_pretrained_severity.py",
+      "sha256": "b5d69d0af233edeb0779bfb99c05129ce576f1dbe09139c931f208ad3011ce5a",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_scratch_job.py",
+      "sha256": "59094ccb9e8f4adeaec0a9d2e184374ad73e922fedec1f12c25b23291a31fdb9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/run_scratch_matrix.py",
+      "sha256": "41f372d415296f7dec46da2f5326f2c9ce67fced8d3f19ef32608408fe7324b4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/scripts/verify_scratch_real_data.py",
+      "sha256": "f420996e518d11bf6eac964a00a584d21bb29714906a1bf9cfe9c36213c772b2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/verify_scratch_real_data.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/anchor.py",
+      "sha256": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/kaggle_pilot.py",
+      "sha256": "5700485a886c134f33613fc83537da5e093d41995d6f23bda3c67514ba8aeb03",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/kaggle_scratch_pilot.py",
+      "sha256": "2bb99fe9edfda8d04ee14403eb7e58d5175e41872855d6ff1f1bc6d7e3ae6dbe",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/pretrained_data_adapter.py",
+      "sha256": "35b7b7b2aa63f4324c63c728efecf103c4e4349144c08645cd896275f9d0d4d7",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/pretrained_job_runner.py",
+      "sha256": "4466b218e8a929610ec863e5d19d50182d4b88dc791b08c45f74e6f0510f570c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/pretrained_matrix.py",
+      "sha256": "2b834ff26272c0788724b4a5f3ed8c515f0121d8a0f1fe6a21e6aa8feaa3901f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/pretrained_model_adapter.py",
+      "sha256": "b0ed8b91018039ad86bca740c18c810b71a23c62419820f0dc5274ac69cc6ac0",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/pretrained_severity.py",
+      "sha256": "fb702776629b010eaf582bb43ec440058d3c9c86d21ca4721978bcf61037a589",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scheduler_semantics.py",
+      "sha256": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scratch_data_contract.py",
+      "sha256": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scratch_dataset_adapter.py",
+      "sha256": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scratch_job_runner.py",
+      "sha256": "6621c26e5434c9c03cce7d78f9f01f6df3cab625700fc8bdd7d0c46c4cea358f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scratch_matrix.py",
+      "sha256": "786ea35eb63b45f52e017ed7a27c8c825e4e6aaa9c720782b86bf1c0115ff08b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/scratch_model_adapter.py",
+      "sha256": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/src/transition_executor.py",
+      "sha256": "31112f27b89a557f56d7045eee22045f7b8698cd5f421d8c1d36595f5eef1475",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_anchor.py",
+      "sha256": "5f675106f250c16c194b8eb5efa9d3f64a3a818290cac23a91f4fbee7bbb0c43",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_kaggle_pilot.py",
+      "sha256": "c5fc22061fa893973601e52450be41d8e19de2306343391042fba82f12bda13b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_kaggle_scratch_pilot.py",
+      "sha256": "5d09602bf971aefeab689cff0466b38656f28fff1f3429c757baf55a21278ea4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_pretrained_data_adapter.py",
+      "sha256": "63f1a792848927cbbfe864866be3b09d20294283396291e0571ec6e03ba394a9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_pretrained_job_runner.py",
+      "sha256": "03d0c91bc4a3e8045c897fe2b0adadb5af62f7efc9d7d4eda15a6f3e0c7e8716",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_pretrained_matrix.py",
+      "sha256": "5cf1f3d9d9483cb7bcccb47543a2d23d091a4e5bfb5300218073181d208aec8c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_pretrained_model_adapter.py",
+      "sha256": "2f30fefdc6c10ea1169bbef3fd9cfa76edfca06322026e83c6d36859c9d45c1d",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_pretrained_severity.py",
+      "sha256": "c6b88c54b37eecf6ee0984b5de3c655db907b7bd521bed83cb80d10b33061ecb",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scheduler_semantics.py",
+      "sha256": "ab041829dc4b058252cfe5911946aa83ac11fc249f44ef3d318acaeeb39f7c01",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scratch_data_contract.py",
+      "sha256": "59c4ea77769fbd1c383ddf0d42e0ff556b4a05d93836dff94d9de4e655ab4871",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scratch_dataset_adapter.py",
+      "sha256": "65fec7a105fe01d086f927a10704666749cfd8a360c385d9bce2ba9ddb201228",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scratch_job_runner.py",
+      "sha256": "9312fa5bd5c028bd599546364fbc499c86560b99eec6eeae5e6d655a29d6c85b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scratch_matrix.py",
+      "sha256": "3262004c1ace30a7bedb25f8dccf0118f9fa8ed940568b45199773f96427af36",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_scratch_transformer_integration.py",
+      "sha256": "93e8975ff94a8502fab43ca76456d3536cd3b22748d2bd4b1f67876cbbaf2261",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_transformer_integration.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/tests/test_transition_executor.py",
+      "sha256": "7d1d03e2222716f4c5108a09faad50c642cb29f2247d7d1ca097b79753184e22",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py",
+      "sha256": "c743992a438ebb2aee2d777a94768b54b069402eca6fdbdd987d83fccb3ea19c",
+      "repository_location": "historical/recovered_code/warm-up_paper_package_a007bb39/ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/src/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/audit_pretrained_anchors.py",
+      "sha256": "5ab6c4403f4251c7d51744a6cd8b6619a85f00848d11e619851f7d991b70786c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/audit_pretrained_anchors.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/build_pretrained_thresholds.py",
+      "sha256": "7f27af0efb7019455ab9fc2e31d321e20a8e0c17c1f5d80bc4c950dc43b44928",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_pretrained_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/build_scratch_thresholds.py",
+      "sha256": "699b934275a827ed19c1e39fd446c0a94cd7166169221078fa68383bb0303937",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/build_scratch_thresholds.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_kaggle_pilot.py",
+      "sha256": "cb525fd8d4d9673025bbb34682d4704135123dba2a5d8c9f7596231a6193e520",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_kaggle_scratch_pilot.py",
+      "sha256": "43d56ada37ef9d5f17558921d2114e4304808302ef936e7713047de87c15b49b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_pretrained_job.py",
+      "sha256": "e0298fded29a70bf1ab3de699e490bb7b4c9d82ee0a52813f353522f456436be",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_pretrained_matrix.py",
+      "sha256": "4e4e8e46f1f40986ecd57674fe2110e255096e4e4917263be58c9d77a22000c3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_pretrained_severity.py",
+      "sha256": "b5d69d0af233edeb0779bfb99c05129ce576f1dbe09139c931f208ad3011ce5a",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_scratch_job.py",
+      "sha256": "59094ccb9e8f4adeaec0a9d2e184374ad73e922fedec1f12c25b23291a31fdb9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_job.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/run_scratch_matrix.py",
+      "sha256": "41f372d415296f7dec46da2f5326f2c9ce67fced8d3f19ef32608408fe7324b4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/run_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/scripts/verify_scratch_real_data.py",
+      "sha256": "f420996e518d11bf6eac964a00a584d21bb29714906a1bf9cfe9c36213c772b2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/scripts/verify_scratch_real_data.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/anchor.py",
+      "sha256": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/kaggle_pilot.py",
+      "sha256": "5700485a886c134f33613fc83537da5e093d41995d6f23bda3c67514ba8aeb03",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/kaggle_scratch_pilot.py",
+      "sha256": "2bb99fe9edfda8d04ee14403eb7e58d5175e41872855d6ff1f1bc6d7e3ae6dbe",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/pretrained_data_adapter.py",
+      "sha256": "35b7b7b2aa63f4324c63c728efecf103c4e4349144c08645cd896275f9d0d4d7",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/pretrained_job_runner.py",
+      "sha256": "4466b218e8a929610ec863e5d19d50182d4b88dc791b08c45f74e6f0510f570c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/pretrained_matrix.py",
+      "sha256": "2b834ff26272c0788724b4a5f3ed8c515f0121d8a0f1fe6a21e6aa8feaa3901f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/pretrained_model_adapter.py",
+      "sha256": "b0ed8b91018039ad86bca740c18c810b71a23c62419820f0dc5274ac69cc6ac0",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/pretrained_severity.py",
+      "sha256": "fb702776629b010eaf582bb43ec440058d3c9c86d21ca4721978bcf61037a589",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scheduler_semantics.py",
+      "sha256": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scratch_data_contract.py",
+      "sha256": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scratch_dataset_adapter.py",
+      "sha256": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scratch_job_runner.py",
+      "sha256": "6621c26e5434c9c03cce7d78f9f01f6df3cab625700fc8bdd7d0c46c4cea358f",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scratch_matrix.py",
+      "sha256": "786ea35eb63b45f52e017ed7a27c8c825e4e6aaa9c720782b86bf1c0115ff08b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/scratch_model_adapter.py",
+      "sha256": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+      "repository_location": "computing/peak_pair_runner/frozen_source/publication_expansion/src/scratch_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/src/transition_executor.py",
+      "sha256": "31112f27b89a557f56d7045eee22045f7b8698cd5f421d8c1d36595f5eef1475",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/src/transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_location": "publication_expansion/__init__.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_anchor.py",
+      "sha256": "5f675106f250c16c194b8eb5efa9d3f64a3a818290cac23a91f4fbee7bbb0c43",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_anchor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_kaggle_pilot.py",
+      "sha256": "c5fc22061fa893973601e52450be41d8e19de2306343391042fba82f12bda13b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_kaggle_scratch_pilot.py",
+      "sha256": "5d09602bf971aefeab689cff0466b38656f28fff1f3429c757baf55a21278ea4",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_kaggle_scratch_pilot.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_pretrained_data_adapter.py",
+      "sha256": "63f1a792848927cbbfe864866be3b09d20294283396291e0571ec6e03ba394a9",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_data_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_pretrained_job_runner.py",
+      "sha256": "03d0c91bc4a3e8045c897fe2b0adadb5af62f7efc9d7d4eda15a6f3e0c7e8716",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_pretrained_matrix.py",
+      "sha256": "5cf1f3d9d9483cb7bcccb47543a2d23d091a4e5bfb5300218073181d208aec8c",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_pretrained_model_adapter.py",
+      "sha256": "2f30fefdc6c10ea1169bbef3fd9cfa76edfca06322026e83c6d36859c9d45c1d",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_model_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_pretrained_severity.py",
+      "sha256": "c6b88c54b37eecf6ee0984b5de3c655db907b7bd521bed83cb80d10b33061ecb",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_pretrained_severity.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scheduler_semantics.py",
+      "sha256": "ab041829dc4b058252cfe5911946aa83ac11fc249f44ef3d318acaeeb39f7c01",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scheduler_semantics.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scratch_data_contract.py",
+      "sha256": "59c4ea77769fbd1c383ddf0d42e0ff556b4a05d93836dff94d9de4e655ab4871",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_data_contract.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scratch_dataset_adapter.py",
+      "sha256": "65fec7a105fe01d086f927a10704666749cfd8a360c385d9bce2ba9ddb201228",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_dataset_adapter.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scratch_job_runner.py",
+      "sha256": "9312fa5bd5c028bd599546364fbc499c86560b99eec6eeae5e6d655a29d6c85b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_job_runner.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scratch_matrix.py",
+      "sha256": "3262004c1ace30a7bedb25f8dccf0118f9fa8ed940568b45199773f96427af36",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_matrix.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_scratch_transformer_integration.py",
+      "sha256": "93e8975ff94a8502fab43ca76456d3536cd3b22748d2bd4b1f67876cbbaf2261",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_scratch_transformer_integration.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/tests/test_transition_executor.py",
+      "sha256": "7d1d03e2222716f4c5108a09faad50c642cb29f2247d7d1ca097b79753184e22",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/publication_expansion/tests/test_transition_executor.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py",
+      "sha256": "1616671560aeb4c62c0d2e01b5d17821bfe01a62e112ffd2c2c98cf1a82b64a9",
+      "repository_location": "historical/recovered_code/warm-up_paper_package_a007bb39/ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/src/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "warm-up paper package.zip",
+      "archive_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+      "source_member": "ACML_ALL_DATASETS_ONE_COMMAND/run_all_datasets.py",
+      "sha256": "935516ebfec54186c1dd9800017820c643866d213006c3c373ec8e7a72f53e33",
+      "repository_location": "historical/recovered_code/warm-up_paper_package_a007bb39/ACML_ALL_DATASETS_ONE_COMMAND/run_all_datasets.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py",
+      "sha256": "66e9074b4cbdd7ffa16234aae4856a9bbe92b14d412c2a3db291a797253802a2",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/run_warmup_safety_gate_agnews.py",
+      "sha256": "8115e87bb861b73b23e7d1d4f61ce62a8d554ebf62bd3e0cb0c0d0aa30811f06",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_agnews.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "fc93216c8b48dd24caed4db0d7ac269942b4e368b42eca98a353375e1fdaa475",
+      "repository_location": "historical/recovered_code/Lubem_1__ebe3a104/Lubem/final_agnews_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "final_agnews_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "07ddbcc883f19c69819bedbc74aeed73e8b7137b4691b40c2f7ba36338ca1b05",
+      "source_member": "final_agnews_warmup_safety_gate_calibrated_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/run_warmup_safety_gate_dbpedia.py",
+      "sha256": "29a868e3a0e19d75f3618acc22577cab14b4b1dfda4488f3fe0a3801814fc5c8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_warmup_safety_gate_dbpedia.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py",
+      "sha256": "85604b70acddd1fde94850e3b017e1750b699b9dcf34246c2a52df307a8415d3",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/data/data_loader_scratch.py",
+      "sha256": "7048d62ddc38b1432c16b8f0f1ef79ade0323a95ab35c04bf32846630c111c9b",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/data/data_loader_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/utils/metrics_scratch.py",
+      "sha256": "cb06452fa2a9c8177363db099cfab74c4c59f3ee3a89263d4db59dd6756ebe77",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/src/transformer_project/utils/metrics_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "final_dbpedia_warmup_safety_gate_calibrated_package.zip",
+      "archive_sha256": "703447e78b3330f0e772378c136054ab8ddebe3ce5cc86fdabcaa22516479cfd",
+      "source_member": "final_dbpedia_warmup_safety_gate_calibrated_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "repository_location": "computing/evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_file": "ACML_Drive/Transformer_Artifacts(AGNEWS).ipynb",
+      "sha256": "a6dbe301c35f60e26fc0888db16be89975eddd2c86fa20f8cc7da1ff9032eeda",
+      "repository_location": "computing/data/Transformer_Artifacts(AGNEWS).ipynb"
+    },
+    {
+      "source_file": "ACML_Drive/Transformer_Artifacts(DBPEDIA).ipynb",
+      "sha256": "e3352fee3bf21cf6f6106028bdc954dcb183be4d61486a945639ec590dd6fad3",
+      "repository_location": "computing/data/Transformer_Artifacts(DBPEDIA).ipynb"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/notebooks/Transformer_Artifacts(AGNEWS).ipynb",
+      "sha256": "3ce58ad93775566cdec6028d3b0c0b1c4ca47ccd3f06104331dcedcfe0abe655",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/notebooks/Transformer_Artifacts(AGNEWS).ipynb"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/notebooks/Transformer_Artifacts(DBPEDIA).ipynb",
+      "sha256": "2f3de0ed16bb507ce960218e7ef03e56a59264b0e8d2177bc71c0d9ee8f601b8",
+      "repository_location": "computing/source/warmup-update-budget-acml2026/notebooks/Transformer_Artifacts(DBPEDIA).ipynb"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py",
+      "sha256": "97348f3098ee35911304a4c9934d2d8ce979f3893a30cf166c58012f09872b0c",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/run_experiment_pretrained.py"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py",
+      "sha256": "bd270b88312e1a643499ebe0914d4650a1df9b4270b55df3dc213db4e430e392",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/data/data_loader_pretrained.py"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py",
+      "sha256": "c877a8722d06472fde41a1c9741c685c99eb03c45586077fa8eb923b892ff1f4",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/metrics_pretrained.py"
+    },
+    {
+      "source_file": "ACML_Drive/warmup_update_budget_artifacts_acml2026/acml_artifacts_core/raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py",
+      "sha256": "85dbca2267ac92186081edbbd46defe93bec3a708e6949fac3e16dd778706db2",
+      "repository_location": "historical/recovered_code/acml_artifacts_core_404ecc2e/raw/dbpedia_pretrained_context/transformer_project/utils/trainer_pretrained.py"
+    }
+  ]
+}

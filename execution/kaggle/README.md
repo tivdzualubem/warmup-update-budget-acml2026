@@ -1,0 +1,3 @@
+# Preserved Kaggle execution and preflight files
+
+These are the original check scripts, real-data preflight, launcher wrappers and returned preflight reports for the completed configured-peak pair. The RESTART_CHECKED wrapper is the final launch route. Wrapper directory names identify the historical runtime and must not be interpreted as portable paths in a new session. The current results, exact executed source and frozen protocol are in ../../computing/. No new experiment is needed to reproduce the paper tables; use computing/README_REPRODUCE.md. These wrappers are retained as execution provenance, not automatically executed by the analysis command.

@@ -1,0 +1,18 @@
+{
+  "purpose": "Large companion evidence; required only for fresh raw-logit/tensor audit, not saved-record table reproduction",
+  "companions": [
+    {
+      "file": "ACML_Peak_First_PREDICTIONS.zip",
+      "bytes": 109388801,
+      "sha256": "43e1d3759d15a76ba2356ec8230c3a9363b2b1e22252f5b4f4fb6470d360e83f",
+      "verified_members": 42
+    },
+    {
+      "file": "ACML_Peak_First_STATES.zip",
+      "bytes": 404524970,
+      "sha256": "f32574f81b1097e01978febe6d78f83a634ab3c67fefa9aa183e44ec880c2592",
+      "verified_members": 5
+    }
+  ],
+  "placement": "Place unchanged companion ZIPs beside the extracted ACML_Revision directory; see README_REPRODUCE.md."
+}

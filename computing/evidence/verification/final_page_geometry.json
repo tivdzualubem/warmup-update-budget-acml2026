@@ -1,0 +1,450 @@
+[
+  {
+    "document": "Research_Manuscript",
+    "page": 1,
+    "chars": 3747,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Separating First-Step Learning-Rate Faults from Scheduler",
+      "Delay in Adam Training"
+    ],
+    "last_lines": [
+      "testsalessextremeexecutionmistakeatafixedbudgetandyieldsnearlyidenticalfinalendpoints. Standard",
+      "1"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 2,
+    "chars": 3557,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "first-stepAdamalgebraexplainsthespecifiedintervention,andLRassertionsprovideasimpleprevention",
+      "baselinefortheknownexecutionmistake."
+    ],
+    "last_lines": [
+      "exit,t target,t",
+      "2"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 3,
+    "chars": 2076,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Withtrainableparameters\u03b8,definethenormalizedrealizedupdateratio",
+      "rx ="
+    ],
+    "last_lines": [
+      "differentoptimizer/schedulercallorder.",
+      "3"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 4,
+    "chars": 1093,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Table 1. Actual committed scratch LR sequences (one-based transition index). The recorded rescue",
+      "rowappliestotheobservedtrajectories,inwhichonlythefirstcandidatetriggeredrepair."
+    ],
+    "last_lines": [
+      "legacy, one bad first update followed by stable cosine, and ratio-triggered rollback-and-replay following",
+      "4"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 5,
+    "chars": 3612,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "legacy scheduling. Fail-fast is evaluated as a diagnostic stop, not as a trained classifier. Rescue replaces",
+      "an unsafe candidate transition by restoring the model/optimizer/gradient snapshot and replaying at the"
+    ],
+    "last_lines": [
+      "batch, so this weighting mechanism cannot change DBpedia checkpoint selection. AG News validation",
+      "5"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 6,
+    "chars": 3467,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "contains 18,000 examples: 562 batches of 32 and a final batch of 16. Each final-batch example receives",
+      "about twice its correct example-weighted influence. Whether this changed AG News\u2019s selected epoch"
+    ],
+    "last_lines": [
+      "untilsignificanceappears.",
+      "6"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 7,
+    "chars": 4130,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "3.9Executionevidenceandreproducibility",
+      "The returned master manifest and four dataset manifests retain negative completion flags. All"
+    ],
+    "last_lines": [
+      "pleidentitiesandfullpairedstatesat0,1,8,000and49,999,plusthelateststate,arepreserved. Evaluation",
+      "7"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 8,
+    "chars": 2130,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "restores training RNG. Execution used one Kaggle Tesla T4, Python 3.13.16 and PyTorch 2.11.0+cu130",
+      "withdeterministicoperations. Ashortreal-data/deviceserializationtestmatcheduninterruptedexecution"
+    ],
+    "last_lines": [
+      "accuracyby47.19-70.99percentagepoints. Everyseedshowsaloss. Theselossespersistunderthetested",
+      "8"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 9,
+    "chars": 1974,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "procedure. BecausestableLRreacheszeroattransition50,000,theresultsdonotestablishwhetherfurther",
+      "positive-LRtrainingwouldrecoverperformance."
+    ],
+    "last_lines": [
+      "pairedintervalscoverall95summaries.",
+      "9"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 10,
+    "chars": 413,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "Figure4: Validationateverystepsharedbybothstable-familyarmsandallfiveseeds. Faintdotsshowindividual",
+      "seeds;largermarkersandbarsshowmeanandsampleSD.Thedashedlineisthestablezero-LRboundary. Only"
+    ],
+    "last_lines": [
+      "markersandbarsshowmeanandsampleSD.Eachcontrastretainsitsownfullshared-stepintersection.",
+      "10"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 11,
+    "chars": 3431,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "Table4. DBpediashared-stepillustrationattransition44,625. Thisstepistheillustrationspecifiedin",
+      "thesuppliedplan,notanewlyselectedoptimum. All95summariesareavailable. Shared-stepvalidation"
+    ],
+    "last_lines": [
+      "wouldrequiretheoriginalcheckpoints.",
+      "11"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 12,
+    "chars": 3425,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "7. Pretrainedgeneralizationandmonitoringdistinctions",
+      "Table5. Pretrainedprimarytestmetrics(%,mean\u00b1sampleSD,fiveseeds). AGNewsandDBpedia"
+    ],
+    "last_lines": [
+      "tures remain distinct from the new configured-peak runner, whose real-data/device resume check passed",
+      "12"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 13,
+    "chars": 2721,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "andwhoseactualtrainingcostisrecordedinSection8. Thenewpairhasnorollbackintervention. Histor-",
+      "icalcandidate-epochpredictionreevaluationremainsunavailable."
+    ],
+    "last_lines": [
+      "encesinstopping,samplerimplementation,hardwareandsoftwarepreventtreatingthehistoricalandnew",
+      "13"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 14,
+    "chars": 3966,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "resultsasafullycontrolledcross-studydose-response. Asingleseedandabsenceofaprespecifiedequiv-",
+      "alencemarginprecludeageneralsafetyorequivalenceconclusion."
+    ],
+    "last_lines": [
+      "orcompletedrecoveryresult.",
+      "14"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 15,
+    "chars": 3317,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "References",
+      "Abulikemu Abuduweili and Changliu Liu. Revisiting the initial steps in adaptive gradient descent opti-"
+    ],
+    "last_lines": [
+      "17069. URLhttps://arxiv.org/abs/1910.04209.",
+      "15"
+    ]
+  },
+  {
+    "document": "Research_Manuscript",
+    "page": 16,
+    "chars": 1194,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "Noam Shazeer and Mitchell Stern. Adafactor: Adaptive learning rates with sublinear memory cost. In",
+      "Proceedingsofthe35thInternationalConferenceonMachineLearning, volume80of Proceedingsof"
+    ],
+    "last_lines": [
+      "v119/xiong20b.html.",
+      "16"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 1,
+    "chars": 1329,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "All five seed results and source provenance",
+      "TablesS1-S8reportsavedtestmetricsfromvalidation-selectedcheckpoints;TablesS9-S12reportpaired"
+    ],
+    "last_lines": [
+      "2026 98.5971 43.5786 91.0986 98.6357 98.7157",
+      "1"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 2,
+    "chars": 1069,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "TableS4DBpedialarge-6",
+      "Metric: accuracy."
+    ],
+    "last_lines": [
+      "2026 42.5532 42.9630 42.5873 42.5873",
+      "2"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 3,
+    "chars": 1255,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "TableS8CIFAR-10deit-tiny",
+      "Metric: accuracy."
+    ],
+    "last_lines": [
+      "2026 +55.01857 +7.53714 +0.08000",
+      "3"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 4,
+    "chars": 2620,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "TableS12PaireddifferencesDBpedialarge-6",
+      "Alldifferencesarepercentagepoints. Therepairandremaining-delaycolumnsareexploratory."
+    ],
+    "last_lines": [
+      "DBpedialarge-6 Fail-fast n.a. n.a. n.a.",
+      "4"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 5,
+    "chars": 2359,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "TableS14Scratchpositive-LR,zero-LRandreplaybudgets",
+      "Eachrowisaseparatefive-jobmean. Positive-LRandzero-LRcountsrefertocommittedtransitions;extra"
+    ],
+    "last_lines": [
+      "WNUT-17 Fail-fast 0.082 639 0",
+      "5"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 6,
+    "chars": 2068,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Archivedonlinetrain",
+      "Task Condition loss Positive-LRsteps Zero-LRsteps"
+    ],
+    "last_lines": [
+      "Newsselectionisunknown. Thisdistinctionisspecifictothevalidationpopulations.",
+      "6"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 7,
+    "chars": 1413,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Theseparateclipped-probabilityNLLusesfloor1e-12andwasnottheselectionobjective. Originalselec-",
+      "tionsandtestendpointsremainunchanged. Examinedreturnscontainaggregatevalidationmetricsandan-"
+    ],
+    "last_lines": [
+      "Eachpanelretainsallsharedloggedstepsandusesitsownverticalscale.",
+      "7"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 8,
+    "chars": 286,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "Supportingtrajectoriesandprovenance",
+      "FigureS2: Archivedonlinetraininglossbycondition,recordedwhileparametersanddropoutstatechange. These"
+    ],
+    "last_lines": [
+      "FigureS3: Positive-LRtransitions,zero-LRcomputationandreplayoverheadremainseparate.",
+      "8"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 9,
+    "chars": 182,
+    "outside_margin_chars": 1,
+    "first_lines": [
+      "FigureS4: Historicalthree-seed/W4000trained-modelseverityoutcomes;separatefromOctober",
+      "five-seed/W8000."
+    ],
+    "last_lines": [
+      "FigureS5: Primarykappa=10andretrospectivesensitivity;WNUTmissesremainvisible.",
+      "9"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 10,
+    "chars": 139,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "FigureS6: Allfivestableandisolated-badselectedendpoints.",
+      "FigureS7: Allfivecorrectedandlatelegacyselectedendpoints;stoppingbudgetsdiffer."
+    ],
+    "last_lines": [
+      "FigureS7: Allfivecorrectedandlatelegacyselectedendpoints;stoppingbudgetsdiffer.",
+      "10"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 11,
+    "chars": 1816,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "FigureS8: Exploratorylegacyselectedendpoints;conditionalcomparisonsdonotcompleteafactorial.",
+      "Historicalconfigurationandanalysis-referenceprovenance"
+    ],
+    "last_lines": [
+      "Newsfinalbatch. Thecorrectedevaluatorispartition-invariantintheregressionfixture.",
+      "11"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 12,
+    "chars": 3287,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "Archivedfixed-gradientcontract",
+      "Exact replay requires restoration of weights, Adam moments and step counters, parameter groups, and"
+    ],
+    "last_lines": [
+      "Pretrained LRassertionbeforemutation 20 0",
+      "12"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 13,
+    "chars": 3611,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "Thus240scientificrecordscontain180trainedtestendpoints. ThefiveWNUTdiagnosticarmsdonotbe-",
+      "comeadditionaltestclassifiersmerelybecausetheirguardmissedandtrainingcontinued. Twentyseparate"
+    ],
+    "last_lines": [
+      "three-updatefixtureinstallsS(50,000)=0on itslastcall. ParametersremainunchangedwhilebothAdam",
+      "13"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 14,
+    "chars": 3015,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "momentarraysandthecounterchange. Thisisaboundary-valuefixture,notarecoveredornewlytrained",
+      "49,999-stepstate."
+    ],
+    "last_lines": [
+      "49999 0.061363441 0.061368136 +4.69526e-06 98.5024 98.5107",
+      "14"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 15,
+    "chars": 1593,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "TableS19Completefixedtraining-subsettrajectory",
+      "Thesubsetcontains8,192fixedtrainingexamples;thesearenotfull-training-setmetrics."
+    ],
+    "last_lines": [
+      "titiesandlabelsagreeacrossbotharmsandallcheckpointsineachpopulation.",
+      "15"
+    ]
+  },
+  {
+    "document": "All_Seed_Results_and_Provenance",
+    "page": 16,
+    "chars": 3112,
+    "outside_margin_chars": 2,
+    "first_lines": [
+      "TableS20Per-armbudgetandmeasuredcost",
+      "Instrumented"
+    ],
+    "last_lines": [
+      "LR=1.0stressresultwithoutinvalidatingthehistoricalobservations.",
+      "16"
+    ]
+  }
+]

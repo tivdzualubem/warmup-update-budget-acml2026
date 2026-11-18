@@ -1,0 +1,21 @@
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "archive_member_count": 1281,
+  "scientific_jobs_by_family": {
+    "pretrained": 120,
+    "scratch": 120
+  },
+  "distinct_anchor_groups": 40,
+  "anchor_hash_mismatch": [],
+  "selection_metadata_failures": [],
+  "model_checkpoint_files_in_archive": 0,
+  "cannot_independently_rerun_test_evaluation_without_checkpoint_bytes": true,
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "note": "best-validation metadata compared with per-epoch validation histories; actual test recalculation requires original model checkpoint bytes; historical notebook outcomes are supplemented by archived run sources, raw AG News traces and DBpedia trace-audit exports in evidence/historical_warmup"
+}

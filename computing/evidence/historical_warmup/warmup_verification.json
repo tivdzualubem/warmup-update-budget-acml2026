@@ -1,0 +1,1334 @@
+{
+  "historical_warmup_steps": 4000,
+  "verification": "explicit archived run configuration overrides the trainer default; checked against raw AG News LR trajectories and archived DBpedia first-step trace export",
+  "trainer_default_steps": 8000,
+  "run_manifest_limitation": "The original sweep run manifest omits warmup_steps. Its omission is preserved; 4000 is established by separate run-source and numerical trace evidence.",
+  "AG_News_raw_traces_checked": 30,
+  "AG_News_all_raw_trace_rows_checked": 1268824,
+  "DBpedia_first_step_trace_export_rows_checked": 30,
+  "DBpedia_raw_trace_access": "Full original DBpedia trace archive remains on Drive; local verification uses its preserved first-step audit export, not a newly fetched full trace.",
+  "sources": [
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_agnews_one_script_package (1).zip",
+      "member": "final_agnews_one_script_package/transformer_project/run_initial_lr_sweep.py",
+      "sha256": "5109da50c301e306455d86fbb04f3f7f5c68314e841c5cdeef00c8d0b2a65128",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/run_initial_lr_sweep.py"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_agnews_one_script_package (1).zip",
+      "member": "final_agnews_one_script_package/configs/agnews_initial_lr_sweep_config.txt",
+      "sha256": "5ee73e5d30d47ff0b3c620267689edf8b6afa36611991e7e42751b3c4506a9bb",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/agnews_initial_lr_sweep_config.txt"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_agnews_one_script_package (1).zip",
+      "member": "final_agnews_one_script_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trainer_scratch.py"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_agnews_one_script_package (1).zip",
+      "member": "final_agnews_one_script_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/transformer.py"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_dbpedia_one_script_package (1).zip",
+      "member": "final_dbpedia_one_script_package/transformer_project/run_initial_lr_sweep.py",
+      "sha256": "0501223a4a68edfd79a898784faee7402907cdc4381a2f426398f7d218e765ba",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/run_initial_lr_sweep.py"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_dbpedia_one_script_package (1).zip",
+      "member": "final_dbpedia_one_script_package/configs/dbpedia_initial_lr_sweep_config.txt",
+      "sha256": "d10de987f43f2c5fa3fca80e0256f8e56fa8b649f42adbc8107bb4b0a8abf787",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/dbpedia_initial_lr_sweep_config.txt"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_dbpedia_one_script_package (1).zip",
+      "member": "final_dbpedia_one_script_package/transformer_project/utils/trainer_scratch.py",
+      "sha256": "bf835f18a11dafbdd3a6bd4c13838c009d9acfb03d40b26bfb3dbf6b66a80c08",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/trainer_scratch.py"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_local_files\\final_dbpedia_one_script_package (1).zip",
+      "member": "final_dbpedia_one_script_package/transformer_project/models/transformer.py",
+      "sha256": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/transformer.py"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/run_manifest.json",
+      "sha256": "07266d35a127741b6b7001da060319146e4fdef1a7ba968b2ca8eb909f1e4e51",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/raw_run_manifest.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json",
+      "sha256": "f1f43cfd848b1941ea013476e33fbf92010e33ad60e0b18186f9de919c2f4c02",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json",
+      "sha256": "f1f43cfd848b1941ea013476e33fbf92010e33ad60e0b18186f9de919c2f4c02",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json",
+      "sha256": "f1f43cfd848b1941ea013476e33fbf92010e33ad60e0b18186f9de919c2f4c02",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json",
+      "sha256": "60499f4fcee38df34b0e5a2383670e230bec8c193844d070386646d78aac8296",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json",
+      "sha256": "60499f4fcee38df34b0e5a2383670e230bec8c193844d070386646d78aac8296",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json",
+      "sha256": "60499f4fcee38df34b0e5a2383670e230bec8c193844d070386646d78aac8296",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json",
+      "sha256": "936c2398a94a3ec499120ab89dc490bb847092ea14fff2dc17f8b38c126bc4c8",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json",
+      "sha256": "936c2398a94a3ec499120ab89dc490bb847092ea14fff2dc17f8b38c126bc4c8",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json",
+      "sha256": "936c2398a94a3ec499120ab89dc490bb847092ea14fff2dc17f8b38c126bc4c8",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json",
+      "sha256": "db58d2d995ea99cce2fcc2e60b54a05c3e2598900a7f46f3ef2cda147116241d",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json",
+      "sha256": "db58d2d995ea99cce2fcc2e60b54a05c3e2598900a7f46f3ef2cda147116241d",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json",
+      "sha256": "db58d2d995ea99cce2fcc2e60b54a05c3e2598900a7f46f3ef2cda147116241d",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json",
+      "sha256": "835a6b8b3fef974fa82ee17cb86464adaa05ce55dbfd303aaebe14541f58e663",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json",
+      "sha256": "835a6b8b3fef974fa82ee17cb86464adaa05ce55dbfd303aaebe14541f58e663",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json",
+      "sha256": "835a6b8b3fef974fa82ee17cb86464adaa05ce55dbfd303aaebe14541f58e663",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/large-6_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json",
+      "sha256": "1b7cda72bde7bd4219702a089f4d2d7774bdca5323ce665b022cf98bc82edf72",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json",
+      "sha256": "1b7cda72bde7bd4219702a089f4d2d7774bdca5323ce665b022cf98bc82edf72",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json",
+      "sha256": "1b7cda72bde7bd4219702a089f4d2d7774bdca5323ce665b022cf98bc82edf72",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json",
+      "sha256": "7ed203ed5ad728583d9bbb77741977a709faeb6c0372466a75ebd0c2c5ccd2c4",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json",
+      "sha256": "7ed203ed5ad728583d9bbb77741977a709faeb6c0372466a75ebd0c2c5ccd2c4",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json",
+      "sha256": "7ed203ed5ad728583d9bbb77741977a709faeb6c0372466a75ebd0c2c5ccd2c4",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json",
+      "sha256": "df2664bd9c9721be8cdbcce457f857bd795cf0bccee21a0ce43efbef11f715ed",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json",
+      "sha256": "df2664bd9c9721be8cdbcce457f857bd795cf0bccee21a0ce43efbef11f715ed",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json",
+      "sha256": "df2664bd9c9721be8cdbcce457f857bd795cf0bccee21a0ce43efbef11f715ed",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json",
+      "sha256": "21b2e0012b1c4549f1a751d9c3d4845f0e9770f97d66da3742a449bafc84b654",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json",
+      "sha256": "21b2e0012b1c4549f1a751d9c3d4845f0e9770f97d66da3742a449bafc84b654",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json",
+      "sha256": "21b2e0012b1c4549f1a751d9c3d4845f0e9770f97d66da3742a449bafc84b654",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json",
+      "sha256": "a1c11ed59d083fa61ec6792832167e6755396aed27936b3aceb7ad49c1f8fb4e",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json",
+      "sha256": "a1c11ed59d083fa61ec6792832167e6755396aed27936b3aceb7ad49c1f8fb4e",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json",
+      "sha256": "a1c11ed59d083fa61ec6792832167e6755396aed27936b3aceb7ad49c1f8fb4e",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/trace_excerpts/medium-4_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p01_seed456.json",
+      "sha256": "709e1ad90f3e3c2eac4d5a990c378fe4c5ed80308dc0d90a990cd4ef15f15099",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p01_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_1p0_seed42.json",
+      "sha256": "a2de814186828fd4ced8539fd2937ea65515befc16a07ebda4c0ec772cbdee5b",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_1p0_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_1p0_seed123.json",
+      "sha256": "7af1ad16eab0d0a06f628d96f108c9c5a4dc775ed8ff930974f67cb74a31dcee",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_1p0_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_1p0_seed456.json",
+      "sha256": "b36649ce10364492b777e22235371e6b573029d2bc634ff47687a238f7d23780",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_1p0_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p3_seed42.json",
+      "sha256": "ffe47515c0a9cdb5af49a76b144a5810b0f13ae1a4c804cbba5f2bd474751645",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p3_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p3_seed123.json",
+      "sha256": "a8c7d3cea1ce5e9fbdca2ce78178912c38819effb121889ac4878bcb7f458b58",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p3_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p3_seed456.json",
+      "sha256": "c22ce7898f1324ce60c30c9d254d52412812fb7e1ec4dbd6e6833b532bacd957",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p3_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p1_seed42.json",
+      "sha256": "7eb2d843f9baabc22d0bbd711bc0caad92855f84e7e403cb54ae97f7db5853e6",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p1_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p1_seed123.json",
+      "sha256": "4708531143d1caf1c2c2e5cb792d1cc5348db7ad25a3e61cf456dceec9885147",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p1_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p1_seed456.json",
+      "sha256": "1d64f940d8a9050ec2a2d926ff7100f92a08b15b1bd42bf08fd73f93382dfb7a",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p1_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p03_seed42.json",
+      "sha256": "033bbc6301bfe2ebdf3495ef9fa2e3e6f08a966bfad0c621c5bf5189d042f634",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p03_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p03_seed123.json",
+      "sha256": "c297c659c88b7e42e77bd0203397d8fcf2a2ce75ef97b18f1818cd5e2de8962b",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p03_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p03_seed456.json",
+      "sha256": "a0f8139124c75bcf7b56247691c699d199b7d0913c4aa052ec05f5ecb165c38e",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p03_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p01_seed42.json",
+      "sha256": "fb4810ae68a8acdda4db537f8e5af4c052e4c438500f6c0e1f5d43049e720038",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p01_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p01_seed123.json",
+      "sha256": "a2c7d209cc25e95f7f035f68d2722dc1c07064e8a55d5e40c5249186e7f268e1",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p01_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/medium-4_legacy_buggy_initlr_0p01_seed456.json",
+      "sha256": "0f5de6f7b899f2447238201610bbca6713c90ca6c0523c2658dc0a84c42d7b37",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/medium-4_legacy_buggy_initlr_0p01_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_1p0_seed42.json",
+      "sha256": "8474a4e7aa2664611fecfdb6c9889e7933c360c8c2acc61151411a222f77dfaf",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_1p0_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_1p0_seed123.json",
+      "sha256": "823b79e8c7a2e8ac6a5ee531771e206c970439e6c614d93690ece3aa8de436af",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_1p0_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_1p0_seed456.json",
+      "sha256": "5bb9f2a8d4886af0f1aba681f7328b64ec68cb165be5f0f7dfd12136f0143b41",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_1p0_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p3_seed42.json",
+      "sha256": "9bfdaae9494bdc5b6011ccbfd93316f791251d39ee16838a1565834dd73e474c",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p3_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p3_seed123.json",
+      "sha256": "3c2d7abc001ad1e7b819f6f63d62eddadf16c24f865eb3df3ae203d9f8e3f8b9",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p3_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p3_seed456.json",
+      "sha256": "213b7c873d286ec571c3e7dfd44728919a7ab9adae4b81a1ebf040ba2440c1a8",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p3_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p1_seed42.json",
+      "sha256": "487803a7a3d83a9a416fe61fb0747a64308a0b5e6e18d3c90c8bc432a747bf8f",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p1_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p1_seed123.json",
+      "sha256": "88e5b230786e037844ecd389d34623f2c317bd96aa57d40dbd280f71ef6d5847",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p1_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p1_seed456.json",
+      "sha256": "0dbe8c8c61049db40f7d30e7a19b839949fc474da03014337b7a76d47172c3f9",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p1_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p03_seed42.json",
+      "sha256": "76f4075083362485cae940f65aa03e8ad23276cac6e72487a4a16f71f860216e",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p03_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p03_seed123.json",
+      "sha256": "33e569ddecd26859efb1c325c033b10c479934872bb3b0a3e70575f9424b291d",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p03_seed123.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p03_seed456.json",
+      "sha256": "8250c0fede4552e0b54cddb53783dfee0959d0254ea6ad4971e1d9ea92b6e7a0",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p03_seed456.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p01_seed42.json",
+      "sha256": "0841430cca30afd1b431dc16089be955688aa01a04e6facad1bef5f8d806ef76",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p01_seed42.json"
+    },
+    {
+      "source_archive": "collected\\drive\\ACML_Drive\\results_agnewa-no_ckp.zip",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/per_seed/large-6_legacy_buggy_initlr_0p01_seed123.json",
+      "sha256": "d2323ab401f838ce2a1ee5267416b2ed66921bc652b83641cf8c5152d159c844",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/per_seed/large-6_legacy_buggy_initlr_0p01_seed123.json"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\agnews_final_analysis_artifacts.zip",
+      "member": "agnews_initial_lr_sweep_summary.csv",
+      "sha256": "007901b395d9dc329c97ef6747f1f53bdaa9c09c0e3026d23c77aee397cedc33",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/agnews_initial_lr_sweep_summary.csv"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\agnews_final_analysis_artifacts.zip",
+      "member": "agnews_initial_lr_sweep_per_seed.csv",
+      "sha256": "b128b283799fb066f1b2e5300bd0f4e5d415a8fc4802c696f9b386c69868a425",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/agnews_initial_lr_sweep_per_seed.csv"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\agnews_final_analysis_artifacts.zip",
+      "member": "agnews_initial_lr_first_step_trace_check.csv",
+      "sha256": "246d43b23fea8ef554e5150180582eb83d91f023a39468800529c9659c6ae383",
+      "local_evidence_path": "evidence/historical_warmup/ag_news/agnews_initial_lr_first_step_trace_check.csv"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\dbpedia_final_analysis_artifacts.zip",
+      "member": "dbpedia_initial_lr_first_step_trace_check.csv",
+      "sha256": "9fa2a42a621fe31aeefec28990fbf88b4e3aec525fc1fe2cc594def80d97a380",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/dbpedia_initial_lr_first_step_trace_check.csv"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\dbpedia_final_analysis_artifacts.zip",
+      "member": "dbpedia_initial_lr_sweep_summary.csv",
+      "sha256": "50295383cc03fb7c7c29452e132dfb4e8165bfc49163ef493e87368686702e40",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/dbpedia_initial_lr_sweep_summary.csv"
+    },
+    {
+      "source_archive": "handoff\\ACML_HANDOFF_2026-10-15\\originals\\earlier_telegram_downloads\\dbpedia_final_analysis_artifacts.zip",
+      "member": "dbpedia_initial_lr_sweep_per_seed.csv",
+      "sha256": "47d0a7c32804851a87e244de18771e507de22d7094948506368ec005167e29f0",
+      "local_evidence_path": "evidence/historical_warmup/dbpedia_14/dbpedia_initial_lr_sweep_per_seed.csv"
+    }
+  ],
+  "trace_checks": [
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "ce2fd355952aa8e0d8a7f0856916a7c568c257111ce7c6cf84d9f2cd98723ce6"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json",
+      "rows_checked": 22316,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "36f688b2c3e23580a65be4c5a3c60aba9e988ac15404adb5afa66e9f188d512c"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json",
+      "rows_checked": 28692,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "5b67db6fb33e4146f37f9471346748dad4134c8b2fc904d1e7f577ed3c46a02a"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "8bf4ab0993a0caf4ee10f13c31c3b7e0677cef0655e2a2a577de774f5b0a2b34"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json",
+      "rows_checked": 28692,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "666f8b0b41257549bafb7fa6cd4ffc7f0cee575b1326ec175d04b20e595e9fbc"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json",
+      "rows_checked": 28692,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "666f8b0b41257549bafb7fa6cd4ffc7f0cee575b1326ec175d04b20e595e9fbc"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json",
+      "rows_checked": 31880,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "4bf31d88eeffa8197bbfc070e21a3e7cc29aa1a0f0ce49cb6f3a802b2d6bc832"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json",
+      "rows_checked": 31880,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "4bf31d88eeffa8197bbfc070e21a3e7cc29aa1a0f0ce49cb6f3a802b2d6bc832"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json",
+      "rows_checked": 28692,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "881e1f6b75afa97bea0e8031d29b7ecbe5604eaf23fbda705e7bba7acfdfe0ba"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json",
+      "rows_checked": 57384,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "189089790987e3fa160403805a96b5e8654b2d4592eb8b9af6b937b016d0f3b0"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json",
+      "rows_checked": 57384,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "189089790987e3fa160403805a96b5e8654b2d4592eb8b9af6b937b016d0f3b0"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json",
+      "rows_checked": 47820,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "84842357791e7837bb938525f858435b8e56969973e9663aee952161b60e6dae"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json",
+      "rows_checked": 95640,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "7421e39c24c79dce6b40fa6ce2b7b1d6aa8527423c56a68831dafc9964a36866"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json",
+      "rows_checked": 86076,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "dabd60769f47f45e93b1980d0e4758e3eb2d793e5e37833838a93fda5319f3e0"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json",
+      "rows_checked": 95640,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 1.0842021724855044e-19,
+      "trace_sha256": "7421e39c24c79dce6b40fa6ce2b7b1d6aa8527423c56a68831dafc9964a36866"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "fbeac5090d2c68914c53beb368364d1503323c170f79d7b3b869a5f95bfc9c30"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "fbeac5090d2c68914c53beb368364d1503323c170f79d7b3b869a5f95bfc9c30"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "fbeac5090d2c68914c53beb368364d1503323c170f79d7b3b869a5f95bfc9c30"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "722086dc44e5524b14ad85c1024618241858905a9ef69327e197b5b8390d4f8c"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json",
+      "rows_checked": 22316,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "293505241e0be84f424c1ee4abcc5128b3056aad186fe728a87e05596d5a3483"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "722086dc44e5524b14ad85c1024618241858905a9ef69327e197b5b8390d4f8c"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "73cd1b25940d1d640bd237a5b67d8dc5b6ec46fe3c2909578b3ffef059af54a4"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "73cd1b25940d1d640bd237a5b67d8dc5b6ec46fe3c2909578b3ffef059af54a4"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json",
+      "rows_checked": 25504,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "73cd1b25940d1d640bd237a5b67d8dc5b6ec46fe3c2909578b3ffef059af54a4"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json",
+      "rows_checked": 31880,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "3a1a8c302eb4febe97f4b6f1ad35ac97cc46b7b0ade69a172a602d7a969c70c8"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json",
+      "rows_checked": 38256,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "0f1c7e828d4fd2ebbdc9d4975808d42117f6f11acec6941f6a7398ae9f8c7d3f"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json",
+      "rows_checked": 41444,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "ac69a859ed166991b801b70df9f148f255bcf242430f4ae644499bc46d6905eb"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json",
+      "rows_checked": 95640,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "5cdc8449eddbabc45ccde8403f1395f5628178e788fca4d9f396c5d960f91fbc"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json",
+      "rows_checked": 95640,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "5cdc8449eddbabc45ccde8403f1395f5628178e788fca4d9f396c5d960f91fbc"
+    },
+    {
+      "dataset": "ag_news",
+      "member": "results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json",
+      "rows_checked": 47820,
+      "peak_step": 4000,
+      "warmup_steps_supported": 4000,
+      "max_absolute_lr_error": 2.168404344971009e-19,
+      "trace_sha256": "ecab44e01c21f053d6db5cd3f272197fb0624f65f4b89c8a9065bb9b29159a25"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_agnews_outputs/results_agnewa-no_ckp/initial_lr_sweep_ag_news_agnews_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 42,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 123,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "seed": 456,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.999999999998,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/large-6_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 1.0,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_1p0_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.3,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p3_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.1,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p1_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.03,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p03_seed456_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 42,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed42_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 123,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed123_scheduler_trace.json"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "seed": 456,
+      "initial_lr": 0.01,
+      "evidence_kind": "archived_first_step_trace_export",
+      "warmup_steps_supported": 4000,
+      "recovered_warmup_from_first_installed_lr": 3999.9999999999977,
+      "raw_trace_path_reported": "/content/prof_dbpedia_outputs/results_dp_no_ckp/initial_lr_sweep_dbpedia_14_dbpedia_initial_lr_sweep_v1/scheduler_traces/medium-4_legacy_buggy_initlr_0p01_seed456_scheduler_trace.json"
+    }
+  ]
+}

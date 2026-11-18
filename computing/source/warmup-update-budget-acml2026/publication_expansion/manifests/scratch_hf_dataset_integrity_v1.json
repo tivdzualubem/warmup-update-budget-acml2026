@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "purpose": "real Hugging Face scratch-dataset integrity check",
+  "datasets_version": "5.0.0",
+  "datasets": {
+    "ag_news": {
+      "repository": "fancyzhx/ag_news",
+      "splits": {
+        "train": {
+          "num_rows": 120000,
+          "fingerprint": "2bc1e2be15d7f2ee",
+          "features": "{'text': Value('string'), 'label': ClassLabel(names=['World', 'Sports', 'Business', 'Sci/Tech'])}",
+          "first_row_sha256": "43fd291fbae17071a5e69e326c4111d33d800663b9853479e061ebb6ce0bdbb2",
+          "last_row_sha256": "130c6ec48edd0c8ee9e9ce87309d2515595b52d643d0fbd9a14da28cbd80106c"
+        },
+        "test": {
+          "num_rows": 7600,
+          "fingerprint": "0ebcc57b6aea2fc9",
+          "features": "{'text': Value('string'), 'label': ClassLabel(names=['World', 'Sports', 'Business', 'Sci/Tech'])}",
+          "first_row_sha256": "373b8e2c8754454afc5ec5fa615853ab3797be63a8b2d60d6e331c088c90fffd",
+          "last_row_sha256": "891711195435f9e23e6fb7941137892493d4703de4b5ad31e259a48ccb2a6850"
+        }
+      }
+    },
+    "dbpedia_14": {
+      "repository": "fancyzhx/dbpedia_14",
+      "splits": {
+        "train": {
+          "num_rows": 560000,
+          "fingerprint": "beedf461d6a52841",
+          "features": "{'label': ClassLabel(names=['Company', 'EducationalInstitution', 'Artist', 'Athlete', 'OfficeHolder', 'MeanOfTransportation', 'Building', 'NaturalPlace', 'Village', 'Animal', 'Plant', 'Album', 'Film', 'WrittenWork']), 'title': Value('string'), 'content': Value('string')}",
+          "first_row_sha256": "389cb18e4487bebe0dde039bcb2ed4823ef213abf9bcbaaba84b85923365dec1",
+          "last_row_sha256": "428cf3821c6bff970dc69cb822073fd0edc731a2234a6d0578097a4db5b1e3f9"
+        },
+        "test": {
+          "num_rows": 70000,
+          "fingerprint": "0db42c90dd82bcbb",
+          "features": "{'label': ClassLabel(names=['Company', 'EducationalInstitution', 'Artist', 'Athlete', 'OfficeHolder', 'MeanOfTransportation', 'Building', 'NaturalPlace', 'Village', 'Animal', 'Plant', 'Album', 'Film', 'WrittenWork']), 'title': Value('string'), 'content': Value('string')}",
+          "first_row_sha256": "ce9a995e4dfa7dbfff9d2b9326c05390918ef6ddc5c233c42038622f07172be8",
+          "last_row_sha256": "220d687c3683176bcc91e6baf0f6d03a7eb32639b558263929fea3afeb0b229c"
+        }
+      }
+    }
+  }
+}

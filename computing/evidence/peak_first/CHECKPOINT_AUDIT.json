@@ -1,0 +1,42 @@
+[
+  {
+    "file": "pair_step00000.pt",
+    "step": 0,
+    "finite_model_and_optimizer": true,
+    "adam_counter_matches": true,
+    "sampler_matches_trace": true,
+    "paired_rng_matches": true
+  },
+  {
+    "file": "pair_step00001.pt",
+    "step": 1,
+    "finite_model_and_optimizer": true,
+    "adam_counter_matches": true,
+    "sampler_matches_trace": true,
+    "paired_rng_matches": true
+  },
+  {
+    "file": "pair_step08000.pt",
+    "step": 8000,
+    "finite_model_and_optimizer": true,
+    "adam_counter_matches": true,
+    "sampler_matches_trace": true,
+    "paired_rng_matches": true
+  },
+  {
+    "file": "pair_step49999.pt",
+    "step": 49999,
+    "finite_model_and_optimizer": true,
+    "adam_counter_matches": true,
+    "sampler_matches_trace": true,
+    "paired_rng_matches": true
+  },
+  {
+    "file": "latest.pt",
+    "step": 49999,
+    "finite_model_and_optimizer": true,
+    "adam_counter_matches": true,
+    "sampler_matches_trace": true,
+    "paired_rng_matches": true
+  }
+]

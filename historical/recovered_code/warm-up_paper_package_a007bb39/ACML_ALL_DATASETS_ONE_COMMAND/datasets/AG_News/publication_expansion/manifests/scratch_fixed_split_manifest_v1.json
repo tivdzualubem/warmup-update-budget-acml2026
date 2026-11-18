@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "split_seed": 42,
+  "validation_ratio": 0.15,
+  "train_fraction": 1.0,
+  "datasets": {
+    "ag_news": {
+      "dataset_name": "ag_news",
+      "hf_name": "fancyzhx/ag_news",
+      "text_field": "text",
+      "label_field": "label",
+      "num_classes": 4,
+      "official_train_count": 120000,
+      "official_test_count": 7600,
+      "max_length": 128,
+      "vocab_policy": {
+        "tokenization": "lowercase_whitespace_split",
+        "pad_token": "<PAD>",
+        "pad_index": 0,
+        "unk_token": "<UNK>",
+        "unk_index": 1,
+        "min_freq": 2,
+        "max_vocab_size": 30000,
+        "source": "final_training_subset_only"
+      },
+      "split": {
+        "split_seed": 42,
+        "val_ratio": 0.15,
+        "train_fraction": 1.0,
+        "train_count": 102000,
+        "validation_count": 18000,
+        "train_indices_sha256": "2f56021a521f84587365d3946a0466dad303943c9353849f63b393fe2896c559",
+        "validation_indices_sha256": "44a8f8a79afae4c318338bf8f1aa0c6c80cdfc197c5284dd9b259a968faf5611"
+      },
+      "vocab_size": 30000,
+      "hf_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+      "hf_fingerprints": {
+        "train": "2bc1e2be15d7f2ee",
+        "test": "0ebcc57b6aea2fc9"
+      },
+      "vocab_sha256": "ca118ef765d7241d83ab467ce3b84ae16ae1c405f0470c386b0919d1d4621318"
+    },
+    "dbpedia_14": {
+      "dataset_name": "dbpedia_14",
+      "hf_name": "fancyzhx/dbpedia_14",
+      "text_field": "content",
+      "label_field": "label",
+      "num_classes": 14,
+      "official_train_count": 560000,
+      "official_test_count": 70000,
+      "max_length": 128,
+      "vocab_policy": {
+        "tokenization": "lowercase_whitespace_split",
+        "pad_token": "<PAD>",
+        "pad_index": 0,
+        "unk_token": "<UNK>",
+        "unk_index": 1,
+        "min_freq": 2,
+        "max_vocab_size": 30000,
+        "source": "final_training_subset_only"
+      },
+      "split": {
+        "split_seed": 42,
+        "val_ratio": 0.15,
+        "train_fraction": 1.0,
+        "train_count": 476000,
+        "validation_count": 84000,
+        "train_indices_sha256": "767c8c4fea87b9f39ddcfd24cb9e32807694ccdcc4f6bf19c9edd0ea81b4d4d6",
+        "validation_indices_sha256": "75cc3a5c716ae024bd95de7e7d579546bef5a63038d940c7ff5d5a66aa08f3fa"
+      },
+      "vocab_size": 30000,
+      "hf_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+      "hf_fingerprints": {
+        "train": "beedf461d6a52841",
+        "test": "0db42c90dd82bcbb"
+      },
+      "vocab_sha256": "7abbc95ffe407a4fc3dc86499f2474039987381f0f011cd785a116c085623e7a"
+    }
+  }
+}

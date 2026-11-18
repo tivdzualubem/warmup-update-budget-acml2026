@@ -1,0 +1,9 @@
+{
+  "script": "ACML_Kaggle_Run_Pair.py",
+  "sha256": "65b3b24457f6b89795afa00a0e02aff23bd23e95175afac7377408cac5cdb71d",
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Wrapper checks with synthetic files and returned preflight records; no research process launched."
+}

@@ -1,0 +1,33 @@
+{
+  "audit_date": "2026-11-07",
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "independent_of_analysis_builders": true,
+  "shared_step_summary_rows": 95,
+  "paired_seed_rows": 475,
+  "summary_numeric_fields_checked": 855,
+  "source_pair_numeric_fields_checked": 2850,
+  "coverage_groups": 12,
+  "all_shared_steps_retained": true,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "scientific_trace_files": 240,
+  "scientific_trace_rows": 55535,
+  "nonfinite_trace_fields": [],
+  "stable_family_runs_crossing_zero": {
+    "ag_news": 9,
+    "dbpedia_14": 20
+  },
+  "DBpedia_equal_consecutive_postzero_losses": 91,
+  "stable_family_selected_epoch_at_or_after_zero": 14,
+  "WNUT_candidate_to_fold_safe_max_factors": [
+    2.038965040774801,
+    2.0391606471176824,
+    2.1031328721698044,
+    2.038728845957353,
+    2.039432518798453
+  ],
+  "WNUT_mean_factor": 2.051883984963619,
+  "WNUT_primary_threshold_misses": 5,
+  "discrepancies": [],
+  "research_training": false
+}

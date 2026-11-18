@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "complete saved-record/trace audit",
+  "archives": [
+    {
+      "file": "ACML_Peak_First_RESULTS.zip",
+      "bytes": 10103218,
+      "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+      "verified_members": 49
+    }
+  ],
+  "paired_transitions": 49999,
+  "consumed_lr_fields_checked": 99998,
+  "sampler_batches_checked": 49999,
+  "evaluation_records": 42,
+  "online_training_blocks_checked": 1000,
+  "fixed_split_verified": true,
+  "same_source_config_data_environment_as_preflight": true,
+  "failure_or_resume_events": 0,
+  "closed_session_active_seconds": 4969.857002546,
+  "first_transition": {
+    "event": "paired_step",
+    "step": 1,
+    "epoch": 0,
+    "sampler_cursor": 32,
+    "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+    "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+    "arms": {
+      "clean": {
+        "lr_consumed": [
+          1.2500000000000001e-08
+        ],
+        "online_batch_ce": 3.2366724014282227,
+        "examples": 32,
+        "candidate_and_committed_ratio": 6.603961943503159e-08,
+        "instrumented_training_seconds": 0.43773331199997756
+      },
+      "peak_first": {
+        "lr_consumed": [
+          0.0001
+        ],
+        "online_batch_ce": 3.2366724014282227,
+        "examples": 32,
+        "candidate_and_committed_ratio": 0.0005065598757595089,
+        "instrumented_training_seconds": 0.18758080700001756
+      }
+    }
+  },
+  "primary_validation_ce_difference": 4.695263706736008e-06,
+  "research_training_by_this_analysis": false,
+  "new_research_pair_executed_on_kaggle": true,
+  "original_historical_checkpoint_reselection": false
+}

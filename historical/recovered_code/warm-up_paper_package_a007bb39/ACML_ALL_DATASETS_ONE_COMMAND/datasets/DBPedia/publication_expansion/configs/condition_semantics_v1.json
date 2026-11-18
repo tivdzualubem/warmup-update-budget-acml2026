@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "status": "pre_experiment_frozen_design",
+  "indexing": "optimizer steps are one-based: t = 1,2,...,T",
+  "trace_contract": [
+    "step",
+    "entry_lr",
+    "scheduler_or_guard_action",
+    "intended_lr",
+    "candidate_lr_consumed",
+    "candidate_update_ratio",
+    "guard_triggered",
+    "committed_lr_consumed",
+    "committed_update_ratio",
+    "actual_exit_lr"
+  ],
+  "update_ratio": {
+    "definition": "||theta_after - theta_before||_2 / ||theta_before||_2",
+    "measurement": "computed from the actual parameter transition",
+    "candidate": "transition produced by the first optimizer.step attempt",
+    "committed": "transition retained after any guard action"
+  },
+  "scratch_schedules": {
+    "legacy_transformer": {
+      "symbol": "L(t)",
+      "formula": "d_model^(-1/2) * min(t^(-1/2), t * W^(-3/2))",
+      "warmup_steps_W": 8000,
+      "d_model": {
+        "medium-4": 128,
+        "large-6": 256
+      },
+      "initial_optimizer_lr_for_legacy_branches": 1.0
+    },
+    "stable": {
+      "symbol": "S(t)",
+      "base_lr": 0.0001,
+      "warmup_steps_W": 8000,
+      "total_steps_T": 50000,
+      "formula_warmup": "base_lr * t / W",
+      "formula_post_warmup": "base_lr * 0.5 * (1 + cos(pi * (t-W)/(T-W)))",
+      "initial_optimizer_lr": 0.0001
+    }
+  },
+  "scratch_conditions": {
+    "buggy_no_guard": {
+      "schedule": "legacy_transformer",
+      "semantics": "optimizer.step consumes entry_lr; after the step install L(t)",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "entry_lr",
+      "exit_lr": "L(t)",
+      "guard": "none"
+    },
+    "buggy_failfast_guard": {
+      "schedule": "legacy_transformer",
+      "semantics": "optimizer.step consumes entry_lr; install L(t); measure update; stop if ratio > tau",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "entry_lr",
+      "exit_lr": "L(t)",
+      "guard": "post-update detection; offending update is not rolled back"
+    },
+    "buggy_rescue_guard": {
+      "schedule": "legacy_transformer",
+      "semantics": "candidate step consumes entry_lr; if ratio > tau restore exact pre-step model and optimizer state, install L(t), and replay the same gradients once",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "L(t) if guard triggers, otherwise entry_lr",
+      "exit_lr": "L(t)",
+      "guard": "post-update detection with rollback and replay"
+    },
+    "stable_with_guard": {
+      "schedule": "stable",
+      "semantics": "install S(t) before optimizer.step; optimizer.step consumes S(t)",
+      "candidate_lr": "S(t)",
+      "committed_lr": "S(t)",
+      "exit_lr": "S(t)",
+      "guard": "monitoring only; no stop or rescue action"
+    },
+    "fixed_order_with_guard": {
+      "schedule": "legacy_transformer",
+      "semantics": "install L(t) before optimizer.step; optimizer.step consumes L(t)",
+      "candidate_lr": "L(t)",
+      "committed_lr": "L(t)",
+      "exit_lr": "L(t)",
+      "guard": "monitoring only; no stop or rescue action",
+      "matched_control_for": "buggy_no_guard"
+    },
+    "single_bad_first_step_then_stable": {
+      "schedule": "stable after first transition",
+      "semantics_step_1": "do not install S(1); optimizer.step consumes initial LR 1.0; actual exit LR remains 1.0",
+      "semantics_step_ge_2": "install S(t) before optimizer.step; optimizer.step consumes S(t)",
+      "candidate_lr_step_1": 1.0,
+      "committed_lr_step_1": 1.0,
+      "actual_exit_lr_step_1": 1.0,
+      "guard": "none"
+    }
+  },
+  "pretrained_schedule": {
+    "name": "linear_warmup_linear_decay",
+    "symbol": "P(t)",
+    "peak_lr": "environment-specific value from hyperparameters_v1.json",
+    "total_steps": "T = number of optimizer steps over the frozen training run",
+    "warmup_steps": "W = ceil(0.10 * T)",
+    "formula_warmup": "peak_lr * t / W",
+    "formula_decay": "peak_lr * max(0, (T-t)/(T-W))",
+    "initial_optimizer_lr_for_mismatch_branches": "peak_lr"
+  },
+  "pretrained_conditions": {
+    "safe_correct_order": {
+      "semantics": "install P(t) before optimizer.step; consume P(t)",
+      "candidate_lr": "P(t)",
+      "committed_lr": "P(t)",
+      "exit_lr": "P(t)",
+      "purpose": "safe reference"
+    },
+    "late_schedule_no_guard": {
+      "semantics": "optimizer.step consumes entry_lr; install P(t) only after the update",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "entry_lr",
+      "exit_lr": "P(t)",
+      "purpose": "scheduler/state-order mismatch without protection"
+    },
+    "single_bad_then_correct": {
+      "semantics_step_1": "first optimizer.step consumes the initial peak LR; no corrective schedule installation occurs before that transition",
+      "semantics_step_ge_2": "install P(t) before optimizer.step and consume P(t)",
+      "candidate_lr_step_1": "peak_lr",
+      "committed_lr_step_1": "peak_lr",
+      "actual_exit_lr_step_1": "peak_lr",
+      "purpose": "isolate the effect of one bad first transition"
+    },
+    "update_guard_failfast": {
+      "semantics": "use late-schedule candidate transition; measure update ratio; if ratio > tau stop without rollback",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "entry_lr",
+      "exit_lr": "P(t)",
+      "purpose": "post-update detection"
+    },
+    "update_guard_rescue": {
+      "semantics": "use late-schedule candidate transition; if ratio > tau restore exact pre-step model and optimizer state, install P(t), and replay the same gradients once",
+      "candidate_lr": "entry_lr",
+      "committed_lr": "P(t) if guard triggers, otherwise entry_lr",
+      "exit_lr": "P(t)",
+      "purpose": "post-update detection and recovery"
+    },
+    "executed_lr_assertion": {
+      "semantics": "before optimizer.step assert that the LR currently about to be consumed equals P(t); on mismatch record the event and abort before any parameter update",
+      "candidate_lr_on_mismatch": null,
+      "committed_lr_on_mismatch": null,
+      "parameter_update_on_mismatch": false,
+      "purpose": "direct pre-update prevention control"
+    }
+  },
+  "state_restoration_contract": {
+    "rescue_restores": [
+      "all trainable model parameters",
+      "optimizer state including moments and step counters",
+      "optimizer parameter-group LR"
+    ],
+    "gradient_rule": "replay uses the same already-computed clipped gradients; no second forward/backward pass",
+    "required_identity_check": "pre-candidate state must equal restored state before replay"
+  },
+  "reporting_rules": {
+    "candidate_and_committed_updates_are_distinct": true,
+    "actual_exit_lr_is_read_from_optimizer_state": true,
+    "do_not_infer_exit_lr_from_scheduler_target": true,
+    "failfast_bad_update_is_committed": true,
+    "rescue_bad_candidate_is_not_committed": true,
+    "executed_lr_assertion_runs_may_terminate_without_training_metrics": true,
+    "nominal_condition_runs_must_not_be_reported_as_completed_training_runs": true
+  }
+}

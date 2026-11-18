@@ -1,0 +1,5 @@
+dataset,n,mean_lr_multiplier,mean_realized_ratio_multiplier
+ag_news,5,957.0,936.0489002324726
+cifar10,5,423.0,421.7851069622466
+dbpedia_14,5,4463.0,4309.022135629221
+wnut_17,5,64.0,63.92878973427669

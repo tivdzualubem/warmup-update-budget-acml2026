@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "scope": "saved-record and source provenance audit; no model training or prediction reevaluation",
+  "results_archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "original_source_launcher_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+  "scientific_job_records": 240,
+  "trained_test_endpoints": 180,
+  "severity_diagnostic_records": 20,
+  "metadata_files_byte_identical_to_original_launcher": 49,
+  "historical_completion_manifests_unchanged": 5,
+  "source_file_copy_matches": 224,
+  "distinct_scientific_source_files": 56,
+  "matched_initialization_groups": 40,
+  "anchor_fields_per_group": 7,
+  "history_rows_checked": 1573,
+  "trace_rows_checked": 55535,
+  "trace_lr_fields_checked": 277675,
+  "log_lines_read": 1499,
+  "log_epoch_rows_checked": 635,
+  "log_completed_jobs": 40,
+  "terminal_outcomes": [
+    {
+      "cohort": "pretrained",
+      "reason": "completed_3_epochs",
+      "has_test_endpoint": false,
+      "count": 5
+    },
+    {
+      "cohort": "pretrained",
+      "reason": "completed_3_epochs",
+      "has_test_endpoint": true,
+      "count": 80
+    },
+    {
+      "cohort": "pretrained",
+      "reason": "executed_lr_assertion_failed",
+      "has_test_endpoint": false,
+      "count": 20
+    },
+    {
+      "cohort": "pretrained",
+      "reason": "guard_failfast",
+      "has_test_endpoint": false,
+      "count": 15
+    },
+    {
+      "cohort": "scratch",
+      "reason": "early_stopping",
+      "has_test_endpoint": true,
+      "count": 89
+    },
+    {
+      "cohort": "scratch",
+      "reason": "guard_failfast",
+      "has_test_endpoint": false,
+      "count": 20
+    },
+    {
+      "cohort": "scratch",
+      "reason": "max_epochs",
+      "has_test_endpoint": true,
+      "count": 11
+    }
+  ],
+  "failures": [],
+  "interpretation": "The five completion flags are byte-identical pre-execution design metadata. Per-job result/status/history/trace records cover the full scientific matrix. This establishes internally consistent recorded completion, not bit-exact reproduction of original training.",
+  "recovered_hotfix": "ACML_LAUNCHER_HOTFIX_RESUME.zip is preserved and audited separately in launcher_hotfix_audit.json; its text transformation addresses both observed launch errors.",
+  "unresolved": [
+    "Final executed launcher bytes/application log not recovered. The supplied hotfix can reconstruct corrected wrappers but is not a captured execution-time copy.",
+    "No complete final master run_status/run_all_status.json or original console logs for remaining phases/datasets in returned results.",
+    "No original execution-host package/version lock or execution-time source-code digest; source_commit fields are provenance declarations.",
+    "Original candidate checkpoint weights, prediction-level validation evidence, and complete paired states at step 49999 not recovered.",
+    "Split and initialization fingerprints match saved records; underlying original index/token-to-ID/state bytes are not recovered by these hashes."
+  ]
+}

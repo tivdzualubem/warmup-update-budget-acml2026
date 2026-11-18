@@ -1,0 +1,286 @@
+{
+  "source": "evidence/professor_feedback/EDITS_2026-10-19.txt",
+  "source_line_count": 13,
+  "requirements": [
+    {
+      "id": "F01",
+      "line": 4,
+      "requirement": "Retain stable versus isolated bad-first-step",
+      "status": "Already present; retained",
+      "evidence": "Table 2, Figure 1, paired_per_seed.csv",
+      "interpretation": "Stable and bad-then-stable share the post-first-step target rule; original realized budgets are shown separately."
+    },
+    {
+      "id": "F02",
+      "line": 4,
+      "requirement": "Add rescue versus late scheduler",
+      "status": "Added exploratory analysis",
+      "evidence": "Table 2, Figure 9, paired_per_seed.csv",
+      "interpretation": "Existing scratch runs yield improvements of 5.716-23.861 pp; no new training."
+    },
+    {
+      "id": "F03",
+      "line": 4,
+      "requirement": "Add corrected scheduler versus rescue",
+      "status": "Added exploratory analysis",
+      "evidence": "Table 2, Figure 9, paired_contrasts_corrected.csv",
+      "interpretation": "Residual endpoint means are -0.061 to +0.097 pp; not an equivalence result."
+    },
+    {
+      "id": "F04",
+      "line": 4,
+      "requirement": "Label added analyses exploratory",
+      "status": "Implemented",
+      "evidence": "Abstract, Methods 3.6, Tables 2/S9-S12, CSV analysis_status",
+      "interpretation": "These comparisons were added after observing the matrix and are not represented as prospective primary analyses."
+    },
+    {
+      "id": "F05",
+      "line": 4,
+      "requirement": "Do not call different schedules or realized budgets identical",
+      "status": "Implemented",
+      "evidence": "Abstract, Methods, section 4.2, Tables 3b/6",
+      "interpretation": "Distinguish target formula, consumed LR sequence, stopping steps, positive-LR exposure and replay calls."
+    },
+    {
+      "id": "F06",
+      "line": 5,
+      "requirement": "Stable LR reaches zero at 50,000",
+      "status": "Retained and checked",
+      "evidence": "Original stable_lr; Figure 4 and budget tables",
+      "interpretation": "Positive only through transition 49,999."
+    },
+    {
+      "id": "F07",
+      "line": 5,
+      "requirement": "Later epochs do not show continued recovery training",
+      "status": "Retained explicitly",
+      "evidence": "Sections 5/8/9",
+      "interpretation": "Zero-LR computation is not additional parameter recovery."
+    },
+    {
+      "id": "F08",
+      "line": 5,
+      "requirement": "Report loss under tested procedure; no irreversible damage",
+      "status": "Implemented",
+      "evidence": "Title/abstract/discussion/conclusion",
+      "interpretation": "The claim is observed-procedure damage, not permanence or fixed-budget irreversibility."
+    },
+    {
+      "id": "F09",
+      "line": 5,
+      "requirement": "Stronger recovery requires matched positive-LR experiment",
+      "status": "Conditional future evidence",
+      "evidence": "Manuscript section 8",
+      "interpretation": "Stronger recovery claims require matched continued positive-LR training. Current findings remain limited to the tested procedures."
+    },
+    {
+      "id": "F10",
+      "line": 6,
+      "requirement": "Keep 35/40 and all five WNUT misses",
+      "status": "Retained, regenerated",
+      "evidence": "guard_first_transition.csv; Table 7",
+      "interpretation": "Threshold reconstruction preserves the primary kappa=10 result."
+    },
+    {
+      "id": "F11",
+      "line": 6,
+      "requirement": "Simple LR check catches all 20 pretrained mismatches",
+      "status": "Retained",
+      "evidence": "Section 7.1; original assertion records",
+      "interpretation": "Known LR mismatch is checked before mutation; no guard-superiority claim."
+    },
+    {
+      "id": "F12",
+      "line": 6,
+      "requirement": "Explain what displacement guard adds",
+      "status": "Clarified",
+      "evidence": "Section 7.1 and rationale",
+      "interpretation": "It observes realized update size and can trigger rollback/replay; broader benefit for other faults remains untested."
+    },
+    {
+      "id": "F13",
+      "line": 6,
+      "requirement": "Lower thresholds retrospective",
+      "status": "Retained and labeled",
+      "evidence": "Table 7, Figure 7, sensitivity CSV",
+      "interpretation": "Alternate operating points are not new prospective calibration results."
+    },
+    {
+      "id": "F14",
+      "line": 6,
+      "requirement": "Retain small pretrained effects",
+      "status": "Retained",
+      "evidence": "Table 5 and S5-S8",
+      "interpretation": "Existing macro-F1/entity-F1/accuracy outcomes remain; no causal pretraining explanation."
+    },
+    {
+      "id": "F15",
+      "line": 7,
+      "requirement": "Fill 80 missing threshold-export cells",
+      "status": "Completed from original result fields",
+      "evidence": "guard_first_transition.csv; threshold_reconstruction.json",
+      "interpretation": "No guesses: each exported threshold is checked against its result JSON and LOSO manifest."
+    },
+    {
+      "id": "F16",
+      "line": 7,
+      "requirement": "Automatically regenerate sensitivity tables",
+      "status": "Implemented",
+      "evidence": "reanalyse.py and rebuild_sensitivity.py",
+      "interpretation": "400 detailed rows and 40 scope summaries rebuilt from raw first-100 safe/candidate traces; deterministic regeneration tested."
+    },
+    {
+      "id": "F17",
+      "line": 7,
+      "requirement": "Fix pretrained first-step actual exit LR",
+      "status": "Corrected separate reference",
+      "evidence": "analysis/reference_scheduler_semantics.py and diff",
+      "interpretation": "Pretrained single-bad exits at intended LR; scratch single-bad still exits at 1.0, matching their different runners."
+    },
+    {
+      "id": "F18",
+      "line": 7,
+      "requirement": "Fix 100-step guard limit",
+      "status": "Corrected separate reference",
+      "evidence": "Reference helper; boundary tests at 100/101",
+      "interpretation": "No fail-fast/rescue enforcement after step 100; late scheduling continues."
+    },
+    {
+      "id": "F19",
+      "line": 7,
+      "requirement": "Run rollback tests for weights/moments/counters/gradients/random state",
+      "status": "Executed CPU verification",
+      "evidence": "tests/test_rollback_adam_state.py and test_oct19_reproducibility.py",
+      "interpretation": "Deterministic fixed-gradient Adam replay preserves RNG and matches clean state; explicit Python/NumPy/Torch CPU RNG restoration also tested. No general stochastic/GPU claim."
+    },
+    {
+      "id": "F20",
+      "line": 7,
+      "requirement": "Separate analysis fixes from original training code",
+      "status": "Preserved and verified",
+      "evidence": "analysis/ versus source/; preservation hashes",
+      "interpretation": "Original training files and raw inputs remain unchanged. CPU unit fixtures do not retrain the research models."
+    },
+    {
+      "id": "F21",
+      "line": 11,
+      "requirement": "Title/abstract/conclusion focus on first step versus delay",
+      "status": "Rewritten",
+      "evidence": "Research_Manuscript.md",
+      "interpretation": "The professor explicitly requested a focus on first-step LR faults versus scheduler delay. The specific replacement title implements that request."
+    },
+    {
+      "id": "F22",
+      "line": 11,
+      "requirement": "Explain learning beyond existing Adam/warmup work",
+      "status": "Sharpened and source checked",
+      "evidence": "Related work; PRIMARY_LITERATURE_CHECK.md",
+      "interpretation": "Execution-fault decomposition, candidate/committed traces, exact replay and finite budget audit; no new optimizer/theory."
+    },
+    {
+      "id": "F23",
+      "line": 11,
+      "requirement": "State LR=1.0 extreme injected fault",
+      "status": "Explicit",
+      "evidence": "Abstract and Methods 3.2",
+      "interpretation": "No claim it represents typical LR tuning or natural bug prevalence."
+    },
+    {
+      "id": "F24",
+      "line": 11,
+      "requirement": "Avoid new general warmup theory",
+      "status": "Explicit limitation",
+      "evidence": "Abstract/related work/conclusion",
+      "interpretation": "No new general theory is asserted."
+    },
+    {
+      "id": "F25",
+      "line": 11,
+      "requirement": "Avoid robustness caused by pretraining",
+      "status": "Retained limitation",
+      "evidence": "Section 7 and conclusion",
+      "interpretation": "Architecture, task, optimizer and schedule vary; no isolated causal-pretraining study."
+    },
+    {
+      "id": "F26",
+      "line": 11,
+      "requirement": "Avoid negligible guard cost",
+      "status": "Explicitly unmeasured",
+      "evidence": "Section 7.1 and rationale",
+      "interpretation": "No runtime/memory benchmark is in the archive; positive-LR counts are not a timing benchmark."
+    },
+    {
+      "id": "F27",
+      "line": 12,
+      "requirement": "Show all five seed results",
+      "status": "Added readable supplement",
+      "evidence": "All_Seed_Results_and_Provenance.md/PDF; all_condition_results.csv",
+      "interpretation": "Eight endpoint tables and four paired-seed tables, retaining saved validation selection."
+    },
+    {
+      "id": "F28",
+      "line": 12,
+      "requirement": "Show paired uncertainty",
+      "status": "Retained and expanded",
+      "evidence": "Table 2; paired_contrasts_corrected.csv",
+      "interpretation": "Descriptive 95% t intervals, n=5 and unadjusted exact sign tests."
+    },
+    {
+      "id": "F29",
+      "line": 12,
+      "requirement": "Five same-direction differences give p=0.0625",
+      "status": "Stated and tested",
+      "evidence": "Methods 3.6; CSV sign-test column",
+      "interpretation": "Not misrepresented as p<0.05; no arbitrary seed expansion."
+    },
+    {
+      "id": "F30",
+      "line": 12,
+      "requirement": "Small differences do not prove equivalence",
+      "status": "Explicit",
+      "evidence": "Abstract, Methods, section 4.2, conclusion",
+      "interpretation": "No equivalence margin or equivalence test was prespecified."
+    },
+    {
+      "id": "F31",
+      "line": 13,
+      "requirement": "Historical/current experiments separate",
+      "status": "Retained",
+      "evidence": "Methods 3.5, Table 4, provenance JSON",
+      "interpretation": "Historical 3 seeds/W4000 separate from current 5 seeds/W8000; no pooling."
+    },
+    {
+      "id": "F32",
+      "line": 13,
+      "requirement": "Retain validation-only selection",
+      "status": "Preserved",
+      "evidence": "Methods 3.4; selection audit CSV",
+      "interpretation": "Scratch min validation loss; AG/DB pretrained max macro-F1; WNUT entity F1; CIFAR accuracy. No test-based reselection."
+    },
+    {
+      "id": "F33",
+      "line": 13,
+      "requirement": "Every table traceable to records",
+      "status": "Added source manifest",
+      "evidence": "manuscript_table_sources.json; per-seed source columns",
+      "interpretation": "981 entries link Tables 1-7/S1-S12 to result members, histories, threshold traces or historical notebooks."
+    },
+    {
+      "id": "F34",
+      "line": 13,
+      "requirement": "Do not start broad experiment matrix",
+      "status": "Observed",
+      "evidence": "Revision verification and README",
+      "interpretation": "No new research training or recovery run; only record analysis and small CPU optimizer tests."
+    },
+    {
+      "id": "F35",
+      "line": 13,
+      "requirement": "Prioritize verified evidence and reproducibility",
+      "status": "Implemented checks and clear limits",
+      "evidence": "Test report, SHA hashes, reproduction scripts",
+      "interpretation": "Source preservation, deterministic sensitivity regeneration, helper conformance, seed provenance and document checks; no acceptance guarantee."
+    }
+  ]
+}

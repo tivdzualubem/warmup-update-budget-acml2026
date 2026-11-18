@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "datasets": {
+    "ag_news": {
+      "repository": "fancyzhx/ag_news",
+      "revision": "eb185aade064a813bc0b7f42de02595523103ca4"
+    },
+    "dbpedia_14": {
+      "repository": "fancyzhx/dbpedia_14",
+      "revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac"
+    }
+  }
+}

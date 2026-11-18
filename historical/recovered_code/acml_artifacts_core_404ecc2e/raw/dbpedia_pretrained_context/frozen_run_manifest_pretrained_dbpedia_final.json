@@ -1,0 +1,17 @@
+{
+  "dataset_name": "dbpedia_14",
+  "model_name": "distilbert-base-uncased",
+  "run_tag": "prof_dbpedia_pretrained_v1",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "max_length": 128,
+  "batch_size": 8,
+  "num_epochs": 3,
+  "learning_rate": 2e-05,
+  "val_ratio": 0.15,
+  "split_seed": 42,
+  "expected_output_root": "transformer_project/results/pretrained_dbpedia_14_distilbert-base-uncased_prof_dbpedia_pretrained_v1"
+}

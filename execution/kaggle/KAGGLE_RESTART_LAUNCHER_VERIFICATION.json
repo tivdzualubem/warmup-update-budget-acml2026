@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "f417870f4e2f214524b416cfa5a3498b541e7f442cd4c993beb4312ec804b449",
+  "archive_crc": "passed",
+  "four_identity_hashes_recomputed": true,
+  "same_protocol_code_data_environment_as_previous_preflight": true,
+  "source_files_matched": 14,
+  "cpu_tests_passed": 21,
+  "actual_device_resume_exact": true,
+  "new_preflight_folder": "/kaggle/working/ACML_preflight_20261112_191929_5acfd7",
+  "launcher": "ACML_Kaggle_Run_Pair_RESTART_CHECKED.py",
+  "launcher_sha256": "3febcd3944fda4c572e0f5a07bf947e6d2a8342c19572d8aec002f9b37807f4b",
+  "only_launcher_change": "PREFLIGHT_ROOT folder; stable experiment output and all training settings unchanged",
+  "syntax_and_non_Kaggle_guard": "passed",
+  "research_pair_run": false,
+  "training_plus_validation_minutes": 102.30255761718477
+}

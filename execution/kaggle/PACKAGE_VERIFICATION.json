@@ -1,0 +1,18 @@
+{
+  "zip": "ACML_Peak_First_Pair_2026-11-12.zip",
+  "bytes": 49377,
+  "sha256": "3c437b7e71f9bb5eaed522df222a14f55a2bba93377f63d41a51c0f3de53adea",
+  "members": 24,
+  "member_hashes_verified": 23,
+  "crc_check": "passed",
+  "status": "prospective implementation; no research run or real-data/device preflight performed",
+  "fresh_extraction_cpu_tests": {
+    "passed": true,
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "same_tested_source_hashes": true,
+    "research_training_performed": false,
+    "real_data_preflight_performed": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "models": {
+    "distilbert_base_uncased": {
+      "repository": "distilbert/distilbert-base-uncased",
+      "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be"
+    },
+    "deit_tiny_patch16_224": {
+      "repository": "facebook/deit-tiny-patch16-224",
+      "revision": "b3428f18dcc7b543470d07f14b4a4157815d1880"
+    }
+  },
+  "datasets": {
+    "ag_news": {
+      "repository": "fancyzhx/ag_news",
+      "revision": "eb185aade064a813bc0b7f42de02595523103ca4"
+    },
+    "dbpedia_14": {
+      "repository": "fancyzhx/dbpedia_14",
+      "revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac"
+    },
+    "wnut_17": {
+      "repository": "flaitenberger/wnut_17",
+      "revision": "d6c9cc3726ab60f77c2b7d95b882adb1b61df5e7"
+    },
+    "cifar10": {
+      "repository": "uoft-cs/cifar10",
+      "revision": "0b2714987fa478483af9968de7c934580d0bb9a2"
+    }
+  }
+}

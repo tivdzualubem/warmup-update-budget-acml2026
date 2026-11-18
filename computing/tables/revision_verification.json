@@ -1,0 +1,374 @@
+{
+  "revision_date": "2026-11-17",
+  "current_feedback_date": "2026-11-13",
+  "source_plan_date": "2026-10-22",
+  "tests_run": 51,
+  "tests_passed": 51,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_returncode": 0,
+  "original_files_preserved": 107,
+  "preservation_mismatches": [],
+  "original_scientific_csvs_checked": 20,
+  "changed_original_scientific_csvs": [],
+  "validation_scope": "Scientific records, displayed results, original-file preservation, evaluator and optimizer fixtures",
+  "current_execution_provenance": {
+    "status": "passed",
+    "scope": "saved-record and source provenance audit; no model training or prediction reevaluation",
+    "results_archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+    "original_source_launcher_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+    "scientific_job_records": 240,
+    "trained_test_endpoints": 180,
+    "severity_diagnostic_records": 20,
+    "metadata_files_byte_identical_to_original_launcher": 49,
+    "historical_completion_manifests_unchanged": 5,
+    "source_file_copy_matches": 224,
+    "distinct_scientific_source_files": 56,
+    "matched_initialization_groups": 40,
+    "anchor_fields_per_group": 7,
+    "history_rows_checked": 1573,
+    "trace_rows_checked": 55535,
+    "trace_lr_fields_checked": 277675,
+    "log_lines_read": 1499,
+    "log_epoch_rows_checked": 635,
+    "log_completed_jobs": 40,
+    "terminal_outcomes": [
+      {
+        "cohort": "pretrained",
+        "reason": "completed_3_epochs",
+        "has_test_endpoint": false,
+        "count": 5
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "completed_3_epochs",
+        "has_test_endpoint": true,
+        "count": 80
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "executed_lr_assertion_failed",
+        "has_test_endpoint": false,
+        "count": 20
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "guard_failfast",
+        "has_test_endpoint": false,
+        "count": 15
+      },
+      {
+        "cohort": "scratch",
+        "reason": "early_stopping",
+        "has_test_endpoint": true,
+        "count": 89
+      },
+      {
+        "cohort": "scratch",
+        "reason": "guard_failfast",
+        "has_test_endpoint": false,
+        "count": 20
+      },
+      {
+        "cohort": "scratch",
+        "reason": "max_epochs",
+        "has_test_endpoint": true,
+        "count": 11
+      }
+    ],
+    "failures": [],
+    "interpretation": "The five completion flags are byte-identical pre-execution design metadata. Per-job result/status/history/trace records cover the full scientific matrix. This establishes internally consistent recorded completion, not bit-exact reproduction of original training.",
+    "recovered_hotfix": "ACML_LAUNCHER_HOTFIX_RESUME.zip is preserved and audited separately in launcher_hotfix_audit.json; its text transformation addresses both observed launch errors.",
+    "unresolved": [
+      "Final executed launcher bytes/application log not recovered. The supplied hotfix can reconstruct corrected wrappers but is not a captured execution-time copy.",
+      "No complete final master run_status/run_all_status.json or original console logs for remaining phases/datasets in returned results.",
+      "No original execution-host package/version lock or execution-time source-code digest; source_commit fields are provenance declarations.",
+      "Original candidate checkpoint weights, prediction-level validation evidence, and complete paired states at step 49999 not recovered.",
+      "Split and initialization fingerprints match saved records; underlying original index/token-to-ID/state bytes are not recovered by these hashes."
+    ]
+  },
+  "recovered_launcher_hotfix": {
+    "supplied_zip_sha256": "d05ace110f0d702aee6842a81d215a9aa1ffbc9eb279079178a6b46243479a7d",
+    "patch_script_sha256": "1efd6a7f6c9ec6bfbe7d9fe9e5512e1f19a0626910f165f7eb53ed1b6b43e0a6",
+    "status": "passed",
+    "wrappers": [
+      {
+        "dataset": "AG_News",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py",
+        "original_sha256": "0442d9cfd6c819753ea83897cb94c11226de276ae0d9463c8344b1cd1f146249",
+        "reconstructed_sha256": "1b67b2f3f4a0df53dc61cbe978ae349e3e72f0673a937fac83f34bd2f2bc26bd",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "DBPedia",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py",
+        "original_sha256": "c743992a438ebb2aee2d777a94768b54b069402eca6fdbdd987d83fccb3ea19c",
+        "reconstructed_sha256": "16f832ef9da6b11010c7acc453d23dbdfde7f5c42e33892f958c8f5cbc71d81d",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "WNUT_17",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py",
+        "original_sha256": "1616671560aeb4c62c0d2e01b5d17821bfe01a62e112ffd2c2c98cf1a82b64a9",
+        "reconstructed_sha256": "f0eadbfcec3f665531e5775918b2dc1182746d476aea6fff259e32bf544596f3",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "CIFAR_10",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py",
+        "original_sha256": "6c3a582bf5299836bd4de65b23e905f662ab6f46f0b9ad0b80a3e2efeed84c1c",
+        "reconstructed_sha256": "51eb8bd6d5eb6f9231bb4f66d3b0867fca78e6cc1a4e6ee9ea9a9bd3b269c3d7",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      }
+    ],
+    "scope": "Pure patch function applied to original launcher text in memory; syntax and idempotence checks only. No launcher, original hotfix main, or training executed.",
+    "source_modules_changed": false,
+    "observed_log_failures_addressed": [
+      "Two tuple-versus-dictionary queue failures",
+      "Cross-dataset DBpedia threshold lookup from AG News launcher"
+    ],
+    "not_proven": "No final original-host patch application log or execution-time source digest was supplied; reconstructed wrappers are not recovered executed files."
+  },
+  "configured_peak_pair_run": true,
+  "venue": "Computing (Springer)",
+  "author_declarations_confirmed": true,
+  "external_submission": false,
+  "configured_peak_record_audit": {
+    "status": "passed",
+    "scope": "complete saved-record/trace audit",
+    "archives": [
+      {
+        "file": "ACML_Peak_First_RESULTS.zip",
+        "bytes": 10103218,
+        "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+        "verified_members": 49
+      }
+    ],
+    "paired_transitions": 49999,
+    "consumed_lr_fields_checked": 99998,
+    "sampler_batches_checked": 49999,
+    "evaluation_records": 42,
+    "online_training_blocks_checked": 1000,
+    "fixed_split_verified": true,
+    "same_source_config_data_environment_as_preflight": true,
+    "failure_or_resume_events": 0,
+    "closed_session_active_seconds": 4969.857002546,
+    "first_transition": {
+      "event": "paired_step",
+      "step": 1,
+      "epoch": 0,
+      "sampler_cursor": 32,
+      "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+      "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+      "arms": {
+        "clean": {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 6.603961943503159e-08,
+          "instrumented_training_seconds": 0.43773331199997756
+        },
+        "peak_first": {
+          "lr_consumed": [
+            0.0001
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 0.0005065598757595089,
+          "instrumented_training_seconds": 0.18758080700001756
+        }
+      }
+    },
+    "primary_validation_ce_difference": 4.695263706736008e-06,
+    "research_training_by_this_analysis": false,
+    "new_research_pair_executed_on_kaggle": true,
+    "original_historical_checkpoint_reselection": false
+  },
+  "configured_peak_full_prediction_state_audit": {
+    "status": "passed",
+    "scope": "full returned records, predictions and restricted tensor-state audit",
+    "archives": [
+      {
+        "file": "ACML_Peak_First_RESULTS.zip",
+        "bytes": 10103218,
+        "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+        "verified_members": 49
+      },
+      {
+        "file": "ACML_Peak_First_PREDICTIONS.zip",
+        "bytes": 109388801,
+        "sha256": "43e1d3759d15a76ba2356ec8230c3a9363b2b1e22252f5b4f4fb6470d360e83f",
+        "verified_members": 42
+      },
+      {
+        "file": "ACML_Peak_First_STATES.zip",
+        "bytes": 404524970,
+        "sha256": "f32574f81b1097e01978febe6d78f83a634ab3c67fefa9aa183e44ec880c2592",
+        "verified_members": 5
+      }
+    ],
+    "paired_transitions": 49999,
+    "consumed_lr_fields_checked": 99998,
+    "sampler_batches_checked": 49999,
+    "evaluation_records": 42,
+    "online_training_blocks_checked": 1000,
+    "fixed_split_verified": true,
+    "same_source_config_data_environment_as_preflight": true,
+    "failure_or_resume_events": 0,
+    "closed_session_active_seconds": 4969.857002546,
+    "first_transition": {
+      "event": "paired_step",
+      "step": 1,
+      "epoch": 0,
+      "sampler_cursor": 32,
+      "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+      "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+      "arms": {
+        "clean": {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 6.603961943503159e-08,
+          "instrumented_training_seconds": 0.43773331199997756
+        },
+        "peak_first": {
+          "lr_consumed": [
+            0.0001
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 0.0005065598757595089,
+          "instrumented_training_seconds": 0.18758080700001756
+        }
+      }
+    },
+    "primary_validation_ce_difference": 4.695263706736008e-06,
+    "research_training_by_this_analysis": false,
+    "new_research_pair_executed_on_kaggle": true,
+    "original_historical_checkpoint_reselection": false,
+    "prediction_files_independently_recomputed": 42,
+    "maximum_absolute_ce_recomputation_difference": 7.993605777301127e-15,
+    "full_paired_checkpoint_files_checked": 5,
+    "first_step_moments_equal_weights_differ": true,
+    "final_and_latest_scientific_states_match": true
+  },
+  "dataset_validation_layout": [
+    {
+      "dataset": "ag_news",
+      "validation_examples": "18000",
+      "validation_batch_size": "32",
+      "validation_full_batches": "562",
+      "validation_batches": "563",
+      "validation_final_batch_examples": "16",
+      "validation_has_partial_batch": "True",
+      "validation_batch_weighting_matches_example_weighting": "False",
+      "final_batch_example_influence_ratio": "1.9982238010657194",
+      "partial_batch_selection_effect_status": "unknown_without_candidate_epoch_assets"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "validation_examples": "84000",
+      "validation_batch_size": "32",
+      "validation_full_batches": "2625",
+      "validation_batches": "2625",
+      "validation_final_batch_examples": "32",
+      "validation_has_partial_batch": "False",
+      "validation_batch_weighting_matches_example_weighting": "True",
+      "final_batch_example_influence_ratio": "1.0",
+      "partial_batch_selection_effect_status": "not_applicable_full_validation_batches"
+    }
+  ],
+  "research_training_performed": true,
+  "analysis_launched_training": false,
+  "new_prediction_evaluation_performed": true,
+  "cpu_optimizer_fixtures_executed": true,
+  "cpu_resume_fixture_executed": true,
+  "actual_training_device_resume_verified": true,
+  "actual_device_resume_scope": "new configured-peak runner on Kaggle T4; not historical rollback",
+  "cuda_amp_distributed_tested": false,
+  "replay_contract": "v2: finite-state validation, at most one revalidated replay; rejected replay has no committed transition",
+  "archived_executor_preserved": true,
+  "archived_checkpoint_selections_preserved": true,
+  "shared_step_summaries": 95,
+  "shared_step_seed_pairs": 475,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "guard_primary_detected": 35,
+  "guard_primary_groups": 40,
+  "WNUT_misses": 5,
+  "assertion_detected_pretrained": 20,
+  "model_checkpoints_available_in_results_zip": false,
+  "new_pair_model_checkpoints_available": true,
+  "guard_overhead_measured": false,
+  "title_unchanged": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "package_versions": {
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.21.4",
+    "reportlab": "4.4.9"
+  },
+  "displayed_numeric_cells_checked": 560,
+  "discrepancies": 0,
+  "basis": "original October result/history/trace JSON; historical per-seed notebook extraction; regenerated sensitivity rows; raw shared-step history reconstruction",
+  "independent_saved_evidence_audit": {
+    "audit_date": "2026-11-07",
+    "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+    "independent_of_analysis_builders": true,
+    "shared_step_summary_rows": 95,
+    "paired_seed_rows": 475,
+    "summary_numeric_fields_checked": 855,
+    "source_pair_numeric_fields_checked": 2850,
+    "coverage_groups": 12,
+    "all_shared_steps_retained": true,
+    "scientific_records": 240,
+    "trained_test_endpoints": 180,
+    "scientific_trace_files": 240,
+    "scientific_trace_rows": 55535,
+    "nonfinite_trace_fields": [],
+    "stable_family_runs_crossing_zero": {
+      "ag_news": 9,
+      "dbpedia_14": 20
+    },
+    "DBpedia_equal_consecutive_postzero_losses": 91,
+    "stable_family_selected_epoch_at_or_after_zero": 14,
+    "WNUT_candidate_to_fold_safe_max_factors": [
+      2.038965040774801,
+      2.0391606471176824,
+      2.1031328721698044,
+      2.038728845957353,
+      2.039432518798453
+    ],
+    "WNUT_mean_factor": 2.051883984963619,
+    "WNUT_primary_threshold_misses": 5,
+    "discrepancies": [],
+    "research_training": false
+  },
+  "pdf_page_counts": {
+    "All_Seed_Results_and_Provenance": 19,
+    "Research_Manuscript": 22
+  },
+  "pdf_visual_review": "pending",
+  "test_log": "evidence/verification/submission_plan_test_log.txt"
+}

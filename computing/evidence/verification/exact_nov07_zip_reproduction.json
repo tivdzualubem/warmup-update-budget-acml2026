@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-12",
+  "input_zip_sha256": "a7a7cd887a01f6741c3f0afabf7b0987a0e969d830bf5be894e7448423a05890",
+  "actual_delivery_zip_extracted": true,
+  "command": "python reproduce_revision.py",
+  "tests_passed": 44,
+  "test_returncode": 0,
+  "changed_scientific_outputs": [],
+  "pdf_text_and_page_counts_identical": {
+    "Research_Manuscript": true,
+    "All_Seed_Results_and_Provenance": true
+  },
+  "versions": {
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.21.4",
+    "reportlab": "4.4.9"
+  },
+  "research_training": false,
+  "limitation": "Reproduction of saved records and CPU fixtures, not original training. The professor did not identify specific earlier discrepant outputs; this does not retrospectively explain an unprovided discrepancy."
+}

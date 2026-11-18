@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "Actual selected device and real-data loader smoke/resume/timing check; discarded diagnostic trajectories, not scientific results.",
+  "identity": {
+    "protocol": "ea6bfb615e48e63055f85577ee570f82b0517b99e00e7a762e54de07fd962be6",
+    "code": "2f6991b0811855a82b51db14515b9a38353cdb304b79890e2184a65f6c18a474",
+    "data": "ff41c9d40d42ee5992f4faa6e101200fde6a32ac99da4e6853bdb344713dfbf0",
+    "environment": "fa6fe07d5dfa3d4deef98c30659ecd1c30daea4254cf8cbc5b1b181723f1734f"
+  },
+  "resume_probe_exact": true,
+  "first_transition_anchors_match": true,
+  "measured_steps_per_arm": 20,
+  "cost": {
+    "clean": {
+      "instrumented_training_seconds": 1.1220061760000135,
+      "evaluation_seconds": 0.0,
+      "examples": 640,
+      "positive_lr_steps": 20,
+      "zero_lr_steps": 0,
+      "peak_process_cuda_allocated_bytes": 513183744,
+      "peak_process_cuda_reserved_bytes": 591396864,
+      "memory_scope": "Process CUDA peak during this arm; BOTH arms remain resident. CPU peak RAM not measured."
+    },
+    "peak_first": {
+      "instrumented_training_seconds": 1.1416088009999612,
+      "evaluation_seconds": 0.0,
+      "examples": 640,
+      "positive_lr_steps": 20,
+      "zero_lr_steps": 0,
+      "peak_process_cuda_allocated_bytes": 531718656,
+      "peak_process_cuda_reserved_bytes": 591396864,
+      "memory_scope": "Process CUDA peak during this arm; BOTH arms remain resident. CPU peak RAM not measured."
+    }
+  },
+  "full_validation_seconds_per_arm": {
+    "clean": 23.80635064100005,
+    "peak_first": 24.11656888699997
+  },
+  "paired_checkpoint_seconds": 0.5473153229999639,
+  "paired_checkpoint_bytes": 115315119,
+  "rough_cost_projection": {
+    "clean": {
+      "instrumented_training_seconds": 2804.9593396912337,
+      "validation_seconds": 238.0635064100005
+    },
+    "peak_first": {
+      "instrumented_training_seconds": 2853.964922059853,
+      "validation_seconds": 241.1656888699997
+    }
+  },
+  "projection_limits": "Short-prefix instrumented throughput is approximate. Add data, train-monitor/test evaluation, prediction serialization and checkpoint costs; no wall-clock guarantee.",
+  "research_pair_run": false
+}

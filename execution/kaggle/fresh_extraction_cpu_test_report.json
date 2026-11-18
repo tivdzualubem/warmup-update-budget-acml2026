@@ -1,0 +1,29 @@
+{
+  "scope": "CPU synthetic fixtures only. No real dataset downloaded and no research experiment run.",
+  "tests": 21,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "python": "3.12.14",
+  "torch": "2.8.0+cpu",
+  "numpy": "2.5.4",
+  "torch_threads": 1,
+  "source_hashes": {
+    "check_cpu.py": "bb7dfe817607d1a667f86143dc43a0abe66f77c09ade67fbb507564a43989a3b",
+    "frozen_source/publication_expansion/src/anchor.py": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+    "frozen_source/publication_expansion/src/scheduler_semantics.py": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+    "frozen_source/publication_expansion/src/scratch_data_contract.py": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+    "frozen_source/publication_expansion/src/scratch_dataset_adapter.py": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+    "frozen_source/publication_expansion/src/scratch_model_adapter.py": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+    "frozen_source/src/transformer_project/models/transformer.py": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5",
+    "pair_core.py": "a10d5f68160ebe87033a8417614561b779d39ef3c6c09dfe46a156508973a30f",
+    "peak_pair.py": "054bf735c47a5dbe74603d1c9121d21b5beb9cb3775ebcddf86dfde8ec06d82b",
+    "reference_utils/__init__.py": "10830e69e990e44bdf643b568da4a4b3b83b23d4df7e2dcd2da3485607309c16",
+    "reference_utils/evaluation.py": "9229c02ed2f209da7b21a6bd7806bf3df01c00b278248a2273d5a896ca0ed6d4",
+    "reference_utils/resumable_state.py": "1bbbab068edf91767fa08b977b59647dd1d944d8f05e8fdfe77e94d598f57da8",
+    "reference_utils/transition_executor.py": "75cfe080b4239ca1e98d8f57e0410422e479aaefd3e8c4271b6b7f2caa2a5901",
+    "tests/test_pair.py": "94e237961ec94e4f2a126afdb237374f9b5156e424404835069cf98e502c84af"
+  },
+  "elapsed_seconds": 4.690726999891922,
+  "command": "python -B check_cpu.py"
+}

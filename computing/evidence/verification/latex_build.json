@@ -1,0 +1,19 @@
+{
+  "source_format": "LaTeX with BibTeX",
+  "pandoc_version": "pandoc.exe 3.6.1",
+  "documents": [
+    {
+      "source": "manuscript/Research_Manuscript.tex",
+      "sha256": "1c2cb9394448680c945d947b2a26bb3a00e9ca05388bee1b71a48dc60be1cfb2",
+      "pdf": "manuscript/Research_Manuscript.pdf",
+      "pdf_sha256": "0984a786e89e8176fc5c65dfbcb1cd43e6c4376f64dd6c8452fd29c2ad0d1225"
+    },
+    {
+      "source": "manuscript/All_Seed_Results_and_Provenance.tex",
+      "sha256": "14397537f87c08bbe6979da8ff8a3b94b21433e08cfc75d0b7e1c56869282cf7",
+      "pdf": "manuscript/All_Seed_Results_and_Provenance.pdf",
+      "pdf_sha256": "8a27a0656c23b04b95cf0e55f8e0fcac5b4fab2bfe3d3479b5ac6ac9e67dffd7"
+    }
+  ],
+  "tectonic_version": "Tectonic 0.17.0"
+}

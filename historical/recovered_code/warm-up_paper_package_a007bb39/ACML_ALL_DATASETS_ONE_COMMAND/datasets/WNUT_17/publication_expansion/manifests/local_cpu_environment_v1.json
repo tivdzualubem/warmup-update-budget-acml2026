@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "local CPU development and validation only",
+  "not_full_experiment_environment": true,
+  "python": "3.12.13",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.0.2",
+  "cuda_available": false,
+  "git": {
+    "branch": "publication-expansion",
+    "head": "b93a9507bf15feb31c1b632760ac9f77f89a3e75",
+    "dirty": true
+  }
+}

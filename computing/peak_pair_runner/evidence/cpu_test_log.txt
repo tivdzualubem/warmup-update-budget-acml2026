@@ -1,0 +1,26 @@
+test_evaluation_does_not_change_subsequent_dropout_trajectory (test_pair.EvaluationTests.test_evaluation_does_not_change_subsequent_dropout_trajectory) ... ok
+test_nonfinite_eval_rejected_and_mode_rng_restored (test_pair.EvaluationTests.test_nonfinite_eval_rejected_and_mode_rng_restored) ... ok
+test_test_population_gated_until_both_arms_finish (test_pair.EvaluationTests.test_test_population_gated_until_both_arms_finish) ... ok
+test_uneven_batches_uncapped_ce_and_saved_predictions (test_pair.EvaluationTests.test_uneven_batches_uncapped_ce_and_saved_predictions) ... ok
+test_cli_config_rejects_zero_lr_budget_and_wrong_metric (test_pair.InterfaceTests.test_cli_config_rejects_zero_lr_budget_and_wrong_metric) ... ok
+test_default_describe_is_stdlib_only (test_pair.InterfaceTests.test_default_describe_is_stdlib_only) ... ok
+test_frozen_original_source_hashes (test_pair.InterfaceTests.test_frozen_original_source_hashes) ... ok
+test_full_synthetic_orchestration_interruption_and_resume (test_pair.InterfaceTests.test_full_synthetic_orchestration_interruption_and_resume) ... ok
+test_prepare_identity_mismatch_does_not_write_run_files (test_pair.InterfaceTests.test_prepare_identity_mismatch_does_not_write_run_files) ... ok
+test_truncated_log_tail_accounted_but_interior_corruption_fails (test_pair.InterfaceTests.test_truncated_log_tail_accounted_but_interior_corruption_fails) ... ok
+test_actual_adam_pre_hook_rejects_wrong_rate (test_pair.PairTests.test_actual_adam_pre_hook_rejects_wrong_rate) ... ok
+test_arm_rng_streams_match_despite_interleaving (test_pair.PairTests.test_arm_rng_streams_match_despite_interleaving) ... ok
+test_checkpoint_corruption_rejected_before_loading (test_pair.PairTests.test_checkpoint_corruption_rejected_before_loading) ... ok
+test_first_anchors_and_actual_lr_then_identical_schedule (test_pair.PairTests.test_first_anchors_and_actual_lr_then_identical_schedule) ... ok
+test_fixed_budget_and_weighted_online_blocks (test_pair.PairTests.test_fixed_budget_and_weighted_online_blocks) ... ok
+test_partial_failed_pair_cannot_continue_or_checkpoint (test_pair.PairTests.test_partial_failed_pair_cannot_continue_or_checkpoint) ... ok
+test_real_medium4_architecture_synthetic_resume (test_pair.PairTests.test_real_medium4_architecture_synthetic_resume) ... ok
+test_resume_rejects_identity_and_adam_counter_change (test_pair.PairTests.test_resume_rejects_identity_and_adam_counter_change) ... ok
+test_sampler_rejects_invalid_permutation (test_pair.PairTests.test_sampler_rejects_invalid_permutation) ... ok
+test_serialized_resume_across_permutation_boundary_is_exact (test_pair.PairTests.test_serialized_resume_across_permutation_boundary_is_exact) ... ok
+test_zero_lr_is_rejected (test_pair.PairTests.test_zero_lr_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 7.910s
+
+OK

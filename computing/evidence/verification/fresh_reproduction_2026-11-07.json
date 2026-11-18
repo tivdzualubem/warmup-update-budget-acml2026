@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "status": "passed",
+  "isolated_input_copy": true,
+  "full_reproduction_command": "python reproduce_revision.py",
+  "tests_passed": 44,
+  "original_files_unchanged": 107,
+  "original_scientific_csvs_unchanged": 20,
+  "all_table_csvs_bit_identical": 28,
+  "all_figure_pngs_bit_identical": 25,
+  "both_scientific_markdown_sources_bit_identical": true,
+  "pdf_page_counts_and_extracted_content_identical": true,
+  "research_training": false,
+  "new_prediction_evaluation": false,
+  "pdf_byte_identity_required": false,
+  "pdf_byte_identity_note": "PDF creation timestamps may differ; reviewed delivery PDFs are separately bound to SHA-256 hashes."
+}

@@ -1,0 +1,12 @@
+{
+  "file": "ACML_Kaggle_Real_Data_Check.py",
+  "bytes": 74467,
+  "sha256": "9495a9ab60db33967b21d2dba21e2a2f52b3840c652cbc74217dc5f87cbb3e62",
+  "embedded_package_sha256": "3c437b7e71f9bb5eaed522df222a14f55a2bba93377f63d41a51c0f3de53adea",
+  "syntax_check": "passed",
+  "embedded_member_hashes": "passed",
+  "corruption_rejection": "passed",
+  "non_Kaggle_execution_guard": "passed",
+  "GPU_preflight_run_locally": false,
+  "research_pair_run": false
+}

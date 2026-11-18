@@ -1,0 +1,12 @@
+metadata/ag_news_run_manifest.json
+metadata/dbpedia_run_manifest.json
+src/transformer_project/data/data_loader_scratch.py
+src/transformer_project/models/transformer.py
+src/transformer_project/run_stage2_agnews_warmup_safety_gate_calibrated.py
+src/transformer_project/run_stage2_dbpedia_warmup_safety_gate_calibrated.py
+src/transformer_project/run_warmup_safety_gate_agnews.py
+src/transformer_project/run_warmup_safety_gate_dbpedia.py
+src/transformer_project/stage2_agnews_warmup_safety_gate_calibrated_manifest.json
+src/transformer_project/stage2_dbpedia_warmup_safety_gate_calibrated_manifest.json
+src/transformer_project/utils/metrics_scratch.py
+src/transformer_project/utils/trainer_scratch.py

@@ -1,0 +1,42 @@
+{
+  "protocol_version": "configured_peak_pair_v1_proposed",
+  "dataset": "dbpedia_14",
+  "dataset_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+  "model": "medium-4",
+  "seed": 42,
+  "split_seed": 42,
+  "validation_ratio": 0.15,
+  "expected_validation_indices_sha256": "75cc3a5c716ae024bd95de7e7d579546bef5a63038d940c7ff5d5a66aa08f3fa",
+  "batch_size": 32,
+  "max_length": 128,
+  "peak_lr": 0.0001,
+  "warmup_steps": 8000,
+  "schedule_horizon": 50000,
+  "budget_steps": 49999,
+  "evaluation_steps": [
+    0,
+    1,
+    100,
+    1000,
+    8000,
+    10000,
+    20000,
+    30000,
+    40000,
+    49999
+  ],
+  "retained_checkpoint_steps": [
+    0,
+    1,
+    8000,
+    49999
+  ],
+  "latest_checkpoint_every": 1000,
+  "online_loss_every": 100,
+  "train_monitor_size": 8192,
+  "preflight_timing_steps": 20,
+  "gradient_clip": 1.0,
+  "precision": "fp32",
+  "primary_endpoint": "validation_logit_ce_peak_first_minus_clean_at_fixed_final_step",
+  "test_policy": "evaluate_only_after_both_arms_reach_fixed_final_step"
+}

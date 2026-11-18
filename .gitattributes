@@ -1,0 +1,5 @@
+# Preserve exact bytes of the archived scientific package and source inputs.
+computing/** -text
+historical/** -text
+execution/** -text
+submission/** -text

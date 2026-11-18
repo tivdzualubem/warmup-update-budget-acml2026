@@ -19,3 +19,8 @@ artifacts/source_archives/
 *.pyc
 .ipynb_checkpoints/
 .venv-publication/
+
+# Deliberately published compact scientific archives
+!computing/**/*.zip
+!execution/**/*.zip
+!submission/*.zip

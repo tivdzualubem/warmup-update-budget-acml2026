@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "purpose": "local CPU development and data validation only",
+  "not_full_experiment_environment": true,
+  "python": "3.12.13",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.0.2",
+  "datasets": "5.0.0",
+  "huggingface_hub": "1.33.0",
+  "cuda_available": false,
+  "git": {
+    "branch": "publication-expansion",
+    "head_before_checkpoint": "669ac2c34bcded2ff231ff17db7fcd44518e57c8"
+  }
+}

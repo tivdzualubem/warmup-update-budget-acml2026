@@ -1,0 +1,10 @@
+# Tested CPU analysis environment, Python 3.12.14
+torch==2.8.0
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.0.1
+matplotlib==3.11.2
+pypdf==6.21.4
+reportlab==4.4.9
+# Install the CPU Torch build appropriate to the platform.
+# Source regeneration: Pandoc 3.6.1; PDF compiler: Tectonic 0.17.0.

@@ -1,0 +1,25 @@
+test_displayed_numbers_match_the_source_records (test_final_editorial_audit.FinalEditorialAudit.test_displayed_numbers_match_the_source_records) ... ok
+test_requested_scientific_content_and_removed_administrative_prose (test_final_editorial_audit.FinalEditorialAudit.test_requested_scientific_content_and_removed_administrative_prose) ... ok
+test_all_display_table_sources_exist_and_prior_pairs_are_preserved (test_oct19_reproducibility.TestOctober19.test_all_display_table_sources_exist_and_prior_pairs_are_preserved) ... ok
+test_explicit_random_state_restore_for_python_numpy_and_torch (test_oct19_reproducibility.TestOctober19.test_explicit_random_state_restore_for_python_numpy_and_torch) ... ok
+test_exploratory_contrasts_have_all_five_pairs_and_no_equivalence_claim (test_oct19_reproducibility.TestOctober19.test_exploratory_contrasts_have_all_five_pairs_and_no_equivalence_claim) ... ok
+test_fixed_gradient_adam_rescue_preserves_rng_and_matches_clean_step (test_oct19_reproducibility.TestOctober19.test_fixed_gradient_adam_rescue_preserves_rng_and_matches_clean_step) ... ok
+test_reference_matches_actual_runner_specifications_and_guard_boundary (test_oct19_reproducibility.TestOctober19.test_reference_matches_actual_runner_specifications_and_guard_boundary) ... ok
+test_reference_matches_all_saved_transition_records (test_oct19_reproducibility.TestOctober19.test_reference_matches_all_saved_transition_records) ... ok
+test_sensitivity_rebuild_is_deterministic_and_source_calibrated (test_oct19_reproducibility.TestOctober19.test_sensitivity_rebuild_is_deterministic_and_source_calibrated) ... ok
+test_threshold_exports_match_original_results (test_oct19_reproducibility.TestOctober19.test_threshold_exports_match_original_results) ... ok
+test_01_saved_primary_metrics_and_validation_selection (test_revision_evidence.RevisionEvidence.test_01_saved_primary_metrics_and_validation_selection) ... ok
+test_02_condition_specific_positive_and_zero_budgets (test_revision_evidence.RevisionEvidence.test_02_condition_specific_positive_and_zero_budgets) ... ok
+test_03_original_warmup_evidence (test_revision_evidence.RevisionEvidence.test_03_original_warmup_evidence) ... ok
+test_04_configuration_derived_schedule_plot (test_revision_evidence.RevisionEvidence.test_04_configuration_derived_schedule_plot) ... ok
+test_05_guard_misses_retained (test_revision_evidence.RevisionEvidence.test_05_guard_misses_retained) ... ok
+test_06_original_data_training_code_and_contrasts_preserved (test_revision_evidence.RevisionEvidence.test_06_original_data_training_code_and_contrasts_preserved) ... ok
+test_07_documents_consistent (test_revision_evidence.RevisionEvidence.test_07_documents_consistent) ... ok
+test_known_scheduler_zero_at_50000 (test_rollback_adam_state.TestAdamRollback.test_known_scheduler_zero_at_50000) ... ok
+test_replay_matches_clean_safe_step_including_moments_and_counters (test_rollback_adam_state.TestAdamRollback.test_replay_matches_clean_safe_step_including_moments_and_counters) ... ok
+test_state_restore_after_unsafe_candidate (test_rollback_adam_state.TestAdamRollback.test_state_restore_after_unsafe_candidate) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 8.964s
+
+OK

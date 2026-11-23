@@ -1,0 +1,236 @@
+{
+  "original_sha256": "776221d99282734a3f3841821cb2f88340b568c2ffe9f45219ffe7bf4d2d2691",
+  "lines_read": 1499,
+  "completed_jobs": [
+    {
+      "line": 87,
+      "job_id": "ag_news__medium-4__seed42__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 107,
+      "job_id": "ag_news__medium-4__seed42__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 130,
+      "job_id": "ag_news__medium-4__seed123__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 148,
+      "job_id": "ag_news__medium-4__seed123__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 171,
+      "job_id": "ag_news__medium-4__seed456__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 189,
+      "job_id": "ag_news__medium-4__seed456__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 210,
+      "job_id": "ag_news__medium-4__seed789__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 229,
+      "job_id": "ag_news__medium-4__seed789__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 250,
+      "job_id": "ag_news__medium-4__seed2026__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 268,
+      "job_id": "ag_news__medium-4__seed2026__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 290,
+      "job_id": "ag_news__large-6__seed42__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 312,
+      "job_id": "ag_news__large-6__seed42__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 334,
+      "job_id": "ag_news__large-6__seed123__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 354,
+      "job_id": "ag_news__large-6__seed123__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 376,
+      "job_id": "ag_news__large-6__seed456__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 396,
+      "job_id": "ag_news__large-6__seed456__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 418,
+      "job_id": "ag_news__large-6__seed789__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 440,
+      "job_id": "ag_news__large-6__seed789__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 464,
+      "job_id": "ag_news__large-6__seed2026__stable_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 484,
+      "job_id": "ag_news__large-6__seed2026__fixed_order_with_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 556,
+      "job_id": "ag_news__medium-4__seed42__buggy_no_guard",
+      "terminal_reason": "max_epochs"
+    },
+    {
+      "line": 590,
+      "job_id": "ag_news__medium-4__seed42__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 651,
+      "job_id": "ag_news__medium-4__seed123__buggy_no_guard",
+      "terminal_reason": "max_epochs"
+    },
+    {
+      "line": 684,
+      "job_id": "ag_news__medium-4__seed123__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 730,
+      "job_id": "ag_news__medium-4__seed456__buggy_no_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 766,
+      "job_id": "ag_news__medium-4__seed456__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 818,
+      "job_id": "ag_news__medium-4__seed789__buggy_no_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 854,
+      "job_id": "ag_news__medium-4__seed789__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 915,
+      "job_id": "ag_news__medium-4__seed2026__buggy_no_guard",
+      "terminal_reason": "max_epochs"
+    },
+    {
+      "line": 949,
+      "job_id": "ag_news__medium-4__seed2026__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1004,
+      "job_id": "ag_news__large-6__seed42__buggy_no_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1041,
+      "job_id": "ag_news__large-6__seed42__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1114,
+      "job_id": "ag_news__large-6__seed123__buggy_no_guard",
+      "terminal_reason": "max_epochs"
+    },
+    {
+      "line": 1140,
+      "job_id": "ag_news__large-6__seed123__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1206,
+      "job_id": "ag_news__large-6__seed456__buggy_no_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1251,
+      "job_id": "ag_news__large-6__seed456__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1324,
+      "job_id": "ag_news__large-6__seed789__buggy_no_guard",
+      "terminal_reason": "max_epochs"
+    },
+    {
+      "line": 1361,
+      "job_id": "ag_news__large-6__seed789__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1432,
+      "job_id": "ag_news__large-6__seed2026__buggy_no_guard",
+      "terminal_reason": "early_stopping"
+    },
+    {
+      "line": 1475,
+      "job_id": "ag_news__large-6__seed2026__single_bad_first_step_then_stable",
+      "terminal_reason": "early_stopping"
+    }
+  ],
+  "epoch_rows": 635,
+  "all_rounded_epoch_matches": true,
+  "errors": [
+    {
+      "line": 7,
+      "text": "[AG_News] Traceback (most recent call last):"
+    },
+    {
+      "line": 26,
+      "text": "[AG_News] TypeError: tuple indices must be integers or slices, not str"
+    },
+    {
+      "line": 33,
+      "text": "[AG_News] Traceback (most recent call last):"
+    },
+    {
+      "line": 52,
+      "text": "[AG_News] TypeError: tuple indices must be integers or slices, not str"
+    },
+    {
+      "line": 1482,
+      "text": "[AG_News] Traceback (most recent call last):"
+    },
+    {
+      "line": 1499,
+      "text": "[AG_News] RuntimeError: expected exactly one LOSO threshold for dbpedia_14/medium-4/seed42"
+    }
+  ],
+  "log_is_complete_study_record": false,
+  "other_logs_in_returned_results_zip": []
+}

@@ -1,0 +1,179 @@
+{
+  "status": "completed",
+  "identity": {
+    "protocol": "ea6bfb615e48e63055f85577ee570f82b0517b99e00e7a762e54de07fd962be6",
+    "code": "2f6991b0811855a82b51db14515b9a38353cdb304b79890e2184a65f6c18a474",
+    "data": "ff41c9d40d42ee5992f4faa6e101200fde6a32ac99da4e6853bdb344713dfbf0",
+    "environment": "fa6fe07d5dfa3d4deef98c30659ecd1c30daea4254cf8cbc5b1b181723f1734f"
+  },
+  "protocol": {
+    "protocol_version": "configured_peak_pair_v1_proposed",
+    "dataset": "dbpedia_14",
+    "dataset_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+    "model": "medium-4",
+    "seed": 42,
+    "split_seed": 42,
+    "validation_ratio": 0.15,
+    "expected_validation_indices_sha256": "75cc3a5c716ae024bd95de7e7d579546bef5a63038d940c7ff5d5a66aa08f3fa",
+    "batch_size": 32,
+    "max_length": 128,
+    "peak_lr": 0.0001,
+    "warmup_steps": 8000,
+    "schedule_horizon": 50000,
+    "budget_steps": 49999,
+    "evaluation_steps": [
+      0,
+      1,
+      100,
+      1000,
+      8000,
+      10000,
+      20000,
+      30000,
+      40000,
+      49999
+    ],
+    "retained_checkpoint_steps": [
+      0,
+      1,
+      8000,
+      49999
+    ],
+    "latest_checkpoint_every": 1000,
+    "online_loss_every": 100,
+    "train_monitor_size": 8192,
+    "preflight_timing_steps": 20,
+    "gradient_clip": 1.0,
+    "precision": "fp32",
+    "primary_endpoint": "validation_logit_ce_peak_first_minus_clean_at_fixed_final_step",
+    "test_policy": "evaluate_only_after_both_arms_reach_fixed_final_step"
+  },
+  "fixed_positive_lr_steps_per_arm": 49999,
+  "zero_lr_steps_per_arm": 0,
+  "validation_ce_peak_first_minus_clean": 4.695263706736008e-06,
+  "validation_accuracy_clean_minus_peak_first": -8.333333333332416e-05,
+  "final_metrics": {
+    "clean": {
+      "validation": {
+        "arm": "clean",
+        "population": "validation",
+        "step": 49999,
+        "logit_ce": 0.061363440708874895,
+        "accuracy": 0.9850238095238095,
+        "num_examples": 84000,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "validation_clean_step49999.npz",
+        "prediction_sha256": "1b6d7466ff71df1ee90427ec984150ca5610c843a4d564b732dec5b6d75700da"
+      },
+      "test": {
+        "arm": "clean",
+        "population": "test",
+        "step": 49999,
+        "logit_ce": 0.05749037999206938,
+        "accuracy": 0.9859857142857142,
+        "num_examples": 70000,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "test_clean_step49999.npz",
+        "prediction_sha256": "d0dc6688323772aa0269019a4715a5198cac5bc18003c6c1ea24f8cffa6126ec"
+      },
+      "train_monitor_subset": {
+        "arm": "clean",
+        "population": "train_monitor_subset",
+        "step": 49999,
+        "logit_ce": 0.04368949340067946,
+        "accuracy": 0.9901123046875,
+        "num_examples": 8192,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "train_monitor_subset_clean_step49999.npz",
+        "prediction_sha256": "aa75c20d0c77ddd75347489047043158b2de5eaec078f3fb749b33f22b8f50d6"
+      }
+    },
+    "peak_first": {
+      "validation": {
+        "arm": "peak_first",
+        "population": "validation",
+        "step": 49999,
+        "logit_ce": 0.06136813597258163,
+        "accuracy": 0.9851071428571428,
+        "num_examples": 84000,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "validation_peak_first_step49999.npz",
+        "prediction_sha256": "7fc9897fc07b19b8be0f33d5b93d4f16512aa3c387fdae247786942f0692da78"
+      },
+      "test": {
+        "arm": "peak_first",
+        "population": "test",
+        "step": 49999,
+        "logit_ce": 0.057494740633158896,
+        "accuracy": 0.9860285714285715,
+        "num_examples": 70000,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "test_peak_first_step49999.npz",
+        "prediction_sha256": "ae767c62f0298135d907280d58272f12e7f7ec3e89c34507f51c81ae4154ae68"
+      },
+      "train_monitor_subset": {
+        "arm": "peak_first",
+        "population": "train_monitor_subset",
+        "step": 49999,
+        "logit_ce": 0.0437225712456606,
+        "accuracy": 0.9898681640625,
+        "num_examples": 8192,
+        "evaluator_version": "logit_ce_sample_weighted_v2",
+        "prediction_file": "train_monitor_subset_peak_first_step49999.npz",
+        "prediction_sha256": "73128d83f897a18b2de17b07202c7263e4088bab644c65416f901bfa080e1c87"
+      }
+    }
+  },
+  "committed_trajectory_cost": {
+    "clean": {
+      "instrumented_training_seconds": 2087.7181075999983,
+      "evaluation_seconds": 297.9887775450014,
+      "examples": 1599968,
+      "positive_lr_steps": 49999,
+      "zero_lr_steps": 0,
+      "peak_process_cuda_allocated_bytes": 513183744,
+      "peak_process_cuda_reserved_bytes": 601882624,
+      "memory_scope": "Process CUDA peak during this arm; BOTH arms remain resident. CPU peak RAM not measured."
+    },
+    "peak_first": {
+      "instrumented_training_seconds": 2097.296857712011,
+      "evaluation_seconds": 295.63492075199997,
+      "examples": 1599968,
+      "positive_lr_steps": 49999,
+      "zero_lr_steps": 0,
+      "peak_process_cuda_allocated_bytes": 531718656,
+      "peak_process_cuda_reserved_bytes": 601882624,
+      "memory_scope": "Process CUDA peak during this arm; BOTH arms remain resident. CPU peak RAM not measured."
+    }
+  },
+  "shared_cost": {
+    "data_loading_seconds": 83.6850208329164,
+    "checkpoint_seconds": 31.105864145000282
+  },
+  "recorded_attempt_cost": {
+    "completed_pair_step_events": 49999,
+    "training_seconds": {
+      "clean": 2087.7181075999983,
+      "peak_first": 2097.296857712011
+    },
+    "evaluation_seconds": {
+      "clean": 297.9887775450014,
+      "peak_first": 295.63492075199997
+    },
+    "checkpoint_seconds": 31.105864145000282,
+    "closed_session_active_seconds": 4969.857002546,
+    "failure_events": 0,
+    "segments_without_end": 0,
+    "truncated_final_log_lines": 0,
+    "scope": "Recorded attempts include repeated work after resume. Open/killed segments or failed partial steps can leave unmeasured cost; do not call these totals complete when such gaps exist."
+  },
+  "retained_file_bytes": {
+    "predictions_per_arm": {
+      "clean": 54846582,
+      "peak_first": 54812842
+    },
+    "paired_checkpoints_shared": 502485927,
+    "note": "Full checkpoints contain both arms and shared sampler/metadata; archive bytes are shared, not charged twice."
+  },
+  "interpretation": "One prespecified seed/configuration. No equivalence, population-confidence or permanent-damage claim. Final-state evaluation only; no checkpoint selection."
+}

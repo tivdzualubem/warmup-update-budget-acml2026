@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-23",
+  "change": "Journal-approved supplementary hyperlinks and version metadata only",
+  "scientific_text_title_results_and_references_unchanged": true,
+  "scientific_files_byte_identical": 217,
+  "tests_passed": 51,
+  "pdfs": {
+    "SNCS_Manuscript.pdf": {
+      "pages": 22,
+      "sha256": "0194d5fce64940e5a5e7905f87543eb03d755828b01051431bef09b600ac9ecd",
+      "hyperlinks": [
+        "https://orcid.org/0009-0009-2511-1800",
+        "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23",
+        "https://github.com/tivdzualubem/warmup-update-budget-acml2026/raw/refs/tags/sncs-submission-2026-11-23/submission/sncs-2026-11-23/ESM_1.pdf",
+        "https://github.com/tivdzualubem/warmup-update-budget-acml2026/raw/refs/tags/sncs-submission-2026-11-23/submission/sncs-2026-11-23/ESM_2.zip",
+        "https://huggingface.co/datasets/fancyzhx/ag_news",
+        "https://huggingface.co/datasets/fancyzhx/dbpedia_14",
+        "https://huggingface.co/datasets/flaitenberger/wnut_17",
+        "https://huggingface.co/datasets/uoft-cs/cifar10",
+        "https://proceedings.mlr.press/v280/abuduweili25a.html",
+        "https://proceedings.mlr.press/v306/alimisis26a.html",
+        "https://proceedings.mlr.press/v306/alimisis26a.html",
+        "https://proceedings.mlr.press/v306/bai26o.html",
+        "https://doi.org/10.1145/3529318",
+        "https://doi.org/10.1145/3529318",
+        "https://arxiv.org/abs/1810.13243",
+        "https://arxiv.org/abs/1810.13243",
+        "https://proceedings.mlr.press/v70/guo17a.html",
+        "https://proceedings.mlr.press/v70/guo17a.html",
+        "https://proceedings.mlr.press/v119/huang20f.html",
+        "https://proceedings.mlr.press/v119/huang20f.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ca98452d4e9ecbc18c40da2aa0da8b98-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ca98452d4e9ecbc18c40da2aa0da8b98-Abstract-Conference.html",
+        "https://arxiv.org/abs/1412.6980",
+        "https://arxiv.org/abs/1412.6980",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/059445c2d5b3ef918079851628fef1d6-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/059445c2d5b3ef918079851628fef1d6-Abstract-Conference.html",
+        "https://arxiv.org/abs/1908.03265",
+        "https://arxiv.org/abs/1908.03265",
+        "https://arxiv.org/abs/1908.03265",
+        "https://arxiv.org/abs/1711.05101",
+        "https://arxiv.org/abs/1711.05101",
+        "https://arxiv.org/abs/1910.04209",
+        "https://proceedings.mlr.press/v80/shazeer18a.html",
+        "https://proceedings.mlr.press/v80/shazeer18a.html",
+        "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+        "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+        "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+        "https://doi.org/10.1145/3510003.3510071",
+        "https://proceedings.mlr.press/v119/xiong20b.html",
+        "https://proceedings.mlr.press/v119/xiong20b.html"
+      ]
+    },
+    "ESM_1.pdf": {
+      "pages": 20,
+      "sha256": "cfc799febe81b5c5920b93a7878420283a9ae851539842cd2972bc9cc326c06d",
+      "hyperlinks": [
+        "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23",
+        "https://github.com/tivdzualubem/warmup-update-budget-acml2026/raw/refs/tags/sncs-submission-2026-11-23/submission/sncs-2026-11-23/ESM_2.zip"
+      ]
+    }
+  },
+  "changed_pdf_pages": {
+    "Research_Manuscript": [
+      20
+    ],
+    "All_Seed_Results_and_Provenance": [
+      1
+    ]
+  },
+  "flat_source_rebuilds": [
+    {
+      "file": "SNCS_Main_Source.zip",
+      "sha256": "a0a35a61ddf2c7b3916d233496f3d03788accef105dee767a22170bcae1bf586",
+      "text_and_pages_match": true
+    },
+    {
+      "file": "SNCS_Supplement_Source.zip",
+      "sha256": "1dba185d644f94419c69df7ae59e096fb133e804a4af78f8bfb63dde5a4e74b1",
+      "text_and_pages_match": true
+    }
+  ],
+  "visual_review": {
+    "main_changed_page_20": "passed",
+    "supplement_changed_page_1": "passed",
+    "other_40_pages": "text and page positions unchanged from visually reviewed prior edition"
+  },
+  "public_links_verified": false,
+  "new_training": false,
+  "displayed_numeric_cells_checked": 560,
+  "discrepancies": 0,
+  "reproducibility_zip_members": 430,
+  "archive_sha256": "219d012f11321aa41c3e380e233c49330e72c2074822c82ec918d194f607d363",
+  "internal_manifest_verified": true
+}

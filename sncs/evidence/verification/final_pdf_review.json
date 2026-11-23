@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-13",
+  "review": "All 32 final pages rendered and visually inspected, including new result/cost tables and both new figures. The long-filename overflow in the supplement was corrected. No overlap, clipping or unresolved citations observed.",
+  "documents": {
+    "Research_Manuscript": {
+      "pages": 16,
+      "sha256": "0984a786e89e8176fc5c65dfbcb1cd43e6c4376f64dd6c8452fd29c2ad0d1225",
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    "All_Seed_Results_and_Provenance": {
+      "pages": 16,
+      "sha256": "8a27a0656c23b04b95cf0e55f8e0fcac5b4fab2bfe3d3479b5ac6ac9e67dffd7",
+      "all_pages_rendered_and_visually_reviewed": true
+    }
+  },
+  "source_format": "Compiled LaTeX/BibTeX",
+  "research_training": false
+}

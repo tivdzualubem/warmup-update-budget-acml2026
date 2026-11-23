@@ -1,0 +1,3 @@
+dataset,estimated_min_crossing_initial_lr,estimated_max_crossing_initial_lr,source,scope
+ag_news,2.75e-05,5.97e-05,REBUTTAL_2026.md,first-transition fixed clipped gradient counterfactual
+dbpedia_14,3.16e-05,6.84e-05,REBUTTAL_2026.md,first-transition fixed clipped gradient counterfactual

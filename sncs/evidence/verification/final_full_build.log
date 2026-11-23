@@ -1,0 +1,21 @@
+Built revised manuscript and expanded scientific supplement; title unchanged.
+Applied focused 29 October revisions; title, source data and selections unchanged.
+Computing editorial revision applied; historical tables and title preserved.
+{
+  "format": "svjour3 smallextended",
+  "page_limit": 25,
+  "author_contacts_complete": true,
+  "competing_interests_confirmed": true,
+  "documents": [
+    {
+      "stem": "Research_Manuscript",
+      "tex_sha256": "dfbdffe6a98c0e658570d90d947269550819a1207a6d113a13e3b43e864bb923",
+      "pdf_sha256": "c6cce8187f9c895adb4a313b0aea05a1a4ddad11614d8b3d2fed63062bda5374"
+    },
+    {
+      "stem": "All_Seed_Results_and_Provenance",
+      "tex_sha256": "88ff734964d0965877e8873cc31275eb0a05ed678d77bf8148e671f0ad97a9e0",
+      "pdf_sha256": "6f2e96830d75c151fe7e78b7b85cc07afe8a1b768b511fb960f0bde1de173eea"
+    }
+  ]
+}

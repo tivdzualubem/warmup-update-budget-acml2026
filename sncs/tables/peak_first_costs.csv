@@ -1,0 +1,3 @@
+arm,positive_lr_steps,zero_lr_steps,examples,instrumented_training_seconds,evaluation_seconds,peak_process_cuda_allocated_bytes,peak_process_cuda_reserved_bytes
+clean,49999,0,1599968,2087.7181075999983,297.9887775450014,513183744,601882624
+peak_first,49999,0,1599968,2097.296857712011,295.63492075199997,531718656,601882624

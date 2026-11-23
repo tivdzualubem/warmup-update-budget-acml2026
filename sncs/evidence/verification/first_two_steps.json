@@ -1,0 +1,2106 @@
+{
+  "scope": "Fixed-gradient CPU float64 example; not research training or original-device reproduction",
+  "python": "3.12.14",
+  "torch": "2.8.0+cpu",
+  "frozen_scratch_configuration": {
+    "datasets": [
+      "ag_news",
+      "dbpedia_14"
+    ],
+    "models": [
+      "medium-4",
+      "large-6"
+    ],
+    "max_length": 128,
+    "batch_size": 32,
+    "epochs": 30,
+    "early_stopping_patience": 5,
+    "train_fraction": 1.0,
+    "validation_ratio": 0.15,
+    "optimizer": {
+      "name": "Adam",
+      "beta1": 0.9,
+      "beta2": 0.98,
+      "epsilon": 1e-09,
+      "gradient_clip_norm": 1.0
+    },
+    "stable_schedule": {
+      "base_lr": 0.0001,
+      "warmup_steps": 8000,
+      "total_steps": 50000,
+      "post_warmup": "cosine"
+    },
+    "legacy_schedule": {
+      "initial_optimizer_lr": 1.0,
+      "warmup_steps": 8000,
+      "formula": "d_model^(-1/2) * min(t^(-1/2), t * warmup_steps^(-3/2))",
+      "indexing": "one_based"
+    }
+  },
+  "model_widths": {
+    "medium-4": 128,
+    "large-6": 256
+  },
+  "fixture_threshold": 0.01,
+  "source_sha256": {
+    "publication_expansion/src/scratch_job_runner.py": "6621c26e5434c9c03cce7d78f9f01f6df3cab625700fc8bdd7d0c46c4cea358f",
+    "publication_expansion/src/scratch_model_adapter.py": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+    "publication_expansion/src/scheduler_semantics.py": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+    "publication_expansion/src/transition_executor.py": "31112f27b89a557f56d7045eee22045f7b8698cd5f421d8c1d36595f5eef1475",
+    "publication_expansion/configs/hyperparameters_v1.json": "f357b63ec96888892bcbee70c79a95b5eca356c2a6677f0204f1a96b62df32f9",
+    "src/transformer_project/models/transformer.py": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5"
+  },
+  "traces": [
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "stable_with_guard",
+      "transition": 1,
+      "entry_lr": [
+        0.0001
+      ],
+      "prescribed_lr": 1.2500000000000001e-08,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.9999999875000001,
+              -1.9999999875,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "committed_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "actual_exit_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "candidate_update_ratio": 4.724555883900726e-09,
+        "committed_update_ratio": 4.724555883900726e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999875000001,
+          -1.9999999875,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "stable_with_guard",
+      "transition": 2,
+      "entry_lr": [
+        1.2500000000000001e-08
+      ],
+      "prescribed_lr": 2.5000000000000002e-08,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            2.5000000000000002e-08
+          ],
+          "before": {
+            "weights": [
+              0.9999999875000001,
+              -1.9999999875,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999943883533,
+              -1.9999999746673323,
+              2.999999981485201
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "committed_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "actual_exit_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "candidate_update_ratio": 6.295829455168547e-09,
+        "committed_update_ratio": 6.295829455168547e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999943883533,
+          -1.9999999746673323,
+          2.999999981485201
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "single_bad_first_step_then_stable",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2500000000000001e-08,
+      "action": "single_bad_first_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          1.0
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "single_bad_first_step_then_stable",
+      "transition": 2,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 2.5000000000000002e-08,
+      "action": "stable_schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            2.5000000000000002e-08
+          ],
+          "before": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              1.0888353358175202e-08,
+              -0.999999989167332,
+              2.999999981485201
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "committed_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "actual_exit_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "candidate_update_ratio": 7.449325871793243e-09,
+        "committed_update_ratio": 7.449325871793243e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          1.0888353358175202e-08,
+          -0.999999989167332,
+          2.999999981485201
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "fixed_order_with_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2352647110032733e-07,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.2352647110032733e-07
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.9999998764735294,
+              -1.9999998764735292,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "committed_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "actual_exit_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "candidate_update_ratio": 4.6688617407943736e-08,
+        "committed_update_ratio": 4.6688617407943736e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999998764735294,
+          -1.9999998764735292,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "fixed_order_with_guard",
+      "transition": 2,
+      "entry_lr": [
+        1.2352647110032733e-07
+      ],
+      "prescribed_lr": 2.4705294220065465e-07,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            2.4705294220065465e-07
+          ],
+          "before": {
+            "weights": [
+              0.9999998764735294,
+              -1.9999998764735292,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999445450469,
+              -1.9999997496595945,
+              2.999999817034578
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          2.4705294220065465e-07
+        ],
+        "committed_lr_by_group": [
+          2.4705294220065465e-07
+        ],
+        "actual_exit_lr_by_group": [
+          2.4705294220065465e-07
+        ],
+        "candidate_update_ratio": 6.221612906340764e-08,
+        "committed_update_ratio": 6.221612906340764e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999445450469,
+          -1.9999997496595945,
+          2.999999817034578
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "buggy_no_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2352647110032733e-07,
+      "action": "schedule_after_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "buggy_no_guard",
+      "transition": 2,
+      "entry_lr": [
+        1.2352647110032733e-07
+      ],
+      "prescribed_lr": 2.4705294220065465e-07,
+      "action": "schedule_after_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.2352647110032733e-07
+          ],
+          "before": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              3.803575885185104e-08,
+              -0.9999999385930326,
+              2.9999999085172893
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "committed_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "actual_exit_lr_by_group": [
+          2.4705294220065465e-07
+        ],
+        "candidate_update_ratio": 3.680755729441022e-08,
+        "committed_update_ratio": 3.680755729441022e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          3.803575885185104e-08,
+          -0.9999999385930326,
+          2.9999999085172893
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "buggy_rescue_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2352647110032733e-07,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        },
+        {
+          "lr_consumed": [
+            1.2352647110032733e-07
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.9999998764735294,
+              -1.9999998764735292,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "actual_exit_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 4.6688617407943736e-08,
+        "guard_triggered": true,
+        "stopped": false,
+        "rolled_back": true,
+        "replayed": true
+      },
+      "retained_state": {
+        "weights": [
+          0.9999998764735294,
+          -1.9999998764735292,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "buggy_rescue_guard",
+      "transition": 2,
+      "entry_lr": [
+        1.2352647110032733e-07
+      ],
+      "prescribed_lr": 2.4705294220065465e-07,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.2352647110032733e-07
+          ],
+          "before": {
+            "weights": [
+              0.9999998764735294,
+              -1.9999998764735292,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999105092882,
+              -1.999999813066562,
+              2.9999999085172893
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "committed_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "actual_exit_lr_by_group": [
+          2.4705294220065465e-07
+        ],
+        "candidate_update_ratio": 3.11080644688978e-08,
+        "committed_update_ratio": 3.11080644688978e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999105092882,
+          -1.999999813066562,
+          2.9999999085172893
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "medium-4",
+      "d_model": 128,
+      "condition": "buggy_failfast_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2352647110032733e-07,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          1.2352647110032733e-07
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": true,
+        "stopped": true,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "stable_with_guard",
+      "transition": 1,
+      "entry_lr": [
+        0.0001
+      ],
+      "prescribed_lr": 1.2500000000000001e-08,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.9999999875000001,
+              -1.9999999875,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "committed_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "actual_exit_lr_by_group": [
+          1.2500000000000001e-08
+        ],
+        "candidate_update_ratio": 4.724555883900726e-09,
+        "committed_update_ratio": 4.724555883900726e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999875000001,
+          -1.9999999875,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "stable_with_guard",
+      "transition": 2,
+      "entry_lr": [
+        1.2500000000000001e-08
+      ],
+      "prescribed_lr": 2.5000000000000002e-08,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            2.5000000000000002e-08
+          ],
+          "before": {
+            "weights": [
+              0.9999999875000001,
+              -1.9999999875,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999943883533,
+              -1.9999999746673323,
+              2.999999981485201
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "committed_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "actual_exit_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "candidate_update_ratio": 6.295829455168547e-09,
+        "committed_update_ratio": 6.295829455168547e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999943883533,
+          -1.9999999746673323,
+          2.999999981485201
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "single_bad_first_step_then_stable",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 1.2500000000000001e-08,
+      "action": "single_bad_first_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          1.0
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "single_bad_first_step_then_stable",
+      "transition": 2,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 2.5000000000000002e-08,
+      "action": "stable_schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            2.5000000000000002e-08
+          ],
+          "before": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              1.0888353358175202e-08,
+              -0.999999989167332,
+              2.999999981485201
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "committed_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "actual_exit_lr_by_group": [
+          2.5000000000000002e-08
+        ],
+        "candidate_update_ratio": 7.449325871793243e-09,
+        "committed_update_ratio": 7.449325871793243e-09,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          1.0888353358175202e-08,
+          -0.999999989167332,
+          2.999999981485201
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "fixed_order_with_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 8.734640537108554e-08,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            8.734640537108554e-08
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.999999912653595,
+              -1.9999999126535948,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "committed_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "actual_exit_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "candidate_update_ratio": 3.301383797617715e-08,
+        "committed_update_ratio": 3.301383797617715e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.999999912653595,
+          -1.9999999126535948,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "fixed_order_with_guard",
+      "transition": 2,
+      "entry_lr": [
+        8.734640537108554e-08
+      ],
+      "prescribed_lr": 1.7469281074217108e-07,
+      "action": "schedule_before_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.7469281074217108e-07
+          ],
+          "before": {
+            "weights": [
+              0.999999912653595,
+              -1.9999999126535948,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999607874266,
+              -1.9999998229826017,
+              2.9999998706239093
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.7469281074217108e-07
+        ],
+        "committed_lr_by_group": [
+          1.7469281074217108e-07
+        ],
+        "actual_exit_lr_by_group": [
+          1.7469281074217108e-07
+        ],
+        "candidate_update_ratio": 4.39934464349323e-08,
+        "committed_update_ratio": 4.39934464349323e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999607874266,
+          -1.9999998229826017,
+          2.9999998706239093
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "buggy_no_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 8.734640537108554e-08,
+      "action": "schedule_after_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "buggy_no_guard",
+      "transition": 2,
+      "entry_lr": [
+        8.734640537108554e-08
+      ],
+      "prescribed_lr": 1.7469281074217108e-07,
+      "action": "schedule_after_step",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            8.734640537108554e-08
+          ],
+          "before": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              2.806691591887495e-08,
+              -0.9999999571645034,
+              2.999999935311955
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "committed_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "actual_exit_lr_by_group": [
+          1.7469281074217108e-07
+        ],
+        "candidate_update_ratio": 2.6026873358229204e-08,
+        "committed_update_ratio": 2.6026873358229204e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          2.806691591887495e-08,
+          -0.9999999571645034,
+          2.999999935311955
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "buggy_rescue_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 8.734640537108554e-08,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        },
+        {
+          "lr_consumed": [
+            8.734640537108554e-08
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              0.999999912653595,
+              -1.9999999126535948,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "actual_exit_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 3.301383797617715e-08,
+        "guard_triggered": true,
+        "stopped": false,
+        "rolled_back": true,
+        "replayed": true
+      },
+      "retained_state": {
+        "weights": [
+          0.999999912653595,
+          -1.9999999126535948,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "buggy_rescue_guard",
+      "transition": 2,
+      "entry_lr": [
+        8.734640537108554e-08
+      ],
+      "prescribed_lr": 1.7469281074217108e-07,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            8.734640537108554e-08
+          ],
+          "before": {
+            "weights": [
+              0.999999912653595,
+              -1.9999999126535948,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          },
+          "after": {
+            "weights": [
+              0.9999999367205108,
+              -1.9999998678180981,
+              2.999999935311955
+            ],
+            "step": 2.0,
+            "exp_avg": [
+              -0.0175,
+              -0.03499999999999999,
+              0.019999999999999997
+            ],
+            "exp_avg_sq": [
+              0.0044250000000000045,
+              0.005100000000000005,
+              0.0008000000000000008
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "committed_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "actual_exit_lr_by_group": [
+          1.7469281074217108e-07
+        ],
+        "candidate_update_ratio": 2.1996723186987936e-08,
+        "committed_update_ratio": 2.1996723186987936e-08,
+        "guard_triggered": false,
+        "stopped": false,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          0.9999999367205108,
+          -1.9999998678180981,
+          2.999999935311955
+        ],
+        "step": 2.0,
+        "exp_avg": [
+          -0.0175,
+          -0.03499999999999999,
+          0.019999999999999997
+        ],
+        "exp_avg_sq": [
+          0.0044250000000000045,
+          0.005100000000000005,
+          0.0008000000000000008
+        ]
+      }
+    },
+    {
+      "model_configuration": "large-6",
+      "d_model": 256,
+      "condition": "buggy_failfast_guard",
+      "transition": 1,
+      "entry_lr": [
+        1.0
+      ],
+      "prescribed_lr": 8.734640537108554e-08,
+      "action": "schedule_after_step_guard_monitor",
+      "optimizer_calls": [
+        {
+          "lr_consumed": [
+            1.0
+          ],
+          "before": {
+            "weights": [
+              1.0,
+              -2.0,
+              3.0
+            ],
+            "step": 0.0,
+            "exp_avg": null,
+            "exp_avg_sq": null
+          },
+          "after": {
+            "weights": [
+              4.000000108916879e-09,
+              -1.000000002,
+              3.0
+            ],
+            "step": 1.0,
+            "exp_avg": [
+              0.024999999999999994,
+              -0.04999999999999999,
+              0.0
+            ],
+            "exp_avg_sq": [
+              0.0012500000000000011,
+              0.0050000000000000044,
+              0.0
+            ]
+          }
+        }
+      ],
+      "result": {
+        "candidate_lr_by_group": [
+          1.0
+        ],
+        "committed_lr_by_group": [
+          1.0
+        ],
+        "actual_exit_lr_by_group": [
+          8.734640537108554e-08
+        ],
+        "candidate_update_ratio": 0.37796447187523274,
+        "committed_update_ratio": 0.37796447187523274,
+        "guard_triggered": true,
+        "stopped": true,
+        "rolled_back": false,
+        "replayed": false
+      },
+      "retained_state": {
+        "weights": [
+          4.000000108916879e-09,
+          -1.000000002,
+          3.0
+        ],
+        "step": 1.0,
+        "exp_avg": [
+          0.024999999999999994,
+          -0.04999999999999999,
+          0.0
+        ],
+        "exp_avg_sq": [
+          0.0012500000000000011,
+          0.0050000000000000044,
+          0.0
+        ]
+      }
+    }
+  ],
+  "lr_assertion": {
+    "before": {
+      "weights": [
+        1.0,
+        -2.0,
+        3.0
+      ],
+      "step": 0.0,
+      "exp_avg": null,
+      "exp_avg_sq": null
+    },
+    "after": {
+      "weights": [
+        1.0,
+        -2.0,
+        3.0
+      ],
+      "step": 0.0,
+      "exp_avg": null,
+      "exp_avg_sq": null
+    },
+    "optimizer_calls": [],
+    "actual_consumed_lr": null,
+    "archived_result": {
+      "candidate_lr_by_group": [
+        1.0
+      ],
+      "committed_lr_by_group": null,
+      "actual_exit_lr_by_group": [
+        1.0
+      ],
+      "candidate_update_ratio": null,
+      "committed_update_ratio": null,
+      "guard_triggered": true,
+      "stopped": true,
+      "rolled_back": false,
+      "replayed": false
+    },
+    "note": "The archived candidate_lr field contains the rejected entry LR; no step consumed it."
+  },
+  "zero_lr": {
+    "schedule_index": 50000,
+    "before": {
+      "weights": [
+        0.999927553413397,
+        -1.9998486693285311,
+        2.9999259408043133
+      ],
+      "step": 2.0,
+      "exp_avg": [
+        -0.0175,
+        -0.03499999999999999,
+        0.019999999999999997
+      ],
+      "exp_avg_sq": [
+        0.0044250000000000045,
+        0.005100000000000005,
+        0.0008000000000000008
+      ]
+    },
+    "after": {
+      "weights": [
+        0.999927553413397,
+        -1.9998486693285311,
+        2.9999259408043133
+      ],
+      "step": 3.0,
+      "exp_avg": [
+        0.014249999999999992,
+        -0.05149999999999999,
+        0.027999999999999997
+      ],
+      "exp_avg_sq": [
+        0.006136500000000006,
+        0.0057980000000000045,
+        0.000984000000000001
+      ]
+    },
+    "optimizer_calls": [
+      {
+        "lr_consumed": [
+          0.0
+        ],
+        "before": {
+          "weights": [
+            0.999927553413397,
+            -1.9998486693285311,
+            2.9999259408043133
+          ],
+          "step": 2.0,
+          "exp_avg": [
+            -0.0175,
+            -0.03499999999999999,
+            0.019999999999999997
+          ],
+          "exp_avg_sq": [
+            0.0044250000000000045,
+            0.005100000000000005,
+            0.0008000000000000008
+          ]
+        },
+        "after": {
+          "weights": [
+            0.999927553413397,
+            -1.9998486693285311,
+            2.9999259408043133
+          ],
+          "step": 3.0,
+          "exp_avg": [
+            0.014249999999999992,
+            -0.05149999999999999,
+            0.027999999999999997
+          ],
+          "exp_avg_sq": [
+            0.006136500000000006,
+            0.0057980000000000045,
+            0.000984000000000001
+          ]
+        }
+      }
+    ],
+    "note": "Three toy updates total; no long prefix was run."
+  }
+}

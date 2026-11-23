@@ -1,0 +1,10 @@
+{
+  "selected_validation_gap_pp": 5.822619047619046,
+  "shared_validation_gap_pp": 44.292857142857144,
+  "paired_seeds": 5,
+  "pretrained_safe_fault_pairs_verified": 20,
+  "wnut_peak_within_window_seeds": 5,
+  "checkpoint_selection_unchanged": true,
+  "new_training": false,
+  "prediction_reevaluation": false
+}

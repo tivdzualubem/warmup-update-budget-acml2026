@@ -1,0 +1,18 @@
+{
+  "format": "svjour3 smallextended",
+  "page_limit": null,
+  "author_contacts_complete": true,
+  "competing_interests_confirmed": true,
+  "documents": [
+    {
+      "stem": "Research_Manuscript",
+      "tex_sha256": "a6be4236b057a2f27173f7fda1b87fc383d65f788b9b03db8b95e5db2e5e8554",
+      "pdf_sha256": "a630863e34ba4f3876fad299dad40264cce9539ea2aca43d9fbb344ba1ccd673"
+    },
+    {
+      "stem": "All_Seed_Results_and_Provenance",
+      "tex_sha256": "b4113ca937b6d5adf02cbef9b5826f9ed20ef4ef5284cbe887f7a0b8a6e5551c",
+      "pdf_sha256": "1ee5b664e87572e01b9581698e1676c6f5019f6968b22e226832643c83ccbbc2"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "ag_news",
+    "notebook": "Transformer_Artifacts(AGNEWS).ipynb",
+    "notebook_sha256": "a6dbe301c35f60e26fc0888db16be89975eddd2c86fa20f8cc7da1ff9032eeda",
+    "rows_summary": 10,
+    "rows_per_seed": 30,
+    "warmup_steps_verified": 4000,
+    "warmup_evidence": "evidence/historical_warmup/warmup_verification.json",
+    "note": "Outcomes remain extracted from saved notebook display output; original checkpoint tensors are absent."
+  },
+  {
+    "dataset": "dbpedia_14",
+    "notebook": "Transformer_Artifacts(DBPEDIA).ipynb",
+    "notebook_sha256": "e3352fee3bf21cf6f6106028bdc954dcb183be4d61486a945639ec590dd6fad3",
+    "rows_summary": 10,
+    "rows_per_seed": 30,
+    "warmup_steps_verified": 4000,
+    "warmup_evidence": "evidence/historical_warmup/warmup_verification.json",
+    "note": "Outcomes remain extracted from saved notebook display output; original checkpoint tensors are absent."
+  }
+]

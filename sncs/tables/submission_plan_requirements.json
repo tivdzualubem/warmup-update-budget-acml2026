@@ -1,0 +1,656 @@
+{
+  "source_pdf": "evidence/professor_feedback/Adam_Paper_Submission_Plan.pdf",
+  "source_sha256": "f08d6b7af8f5b5a5e67ea46c7e42e3fb67803d5dbc15035078da426ceea5803d",
+  "source_date": "2026-10-22",
+  "revision_date": "2026-10-27",
+  "requirements": [
+    {
+      "id": "P01",
+      "page": 1,
+      "section": "1.1",
+      "requirement": "Label archived NLL as clipped-probability NLL; compute future CE stably from logits.",
+      "action": "Separate metric labels, evaluator provenance export and uncapped v2 evaluator.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.5; future_runs/evaluation.py; tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P02",
+      "page": 1,
+      "section": "1.2",
+      "requirement": "Weight CE by examples, including the partial final batch.",
+      "action": "Accumulator uses summed per-example logit CE divided by sample count.",
+      "status": "implemented",
+      "evidence": "future_runs/scratch_evaluator.py; tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P03",
+      "page": 1,
+      "section": "1.1-1.2",
+      "requirement": "Test extreme logits and uneven batches.",
+      "action": "Original evaluator fixtures reproduce 2000 vs 27.631 and 5.347 vs 0.975; new evaluator is uncapped and partition-invariant.",
+      "status": "implemented",
+      "evidence": "tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P04",
+      "page": 1,
+      "section": "1.2",
+      "requirement": "Preserve archived selections/accuracy; disclose that ranking changes need weights.",
+      "action": "Historical CSVs and recorded selections retained; checkpoint-ranking caveat explicit.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.5; tables/archived_evaluator_provenance.csv"
+    },
+    {
+      "id": "P05",
+      "page": 1,
+      "section": "1.3",
+      "requirement": "Detect nonfinite gradients/state before and parameters/moments/ratios after update.",
+      "action": "Version 2 validates finite state before/after updating and never replays a nonfinite gradient.",
+      "status": "implemented",
+      "evidence": "future_runs/transition_executor.py; tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P06",
+      "page": 1,
+      "section": "1.3",
+      "requirement": "Restore a verified finite snapshot and stop on numerical failure.",
+      "action": "Candidate/replay failures restore finite state; invalid entry without a verified snapshot is explicitly rejected as unrepairable.",
+      "status": "implemented",
+      "evidence": "tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P07",
+      "page": 1,
+      "section": "1.3",
+      "requirement": "Do not claim the CPU counterexample occurred in saved traces.",
+      "action": "Scientific failure ledger records no archived numerical failure; counterexample scope is separate.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 7.3; tables/archived_failure_and_endpoint_ledger.csv"
+    },
+    {
+      "id": "P08",
+      "page": 1,
+      "section": "1.4",
+      "requirement": "Choose an explicit replay contract and avoid unlimited retries.",
+      "action": "One replay is revalidated against the active threshold; failure restores/stops.",
+      "status": "implemented",
+      "evidence": "future_runs/transition_executor.py"
+    },
+    {
+      "id": "P09",
+      "page": 1,
+      "section": "1.4",
+      "requirement": "Regress nonfinite/over-threshold replay at steps 1,100,101.",
+      "action": "Boundary tests retain guard window and finite checks after step 100.",
+      "status": "implemented",
+      "evidence": "tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P10",
+      "page": 1,
+      "section": "Preserve",
+      "requirement": "Keep original files frozen and future changes versioned separately.",
+      "action": "source/ and raw inputs unchanged; future_runs/ contains v2 utilities.",
+      "status": "implemented",
+      "evidence": "tests/expected_preserved_hashes.json; tables/revision_verification.json"
+    },
+    {
+      "id": "P11",
+      "page": 1,
+      "section": "Preserve",
+      "requirement": "Keep W4000 historical and W8000 current studies, metrics, seeds, exports and helper repairs.",
+      "action": "Existing scientific CSVs retained; source-derived warmup/configuration checks rerun.",
+      "status": "preserved",
+      "evidence": "tests/test_revision_evidence.py; tests/test_oct19_reproducibility.py"
+    },
+    {
+      "id": "P12",
+      "page": 1,
+      "section": "Preserve",
+      "requirement": "Distinguish 240 scientific records from 180 trained test endpoints.",
+      "action": "Machine-readable endpoint/diagnostic ledger and explicit manuscript count.",
+      "status": "implemented",
+      "evidence": "tables/archived_failure_and_endpoint_ledger.csv"
+    },
+    {
+      "id": "P13",
+      "page": 2,
+      "section": "First transition",
+      "requirement": "State zero moments, finite fixed clipped gradient, no decay, bias correction and positive epsilon.",
+      "action": "All first-step algebra assumptions and coordinate/norm bounds explicit.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.1"
+    },
+    {
+      "id": "P14",
+      "page": 2,
+      "section": "First transition",
+      "requirement": "D is optimized coordinates, not model width; motion is bounded.",
+      "action": "Coordinate and L2 bounds retained; no unbounded-motion claim.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.1"
+    },
+    {
+      "id": "P15",
+      "page": 2,
+      "section": "First transition",
+      "requirement": "LR does not change initial moments; subsequent moments may diverge.",
+      "action": "Initial m1/v1 equations and distinction from later trajectories.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.1; tests/test_submission_analysis.py"
+    },
+    {
+      "id": "P16",
+      "page": 2,
+      "section": "Schedules",
+      "requirement": "Use one-based actual S/L schedules with peak1e-4,W8000,T50000,width128/256 and S1=1.25e-8.",
+      "action": "Configuration-derived schedules/figure retained; explicit consumed-LR condition table.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md Table 1; tables/schedule_curves_from_configuration.csv"
+    },
+    {
+      "id": "P17",
+      "page": 2,
+      "section": "Schedules",
+      "requirement": "LR1.0 is extreme; historical warmup is4000.",
+      "action": "Preserved exact severity and cohort distinction.",
+      "status": "preserved",
+      "evidence": "manuscript/Research_Manuscript.md sections 3.2,3.6"
+    },
+    {
+      "id": "P18",
+      "page": 2,
+      "section": "Schedules",
+      "requirement": "Rescue row describes observed first-trigger repair, not all trajectories.",
+      "action": "Explicit table caption and execution schematic.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md Table 1; figures/fig1_execution_conditions.png"
+    },
+    {
+      "id": "P19",
+      "page": 2,
+      "section": "Logging",
+      "requirement": "Distinguish entry,intended,candidate,committed,exit LR.",
+      "action": "Existing definitions retained; v2 result separates rejected/committed outcomes and calls.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.1; future_runs/transition_executor.py"
+    },
+    {
+      "id": "P20",
+      "page": 2,
+      "section": "Guard definition",
+      "requirement": "Candidate/committed displacement is diagnostic, not task-quality safety.",
+      "action": "Separate ratios, explicit epsilon_r=1e-12 and bounded diagnostic claim.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 3.1,7.1"
+    },
+    {
+      "id": "P21",
+      "page": 2,
+      "section": "Scope",
+      "requirement": "CPU fixed-gradient replay is not stochastic-forward/AMP/CUDA/distributed certification.",
+      "action": "Original replay scope retained; new CPU resume fixture separately scoped.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 7.2-7.3"
+    },
+    {
+      "id": "P22",
+      "page": 2,
+      "section": "API",
+      "requirement": "Manual LR assignment does not justify universally reversing scheduler calls.",
+      "action": "Explicit actual-API/version consumed-LR qualification.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.2"
+    },
+    {
+      "id": "P23",
+      "page": 3,
+      "section": "Estimand",
+      "requirement": "Unequal stopping can be an intervention effect; do not call it fixed computation.",
+      "action": "Recorded-procedure estimand retained and shared-step analysis separated.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.8"
+    },
+    {
+      "id": "P24",
+      "page": 3,
+      "section": "Zero LR",
+      "requirement": "Zero-LR parameters can be static while moments/counters still change.",
+      "action": "Explicit distinction and positive/zero budgets by condition.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 5.2; tables/condition_training_and_budget_per_run.csv"
+    },
+    {
+      "id": "P25",
+      "page": 3,
+      "section": "Factorial",
+      "requirement": "Missing bad-first/no-lag legacy cell cannot be supplied by stable arm.",
+      "action": "All four conceptual cells named; missing cell and schedule-family distinction explicit.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.8"
+    },
+    {
+      "id": "P26",
+      "page": 3,
+      "section": "Factorial",
+      "requirement": "Three cells do not identify interaction/additive effects; do not append unmatched new cell.",
+      "action": "Interaction expression and restriction added; endpoint language made conditional.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.8"
+    },
+    {
+      "id": "P27",
+      "page": 3,
+      "section": "Histories",
+      "requirement": "Retain every logged step shared across both arms and all five seeds.",
+      "action": "Rebuild 95 summaries/475 seed pairs directly from raw archive histories.",
+      "status": "implemented",
+      "evidence": "analyse_matched_steps.py; tables/matched_step_coverage.csv"
+    },
+    {
+      "id": "P28",
+      "page": 3,
+      "section": "Histories",
+      "requirement": "No interpolation, stopped-run carry-forward or favorable horizon.",
+      "action": "Per-contrast complete intersections exported and deterministically tested.",
+      "status": "implemented",
+      "evidence": "tests/test_submission_analysis.py"
+    },
+    {
+      "id": "P29",
+      "page": 3,
+      "section": "Histories",
+      "requirement": "Keep exploratory validation curves separate from selected-test endpoints.",
+      "action": "Complementary plots, separate tables and matched-step analysis labels.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md Figures 3-5; tables/matched_step_summary.csv"
+    },
+    {
+      "id": "P30",
+      "page": 3,
+      "section": "Histories",
+      "requirement": "Reconcile DBpedia44625 gaps44.293/40.414 with selected5.716/16.505.",
+      "action": "Both endpoint types independently reconstructed and shown, with all horizons retained.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md Table 4; audit_displayed_tables.py"
+    },
+    {
+      "id": "P31",
+      "page": 3,
+      "section": "Budgets",
+      "requirement": "Report positive/zero/selected/termination and rejected/replay costs separately.",
+      "action": "Existing 240-job budget export preserved; supporting tables and selected/stop fields retained.",
+      "status": "preserved",
+      "evidence": "tables/condition_training_and_budget_per_run.csv"
+    },
+    {
+      "id": "P32",
+      "page": 3,
+      "section": "Cost",
+      "requirement": "Summed LR is exposure, not equal learning/movement.",
+      "action": "Explicit exposure qualification.",
+      "status": "preserved",
+      "evidence": "manuscript/Research_Manuscript.md section 5.2"
+    },
+    {
+      "id": "P33",
+      "page": 3,
+      "section": "Cost",
+      "requirement": "Efficiency needs time/memory versus an uninstrumented baseline.",
+      "action": "No efficiency claim; copying in archived no-guard path and unmeasured cost explicit.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 7.1"
+    },
+    {
+      "id": "P34",
+      "page": 3,
+      "section": "Statistics",
+      "requirement": "Paired seeds, sample SD, descriptive t intervals df4 and signp0.0625.",
+      "action": "All seeds retained; independent/approximately normal paired-difference assumptions and fixed-data conditioning stated, n=5 caveat and unadjusted exploratory scope explicit.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.7; tables/matched_step_summary.csv"
+    },
+    {
+      "id": "P35",
+      "page": 3,
+      "section": "Statistics",
+      "requirement": "Small effects do not establish equivalence.",
+      "action": "No equivalence claim; no invented margin.",
+      "status": "preserved",
+      "evidence": "manuscript/Research_Manuscript.md sections 3.7,8-9"
+    },
+    {
+      "id": "P36",
+      "page": 3,
+      "section": "New work",
+      "requirement": "Prespecify endpoints,multiplicity,failure handling; no seeds until significance.",
+      "action": "Prospective protocol and methods state this restriction.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.8; RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P37",
+      "page": 3,
+      "section": "Monitoring",
+      "requirement": "Keep35/40, all WNUT misses,20/20 assertion; different populations.",
+      "action": "Counts preserved; no paired superiority claim.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 7.1"
+    },
+    {
+      "id": "P38",
+      "page": 3,
+      "section": "Calibration",
+      "requirement": "LOSO safe steps1-100, primarykappa10,WNUT~2.05 and lower thresholds retrospective.",
+      "action": "Original calibration data/threshold/sensitivity unchanged and tests retained.",
+      "status": "preserved",
+      "evidence": "manuscript/Research_Manuscript.md section 7.1; tables/retrospective_kappa_sensitivity.csv"
+    },
+    {
+      "id": "P39",
+      "page": 3,
+      "section": "Calibration",
+      "requirement": "Zero alarms in6000 dependent transitions is not a false-positive certificate.",
+      "action": "Dependent-transition qualification preserved.",
+      "status": "preserved",
+      "evidence": "manuscript/All_Seed_Results_and_Provenance.md Table S17"
+    },
+    {
+      "id": "P40",
+      "page": 3,
+      "section": "Scope",
+      "requirement": "Distinguish LR mismatch, displacement and downstream harm.",
+      "action": "Separate monitoring endpoints retained.",
+      "status": "preserved",
+      "evidence": "manuscript/Research_Manuscript.md section 7.1"
+    },
+    {
+      "id": "P41",
+      "page": 3,
+      "section": "Pairing",
+      "requirement": "First-step hashes do not certify later paths; log data/RNG for new runs.",
+      "action": "Initial-only pairing scope and full-state future contract retained.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md section 3.3; future_runs/resumable_state.py"
+    },
+    {
+      "id": "P42",
+      "page": 4,
+      "section": "Decision",
+      "requirement": "Narrow paper can stop after existing-evidence corrections; no broad matrix.",
+      "action": "Adopt narrower execution-contract manuscript; no new research training.",
+      "status": "implemented",
+      "evidence": "REVIEW_STATUS.md; RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P43",
+      "page": 4,
+      "section": "Configuration",
+      "requirement": "Optional DBpedia medium4 seed42 pair must verify archived data/model/optimizer manifest.",
+      "action": "Exact proposed settings retained with verification gate.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P44",
+      "page": 4,
+      "section": "Prefix",
+      "requirement": "Through49999,cleanS,bad1thenS,earlystoppingdisabled.",
+      "action": "New proposal supersedes old10k accuracy-primary protocol.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P45",
+      "page": 4,
+      "section": "Continuation",
+      "requirement": "50,000 extras each,constant1e-4,own moments/counters; proposed not optimal.",
+      "action": "Exact proposal recorded, not launched.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P46",
+      "page": 4,
+      "section": "State",
+      "requirement": "Save full boundary states including RNG,sampler,identities,precision and verify actual-device resume.",
+      "action": "Primitives and CPU serialized mid-permutation dropout fixture implemented; actual-device/data-loader gate remains.",
+      "status": "conditional_actual_device_check",
+      "evidence": "future_runs/resumable_state.py; tests/test_submission_plan_v2.py"
+    },
+    {
+      "id": "P47",
+      "page": 4,
+      "section": "State",
+      "requirement": "No weights/seed-only resume,latezero moments,Adam reset or extended cosine; rerun prefix if absent.",
+      "action": "Explicit prospective exclusions and missing checkpoint constraint.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P48",
+      "page": 4,
+      "section": "Evaluation",
+      "requirement": "Boundary/every5000,same cadence,training RNG untouched,test not policy.",
+      "action": "Protocol and RNG-preserving future evaluator; CPU context test.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md; future_runs/scratch_evaluator.py"
+    },
+    {
+      "id": "P49",
+      "page": 4,
+      "section": "Endpoints",
+      "requirement": "Primary paired sample-weighted validationCE atfixedfinal; report accuracy/CE gaps.",
+      "action": "Exact prospective endpoint definition.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P50",
+      "page": 4,
+      "section": "Recovery",
+      "requirement": "0.5ppaccuracy proposed; CE tolerance/consecutive crossings need justification.",
+      "action": "Unresolved choices left explicit; no data-chosen thresholds.",
+      "status": "conditional_protocol_choices",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P51",
+      "page": 4,
+      "section": "Control",
+      "requirement": "Healthy clean boundary/continuation; clean collapse is not recovery.",
+      "action": "Control-health decision rule explicit.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P52",
+      "page": 4,
+      "section": "Interpretation",
+      "requirement": "Noncrossing bounded by extras; crossings limited by evaluation cadence.",
+      "action": "Finite-budget language and 5000-step resolution.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P53",
+      "page": 4,
+      "section": "Replication",
+      "requirement": "Healthy informative pilot before prespecified replication; fivepairs descriptive.",
+      "action": "Replication decision and no guaranteed precision; changed-pilot protocol requires fresh confirmation.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P54",
+      "page": 4,
+      "section": "Failure",
+      "requirement": "Nonfinite,resumemismatch,cleandegradation diagnosed before more runs.",
+      "action": "Explicit failure gate, not replacement seeds.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P55",
+      "page": 4,
+      "section": "Cost",
+      "requirement": "199998 transitions with prefix; GPUhours from throughput.",
+      "action": "Prefix/extension costs separated; no GPU-hour guess.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P56",
+      "page": 4,
+      "section": "Extensions",
+      "requirement": "Smallerfaults,fourmatchedcells,mechanisms,independentdepth,broaderguard only as claims require.",
+      "action": "All extensions retained conditionally; no broad matrix scheduled.",
+      "status": "conditional_not_run",
+      "evidence": "RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P57",
+      "page": 5,
+      "section": "Contribution",
+      "requirement": "Execution faults at specified budgets; recovery only if measured; not new Adam theory.",
+      "action": "Narrow contribution and evidence limits throughout manuscript.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 1-2,8-9"
+    },
+    {
+      "id": "P58",
+      "page": 5,
+      "section": "Related work",
+      "requirement": "Compare Adam,Adafactor,MaYarats,Kosson,Kalra,Abuduweili with known/new/evidence.",
+      "action": "Compact comparison and source check dated26October.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md Table R1; PRIMARY_LITERATURE_CHECK.md"
+    },
+    {
+      "id": "P59",
+      "page": 5,
+      "section": "Related work",
+      "requirement": "Update primary-source search including recent instability and horizon work.",
+      "action": "2026 proceedings/preprint coverage added with bounded descriptions.",
+      "status": "implemented",
+      "evidence": "PRIMARY_LITERATURE_CHECK.md"
+    },
+    {
+      "id": "P60",
+      "page": 5,
+      "section": "Writing",
+      "requirement": "Title/abstract/introduction must reflect extremefault,testedbudget,empiricalfinding.",
+      "action": "Title retained; abstract/introduction revised to exact evidence scope.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md"
+    },
+    {
+      "id": "P61",
+      "page": 5,
+      "section": "Claims",
+      "requirement": "No permanence,unboundedmotion,equivalence,generalsafety/efficiency,causalpretraining/depth.",
+      "action": "All explicit limits retained or strengthened.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 3.1,7-9"
+    },
+    {
+      "id": "P62",
+      "page": 5,
+      "section": "Methods",
+      "requirement": "Exactcheckpointmetrics,guardwindow/calibration,pairing,budgets,replaycontract.",
+      "action": "Methods and versioned executor distinguish archived and future contracts.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 3,7.2-7.3"
+    },
+    {
+      "id": "P63",
+      "page": 5,
+      "section": "Metrics",
+      "requirement": "Scratchaccuracy,textmacroF1,WNUTentityF1,CIFARaccuracy;diagnosticsnoprimaryendpoint.",
+      "action": "Original task metrics preserved; endpoint/failure ledger supplied.",
+      "status": "preserved",
+      "evidence": "tables/archived_failure_and_endpoint_ledger.csv; tests/test_revision_evidence.py"
+    },
+    {
+      "id": "P64",
+      "page": 5,
+      "section": "Results",
+      "requirement": "Report failures; do not silently replace old results with reevaluations.",
+      "action": "240-job ledger and evaluator provenance exported; no replacement/reevaluation.",
+      "status": "implemented",
+      "evidence": "tables/archived_failure_and_endpoint_ledger.csv"
+    },
+    {
+      "id": "P65",
+      "page": 5,
+      "section": "Figures",
+      "requirement": "Complementary schematic,selectedendpoints,matchedcurves;recoveryonlyifexecuted.",
+      "action": "Five main figures; no invented recovery curve.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md"
+    },
+    {
+      "id": "P66",
+      "page": 5,
+      "section": "Presentation",
+      "requirement": "Renumberfiguresreadingorder;units,n,uncertainty;move repetitive/detailtosupplement.",
+      "action": "Figures1-5/S1-S8 and supporting TablesS13-S17 with explicit units and uncertainty; historical-runner provenance and helper-repair history moved to supplement.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md; manuscript/All_Seed_Results_and_Provenance.md"
+    },
+    {
+      "id": "P67",
+      "page": 5,
+      "section": "Verification",
+      "requirement": "Recheck displayed numbers against source records.",
+      "action": "Independent source audit includes all554 prior numeric cells plus6 new shared-step illustration cells.",
+      "status": "implemented",
+      "evidence": "audit_displayed_tables.py; tables/revision_verification.json"
+    },
+    {
+      "id": "P68",
+      "page": 5,
+      "section": "Limitations",
+      "requirement": "Missingcheckpoints,evaluator,extremefault,smalln,tasks,factorial,pretraining,CPU,cost,WNUT,small effects.",
+      "action": "All remain explicit in scientific text.",
+      "status": "implemented",
+      "evidence": "manuscript/Research_Manuscript.md sections 3.5,8"
+    },
+    {
+      "id": "P69",
+      "page": 5,
+      "section": "Venue",
+      "requirement": "Choose venue from demonstrated contribution then verify current rules.",
+      "action": "Venue-specific template,anonymity and artifact rules await a selected target; no submission made.",
+      "status": "venue_not_selected",
+      "evidence": "REVIEW_STATUS.md"
+    },
+    {
+      "id": "P70",
+      "page": 5,
+      "section": "Handoff",
+      "requirement": "Manuscript/supplement,issuechangetable,versionedcode/tests,perseedoutputs,reprocommands.",
+      "action": "Separate scientific documents and operational reproduction/requirement records.",
+      "status": "implemented",
+      "evidence": "README_REPRODUCE.md; ISSUE_TO_CHANGE.md; tables/submission_plan_requirements.csv"
+    },
+    {
+      "id": "P71",
+      "page": 5,
+      "section": "New runs",
+      "requirement": "Full checkpoints,environment/config hashes,failureledger for new experiments.",
+      "action": "State utilities/prospective record requirements supplied; no research runs to inventory.",
+      "status": "conditional_not_run",
+      "evidence": "future_runs/resumable_state.py; RECOVERY_PAIR_PROTOCOL.md"
+    },
+    {
+      "id": "P72",
+      "page": 5,
+      "section": "Submission gate",
+      "requirement": "Numerical reproduction,metric/LRconformance,boundedclaims,explicitnovelty,no favorable selection,limitations.",
+      "action": "Machine checks and manual PDF review recorded separately; author/venue decisions remain.",
+      "status": "implemented_with_explicit_gates",
+      "evidence": "tables/revision_verification.json; REVIEW_STATUS.md"
+    }
+  ]
+}

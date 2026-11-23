@@ -1,0 +1,355 @@
+[
+  {
+    "returned_member": "MASTER_RUN_MANIFEST.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/MASTER_RUN_MANIFEST.json",
+    "sha256": "2c0ab460ea349688dd7736736b927851fb4b1814873ac24fd60d1110b1541461",
+    "byte_identical": true,
+    "historical_completion_fields": {
+      "full_gpu_scientific_runs_completed": false
+    }
+  },
+  {
+    "returned_member": "datasets/AG_News/full_run_manifest.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/full_run_manifest.json",
+    "sha256": "a6dc5b3411835af81074bde1bb3a5a8470c5c6af73fc169c83857e06eebbaff6",
+    "byte_identical": true,
+    "historical_completion_fields": {
+      "scientific_training_run_in_this_package": false
+    }
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/configs/condition_semantics_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/configs/condition_semantics_v1.json",
+    "sha256": "2b4c88e0126ea07e66834a1c845e659f9b77710c9e35c9de3fa3804e7b11b2eb",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/configs/hyperparameters_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/configs/hyperparameters_v1.json",
+    "sha256": "f357b63ec96888892bcbee70c79a95b5eca356c2a6677f0204f1a96b62df32f9",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/configs/pretrained_sources_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/configs/pretrained_sources_v1.json",
+    "sha256": "8482e7b54628894bc3742dd0c0fecc60014ad5c05800f4118753adf4e9b3de75",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "sha256": "e06f47ec1b9f4382d50ac2e873bea8cc388f4695c297c2d0ad80aa4fe7de22a2",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/base_provenance.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/base_provenance.json",
+    "sha256": "75b9a48404fc4660e7251e4a741621a23fc059e4d44aa91f95f0b4fbda3f1299",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/experiment_matrix_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/experiment_matrix_v1.json",
+    "sha256": "349e3382e2a48c0fb5cc57245fadabf15a7c0f6cfe8ff3dc83a2ef3db800bea6",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "sha256": "f5f09a9d5e625757eb957ad7827d08df8692be66e3c4aec22f3c66f1b20a3708",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "sha256": "a7f737b26a35897cb66108bd584354fbfc06494786fba41770dae359834615e7",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "sha256": "da5c591c9ace1dbd0f15e57cdf3bd0c65bec40a659b0de0d8f66c8960cc3daa3",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "sha256": "540531867358a55fffbd4e940b3553919c3ee758f949598216a768ba3a67a13c",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/AG_News/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "sha256": "2ab1e89b7b61dc5dc3901c96546a8c8b94e791696d49537491c6b1cd6076e80d",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/full_run_manifest.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/full_run_manifest.json",
+    "sha256": "36f0bc2e91fbd24af1de0f76edcea6feeaf06dfb9176e7d48af4d803394e2216",
+    "byte_identical": true,
+    "historical_completion_fields": {
+      "scientific_training_run_in_this_package": false
+    }
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/configs/condition_semantics_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/configs/condition_semantics_v1.json",
+    "sha256": "2b4c88e0126ea07e66834a1c845e659f9b77710c9e35c9de3fa3804e7b11b2eb",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/configs/hyperparameters_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/configs/hyperparameters_v1.json",
+    "sha256": "f357b63ec96888892bcbee70c79a95b5eca356c2a6677f0204f1a96b62df32f9",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/configs/pretrained_sources_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/configs/pretrained_sources_v1.json",
+    "sha256": "8482e7b54628894bc3742dd0c0fecc60014ad5c05800f4118753adf4e9b3de75",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "sha256": "e06f47ec1b9f4382d50ac2e873bea8cc388f4695c297c2d0ad80aa4fe7de22a2",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/base_provenance.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/base_provenance.json",
+    "sha256": "75b9a48404fc4660e7251e4a741621a23fc059e4d44aa91f95f0b4fbda3f1299",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/experiment_matrix_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/experiment_matrix_v1.json",
+    "sha256": "349e3382e2a48c0fb5cc57245fadabf15a7c0f6cfe8ff3dc83a2ef3db800bea6",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "sha256": "f5f09a9d5e625757eb957ad7827d08df8692be66e3c4aec22f3c66f1b20a3708",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "sha256": "a7f737b26a35897cb66108bd584354fbfc06494786fba41770dae359834615e7",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "sha256": "da5c591c9ace1dbd0f15e57cdf3bd0c65bec40a659b0de0d8f66c8960cc3daa3",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "sha256": "540531867358a55fffbd4e940b3553919c3ee758f949598216a768ba3a67a13c",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/CIFAR_10/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "sha256": "2ab1e89b7b61dc5dc3901c96546a8c8b94e791696d49537491c6b1cd6076e80d",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/full_run_manifest.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/full_run_manifest.json",
+    "sha256": "b61f75062c623daf39525a5d76d369df9d12b5b4691574735f05c766743af16d",
+    "byte_identical": true,
+    "historical_completion_fields": {
+      "scientific_training_run_in_this_package": false
+    }
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/configs/condition_semantics_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/configs/condition_semantics_v1.json",
+    "sha256": "2b4c88e0126ea07e66834a1c845e659f9b77710c9e35c9de3fa3804e7b11b2eb",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/configs/hyperparameters_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/configs/hyperparameters_v1.json",
+    "sha256": "f357b63ec96888892bcbee70c79a95b5eca356c2a6677f0204f1a96b62df32f9",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/configs/pretrained_sources_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/configs/pretrained_sources_v1.json",
+    "sha256": "8482e7b54628894bc3742dd0c0fecc60014ad5c05800f4118753adf4e9b3de75",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "sha256": "e06f47ec1b9f4382d50ac2e873bea8cc388f4695c297c2d0ad80aa4fe7de22a2",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/base_provenance.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/base_provenance.json",
+    "sha256": "75b9a48404fc4660e7251e4a741621a23fc059e4d44aa91f95f0b4fbda3f1299",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/experiment_matrix_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/experiment_matrix_v1.json",
+    "sha256": "349e3382e2a48c0fb5cc57245fadabf15a7c0f6cfe8ff3dc83a2ef3db800bea6",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "sha256": "f5f09a9d5e625757eb957ad7827d08df8692be66e3c4aec22f3c66f1b20a3708",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "sha256": "a7f737b26a35897cb66108bd584354fbfc06494786fba41770dae359834615e7",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "sha256": "da5c591c9ace1dbd0f15e57cdf3bd0c65bec40a659b0de0d8f66c8960cc3daa3",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "sha256": "540531867358a55fffbd4e940b3553919c3ee758f949598216a768ba3a67a13c",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/DBPedia/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "sha256": "2ab1e89b7b61dc5dc3901c96546a8c8b94e791696d49537491c6b1cd6076e80d",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/full_run_manifest.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/full_run_manifest.json",
+    "sha256": "e690d93d52b8a5db2707aaffcd32616b4d7f714a242937c19543c636f82bb38b",
+    "byte_identical": true,
+    "historical_completion_fields": {
+      "scientific_training_run_in_this_package": false
+    }
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/configs/condition_semantics_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/configs/condition_semantics_v1.json",
+    "sha256": "2b4c88e0126ea07e66834a1c845e659f9b77710c9e35c9de3fa3804e7b11b2eb",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/configs/hyperparameters_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/configs/hyperparameters_v1.json",
+    "sha256": "f357b63ec96888892bcbee70c79a95b5eca356c2a6677f0204f1a96b62df32f9",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/configs/pretrained_sources_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/configs/pretrained_sources_v1.json",
+    "sha256": "8482e7b54628894bc3742dd0c0fecc60014ad5c05800f4118753adf4e9b3de75",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/configs/scratch_dataset_revisions_v1.json",
+    "sha256": "e06f47ec1b9f4382d50ac2e873bea8cc388f4695c297c2d0ad80aa4fe7de22a2",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/base_provenance.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/base_provenance.json",
+    "sha256": "75b9a48404fc4660e7251e4a741621a23fc059e4d44aa91f95f0b4fbda3f1299",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/experiment_matrix_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/experiment_matrix_v1.json",
+    "sha256": "349e3382e2a48c0fb5cc57245fadabf15a7c0f6cfe8ff3dc83a2ef3db800bea6",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v1.json",
+    "sha256": "f5f09a9d5e625757eb957ad7827d08df8692be66e3c4aec22f3c66f1b20a3708",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v2.json",
+    "sha256": "a7f737b26a35897cb66108bd584354fbfc06494786fba41770dae359834615e7",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/local_cpu_environment_v3.json",
+    "sha256": "da5c591c9ace1dbd0f15e57cdf3bd0c65bec40a659b0de0d8f66c8960cc3daa3",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/scratch_fixed_split_manifest_v1.json",
+    "sha256": "540531867358a55fffbd4e940b3553919c3ee758f949598216a768ba3a67a13c",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  },
+  {
+    "returned_member": "datasets/WNUT_17/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/publication_expansion/manifests/scratch_hf_dataset_integrity_v1.json",
+    "sha256": "2ab1e89b7b61dc5dc3901c96546a8c8b94e791696d49537491c6b1cd6076e80d",
+    "byte_identical": true,
+    "historical_completion_fields": {}
+  }
+]

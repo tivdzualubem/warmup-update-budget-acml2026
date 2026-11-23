@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-20",
+  "archive": "ESM_2.zip",
+  "archive_sha256": "1b410849b8a77e66775a419d65322bb141823db0b72e03989bd0283e44a7bbfd",
+  "fresh_extraction_and_all_member_hashes_verified": true,
+  "full_analysis_and_tests_rerun": true,
+  "tests_passed": 51,
+  "displayed_numeric_cells_checked": 560,
+  "discrepancies": 0,
+  "original_files_preserved": 107,
+  "changed_original_csvs": [],
+  "scholarly_outputs_checked": 84,
+  "changed_scholarly_outputs": [],
+  "pdf_text_and_pages_match": {
+    "Research_Manuscript": true,
+    "All_Seed_Results_and_Provenance": true
+  },
+  "flat_source_rebuilds": [
+    {
+      "file": "SNCS_Main_Source.zip",
+      "sha256": "d7ccd523995cb64189806f44386c072c1dbdc39054bc3a241d0c9659224f062e",
+      "compile_passed": true,
+      "text_and_pages_match": true
+    },
+    {
+      "file": "SNCS_Supplement_Source.zip",
+      "sha256": "31e45c781530b07ec57d415353b9a5673f9137063348e025e54e10f05a887e5f",
+      "compile_passed": true,
+      "text_and_pages_match": true
+    }
+  ],
+  "raw_prediction_and_state_audit": {
+    "status": "passed",
+    "scope": "full returned records, predictions and restricted tensor-state audit",
+    "archives": [
+      {
+        "file": "ACML_Peak_First_RESULTS.zip",
+        "bytes": 10103218,
+        "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+        "verified_members": 49
+      },
+      {
+        "file": "ACML_Peak_First_PREDICTIONS.zip",
+        "bytes": 109388801,
+        "sha256": "43e1d3759d15a76ba2356ec8230c3a9363b2b1e22252f5b4f4fb6470d360e83f",
+        "verified_members": 42
+      },
+      {
+        "file": "ACML_Peak_First_STATES.zip",
+        "bytes": 404524970,
+        "sha256": "f32574f81b1097e01978febe6d78f83a634ab3c67fefa9aa183e44ec880c2592",
+        "verified_members": 5
+      }
+    ],
+    "paired_transitions": 49999,
+    "consumed_lr_fields_checked": 99998,
+    "sampler_batches_checked": 49999,
+    "evaluation_records": 42,
+    "online_training_blocks_checked": 1000,
+    "fixed_split_verified": true,
+    "same_source_config_data_environment_as_preflight": true,
+    "failure_or_resume_events": 0,
+    "closed_session_active_seconds": 4969.857002546,
+    "first_transition": {
+      "event": "paired_step",
+      "step": 1,
+      "epoch": 0,
+      "sampler_cursor": 32,
+      "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+      "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+      "arms": {
+        "clean": {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 6.603961943503159e-08,
+          "instrumented_training_seconds": 0.43773331199997756
+        },
+        "peak_first": {
+          "lr_consumed": [
+            0.0001
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 0.0005065598757595089,
+          "instrumented_training_seconds": 0.18758080700001756
+        }
+      }
+    },
+    "primary_validation_ce_difference": 4.695263706736008e-06,
+    "research_training_by_this_analysis": false,
+    "new_research_pair_executed_on_kaggle": true,
+    "original_historical_checkpoint_reselection": false,
+    "prediction_files_independently_recomputed": 42,
+    "maximum_absolute_ce_recomputation_difference": 7.993605777301127e-15,
+    "full_paired_checkpoint_files_checked": 5,
+    "first_step_moments_equal_weights_differ": true,
+    "final_and_latest_scientific_states_match": true,
+    "verified_unchanged_on": "2026-11-20",
+    "full_audit_date": "2026-11-17"
+  },
+  "new_model_training": false,
+  "status": "passed",
+  "analysis_verified_archive_sha256": "3f1aae540a74c98c73879d04b4b3ecd2470d2090db018935c637e92cdd8999cd",
+  "final_document_update": "Removed optional header only; scientific and rebuild inputs unchanged except document builder; final flat main source rebuilt and text checked.",
+  "final_preservation_check": 264
+}

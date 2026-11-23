@@ -1,0 +1,33 @@
+{
+  "scope": "our tiny artificial CPU counterexamples, not historical training outcomes",
+  "torch": "2.8.0+cpu",
+  "extreme_logits": {
+    "archived_logit_ce": 2000.0,
+    "archived_clipped_probability_nll": 27.63102149963379,
+    "v2_logit_ce": 2000.0
+  },
+  "uneven_batch": {
+    "batch_sizes": [
+      32,
+      1
+    ],
+    "archived_mean_of_batch_means": 5.346596289729582,
+    "v2_sample_weighted_ce": 0.975174399297499
+  },
+  "archived_nonfinite_candidate": {
+    "ratio_is_finite": false,
+    "guard_triggered": false,
+    "stopped": false
+  },
+  "replay_ceiling": {
+    "threshold": 0.001,
+    "intended_lr": 0.1,
+    "archived_committed_ratio": 0.09999999989989997,
+    "archived_stopped": false,
+    "v2_replay_ratio": 0.09999999989989997,
+    "v2_stopped": true,
+    "v2_restored_weight": 1.0,
+    "v2_failure_reason": "replay_exceeds_threshold",
+    "v2_optimizer_calls": 2
+  }
+}

@@ -1,0 +1,17 @@
+note: Running TeX ...
+note: Running BibTeX on Research_Manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Running xdvipdfmx ...
+note: Writing `Research_Manuscript.log` (24.85546875 KiB)
+note: Writing `Research_Manuscript.blg` (209 B)
+note: Writing `Research_Manuscript.pdf` (838.431640625 KiB)
+note: Writing `Research_Manuscript.bbl` (6.896484375 KiB)
+note: Writing `Research_Manuscript.out` (6.8251953125 KiB)
+note: Writing `Research_Manuscript.aux` (12.076171875 KiB)
+
+Fontconfig error: Cannot load default config file: No such file: (null)
+warning: Research_Manuscript.tex:222: Underfull \hbox (badness 2189) in paragraph at lines 221--222
+warning: Research_Manuscript.tex:222: Underfull \hbox (badness 3250) in paragraph at lines 221--222
+warning: Research_Manuscript.tex:222: Underfull \hbox (badness 2189) in paragraph at lines 221--222
+warning: Research_Manuscript.tex:222: Underfull \hbox (badness 3250) in paragraph at lines 221--222
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

@@ -1,0 +1,9 @@
+note: Running TeX ...
+note: Rerunning TeX because "All_Seed_Results_and_Provenance.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `All_Seed_Results_and_Provenance.out` (8.96484375 KiB)
+note: Writing `All_Seed_Results_and_Provenance.pdf` (2.3242416381835938 MiB)
+note: Writing `All_Seed_Results_and_Provenance.log` (15.337890625 KiB)
+note: Writing `All_Seed_Results_and_Provenance.aux` (15.49609375 KiB)
+
+Fontconfig error: Cannot load default config file: No such file: (null)

@@ -1,0 +1,8 @@
+{
+  "frozen_source/publication_expansion/src/scratch_dataset_adapter.py": "414ef9a555e1b875c597b1d58e757fdd2dc9de4b2aa8fc6b6910f3edcd9fae71",
+  "frozen_source/publication_expansion/src/scratch_data_contract.py": "bc036fe7bd2fad04fc4c40c53a87bee8a23eb975eb49c50588cf1fd9e64a1394",
+  "frozen_source/publication_expansion/src/scratch_model_adapter.py": "b3c1195ad8a28478731a4d3a6b3dceadd6484ada802eac685c39cd903282c036",
+  "frozen_source/publication_expansion/src/scheduler_semantics.py": "8ed7b0d53f6cd1571adf8b6e1a4b0c3ebe7c77194da84bc564cc518f4f43ef8e",
+  "frozen_source/publication_expansion/src/anchor.py": "5b41c4f3d0eb110ac26afae5f94fd389f8aeddd1714e7d1d64d6cfbd8b8e615e",
+  "frozen_source/src/transformer_project/models/transformer.py": "09b3d2d75357e3b95bf442e9ad49c10255bf20ed48001e9a84f5e7fa6a0441b5"
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-20",
+  "journal": "SN Computer Science",
+  "title_unchanged": true,
+  "research_results_unchanged": true,
+  "professor_requested_clarifications_added": true,
+  "clarification_audit": {
+    "selected_validation_gap_pp": 5.822619047619046,
+    "shared_validation_gap_pp": 44.292857142857144,
+    "paired_seeds": 5,
+    "pretrained_safe_fault_pairs_verified": 20,
+    "wnut_peak_within_window_seeds": 5,
+    "checkpoint_selection_unchanged": true,
+    "new_training": false,
+    "prediction_reevaluation": false
+  },
+  "abstract_changed_only_by_structure_and_same_metric_endpoint_clarification": true,
+  "abstract_words_including_labels": 218,
+  "scientific_csv_and_figure_files_identical_to_submitted_base": 76,
+  "changed_scientific_csv_or_figure_files": [],
+  "flat_sources": [
+    {
+      "file": "SNCS_Main_Source.zip",
+      "members": 8
+    },
+    {
+      "file": "SNCS_Supplement_Source.zip",
+      "members": 12
+    }
+  ],
+  "pages": {
+    "SNCS_Manuscript.pdf": 22,
+    "ESM_1.pdf": 20,
+    "Cover_Letter.pdf": 1
+  },
+  "new_training": false,
+  "github_base_release_unchanged": true,
+  "visual_review": {
+    "all_pages_reviewed": 43,
+    "main": 22,
+    "supplement": 20,
+    "cover": 1,
+    "placeholder_removed": true,
+    "final_changed_pages_rechecked": true
+  },
+  "fresh_archive_check": "passed; full analysis before header-only change, unchanged scientific payload verified afterward",
+  "tests_passed": 51,
+  "displayed_numeric_cells_checked": 560,
+  "discrepancies": 0,
+  "final_clarification_checks": "passed",
+  "unchanged_rebuild_and_scientific_files_compared": 264,
+  "main_flat_source_independently_compiles": true,
+  "prior_fresh_reproduction_sha256": "3f1aae540a74c98c73879d04b4b3ecd2470d2090db018935c637e92cdd8999cd",
+  "large_companions_verified_accessible_locally": true,
+  "availability_promise": "available from authors on request; no public companion link claimed",
+  "pdf_hashes": {
+    "SNCS_Manuscript.pdf": "a630863e34ba4f3876fad299dad40264cce9539ea2aca43d9fbb344ba1ccd673",
+    "ESM_1.pdf": "1ee5b664e87572e01b9581698e1676c6f5019f6968b22e226832643c83ccbbc2",
+    "Cover_Letter.pdf": "35a6464e02f99ad4740d03865cb3cff2a48003c46c7b89e98f874ffc438a3aa9"
+  }
+}

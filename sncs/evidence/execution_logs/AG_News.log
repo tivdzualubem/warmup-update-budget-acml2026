@@ -1,0 +1,1499 @@
+[AG_News] [STUDY] dataset=ag_news seed list=(42, 123, 456, 789, 2026) mode=FULL PUBLICATION
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [1/12] SCRATCH-SAFE
+[AG_News] ========================================================================
+[AG_News] [PHASE] scratch-safe: 20 jobs, GPUs [0], data=ag_news
+[AG_News] Traceback (most recent call last):
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 265, in <module>
+[AG_News]     if __name__=='__main__': main()
+[AG_News]                              ^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 262, in main
+[AG_News]     execute_jobs(phase,args)
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 234, in execute_jobs
+[AG_News]     future.result()
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+[AG_News]     return self.__get_result()
+[AG_News]            ^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+[AG_News]     raise self._exception
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+[AG_News]     result = self.fn(*self.args, **self.kwargs)
+[AG_News]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 186, in worker
+[AG_News]     tag = '__'.join([phase,job['dataset'],job.get('model',''),f'seed{job["seed"]}',job['condition']])
+[AG_News]                            ~~~^^^^^^^^^^^
+[AG_News] TypeError: tuple indices must be integers or slices, not str
+[AG_News] [STUDY] dataset=ag_news seed list=(42, 123, 456, 789, 2026) mode=FULL PUBLICATION
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [1/12] SCRATCH-SAFE
+[AG_News] ========================================================================
+[AG_News] [PHASE] scratch-safe: 20 jobs, GPUs [0], data=ag_news
+[AG_News] Traceback (most recent call last):
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 265, in <module>
+[AG_News]     if __name__=='__main__': main()
+[AG_News]                              ^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 262, in main
+[AG_News]     execute_jobs(phase,args)
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 234, in execute_jobs
+[AG_News]     future.result()
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+[AG_News]     return self.__get_result()
+[AG_News]            ^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+[AG_News]     raise self._exception
+[AG_News]   File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+[AG_News]     result = self.fn(*self.args, **self.kwargs)
+[AG_News]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 186, in worker
+[AG_News]     tag = '__'.join([phase,job['dataset'],job.get('model',''),f'seed{job["seed"]}',job['condition']])
+[AG_News]                            ~~~^^^^^^^^^^^
+[AG_News] TypeError: tuple indices must be integers or slices, not str
+[AG_News] [STUDY] dataset=ag_news seed list=(42, 123, 456, 789, 2026) mode=FULL PUBLICATION
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [1/12] SCRATCH-SAFE
+[AG_News] ========================================================================
+[AG_News] [PHASE] scratch-safe: 20 jobs, GPUs [0], data=ag_news
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed42__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | JOB: ag_news__medium-4__seed42__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard |
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | Generating train split:  60%|██████    | 72000/120000 [00:00<00:00, 713106.46 examples/s]
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 779570.56 examples/s]
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard |
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 1281836.51 examples/s]
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=1 step=3188 train_loss=1.0474 val_loss=0.5542
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=2 step=6376 train_loss=0.4473 val_loss=0.3520
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=3 step=9564 train_loss=0.3060 val_loss=0.2861
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=4 step=12752 train_loss=0.2384 val_loss=0.2372
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=5 step=15940 train_loss=0.2003 val_loss=0.2379
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=6 step=19128 train_loss=0.1739 val_loss=0.2298
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=7 step=22316 train_loss=0.1544 val_loss=0.2387
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=8 step=25504 train_loss=0.1372 val_loss=0.2435
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=9 step=28692 train_loss=0.1208 val_loss=0.2614
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=10 step=31880 train_loss=0.1086 val_loss=0.2855
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | epoch=11 step=35068 train_loss=0.0967 val_loss=0.2937
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__stable_with_guard | COMPLETE: ag_news__medium-4__seed42__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed42__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | JOB: ag_news__medium-4__seed42__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.6305 val_loss=0.2844
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2545 val_loss=0.2414
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2053 val_loss=0.2292
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1634 val_loss=0.2158
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1338 val_loss=0.2373
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1096 val_loss=0.2728
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0909 val_loss=0.3272
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0762 val_loss=0.3206
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | epoch=9 step=28692 train_loss=0.0625 val_loss=0.3921
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard | COMPLETE: ag_news__medium-4__seed42__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed42__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed123__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | JOB: ag_news__medium-4__seed123__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=1 step=3188 train_loss=1.0453 val_loss=0.5535
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=2 step=6376 train_loss=0.4464 val_loss=0.3258
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=3 step=9564 train_loss=0.3031 val_loss=0.2677
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=4 step=12752 train_loss=0.2359 val_loss=0.2493
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=5 step=15940 train_loss=0.1996 val_loss=0.2385
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=6 step=19128 train_loss=0.1736 val_loss=0.2312
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=7 step=22316 train_loss=0.1553 val_loss=0.2527
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=8 step=25504 train_loss=0.1385 val_loss=0.2541
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=9 step=28692 train_loss=0.1221 val_loss=0.2648
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=10 step=31880 train_loss=0.1073 val_loss=0.2920
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | epoch=11 step=35068 train_loss=0.0976 val_loss=0.3071
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__stable_with_guard | COMPLETE: ag_news__medium-4__seed123__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed123__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | JOB: ag_news__medium-4__seed123__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.6241 val_loss=0.3013
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2516 val_loss=0.2297
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.1999 val_loss=0.2144
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1590 val_loss=0.2240
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1283 val_loss=0.2385
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1052 val_loss=0.2647
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0851 val_loss=0.3009
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0693 val_loss=0.3353
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard | COMPLETE: ag_news__medium-4__seed123__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed123__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed456__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | JOB: ag_news__medium-4__seed456__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=1 step=3188 train_loss=1.0359 val_loss=0.5530
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=2 step=6376 train_loss=0.4478 val_loss=0.3637
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=3 step=9564 train_loss=0.3044 val_loss=0.2787
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=4 step=12752 train_loss=0.2375 val_loss=0.2442
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=5 step=15940 train_loss=0.2030 val_loss=0.2468
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=6 step=19128 train_loss=0.1779 val_loss=0.2303
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=7 step=22316 train_loss=0.1564 val_loss=0.2473
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=8 step=25504 train_loss=0.1385 val_loss=0.2431
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=9 step=28692 train_loss=0.1233 val_loss=0.2625
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=10 step=31880 train_loss=0.1101 val_loss=0.2751
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | epoch=11 step=35068 train_loss=0.0986 val_loss=0.3012
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__stable_with_guard | COMPLETE: ag_news__medium-4__seed456__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed456__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | JOB: ag_news__medium-4__seed456__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.6242 val_loss=0.2810
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2542 val_loss=0.2335
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2011 val_loss=0.2240
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1599 val_loss=0.2387
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1302 val_loss=0.2510
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1063 val_loss=0.2668
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0849 val_loss=0.2783
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0695 val_loss=0.3204
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard | COMPLETE: ag_news__medium-4__seed456__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed456__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed789__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | JOB: ag_news__medium-4__seed789__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=1 step=3188 train_loss=1.0498 val_loss=0.5561
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=2 step=6376 train_loss=0.4512 val_loss=0.3616
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=3 step=9564 train_loss=0.3060 val_loss=0.2653
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=4 step=12752 train_loss=0.2388 val_loss=0.2485
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=5 step=15940 train_loss=0.2013 val_loss=0.2410
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=6 step=19128 train_loss=0.1745 val_loss=0.2548
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=7 step=22316 train_loss=0.1535 val_loss=0.2486
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=8 step=25504 train_loss=0.1356 val_loss=0.2558
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=9 step=28692 train_loss=0.1210 val_loss=0.2705
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | epoch=10 step=31880 train_loss=0.1069 val_loss=0.3256
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__stable_with_guard | COMPLETE: ag_news__medium-4__seed789__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed789__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | JOB: ag_news__medium-4__seed789__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.6314 val_loss=0.3220
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2524 val_loss=0.2283
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2005 val_loss=0.2262
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1604 val_loss=0.2243
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1285 val_loss=0.2466
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1041 val_loss=0.2661
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0855 val_loss=0.3039
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0698 val_loss=0.3396
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | epoch=9 step=28692 train_loss=0.0581 val_loss=0.3580
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard | COMPLETE: ag_news__medium-4__seed789__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed789__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed2026__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | JOB: ag_news__medium-4__seed2026__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=1 step=3188 train_loss=1.0712 val_loss=0.5795
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=2 step=6376 train_loss=0.4493 val_loss=0.3497
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=3 step=9564 train_loss=0.3065 val_loss=0.2751
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=4 step=12752 train_loss=0.2389 val_loss=0.2410
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=5 step=15940 train_loss=0.2025 val_loss=0.2285
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=6 step=19128 train_loss=0.1760 val_loss=0.2370
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=7 step=22316 train_loss=0.1558 val_loss=0.2631
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=8 step=25504 train_loss=0.1376 val_loss=0.2576
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=9 step=28692 train_loss=0.1224 val_loss=0.2758
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | epoch=10 step=31880 train_loss=0.1090 val_loss=0.2972
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__stable_with_guard | COMPLETE: ag_news__medium-4__seed2026__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed2026__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | JOB: ag_news__medium-4__seed2026__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.6388 val_loss=0.2867
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2545 val_loss=0.2275
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2018 val_loss=0.2170
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1601 val_loss=0.2370
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1283 val_loss=0.2341
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1062 val_loss=0.2632
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0851 val_loss=0.3094
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0708 val_loss=0.3587
+[AG_News] [GPU0] scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard | COMPLETE: ag_news__medium-4__seed2026__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__medium-4__seed2026__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed42__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | JOB: ag_news__large-6__seed42__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=1 step=3188 train_loss=0.8677 val_loss=0.5977
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=2 step=6376 train_loss=0.3684 val_loss=0.3037
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=3 step=9564 train_loss=0.2582 val_loss=0.2475
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=4 step=12752 train_loss=0.1927 val_loss=0.2145
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=5 step=15940 train_loss=0.1513 val_loss=0.2535
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=6 step=19128 train_loss=0.1158 val_loss=0.2720
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=7 step=22316 train_loss=0.0843 val_loss=0.3358
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=8 step=25504 train_loss=0.0598 val_loss=0.3924
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | epoch=9 step=28692 train_loss=0.0406 val_loss=0.5358
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__stable_with_guard | COMPLETE: ag_news__large-6__seed42__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed42__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | JOB: ag_news__large-6__seed42__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.5977 val_loss=0.3053
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2634 val_loss=0.2616
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2137 val_loss=0.2260
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1690 val_loss=0.2220
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1392 val_loss=0.2700
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1170 val_loss=0.2814
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0968 val_loss=0.3498
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0821 val_loss=0.3299
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | epoch=9 step=28692 train_loss=0.0695 val_loss=0.3820
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard | COMPLETE: ag_news__large-6__seed42__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed42__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed123__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | JOB: ag_news__large-6__seed123__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=1 step=3188 train_loss=0.8756 val_loss=0.4402
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=2 step=6376 train_loss=0.3703 val_loss=0.2713
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=3 step=9564 train_loss=0.2574 val_loss=0.2311
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=4 step=12752 train_loss=0.1944 val_loss=0.2231
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=5 step=15940 train_loss=0.1516 val_loss=0.2333
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=6 step=19128 train_loss=0.1163 val_loss=0.2524
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=7 step=22316 train_loss=0.0844 val_loss=0.3366
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=8 step=25504 train_loss=0.0594 val_loss=0.3966
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | epoch=9 step=28692 train_loss=0.0415 val_loss=0.4710
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__stable_with_guard | COMPLETE: ag_news__large-6__seed123__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed123__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | JOB: ag_news__large-6__seed123__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.5998 val_loss=0.3288
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2637 val_loss=0.2456
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2148 val_loss=0.2171
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1678 val_loss=0.2337
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1376 val_loss=0.2504
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1146 val_loss=0.2840
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0969 val_loss=0.3546
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0803 val_loss=0.3680
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard | COMPLETE: ag_news__large-6__seed123__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed123__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed456__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | JOB: ag_news__large-6__seed456__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=1 step=3188 train_loss=0.8537 val_loss=0.5197
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=2 step=6376 train_loss=0.3727 val_loss=0.2913
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=3 step=9564 train_loss=0.2572 val_loss=0.2532
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=4 step=12752 train_loss=0.1928 val_loss=0.2295
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=5 step=15940 train_loss=0.1534 val_loss=0.2329
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=6 step=19128 train_loss=0.1185 val_loss=0.2663
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=7 step=22316 train_loss=0.0870 val_loss=0.3337
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=8 step=25504 train_loss=0.0617 val_loss=0.4144
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | epoch=9 step=28692 train_loss=0.0423 val_loss=0.5020
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__stable_with_guard | COMPLETE: ag_news__large-6__seed456__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed456__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | JOB: ag_news__large-6__seed456__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.5871 val_loss=0.3205
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2631 val_loss=0.2761
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2137 val_loss=0.2425
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1685 val_loss=0.2460
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1358 val_loss=0.2563
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1130 val_loss=0.2829
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0931 val_loss=0.3009
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0754 val_loss=0.3346
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard | COMPLETE: ag_news__large-6__seed456__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed456__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed789__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | JOB: ag_news__large-6__seed789__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=1 step=3188 train_loss=0.8701 val_loss=0.4429
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=2 step=6376 train_loss=0.3721 val_loss=0.2971
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=3 step=9564 train_loss=0.2554 val_loss=0.2464
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=4 step=12752 train_loss=0.1938 val_loss=0.2358
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=5 step=15940 train_loss=0.1534 val_loss=0.2455
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=6 step=19128 train_loss=0.1175 val_loss=0.2699
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=7 step=22316 train_loss=0.0860 val_loss=0.3307
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=8 step=25504 train_loss=0.0599 val_loss=0.3970
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | epoch=9 step=28692 train_loss=0.0407 val_loss=0.4728
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__stable_with_guard | COMPLETE: ag_news__large-6__seed789__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed789__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | JOB: ag_news__large-6__seed789__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.5950 val_loss=0.3031
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2651 val_loss=0.2386
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2143 val_loss=0.2360
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1705 val_loss=0.2326
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1376 val_loss=0.2490
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1129 val_loss=0.2681
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0923 val_loss=0.3159
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0764 val_loss=0.3391
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | epoch=9 step=28692 train_loss=0.0623 val_loss=0.4015
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard | COMPLETE: ag_news__large-6__seed789__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed789__fixed_order_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed2026__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | JOB: ag_news__large-6__seed2026__stable_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=1 step=3188 train_loss=0.8500 val_loss=0.3977
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=2 step=6376 train_loss=0.3690 val_loss=0.2895
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=3 step=9564 train_loss=0.2560 val_loss=0.2298
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=4 step=12752 train_loss=0.1935 val_loss=0.2319
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=5 step=15940 train_loss=0.1518 val_loss=0.2261
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=6 step=19128 train_loss=0.1161 val_loss=0.2607
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=7 step=22316 train_loss=0.0840 val_loss=0.3703
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=8 step=25504 train_loss=0.0618 val_loss=0.4216
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=9 step=28692 train_loss=0.0421 val_loss=0.4851
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__stable_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | epoch=10 step=31880 train_loss=0.0273 val_loss=0.6272
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__stable_with_guard | COMPLETE: ag_news__large-6__seed2026__stable_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed2026__stable_with_guard
+[AG_News] [GPU0] START scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | JOB: ag_news__large-6__seed2026__fixed_order_with_guard
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=1 step=3188 train_loss=0.5872 val_loss=0.2714
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=2 step=6376 train_loss=0.2633 val_loss=0.2437
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=3 step=9564 train_loss=0.2130 val_loss=0.2234
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=4 step=12752 train_loss=0.1677 val_loss=0.2506
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=5 step=15940 train_loss=0.1359 val_loss=0.2444
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=6 step=19128 train_loss=0.1120 val_loss=0.2939
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=7 step=22316 train_loss=0.0908 val_loss=0.3224
+[AG_News] [GPU0] ACTIVE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | epoch=8 step=25504 train_loss=0.0760 val_loss=0.3754
+[AG_News] [GPU0] scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard | COMPLETE: ag_news__large-6__seed2026__fixed_order_with_guard early_stopping
+[AG_News] [GPU0] DONE scratch-safe__ag_news__large-6__seed2026__fixed_order_with_guard
+[AG_News] [PASS] scratch-safe: 20 jobs finished. Restartable results saved.
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [2/12] SCRATCH-THRESHOLDS
+[AG_News] ========================================================================
+[AG_News] [CALIBRATION] 5-seed LOSO, dataset=ag_news, both scratch models -> publication_expansion/results/scratch/loso_thresholds.json
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [3/12] SCRATCH-NONGUARDED
+[AG_News] ========================================================================
+[AG_News] [PHASE] scratch-nonguarded: 20 jobs, GPUs [0], data=ag_news
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | JOB: ag_news__medium-4__seed42__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=1 step=3188 train_loss=33079.2604 val_loss=514.8534
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=2 step=6376 train_loss=645.6140 val_loss=314.9523
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=3 step=9564 train_loss=345.5385 val_loss=111.8659
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=4 step=12752 train_loss=188.6964 val_loss=104.6523
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=5 step=15940 train_loss=123.4221 val_loss=84.1306
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=6 step=19128 train_loss=91.9634 val_loss=57.9338
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=7 step=22316 train_loss=77.8993 val_loss=50.1789
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=8 step=25504 train_loss=73.4365 val_loss=41.7497
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=9 step=28692 train_loss=64.0855 val_loss=43.8674
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=10 step=31880 train_loss=54.2333 val_loss=31.7822
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=11 step=35068 train_loss=48.8837 val_loss=48.4084
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=12 step=38256 train_loss=43.1675 val_loss=52.2862
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=13 step=41444 train_loss=42.3682 val_loss=30.2874
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=14 step=44632 train_loss=38.5849 val_loss=29.8422
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=15 step=47820 train_loss=37.9361 val_loss=44.0105
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=16 step=51008 train_loss=33.4821 val_loss=27.5230
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=17 step=54196 train_loss=32.2073 val_loss=29.0321
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=18 step=57384 train_loss=30.9621 val_loss=33.8262
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=19 step=60572 train_loss=29.4962 val_loss=29.8022
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=20 step=63760 train_loss=26.9757 val_loss=28.4185
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=21 step=66948 train_loss=24.7491 val_loss=22.7747
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=22 step=70136 train_loss=23.5221 val_loss=27.6878
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=23 step=73324 train_loss=22.0040 val_loss=25.0101
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=24 step=76512 train_loss=21.1035 val_loss=22.7325
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=25 step=79700 train_loss=19.8020 val_loss=31.0355
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=26 step=82888 train_loss=18.8236 val_loss=20.1944
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=27 step=86076 train_loss=17.4913 val_loss=20.4953
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=28 step=89264 train_loss=16.6970 val_loss=14.3965
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=29 step=92452 train_loss=16.3306 val_loss=26.7420
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | epoch=30 step=95640 train_loss=15.0202 val_loss=16.2106
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard | COMPLETE: ag_news__medium-4__seed42__buggy_no_guard max_epochs
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed42__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | JOB: ag_news__medium-4__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=97433.0695 val_loss=5508.4774
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=4045.7855 val_loss=1779.1687
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=1488.7087 val_loss=577.6633
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=895.5707 val_loss=304.4562
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=665.9831 val_loss=240.1739
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=555.7866 val_loss=212.2305
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=486.4024 val_loss=193.3982
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=443.2960 val_loss=182.8630
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=408.9976 val_loss=175.5034
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=382.7540 val_loss=156.4233
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=366.2960 val_loss=156.8376
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=355.2056 val_loss=149.0984
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=347.7162 val_loss=149.0006
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=341.2380 val_loss=153.2461
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=339.3361 val_loss=151.5099
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=340.3024 val_loss=151.2685
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=339.8941 val_loss=151.2685
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=339.4154 val_loss=151.2685
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable | COMPLETE: ag_news__medium-4__seed42__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | JOB: ag_news__medium-4__seed123__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=1 step=3188 train_loss=31659.5161 val_loss=1501.0046
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=2 step=6376 train_loss=1079.6750 val_loss=621.9696
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=3 step=9564 train_loss=522.8736 val_loss=293.8750
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=4 step=12752 train_loss=301.0050 val_loss=171.0372
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=5 step=15940 train_loss=159.9810 val_loss=120.5976
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=6 step=19128 train_loss=68.8065 val_loss=57.0831
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=7 step=22316 train_loss=23.6098 val_loss=21.0205
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=8 step=25504 train_loss=8.5879 val_loss=11.5367
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=9 step=28692 train_loss=2.3948 val_loss=2.2921
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=10 step=31880 train_loss=1.7155 val_loss=1.3073
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=11 step=35068 train_loss=1.5223 val_loss=1.3902
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=12 step=38256 train_loss=1.3908 val_loss=1.1124
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=13 step=41444 train_loss=1.2818 val_loss=1.2338
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=14 step=44632 train_loss=1.1856 val_loss=1.2479
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=15 step=47820 train_loss=1.1011 val_loss=1.1126
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=16 step=51008 train_loss=1.0360 val_loss=0.8596
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=17 step=54196 train_loss=0.9727 val_loss=0.7888
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=18 step=57384 train_loss=0.9277 val_loss=0.7947
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=19 step=60572 train_loss=0.8878 val_loss=0.7826
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=20 step=63760 train_loss=0.8642 val_loss=0.7212
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=21 step=66948 train_loss=0.8297 val_loss=0.8096
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=22 step=70136 train_loss=0.7948 val_loss=0.7180
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=23 step=73324 train_loss=0.7618 val_loss=0.7475
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=24 step=76512 train_loss=0.7263 val_loss=0.7477
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=25 step=79700 train_loss=0.6924 val_loss=0.7013
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=26 step=82888 train_loss=0.6805 val_loss=0.6408
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=27 step=86076 train_loss=0.6601 val_loss=0.7169
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=28 step=89264 train_loss=0.6456 val_loss=0.7066
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=29 step=92452 train_loss=0.6313 val_loss=0.8431
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | epoch=30 step=95640 train_loss=0.6261 val_loss=0.6468
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard | COMPLETE: ag_news__medium-4__seed123__buggy_no_guard max_epochs
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed123__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | JOB: ag_news__medium-4__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=89274.6732 val_loss=6641.9252
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=6404.5803 val_loss=2510.0897
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=2381.5160 val_loss=1340.2121
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=1451.7235 val_loss=1113.0516
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=1092.5259 val_loss=1033.7526
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=910.5131 val_loss=767.2450
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=788.4414 val_loss=570.7682
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=715.3102 val_loss=597.7711
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=654.8629 val_loss=516.3919
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=621.0067 val_loss=421.3677
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=587.6693 val_loss=406.0897
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=572.1367 val_loss=375.6477
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=558.0559 val_loss=385.4038
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=554.9669 val_loss=387.3479
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=552.4831 val_loss=383.7869
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=548.0708 val_loss=381.7086
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=550.9828 val_loss=381.7086
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable | COMPLETE: ag_news__medium-4__seed123__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | JOB: ag_news__medium-4__seed456__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=1 step=3188 train_loss=18953.4100 val_loss=390.9272
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=2 step=6376 train_loss=641.1602 val_loss=190.0867
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=3 step=9564 train_loss=356.0315 val_loss=120.4190
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=4 step=12752 train_loss=219.2272 val_loss=70.1372
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=5 step=15940 train_loss=153.6810 val_loss=59.1217
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=6 step=19128 train_loss=116.2847 val_loss=47.9065
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=7 step=22316 train_loss=92.9134 val_loss=44.5492
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=8 step=25504 train_loss=75.1214 val_loss=33.7107
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=9 step=28692 train_loss=64.0457 val_loss=35.5877
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=10 step=31880 train_loss=56.8125 val_loss=33.2891
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=11 step=35068 train_loss=49.5449 val_loss=48.8370
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=12 step=38256 train_loss=41.8466 val_loss=29.1808
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=13 step=41444 train_loss=39.0991 val_loss=20.2214
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=14 step=44632 train_loss=35.9731 val_loss=26.6085
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=15 step=47820 train_loss=33.3879 val_loss=51.5905
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=16 step=51008 train_loss=29.8193 val_loss=54.7906
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=17 step=54196 train_loss=28.2373 val_loss=18.5866
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=18 step=57384 train_loss=26.4626 val_loss=23.1678
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=19 step=60572 train_loss=24.9364 val_loss=23.8980
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=20 step=63760 train_loss=22.0107 val_loss=24.4732
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=21 step=66948 train_loss=20.9957 val_loss=19.7900
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | epoch=22 step=70136 train_loss=18.3387 val_loss=19.0865
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard | COMPLETE: ag_news__medium-4__seed456__buggy_no_guard early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed456__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | JOB: ag_news__medium-4__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=54073.2965 val_loss=3567.7570
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=3994.3014 val_loss=1605.6681
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=1451.6163 val_loss=398.1615
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=823.9827 val_loss=302.7159
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=610.5436 val_loss=235.9776
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=508.1032 val_loss=188.2156
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=452.1448 val_loss=172.0426
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=408.7580 val_loss=166.2987
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=376.5975 val_loss=154.8266
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=356.4520 val_loss=155.5483
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=341.9280 val_loss=139.9241
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=326.9316 val_loss=135.7724
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=322.7623 val_loss=138.1072
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=315.3474 val_loss=131.1645
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=317.0668 val_loss=132.7146
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=315.7496 val_loss=132.4185
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=316.8929 val_loss=132.4185
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=318.5097 val_loss=132.4185
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | epoch=19 step=60572 train_loss=317.0472 val_loss=132.4185
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable | COMPLETE: ag_news__medium-4__seed456__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | JOB: ag_news__medium-4__seed789__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=1 step=3188 train_loss=19069.7875 val_loss=702.6709
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=2 step=6376 train_loss=930.9784 val_loss=275.5114
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=3 step=9564 train_loss=444.6762 val_loss=225.5715
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=4 step=12752 train_loss=240.7694 val_loss=99.7370
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=5 step=15940 train_loss=142.8676 val_loss=56.5534
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=6 step=19128 train_loss=75.1603 val_loss=27.8733
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=7 step=22316 train_loss=36.6097 val_loss=13.9277
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=8 step=25504 train_loss=15.1850 val_loss=8.5719
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=9 step=28692 train_loss=4.1582 val_loss=1.3542
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=10 step=31880 train_loss=1.5463 val_loss=1.1719
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=11 step=35068 train_loss=1.3815 val_loss=1.0214
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=12 step=38256 train_loss=1.2251 val_loss=0.9727
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=13 step=41444 train_loss=1.1468 val_loss=0.9861
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=14 step=44632 train_loss=1.0749 val_loss=1.1330
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=15 step=47820 train_loss=1.0023 val_loss=1.1356
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=16 step=51008 train_loss=0.9638 val_loss=0.7862
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=17 step=54196 train_loss=0.8962 val_loss=0.7725
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=18 step=57384 train_loss=0.8428 val_loss=0.7821
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=19 step=60572 train_loss=0.8086 val_loss=0.8152
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=20 step=63760 train_loss=0.7715 val_loss=0.6535
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=21 step=66948 train_loss=0.7413 val_loss=1.0388
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=22 step=70136 train_loss=0.7167 val_loss=0.8500
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=23 step=73324 train_loss=0.6908 val_loss=0.6821
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=24 step=76512 train_loss=0.6715 val_loss=0.7043
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | epoch=25 step=79700 train_loss=0.6476 val_loss=1.1216
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard | COMPLETE: ag_news__medium-4__seed789__buggy_no_guard early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed789__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | JOB: ag_news__medium-4__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=51307.3527 val_loss=2089.2677
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=5504.8933 val_loss=1621.4355
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=2115.3806 val_loss=706.0607
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=1271.2497 val_loss=516.6692
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=932.6371 val_loss=350.3001
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=761.8050 val_loss=339.7499
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=661.3276 val_loss=279.5238
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=592.0314 val_loss=250.9094
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=541.7933 val_loss=254.4684
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=509.8973 val_loss=229.7545
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=479.9275 val_loss=230.2723
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=464.7553 val_loss=223.8275
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=453.5566 val_loss=213.9294
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=446.5944 val_loss=208.9696
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=445.0822 val_loss=209.1712
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=443.9880 val_loss=209.0308
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=441.8537 val_loss=209.0308
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=441.4448 val_loss=209.0308
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | epoch=19 step=60572 train_loss=445.7863 val_loss=209.0308
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable | COMPLETE: ag_news__medium-4__seed789__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | JOB: ag_news__medium-4__seed2026__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=1 step=3188 train_loss=24901.0420 val_loss=841.0313
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=2 step=6376 train_loss=905.1122 val_loss=458.6072
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=3 step=9564 train_loss=533.6549 val_loss=1035.0243
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=4 step=12752 train_loss=372.2442 val_loss=388.3780
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=5 step=15940 train_loss=252.1758 val_loss=132.7671
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=6 step=19128 train_loss=182.0762 val_loss=96.9219
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=7 step=22316 train_loss=132.7349 val_loss=82.6433
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=8 step=25504 train_loss=105.1877 val_loss=96.2232
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=9 step=28692 train_loss=83.3348 val_loss=211.2881
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=10 step=31880 train_loss=65.3735 val_loss=38.7004
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=11 step=35068 train_loss=51.7636 val_loss=28.8461
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=12 step=38256 train_loss=41.7812 val_loss=37.6174
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=13 step=41444 train_loss=33.1406 val_loss=37.8760
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=14 step=44632 train_loss=26.2971 val_loss=15.7786
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=15 step=47820 train_loss=21.2371 val_loss=23.2350
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=16 step=51008 train_loss=16.7748 val_loss=9.4276
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=17 step=54196 train_loss=13.7022 val_loss=10.1346
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=18 step=57384 train_loss=10.9587 val_loss=21.2762
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=19 step=60572 train_loss=8.2683 val_loss=14.3762
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=20 step=63760 train_loss=6.0211 val_loss=4.5198
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=21 step=66948 train_loss=3.6726 val_loss=3.4255
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=22 step=70136 train_loss=1.7044 val_loss=1.2286
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=23 step=73324 train_loss=1.2314 val_loss=1.0570
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=24 step=76512 train_loss=1.1543 val_loss=1.0353
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=25 step=79700 train_loss=1.0878 val_loss=1.0681
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=26 step=82888 train_loss=1.0142 val_loss=1.2218
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=27 step=86076 train_loss=0.9625 val_loss=1.0014
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=28 step=89264 train_loss=0.9279 val_loss=0.9423
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=29 step=92452 train_loss=0.8756 val_loss=0.8290
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | epoch=30 step=95640 train_loss=0.8386 val_loss=0.9192
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard | COMPLETE: ag_news__medium-4__seed2026__buggy_no_guard max_epochs
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed2026__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | JOB: ag_news__medium-4__seed2026__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=72270.7204 val_loss=3917.0164
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=3736.4123 val_loss=1295.5678
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=1575.7959 val_loss=498.7019
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=1051.3526 val_loss=459.9274
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=803.7165 val_loss=400.2522
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=658.5927 val_loss=293.4861
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=565.0686 val_loss=295.7405
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=507.1979 val_loss=248.9051
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=475.6221 val_loss=236.5128
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=432.5027 val_loss=230.9450
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=408.1102 val_loss=227.7318
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=394.1282 val_loss=210.6973
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=379.7651 val_loss=196.9149
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=378.1582 val_loss=207.9736
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=374.0744 val_loss=201.6191
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=376.9895 val_loss=202.1614
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=374.9467 val_loss=202.1614
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=373.8262 val_loss=202.1614
+[AG_News] [GPU0] scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable | COMPLETE: ag_news__medium-4__seed2026__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__medium-4__seed2026__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | JOB: ag_news__large-6__seed42__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=1 step=3188 train_loss=147248.7983 val_loss=6210.6581
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=2 step=6376 train_loss=4735.2437 val_loss=1731.9078
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=3 step=9564 train_loss=3200.0598 val_loss=2325.2127
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=4 step=12752 train_loss=2338.1741 val_loss=1731.2608
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=5 step=15940 train_loss=1798.5146 val_loss=2247.6947
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=6 step=19128 train_loss=1310.1133 val_loss=849.6311
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=7 step=22316 train_loss=1176.8467 val_loss=1554.2893
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=8 step=25504 train_loss=1041.2845 val_loss=1172.1861
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=9 step=28692 train_loss=811.3036 val_loss=3180.3810
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=10 step=31880 train_loss=660.5866 val_loss=1795.1081
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=11 step=35068 train_loss=561.6299 val_loss=636.9371
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=12 step=38256 train_loss=537.7536 val_loss=544.1610
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=13 step=41444 train_loss=474.5753 val_loss=1819.0325
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=14 step=44632 train_loss=398.6885 val_loss=799.9910
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=15 step=47820 train_loss=375.2575 val_loss=1676.9438
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=16 step=51008 train_loss=337.6161 val_loss=778.9427
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=17 step=54196 train_loss=300.3794 val_loss=404.4808
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=18 step=57384 train_loss=270.8276 val_loss=522.4040
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=19 step=60572 train_loss=246.4461 val_loss=489.6276
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=20 step=63760 train_loss=235.7720 val_loss=510.8111
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=21 step=66948 train_loss=208.3251 val_loss=949.5459
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | epoch=22 step=70136 train_loss=197.1242 val_loss=635.7641
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard | COMPLETE: ag_news__large-6__seed42__buggy_no_guard early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed42__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | JOB: ag_news__large-6__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=365135.3297 val_loss=19450.3499
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=14917.1612 val_loss=8770.6346
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=6894.4206 val_loss=4650.0604
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=4378.6180 val_loss=3351.4581
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=3193.2820 val_loss=1941.1756
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=2679.5546 val_loss=1088.3770
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=2309.8612 val_loss=1190.9150
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=2071.6353 val_loss=1129.5333
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=1964.9385 val_loss=1143.7530
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=1845.0147 val_loss=1061.4007
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=1769.2268 val_loss=1569.8219
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=1693.0484 val_loss=1031.8382
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=1678.6830 val_loss=1198.6817
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=1676.1950 val_loss=1135.5931
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=1651.2285 val_loss=1157.4995
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=1647.2738 val_loss=1159.9385
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=1646.1272 val_loss=1159.9385
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable | COMPLETE: ag_news__large-6__seed42__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed42__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | JOB: ag_news__large-6__seed123__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=1 step=3188 train_loss=248721.1108 val_loss=11990.1659
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=2 step=6376 train_loss=6810.6745 val_loss=2676.3019
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=3 step=9564 train_loss=4240.7191 val_loss=1736.6997
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=4 step=12752 train_loss=3207.1736 val_loss=2973.1366
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=5 step=15940 train_loss=2474.7006 val_loss=2748.5868
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=6 step=19128 train_loss=1830.5990 val_loss=815.0116
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=7 step=22316 train_loss=1476.5516 val_loss=760.5583
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=8 step=25504 train_loss=1120.4184 val_loss=1306.7001
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=9 step=28692 train_loss=967.3736 val_loss=506.0688
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=10 step=31880 train_loss=806.1217 val_loss=693.5353
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=11 step=35068 train_loss=766.9984 val_loss=475.2542
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=12 step=38256 train_loss=711.5916 val_loss=445.7264
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=13 step=41444 train_loss=666.5449 val_loss=523.5096
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=14 step=44632 train_loss=576.3192 val_loss=420.7376
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=15 step=47820 train_loss=574.2353 val_loss=532.5533
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=16 step=51008 train_loss=565.0552 val_loss=452.0771
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=17 step=54196 train_loss=535.6685 val_loss=814.3314
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=18 step=57384 train_loss=500.2184 val_loss=664.0819
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=19 step=60572 train_loss=452.1654 val_loss=319.8781
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=20 step=63760 train_loss=432.0318 val_loss=314.8146
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=21 step=66948 train_loss=410.7743 val_loss=309.0290
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=22 step=70136 train_loss=375.0495 val_loss=260.1782
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=23 step=73324 train_loss=357.4967 val_loss=299.9378
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=24 step=76512 train_loss=342.0871 val_loss=294.3122
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=25 step=79700 train_loss=326.8343 val_loss=259.2935
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=26 step=82888 train_loss=299.7370 val_loss=242.0349
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=27 step=86076 train_loss=288.9392 val_loss=230.7691
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=28 step=89264 train_loss=270.1755 val_loss=232.2504
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=29 step=92452 train_loss=250.6211 val_loss=225.5551
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | epoch=30 step=95640 train_loss=261.8558 val_loss=203.6619
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard | COMPLETE: ag_news__large-6__seed123__buggy_no_guard max_epochs
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed123__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | JOB: ag_news__large-6__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=621466.8390 val_loss=60393.7906
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=22563.2472 val_loss=30673.5326
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=11605.4884 val_loss=12471.1939
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=7021.9416 val_loss=3556.3339
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=4959.7050 val_loss=2364.1937
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=3872.0383 val_loss=1664.1726
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=3458.3060 val_loss=1789.1748
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=2977.2388 val_loss=2433.5166
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=2870.3125 val_loss=3635.7134
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=2717.1395 val_loss=2859.8081
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=2406.6398 val_loss=2091.6272
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable | COMPLETE: ag_news__large-6__seed123__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed123__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | JOB: ag_news__large-6__seed456__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=1 step=3188 train_loss=114360.0948 val_loss=3389.8447
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=2 step=6376 train_loss=5885.1000 val_loss=3178.9381
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=3 step=9564 train_loss=3927.9328 val_loss=1541.6596
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=4 step=12752 train_loss=2755.9709 val_loss=2035.5581
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=5 step=15940 train_loss=2095.0228 val_loss=842.6642
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=6 step=19128 train_loss=1666.4401 val_loss=1121.3701
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=7 step=22316 train_loss=1193.1820 val_loss=593.3872
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=8 step=25504 train_loss=1076.1068 val_loss=598.3632
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=9 step=28692 train_loss=1026.2661 val_loss=749.8197
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=10 step=31880 train_loss=740.6107 val_loss=651.8026
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=11 step=35068 train_loss=688.5946 val_loss=331.2242
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=12 step=38256 train_loss=565.3354 val_loss=548.7165
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=13 step=41444 train_loss=514.5276 val_loss=297.2161
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=14 step=44632 train_loss=456.7368 val_loss=284.3206
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=15 step=47820 train_loss=434.2125 val_loss=484.4134
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=16 step=51008 train_loss=429.1955 val_loss=451.5836
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=17 step=54196 train_loss=408.5133 val_loss=857.5754
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=18 step=57384 train_loss=347.4615 val_loss=337.9660
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=19 step=60572 train_loss=328.0419 val_loss=226.8800
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=20 step=63760 train_loss=326.5653 val_loss=229.0967
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=21 step=66948 train_loss=311.0314 val_loss=298.1553
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=22 step=70136 train_loss=274.3482 val_loss=220.5764
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=23 step=73324 train_loss=282.7376 val_loss=347.1505
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=24 step=76512 train_loss=247.5151 val_loss=303.9581
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=25 step=79700 train_loss=240.3203 val_loss=326.1492
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=26 step=82888 train_loss=226.2616 val_loss=261.8700
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | epoch=27 step=86076 train_loss=209.5669 val_loss=282.4777
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard | COMPLETE: ag_news__large-6__seed456__buggy_no_guard early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed456__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | JOB: ag_news__large-6__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=274880.6179 val_loss=16760.0959
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=19171.6917 val_loss=4933.8051
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=9037.4581 val_loss=4274.4813
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=5360.5811 val_loss=3053.6213
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=3739.0795 val_loss=2021.3155
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=3098.3701 val_loss=2046.2364
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=2637.2980 val_loss=1694.6552
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=2331.7615 val_loss=1286.4741
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=2114.4223 val_loss=1250.5143
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=1968.1020 val_loss=1170.6318
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=1899.2349 val_loss=1262.3530
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=1955.5992 val_loss=1209.3376
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=1840.5227 val_loss=1163.5329
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=1871.9125 val_loss=1159.9105
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=1851.8791 val_loss=1155.2414
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=1845.9216 val_loss=1148.9630
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=1841.2624 val_loss=1148.9630
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=1865.6913 val_loss=1148.9630
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=19 step=60572 train_loss=1842.6252 val_loss=1148.9630
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=20 step=63760 train_loss=1849.8582 val_loss=1148.9630
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | epoch=21 step=66948 train_loss=1854.0339 val_loss=1148.9630
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable | COMPLETE: ag_news__large-6__seed456__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed456__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | JOB: ag_news__large-6__seed789__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=1 step=3188 train_loss=166410.2292 val_loss=9044.0350
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=2 step=6376 train_loss=7136.7062 val_loss=3587.2524
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=3 step=9564 train_loss=4937.6227 val_loss=7971.6213
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=4 step=12752 train_loss=4206.6714 val_loss=1873.3824
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=5 step=15940 train_loss=3123.1136 val_loss=5250.8735
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=6 step=19128 train_loss=2397.7893 val_loss=1465.7646
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=7 step=22316 train_loss=1768.3036 val_loss=2000.3432
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=8 step=25504 train_loss=1360.6734 val_loss=906.0046
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=9 step=28692 train_loss=1076.7160 val_loss=1118.3146
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=10 step=31880 train_loss=907.5672 val_loss=567.0900
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=11 step=35068 train_loss=744.6094 val_loss=617.2968
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=12 step=38256 train_loss=648.4024 val_loss=452.8358
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=13 step=41444 train_loss=553.5077 val_loss=666.9501
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=14 step=44632 train_loss=476.0566 val_loss=456.6032
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=15 step=47820 train_loss=446.9255 val_loss=1178.4828
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=16 step=51008 train_loss=393.4175 val_loss=282.3204
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=17 step=54196 train_loss=331.4742 val_loss=949.9336
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=18 step=57384 train_loss=282.2456 val_loss=258.2987
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=19 step=60572 train_loss=260.1601 val_loss=246.9914
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=20 step=63760 train_loss=226.8424 val_loss=273.7107
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=21 step=66948 train_loss=200.0867 val_loss=226.6411
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=22 step=70136 train_loss=184.4249 val_loss=415.1582
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=23 step=73324 train_loss=172.5292 val_loss=246.6889
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=24 step=76512 train_loss=154.1322 val_loss=232.6551
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=25 step=79700 train_loss=148.2799 val_loss=164.7952
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=26 step=82888 train_loss=129.3485 val_loss=292.6408
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=27 step=86076 train_loss=113.5183 val_loss=172.3763
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=28 step=89264 train_loss=110.4059 val_loss=157.4041
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=29 step=92452 train_loss=100.5267 val_loss=230.0541
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | epoch=30 step=95640 train_loss=93.0098 val_loss=189.5292
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard | COMPLETE: ag_news__large-6__seed789__buggy_no_guard max_epochs
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed789__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | JOB: ag_news__large-6__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=401735.1015 val_loss=27242.4637
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=24795.3297 val_loss=6024.7408
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=12082.7265 val_loss=3573.8518
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=7374.3427 val_loss=3520.2329
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=5325.2187 val_loss=2343.4051
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=4288.6888 val_loss=1777.9315
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=3703.1821 val_loss=1956.0633
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=3352.4463 val_loss=1541.8609
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=3095.4818 val_loss=1364.8485
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=3122.9326 val_loss=1274.1188
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=2963.6328 val_loss=1794.1044
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=2740.4686 val_loss=1259.3958
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=2664.1902 val_loss=1477.3078
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=2616.7917 val_loss=1339.3712
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=2604.4292 val_loss=1326.0462
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=2582.1904 val_loss=1339.9428
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=2582.1758 val_loss=1339.9428
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable | COMPLETE: ag_news__large-6__seed789__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed789__single_bad_first_step_then_stable
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | JOB: ag_news__large-6__seed2026__buggy_no_guard
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=1 step=3188 train_loss=176568.6835 val_loss=3449.9831
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=2 step=6376 train_loss=5715.2489 val_loss=3296.5451
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=3 step=9564 train_loss=3655.3425 val_loss=1474.8582
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=4 step=12752 train_loss=2541.9994 val_loss=1146.9612
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=5 step=15940 train_loss=2073.9555 val_loss=998.2450
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=6 step=19128 train_loss=1657.6598 val_loss=698.0684
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=7 step=22316 train_loss=1215.9365 val_loss=713.1170
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=8 step=25504 train_loss=1070.0315 val_loss=600.9977
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=9 step=28692 train_loss=906.1867 val_loss=647.8770
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=10 step=31880 train_loss=773.7910 val_loss=557.8140
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=11 step=35068 train_loss=691.6734 val_loss=426.5368
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=12 step=38256 train_loss=554.3747 val_loss=386.8494
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=13 step=41444 train_loss=527.5754 val_loss=558.9729
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=14 step=44632 train_loss=481.2910 val_loss=696.1944
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=15 step=47820 train_loss=457.2395 val_loss=325.8897
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=16 step=51008 train_loss=420.3484 val_loss=723.2639
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=17 step=54196 train_loss=387.8012 val_loss=443.8443
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=18 step=57384 train_loss=385.4003 val_loss=521.2736
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=19 step=60572 train_loss=352.9368 val_loss=264.0824
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=20 step=63760 train_loss=345.7173 val_loss=398.7352
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=21 step=66948 train_loss=338.6456 val_loss=447.6602
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=22 step=70136 train_loss=300.5774 val_loss=203.9541
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=23 step=73324 train_loss=284.7247 val_loss=279.5427
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=24 step=76512 train_loss=271.6981 val_loss=189.3271
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=25 step=79700 train_loss=258.3619 val_loss=234.7669
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=26 step=82888 train_loss=238.1064 val_loss=210.3945
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=27 step=86076 train_loss=245.4258 val_loss=201.1765
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=28 step=89264 train_loss=231.5184 val_loss=191.5156
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | epoch=29 step=92452 train_loss=229.4521 val_loss=227.7580
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard | COMPLETE: ag_news__large-6__seed2026__buggy_no_guard early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed2026__buggy_no_guard
+[AG_News] [GPU0] START scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | JOB: ag_news__large-6__seed2026__single_bad_first_step_then_stable
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | DEVICE: cuda
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=1 step=3188 train_loss=436376.0659 val_loss=29543.6083
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=2 step=6376 train_loss=19318.6315 val_loss=8289.6695
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=3 step=9564 train_loss=9199.2706 val_loss=2661.0918
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=4 step=12752 train_loss=5495.2529 val_loss=4024.4180
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=5 step=15940 train_loss=3930.2169 val_loss=1683.2060
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=6 step=19128 train_loss=3121.8385 val_loss=1693.4412
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=7 step=22316 train_loss=2786.7231 val_loss=1613.7175
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=8 step=25504 train_loss=2522.5177 val_loss=1588.9298
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=9 step=28692 train_loss=2341.5146 val_loss=1153.2447
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=10 step=31880 train_loss=2299.1286 val_loss=1676.6357
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=11 step=35068 train_loss=2139.1382 val_loss=1325.5712
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=12 step=38256 train_loss=2030.8782 val_loss=1059.7087
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=13 step=41444 train_loss=2015.3082 val_loss=1143.1331
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=14 step=44632 train_loss=1962.3909 val_loss=1178.2576
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=15 step=47820 train_loss=1964.0286 val_loss=1059.3256
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=16 step=51008 train_loss=1974.8151 val_loss=1062.5816
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=17 step=54196 train_loss=1977.2424 val_loss=1062.5816
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=18 step=57384 train_loss=1971.0325 val_loss=1062.5816
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=19 step=60572 train_loss=1962.0922 val_loss=1062.5816
+[AG_News] [GPU0] ACTIVE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable — awaiting epoch output
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | epoch=20 step=63760 train_loss=1968.6927 val_loss=1062.5816
+[AG_News] [GPU0] scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable | COMPLETE: ag_news__large-6__seed2026__single_bad_first_step_then_stable early_stopping
+[AG_News] [GPU0] DONE scratch-nonguarded__ag_news__large-6__seed2026__single_bad_first_step_then_stable
+[AG_News] [PASS] scratch-nonguarded: 20 jobs finished. Restartable results saved.
+[AG_News] 
+[AG_News] ========================================================================
+[AG_News] [4/12] SCRATCH-GUARDED
+[AG_News] ========================================================================
+[AG_News] Traceback (most recent call last):
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 265, in <module>
+[AG_News]     if __name__=='__main__': main()
+[AG_News]                              ^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 262, in main
+[AG_News]     execute_jobs(phase,args)
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 164, in execute_jobs
+[AG_News]     jobs = build_jobs(phase, args.dry_run)
+[AG_News]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py", line 142, in build_jobs
+[AG_News]     jobs = [j for j in scratch.build_jobs(group, threshold_manifest=manifest)
+[AG_News]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_matrix.py", line 300, in build_jobs
+[AG_News]     threshold = threshold_lookup(
+[AG_News]                 ^^^^^^^^^^^^^^^^^
+[AG_News]   File "/home/server/Downloads/warm-up paper package/ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/publication_expansion/src/scratch_matrix.py", line 260, in threshold_lookup
+[AG_News]     raise RuntimeError(
+[AG_News] RuntimeError: expected exactly one LOSO threshold for dbpedia_14/medium-4/seed42

@@ -24,3 +24,8 @@ artifacts/source_archives/
 !computing/**/*.zip
 !execution/**/*.zip
 !submission/*.zip
+
+# Verified SN Computer Science scientific package
+!sncs/**/*.zip
+!submission/sncs-2026-11-20/*.zip
+!submission/sncs-2026-11-23/*.zip

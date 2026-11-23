@@ -1,0 +1,19 @@
+{
+  "version": "sncs-submission-2026-11-23",
+  "version_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23",
+  "date": "2026-11-23",
+  "journal": "SN Computer Science",
+  "journal_submission_status": "Draft; journal support instructed supplementary links in manuscript",
+  "package_directory": "sncs",
+  "download_directory": "submission/sncs-2026-11-23",
+  "base_scientific_tag": "computing-submission-2026-11-18-r2",
+  "base_commit": "540ffc25ebbf977930f5a7ad3a10c05f1af3fa0a",
+  "package_files_byte_identical_to_ESM_2": 430,
+  "archive_sha256": "219d012f11321aa41c3e380e233c49330e72c2074822c82ec918d194f607d363",
+  "scientific_delivery_unchanged": false,
+  "new_training": false,
+  "verification": "verification/sncs-2026-11-23/FINAL_CHECK.json",
+  "large_companions": "Retained separately by the authors, with hashes in sncs/EXTERNAL_EVIDENCE.json; not included in this repository upload.",
+  "unavailable_original_assets": "See sncs/ARTIFACT_AVAILABILITY.md. Repository publication does not recover missing historical checkpoints or predictions.",
+  "change_from_20_november": "Only supplementary links and version metadata updated; title, scientific text, results and historical selections unchanged."
+}

@@ -1,0 +1,3 @@
+# Versions used by the local synthetic checks. Choose the CPU wheel for torch.
+numpy==2.5.4
+torch==2.8.0

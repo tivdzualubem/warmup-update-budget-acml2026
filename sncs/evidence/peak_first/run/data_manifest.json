@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "dataset_name": "dbpedia_14",
+    "hf_name": "fancyzhx/dbpedia_14",
+    "text_field": "content",
+    "label_field": "label",
+    "num_classes": 14,
+    "official_train_count": 560000,
+    "official_test_count": 70000,
+    "max_length": 128,
+    "vocab_policy": {
+      "tokenization": "lowercase_whitespace_split",
+      "pad_token": "<PAD>",
+      "pad_index": 0,
+      "unk_token": "<UNK>",
+      "unk_index": 1,
+      "min_freq": 2,
+      "max_vocab_size": 30000,
+      "source": "final_training_subset_only"
+    },
+    "split": {
+      "split_seed": 42,
+      "val_ratio": 0.15,
+      "train_fraction": 1.0,
+      "train_count": 476000,
+      "validation_count": 84000,
+      "train_indices_sha256": "767c8c4fea87b9f39ddcfd24cb9e32807694ccdcc4f6bf19c9edd0ea81b4d4d6",
+      "validation_indices_sha256": "75cc3a5c716ae024bd95de7e7d579546bef5a63038d940c7ff5d5a66aa08f3fa"
+    },
+    "vocab_size": 30000,
+    "hf_revision_requested": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+    "hf_fingerprints": {
+      "train": "beedf461d6a52841",
+      "test": "0db42c90dd82bcbb"
+    }
+  },
+  "vocabulary_sha256": "a837ff73e9e3eddf13ed1ffdbfc7b7bc16ddeb254c91e5e6102be6d4f850db8e",
+  "ordered_train_content_sha256": "e28eb002def29ad351b7bdba78e1019f157a580ec271d71c1a794b92c51135d0",
+  "ordered_validation_content_sha256": "364ae10bc410b0eda5051a59d3fc52db1bd3e779abea4165b0530520e241283f",
+  "ordered_test_content_sha256": "a1213d570f77a62c558a57b64b6023d38b6ee887c7b89dad2bb623684d028b62"
+}

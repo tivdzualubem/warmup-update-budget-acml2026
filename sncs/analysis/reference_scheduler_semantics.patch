@@ -1,0 +1,53 @@
+--- frozen/scheduler_semantics.py
++++ analysis/reference_scheduler_semantics.py
+@@ -1,4 +1,9 @@
+-"""Pure scheduler and condition semantics for the publication expansion.
++"""Corrected analysis reference for the archived publication-expansion runners.
++
++This module is not training code and does not alter historical results.
++Corrections dated 2026-10-19: guard enforcement only through step 100;
++pretrained single-bad first step exits at the installed intended LR.
++The scratch single-bad first step still exits at LR 1.0.
+ 
+ No model, optimizer, dataset, or device dependency is allowed here.
+ Optimizer steps use one-based indexing throughout.
+@@ -195,13 +200,13 @@
+     if condition == "buggy_failfast_guard":
+         return TransitionPlan(
+             condition, t, entry_lr, legacy,
+-            False, entry_lr, "failfast"
++            False, entry_lr, "failfast" if t <= 100 else "none"
+         )
+ 
+     if condition == "buggy_rescue_guard":
+         return TransitionPlan(
+             condition, t, entry_lr, legacy,
+-            False, entry_lr, "rescue"
++            False, entry_lr, "rescue" if t <= 100 else "none"
+         )
+ 
+     # single_bad_first_step_then_stable
+@@ -268,13 +273,13 @@
+     if condition == "update_guard_failfast":
+         return TransitionPlan(
+             condition, t, entry_lr, intended,
+-            False, entry_lr, "failfast"
++            False, entry_lr, "failfast" if t <= 100 else "none"
+         )
+ 
+     if condition == "update_guard_rescue":
+         return TransitionPlan(
+             condition, t, entry_lr, intended,
+-            False, entry_lr, "rescue"
++            False, entry_lr, "rescue" if t <= 100 else "none"
+         )
+ 
+     # executed_lr_assertion
+@@ -341,7 +346,6 @@
+         plan.condition
+         in {
+             "single_bad_first_step_then_stable",
+-            "single_bad_then_correct",
+         }
+         and plan.step == 1
+     ):

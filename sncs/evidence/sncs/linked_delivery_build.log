@@ -1,0 +1,805 @@
+Reproduce: reanalyse.py
+Regenerated 400 sensitivity rows, verified 40 LOSO thresholds; restored 80 guard threshold cells.
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "archive_member_count": 1281,
+  "scientific_jobs_by_family": {
+    "pretrained": 120,
+    "scratch": 120
+  },
+  "distinct_anchor_groups": 40,
+  "anchor_hash_mismatch": [],
+  "selection_metadata_failures": [],
+  "model_checkpoint_files_in_archive": 0,
+  "cannot_independently_rerun_test_evaluation_without_checkpoint_bytes": true,
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "note": "best-validation metadata compared with per-epoch validation histories; actual test recalculation requires original model checkpoint bytes; historical notebook outcomes are supplemented by archived run sources, raw AG News traces and DBpedia trace-audit exports in evidence/historical_warmup"
+}
+Reproduce: analyse_condition_budgets.py
+Condition budgets: 240 runs; 48 separate condition summaries; primary metrics: 80
+Reproduce: extract_historical_sweep.py
+RECOVERED 60 historical seed runs and 20 summary combinations from notebook outputs
+   dataset model_name  initial_lr  test_acc_mean  test_acc_std  ece_mean  nll_mean
+   ag_news    large-6        1.00        0.78469       0.01255   0.20766   4.54787
+   ag_news    large-6        0.30        0.86478       0.01102   0.04267   0.43055
+   ag_news    large-6        0.10        0.91706       0.00382   0.03049   0.27915
+   ag_news    large-6        0.03        0.92636       0.00054   0.03070   0.25918
+   ag_news    large-6        0.01        0.92158       0.00476   0.03209   0.26251
+   ag_news   medium-4        1.00        0.72022       0.09746   0.18229   1.77737
+   ag_news   medium-4        0.30        0.90434       0.00521   0.02836   0.29776
+   ag_news   medium-4        0.10        0.92439       0.00045   0.03152   0.26108
+   ag_news   medium-4        0.03        0.92561       0.00090   0.02537   0.23663
+   ag_news   medium-4        0.01        0.92693       0.00161   0.02899   0.23808
+dbpedia_14    large-6        1.00        0.82798       0.07223   0.16618   3.88515
+dbpedia_14    large-6        0.30        0.97016       0.00155   0.01855   0.16064
+dbpedia_14    large-6        0.10        0.98430       0.00069   0.00908   0.07495
+dbpedia_14    large-6        0.03        0.98620       0.00066   0.00712   0.06448
+dbpedia_14    large-6        0.01        0.98593       0.00035   0.00755   0.06514
+dbpedia_14   medium-4        1.00        0.89604       0.02619   0.05827   0.61778
+dbpedia_14   medium-4        0.30        0.98496       0.00048   0.00785   0.06704
+dbpedia_14   medium-4        0.10        0.98676       0.00042   0.00593   0.05617
+dbpedia_14   medium-4        0.03        0.98627       0.00026   0.00483   0.05400
+dbpedia_14   medium-4        0.01        0.98608       0.00029   0.00516   0.05343
+Reproduce: make_figures.py
+findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+Created 30 figures
+Reproduce: analyse_matched_steps.py
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "contrast_settings": 12,
+  "summary_rows": 95,
+  "paired_seed_rows": 475,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "recorded_numerical_failures": 0,
+  "interpolation": false,
+  "carry_forward": false,
+  "reselected_checkpoints": false,
+  "loss_recomputed_from_predictions": false,
+  "model_training": false
+}
+Reproduce: make_submission_figures.py
+Generated five complementary figures from preserved records.
+Reproduce: record_cpu_probes.py
+Microsoft Visual C++ Redistributable is not installed, this may lead to the DLL load failure.
+It can be downloaded at https://aka.ms/vs/16/release/vc_redist.x64.exe
+{
+  "scope": "our tiny artificial CPU counterexamples, not historical training outcomes",
+  "torch": "2.8.0+cpu",
+  "extreme_logits": {
+    "archived_logit_ce": 2000.0,
+    "archived_clipped_probability_nll": 27.63102149963379,
+    "v2_logit_ce": 2000.0
+  },
+  "uneven_batch": {
+    "batch_sizes": [
+      32,
+      1
+    ],
+    "archived_mean_of_batch_means": 5.346596289729582,
+    "v2_sample_weighted_ce": 0.975174399297499
+  },
+  "archived_nonfinite_candidate": {
+    "ratio_is_finite": false,
+    "guard_triggered": false,
+    "stopped": false
+  },
+  "replay_ceiling": {
+    "threshold": 0.001,
+    "intended_lr": 0.1,
+    "archived_committed_ratio": 0.09999999989989997,
+    "archived_stopped": false,
+    "v2_replay_ratio": 0.09999999989989997,
+    "v2_stopped": true,
+    "v2_restored_weight": 1.0,
+    "v2_failure_reason": "replay_exceeds_threshold",
+    "v2_optimizer_calls": 2
+  }
+}
+Reproduce: audit_execution_provenance.py
+{
+  "status": "passed",
+  "scope": "saved-record and source provenance audit; no model training or prediction reevaluation",
+  "results_archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "original_source_launcher_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+  "scientific_job_records": 240,
+  "trained_test_endpoints": 180,
+  "severity_diagnostic_records": 20,
+  "metadata_files_byte_identical_to_original_launcher": 49,
+  "historical_completion_manifests_unchanged": 5,
+  "source_file_copy_matches": 224,
+  "distinct_scientific_source_files": 56,
+  "matched_initialization_groups": 40,
+  "anchor_fields_per_group": 7,
+  "history_rows_checked": 1573,
+  "trace_rows_checked": 55535,
+  "trace_lr_fields_checked": 277675,
+  "log_lines_read": 1499,
+  "log_epoch_rows_checked": 635,
+  "log_completed_jobs": 40,
+  "failures": [],
+  "interpretation": "The five completion flags are byte-identical pre-execution design metadata. Per-job result/status/history/trace records cover the full scientific matrix. This establishes internally consistent recorded completion, not bit-exact reproduction of original training.",
+  "recovered_hotfix": "ACML_LAUNCHER_HOTFIX_RESUME.zip is preserved and audited separately in launcher_hotfix_audit.json; its text transformation addresses both observed launch errors."
+}
+Reproduce: audit_launcher_hotfix.py
+{
+  "supplied_zip_sha256": "d05ace110f0d702aee6842a81d215a9aa1ffbc9eb279079178a6b46243479a7d",
+  "patch_script_sha256": "1efd6a7f6c9ec6bfbe7d9fe9e5512e1f19a0626910f165f7eb53ed1b6b43e0a6",
+  "status": "passed",
+  "wrappers": [
+    {
+      "dataset": "AG_News",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py",
+      "original_sha256": "0442d9cfd6c819753ea83897cb94c11226de276ae0d9463c8344b1cd1f146249",
+      "reconstructed_sha256": "1b67b2f3f4a0df53dc61cbe978ae349e3e72f0673a937fac83f34bd2f2bc26bd",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "DBPedia",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py",
+      "original_sha256": "c743992a438ebb2aee2d777a94768b54b069402eca6fdbdd987d83fccb3ea19c",
+      "reconstructed_sha256": "16f832ef9da6b11010c7acc453d23dbdfde7f5c42e33892f958c8f5cbc71d81d",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "WNUT_17",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py",
+      "original_sha256": "1616671560aeb4c62c0d2e01b5d17821bfe01a62e112ffd2c2c98cf1a82b64a9",
+      "reconstructed_sha256": "f0eadbfcec3f665531e5775918b2dc1182746d476aea6fff259e32bf544596f3",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "CIFAR_10",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py",
+      "original_sha256": "6c3a582bf5299836bd4de65b23e905f662ab6f46f0b9ad0b80a3e2efeed84c1c",
+      "reconstructed_sha256": "51eb8bd6d5eb6f9231bb4f66d3b0867fca78e6cc1a4e6ee9ea9a9bd3b269c3d7",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    }
+  ],
+  "scope": "Pure patch function applied to original launcher text in memory; syntax and idempotence checks only. No launcher, original hotfix main, or training executed.",
+  "source_modules_changed": false,
+  "observed_log_failures_addressed": [
+    "Two tuple-versus-dictionary queue failures",
+    "Cross-dataset DBpedia threshold lookup from AG News launcher"
+  ],
+  "not_proven": "No final original-host patch application log or execution-time source digest was supplied; reconstructed wrappers are not recovered executed files."
+}
+Reproduce: examples/first_two_steps.py
+medium-4 stable_with_guard                  t=1 entry=[0.0001] candidate=[1.2500000000000001e-08] committed=[1.2500000000000001e-08] exit=[1.2500000000000001e-08] calls=1 retained_counter=1.0
+medium-4 stable_with_guard                  t=2 entry=[1.2500000000000001e-08] candidate=[2.5000000000000002e-08] committed=[2.5000000000000002e-08] exit=[2.5000000000000002e-08] calls=1 retained_counter=2.0
+medium-4 single_bad_first_step_then_stable  t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[1.0] calls=1 retained_counter=1.0
+medium-4 single_bad_first_step_then_stable  t=2 entry=[1.0] candidate=[2.5000000000000002e-08] committed=[2.5000000000000002e-08] exit=[2.5000000000000002e-08] calls=1 retained_counter=2.0
+medium-4 fixed_order_with_guard             t=1 entry=[1.0] candidate=[1.2352647110032733e-07] committed=[1.2352647110032733e-07] exit=[1.2352647110032733e-07] calls=1 retained_counter=1.0
+medium-4 fixed_order_with_guard             t=2 entry=[1.2352647110032733e-07] candidate=[2.4705294220065465e-07] committed=[2.4705294220065465e-07] exit=[2.4705294220065465e-07] calls=1 retained_counter=2.0
+medium-4 buggy_no_guard                     t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[1.2352647110032733e-07] calls=1 retained_counter=1.0
+medium-4 buggy_no_guard                     t=2 entry=[1.2352647110032733e-07] candidate=[1.2352647110032733e-07] committed=[1.2352647110032733e-07] exit=[2.4705294220065465e-07] calls=1 retained_counter=2.0
+medium-4 buggy_rescue_guard                 t=1 entry=[1.0] candidate=[1.0] committed=[1.2352647110032733e-07] exit=[1.2352647110032733e-07] calls=2 retained_counter=1.0
+medium-4 buggy_rescue_guard                 t=2 entry=[1.2352647110032733e-07] candidate=[1.2352647110032733e-07] committed=[1.2352647110032733e-07] exit=[2.4705294220065465e-07] calls=1 retained_counter=2.0
+medium-4 buggy_failfast_guard               t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[1.2352647110032733e-07] calls=1 retained_counter=1.0
+large-6  stable_with_guard                  t=1 entry=[0.0001] candidate=[1.2500000000000001e-08] committed=[1.2500000000000001e-08] exit=[1.2500000000000001e-08] calls=1 retained_counter=1.0
+large-6  stable_with_guard                  t=2 entry=[1.2500000000000001e-08] candidate=[2.5000000000000002e-08] committed=[2.5000000000000002e-08] exit=[2.5000000000000002e-08] calls=1 retained_counter=2.0
+large-6  single_bad_first_step_then_stable  t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[1.0] calls=1 retained_counter=1.0
+large-6  single_bad_first_step_then_stable  t=2 entry=[1.0] candidate=[2.5000000000000002e-08] committed=[2.5000000000000002e-08] exit=[2.5000000000000002e-08] calls=1 retained_counter=2.0
+large-6  fixed_order_with_guard             t=1 entry=[1.0] candidate=[8.734640537108554e-08] committed=[8.734640537108554e-08] exit=[8.734640537108554e-08] calls=1 retained_counter=1.0
+large-6  fixed_order_with_guard             t=2 entry=[8.734640537108554e-08] candidate=[1.7469281074217108e-07] committed=[1.7469281074217108e-07] exit=[1.7469281074217108e-07] calls=1 retained_counter=2.0
+large-6  buggy_no_guard                     t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[8.734640537108554e-08] calls=1 retained_counter=1.0
+large-6  buggy_no_guard                     t=2 entry=[8.734640537108554e-08] candidate=[8.734640537108554e-08] committed=[8.734640537108554e-08] exit=[1.7469281074217108e-07] calls=1 retained_counter=2.0
+large-6  buggy_rescue_guard                 t=1 entry=[1.0] candidate=[1.0] committed=[8.734640537108554e-08] exit=[8.734640537108554e-08] calls=2 retained_counter=1.0
+large-6  buggy_rescue_guard                 t=2 entry=[8.734640537108554e-08] candidate=[8.734640537108554e-08] committed=[8.734640537108554e-08] exit=[1.7469281074217108e-07] calls=1 retained_counter=2.0
+large-6  buggy_failfast_guard               t=1 entry=[1.0] candidate=[1.0] committed=[1.0] exit=[8.734640537108554e-08] calls=1 retained_counter=1.0
+LR assertion: zero optimizer calls; zero LR: unchanged weights, changed moments/counter.
+Saved C:\Users\user\Documents\ChatGPT\ACML PAPER\revisions\2026-11-23_sncs_linked\ACML_Revision\evidence\verification\first_two_steps.json
+Reproduce: analyse_peak_pair.py
+{
+  "status": "passed",
+  "scope": "complete saved-record/trace audit",
+  "archives": [
+    {
+      "file": "ACML_Peak_First_RESULTS.zip",
+      "bytes": 10103218,
+      "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+      "verified_members": 49
+    }
+  ],
+  "paired_transitions": 49999,
+  "consumed_lr_fields_checked": 99998,
+  "sampler_batches_checked": 49999,
+  "evaluation_records": 42,
+  "online_training_blocks_checked": 1000,
+  "fixed_split_verified": true,
+  "same_source_config_data_environment_as_preflight": true,
+  "failure_or_resume_events": 0,
+  "closed_session_active_seconds": 4969.857002546,
+  "first_transition": {
+    "event": "paired_step",
+    "step": 1,
+    "epoch": 0,
+    "sampler_cursor": 32,
+    "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+    "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+    "arms": {
+      "clean": {
+        "lr_consumed": [
+          1.2500000000000001e-08
+        ],
+        "online_batch_ce": 3.2366724014282227,
+        "examples": 32,
+        "candidate_and_committed_ratio": 6.603961943503159e-08,
+        "instrumented_training_seconds": 0.43773331199997756
+      },
+      "peak_first": {
+        "lr_consumed": [
+          0.0001
+        ],
+        "online_batch_ce": 3.2366724014282227,
+        "examples": 32,
+        "candidate_and_committed_ratio": 0.0005065598757595089,
+        "instrumented_training_seconds": 0.18758080700001756
+      }
+    }
+  },
+  "primary_validation_ce_difference": 4.695263706736008e-06,
+  "research_training_by_this_analysis": false,
+  "new_research_pair_executed_on_kaggle": true,
+  "original_historical_checkpoint_reselection": false
+}
+Reproduce: make_peak_figures.py
+Reproduce: revise_for_computing.py
+Built revised manuscript and expanded scientific supplement; title unchanged.
+Applied focused 29 October revisions; title, source data and selections unchanged.
+Computing editorial revision applied; historical tables and title preserved.
+Reproduce: make_computing_figures.py
+Three vector main figures regenerated from unchanged tables.
+Reproduce: adapt_for_sncs.py
+Reproduce: build_sncs_latex.py
+{
+  "format": "svjour3 smallextended",
+  "page_limit": null,
+  "author_contacts_complete": true,
+  "competing_interests_confirmed": true,
+  "documents": [
+    {
+      "stem": "Research_Manuscript",
+      "tex_sha256": "f5a04f1b806fab6ac9901609bed2421866e56c423e8b3b79ab51c32487b59afc",
+      "pdf_sha256": "0194d5fce64940e5a5e7905f87543eb03d755828b01051431bef09b600ac9ecd"
+    },
+    {
+      "stem": "All_Seed_Results_and_Provenance",
+      "tex_sha256": "49c18222b4e1fbea0bd8335da9de539acf2d216cbc76a358bf6d193f06402152",
+      "pdf_sha256": "cfc799febe81b5c5920b93a7878420283a9ae851539842cd2972bc9cc326c06d"
+    }
+  ]
+}
+Reproduce: run_submission_checks.py
+Regenerated 400 sensitivity rows, verified 40 LOSO thresholds; restored 80 guard threshold cells.
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "archive_member_count": 1281,
+  "scientific_jobs_by_family": {
+    "pretrained": 120,
+    "scratch": 120
+  },
+  "distinct_anchor_groups": 40,
+  "anchor_hash_mismatch": [],
+  "selection_metadata_failures": [],
+  "model_checkpoint_files_in_archive": 0,
+  "cannot_independently_rerun_test_evaluation_without_checkpoint_bytes": true,
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "note": "best-validation metadata compared with per-epoch validation histories; actual test recalculation requires original model checkpoint bytes; historical notebook outcomes are supplemented by archived run sources, raw AG News traces and DBpedia trace-audit exports in evidence/historical_warmup"
+}
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "contrast_settings": 12,
+  "summary_rows": 95,
+  "paired_seed_rows": 475,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "recorded_numerical_failures": 0,
+  "interpolation": false,
+  "carry_forward": false,
+  "reselected_checkpoints": false,
+  "loss_recomputed_from_predictions": false,
+  "model_training": false
+}
+test_all_archived_scratch_layouts_match_export_and_selection_scope (test_dataset_validation_weighting.DatasetValidationWeighting.test_all_archived_scratch_layouts_match_export_and_selection_scope) ... ok
+test_dataset_layouts_produce_the_stated_example_weights (test_dataset_validation_weighting.DatasetValidationWeighting.test_dataset_layouts_produce_the_stated_example_weights) ... ok
+test_displayed_numbers_match_the_source_records (test_final_editorial_audit.FinalEditorialAudit.test_displayed_numbers_match_the_source_records) ... ok
+test_requested_scientific_content_and_removed_administrative_prose (test_final_editorial_audit.FinalEditorialAudit.test_requested_scientific_content_and_removed_administrative_prose) ... ok
+test_actual_exit_lr_is_distinct_from_target_for_isolated_fault (test_first_two_steps.TestActualFirstTwoSteps.test_actual_exit_lr_is_distinct_from_target_for_isolated_fault) ... ok
+test_archived_failfast_retains_mutation_and_assertion_prevents_it (test_first_two_steps.TestActualFirstTwoSteps.test_archived_failfast_retains_mutation_and_assertion_prevents_it) ... ok
+test_first_adam_formula_and_moments_independent_of_rate (test_first_two_steps.TestActualFirstTwoSteps.test_first_adam_formula_and_moments_independent_of_rate) ... ok
+test_frozen_constructor_and_schedule_agree_with_configuration (test_first_two_steps.TestActualFirstTwoSteps.test_frozen_constructor_and_schedule_agree_with_configuration) ... ok
+test_rates_at_actual_optimizer_calls (test_first_two_steps.TestActualFirstTwoSteps.test_rates_at_actual_optimizer_calls) ... ok
+test_rescue_restores_counter_and_matches_clean_first_transition (test_first_two_steps.TestActualFirstTwoSteps.test_rescue_restores_counter_and_matches_clean_first_transition) ... ok
+test_zero_lr_changes_optimizer_state_without_parameter_training (test_first_two_steps.TestActualFirstTwoSteps.test_zero_lr_changes_optimizer_state_without_parameter_training) ... ok
+test_all_display_table_sources_exist_and_prior_pairs_are_preserved (test_oct19_reproducibility.TestOctober19.test_all_display_table_sources_exist_and_prior_pairs_are_preserved) ... ok
+test_explicit_random_state_restore_for_python_numpy_and_torch (test_oct19_reproducibility.TestOctober19.test_explicit_random_state_restore_for_python_numpy_and_torch) ... ok
+test_exploratory_contrasts_have_all_five_pairs_and_no_equivalence_claim (test_oct19_reproducibility.TestOctober19.test_exploratory_contrasts_have_all_five_pairs_and_no_equivalence_claim) ... ok
+test_fixed_gradient_adam_rescue_preserves_rng_and_matches_clean_step (test_oct19_reproducibility.TestOctober19.test_fixed_gradient_adam_rescue_preserves_rng_and_matches_clean_step) ... ok
+test_reference_matches_actual_runner_specifications_and_guard_boundary (test_oct19_reproducibility.TestOctober19.test_reference_matches_actual_runner_specifications_and_guard_boundary) ... ok
+test_reference_matches_all_saved_transition_records (test_oct19_reproducibility.TestOctober19.test_reference_matches_all_saved_transition_records) ... ok
+test_sensitivity_rebuild_is_deterministic_and_source_calibrated (test_oct19_reproducibility.TestOctober19.test_sensitivity_rebuild_is_deterministic_and_source_calibrated) ... ok
+test_threshold_exports_match_original_results (test_oct19_reproducibility.TestOctober19.test_threshold_exports_match_original_results) ... ok
+test_01_saved_primary_metrics_and_validation_selection (test_revision_evidence.RevisionEvidence.test_01_saved_primary_metrics_and_validation_selection) ... ok
+test_02_condition_specific_positive_and_zero_budgets (test_revision_evidence.RevisionEvidence.test_02_condition_specific_positive_and_zero_budgets) ... ok
+test_03_original_warmup_evidence (test_revision_evidence.RevisionEvidence.test_03_original_warmup_evidence) ... ok
+test_04_configuration_derived_schedule_plot (test_revision_evidence.RevisionEvidence.test_04_configuration_derived_schedule_plot) ... ok
+test_05_guard_misses_retained (test_revision_evidence.RevisionEvidence.test_05_guard_misses_retained) ... ok
+test_06_original_data_training_code_and_contrasts_preserved (test_revision_evidence.RevisionEvidence.test_06_original_data_training_code_and_contrasts_preserved) ... ok
+test_07_documents_consistent (test_revision_evidence.RevisionEvidence.test_07_documents_consistent) ... ok
+test_known_scheduler_zero_at_50000 (test_rollback_adam_state.TestAdamRollback.test_known_scheduler_zero_at_50000) ... ok
+test_replay_matches_clean_safe_step_including_moments_and_counters (test_rollback_adam_state.TestAdamRollback.test_replay_matches_clean_safe_step_including_moments_and_counters) ... ok
+test_state_restore_after_unsafe_candidate (test_rollback_adam_state.TestAdamRollback.test_state_restore_after_unsafe_candidate) ... ok
+test_all_and_only_common_steps_across_ten_trajectories_are_exported (test_submission_analysis.SubmissionAnalysis.test_all_and_only_common_steps_across_ten_trajectories_are_exported) ... ok
+test_every_pair_matches_raw_history_and_has_no_checkpoint_reselection (test_submission_analysis.SubmissionAnalysis.test_every_pair_matches_raw_history_and_has_no_checkpoint_reselection) ... ok
+test_figure_reading_order_title_and_scientific_scope (test_submission_analysis.SubmissionAnalysis.test_figure_reading_order_title_and_scientific_scope) ... ok
+test_first_adam_lr_changes_weights_not_initial_moments_and_obeys_bounds (test_submission_analysis.SubmissionAnalysis.test_first_adam_lr_changes_weights_not_initial_moments_and_obeys_bounds) ... ok
+test_requirements_and_endpoint_failure_ledger_keep_conditional_work_explicit (test_submission_analysis.SubmissionAnalysis.test_requirements_and_endpoint_failure_ledger_keep_conditional_work_explicit) ... ok
+test_shared_step_regeneration_is_deterministic (test_submission_analysis.SubmissionAnalysis.test_shared_step_regeneration_is_deterministic) ... ok
+test_archived_evaluator_counterexamples_are_preserved (test_submission_plan_v2.EvaluatorV2.test_archived_evaluator_counterexamples_are_preserved) ... ok
+test_extreme_logits_have_uncapped_cross_entropy (test_submission_plan_v2.EvaluatorV2.test_extreme_logits_have_uncapped_cross_entropy) ... ok
+test_full_v2_evaluator_uses_uncapped_weighted_ce_and_restores_mode (test_submission_plan_v2.EvaluatorV2.test_full_v2_evaluator_uses_uncapped_weighted_ce_and_restores_mode) ... ok
+test_invalid_logits_and_empty_evaluation_fail_explicitly (test_submission_plan_v2.EvaluatorV2.test_invalid_logits_and_empty_evaluation_fail_explicitly) ... ok
+test_partial_batch_is_weighted_by_examples_and_partition_invariant (test_submission_plan_v2.EvaluatorV2.test_partial_batch_is_weighted_by_examples_and_partition_invariant) ... ok
+test_invalid_snapshot_is_never_restored (test_submission_plan_v2.ExecutorV2.test_invalid_snapshot_is_never_restored) ... ok
+test_lr_assertion_rejects_before_mutation (test_submission_plan_v2.ExecutorV2.test_lr_assertion_rejects_before_mutation) ... ok
+test_nonfinite_candidate_moments_restore_and_do_not_replay (test_submission_plan_v2.ExecutorV2.test_nonfinite_candidate_moments_restore_and_do_not_replay) ... ok
+test_nonfinite_entry_uses_verified_state_or_explicit_failure (test_submission_plan_v2.ExecutorV2.test_nonfinite_entry_uses_verified_state_or_explicit_failure) ... ok
+test_nonfinite_gradients_stop_before_update_at_all_boundaries (test_submission_plan_v2.ExecutorV2.test_nonfinite_gradients_stop_before_update_at_all_boundaries) ... ok
+test_nonfinite_replay_is_rolled_back_once (test_submission_plan_v2.ExecutorV2.test_nonfinite_replay_is_rolled_back_once) ... ok
+test_replay_ceiling_at_steps_one_one_hundred_and_one_hundred_one (test_submission_plan_v2.ExecutorV2.test_replay_ceiling_at_steps_one_one_hundred_and_one_hundred_one) ... ok
+test_successful_replay_matches_clean_adam_with_warmed_moments (test_submission_plan_v2.ExecutorV2.test_successful_replay_matches_clean_adam_with_warmed_moments) ... ok
+test_evaluation_context_restores_training_rng_on_success_and_failure (test_submission_plan_v2.ResumeCPU.test_evaluation_context_restores_training_rng_on_success_and_failure) ... ok
+test_incomplete_sampler_or_identity_is_rejected (test_submission_plan_v2.ResumeCPU.test_incomplete_sampler_or_identity_is_rejected) ... ok
+test_stochastic_forward_and_mid_permutation_resume_match_cpu (test_submission_plan_v2.ResumeCPU.test_stochastic_forward_and_mid_permutation_resume_match_cpu) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 5.122s
+
+OK
+
+{
+  "audit_date": "2026-11-07",
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "independent_of_analysis_builders": true,
+  "shared_step_summary_rows": 95,
+  "paired_seed_rows": 475,
+  "summary_numeric_fields_checked": 855,
+  "source_pair_numeric_fields_checked": 2850,
+  "coverage_groups": 12,
+  "all_shared_steps_retained": true,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "scientific_trace_files": 240,
+  "scientific_trace_rows": 55535,
+  "nonfinite_trace_fields": [],
+  "stable_family_runs_crossing_zero": {
+    "ag_news": 9,
+    "dbpedia_14": 20
+  },
+  "DBpedia_equal_consecutive_postzero_losses": 91,
+  "stable_family_selected_epoch_at_or_after_zero": 14,
+  "WNUT_candidate_to_fold_safe_max_factors": [
+    2.038965040774801,
+    2.0391606471176824,
+    2.1031328721698044,
+    2.038728845957353,
+    2.039432518798453
+  ],
+  "WNUT_mean_factor": 2.051883984963619,
+  "WNUT_primary_threshold_misses": 5,
+  "discrepancies": [],
+  "research_training": false
+}
+{
+  "revision_date": "2026-11-20",
+  "current_feedback_date": "2026-11-13",
+  "source_plan_date": "2026-10-22",
+  "tests_run": 51,
+  "tests_passed": 51,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_returncode": 0,
+  "original_files_preserved": 107,
+  "preservation_mismatches": [],
+  "original_scientific_csvs_checked": 20,
+  "changed_original_scientific_csvs": [],
+  "validation_scope": "Scientific records, displayed results, original-file preservation, evaluator and optimizer fixtures",
+  "current_execution_provenance": {
+    "status": "passed",
+    "scope": "saved-record and source provenance audit; no model training or prediction reevaluation",
+    "results_archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+    "original_source_launcher_sha256": "a007bb397c9cd361c41a430a7f830eaadf9b9604c829e81a69a21695702d984b",
+    "scientific_job_records": 240,
+    "trained_test_endpoints": 180,
+    "severity_diagnostic_records": 20,
+    "metadata_files_byte_identical_to_original_launcher": 49,
+    "historical_completion_manifests_unchanged": 5,
+    "source_file_copy_matches": 224,
+    "distinct_scientific_source_files": 56,
+    "matched_initialization_groups": 40,
+    "anchor_fields_per_group": 7,
+    "history_rows_checked": 1573,
+    "trace_rows_checked": 55535,
+    "trace_lr_fields_checked": 277675,
+    "log_lines_read": 1499,
+    "log_epoch_rows_checked": 635,
+    "log_completed_jobs": 40,
+    "terminal_outcomes": [
+      {
+        "cohort": "pretrained",
+        "reason": "completed_3_epochs",
+        "has_test_endpoint": false,
+        "count": 5
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "completed_3_epochs",
+        "has_test_endpoint": true,
+        "count": 80
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "executed_lr_assertion_failed",
+        "has_test_endpoint": false,
+        "count": 20
+      },
+      {
+        "cohort": "pretrained",
+        "reason": "guard_failfast",
+        "has_test_endpoint": false,
+        "count": 15
+      },
+      {
+        "cohort": "scratch",
+        "reason": "early_stopping",
+        "has_test_endpoint": true,
+        "count": 89
+      },
+      {
+        "cohort": "scratch",
+        "reason": "guard_failfast",
+        "has_test_endpoint": false,
+        "count": 20
+      },
+      {
+        "cohort": "scratch",
+        "reason": "max_epochs",
+        "has_test_endpoint": true,
+        "count": 11
+      }
+    ],
+    "failures": [],
+    "interpretation": "The five completion flags are byte-identical pre-execution design metadata. Per-job result/status/history/trace records cover the full scientific matrix. This establishes internally consistent recorded completion, not bit-exact reproduction of original training.",
+    "recovered_hotfix": "ACML_LAUNCHER_HOTFIX_RESUME.zip is preserved and audited separately in launcher_hotfix_audit.json; its text transformation addresses both observed launch errors.",
+    "unresolved": [
+      "Final executed launcher bytes/application log not recovered. The supplied hotfix can reconstruct corrected wrappers but is not a captured execution-time copy.",
+      "No complete final master run_status/run_all_status.json or original console logs for remaining phases/datasets in returned results.",
+      "No original execution-host package/version lock or execution-time source-code digest; source_commit fields are provenance declarations.",
+      "Original candidate checkpoint weights, prediction-level validation evidence, and complete paired states at step 49999 not recovered.",
+      "Split and initialization fingerprints match saved records; underlying original index/token-to-ID/state bytes are not recovered by these hashes."
+    ]
+  },
+  "recovered_launcher_hotfix": {
+    "supplied_zip_sha256": "d05ace110f0d702aee6842a81d215a9aa1ffbc9eb279079178a6b46243479a7d",
+    "patch_script_sha256": "1efd6a7f6c9ec6bfbe7d9fe9e5512e1f19a0626910f165f7eb53ed1b6b43e0a6",
+    "status": "passed",
+    "wrappers": [
+      {
+        "dataset": "AG_News",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py",
+        "original_sha256": "0442d9cfd6c819753ea83897cb94c11226de276ae0d9463c8344b1cd1f146249",
+        "reconstructed_sha256": "1b67b2f3f4a0df53dc61cbe978ae349e3e72f0673a937fac83f34bd2f2bc26bd",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "DBPedia",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py",
+        "original_sha256": "c743992a438ebb2aee2d777a94768b54b069402eca6fdbdd987d83fccb3ea19c",
+        "reconstructed_sha256": "16f832ef9da6b11010c7acc453d23dbdfde7f5c42e33892f958c8f5cbc71d81d",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "WNUT_17",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py",
+        "original_sha256": "1616671560aeb4c62c0d2e01b5d17821bfe01a62e112ffd2c2c98cf1a82b64a9",
+        "reconstructed_sha256": "f0eadbfcec3f665531e5775918b2dc1182746d476aea6fff259e32bf544596f3",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      },
+      {
+        "dataset": "CIFAR_10",
+        "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py",
+        "original_sha256": "6c3a582bf5299836bd4de65b23e905f662ab6f46f0b9ad0b80a3e2efeed84c1c",
+        "reconstructed_sha256": "51eb8bd6d5eb6f9231bb4f66d3b0867fca78e6cc1a4e6ee9ea9a9bd3b269c3d7",
+        "idempotent": true,
+        "syntax_valid": true,
+        "dataset_scope_before_enumeration": true,
+        "queue_unwrap_present": true
+      }
+    ],
+    "scope": "Pure patch function applied to original launcher text in memory; syntax and idempotence checks only. No launcher, original hotfix main, or training executed.",
+    "source_modules_changed": false,
+    "observed_log_failures_addressed": [
+      "Two tuple-versus-dictionary queue failures",
+      "Cross-dataset DBpedia threshold lookup from AG News launcher"
+    ],
+    "not_proven": "No final original-host patch application log or execution-time source digest was supplied; reconstructed wrappers are not recovered executed files."
+  },
+  "configured_peak_pair_run": true,
+  "venue": "SN Computer Science (Springer)",
+  "author_declarations_confirmed": true,
+  "external_submission": false,
+  "configured_peak_record_audit": {
+    "status": "passed",
+    "scope": "complete saved-record/trace audit",
+    "archives": [
+      {
+        "file": "ACML_Peak_First_RESULTS.zip",
+        "bytes": 10103218,
+        "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+        "verified_members": 49
+      }
+    ],
+    "paired_transitions": 49999,
+    "consumed_lr_fields_checked": 99998,
+    "sampler_batches_checked": 49999,
+    "evaluation_records": 42,
+    "online_training_blocks_checked": 1000,
+    "fixed_split_verified": true,
+    "same_source_config_data_environment_as_preflight": true,
+    "failure_or_resume_events": 0,
+    "closed_session_active_seconds": 4969.857002546,
+    "first_transition": {
+      "event": "paired_step",
+      "step": 1,
+      "epoch": 0,
+      "sampler_cursor": 32,
+      "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+      "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+      "arms": {
+        "clean": {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 6.603961943503159e-08,
+          "instrumented_training_seconds": 0.43773331199997756
+        },
+        "peak_first": {
+          "lr_consumed": [
+            0.0001
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 0.0005065598757595089,
+          "instrumented_training_seconds": 0.18758080700001756
+        }
+      }
+    },
+    "primary_validation_ce_difference": 4.695263706736008e-06,
+    "research_training_by_this_analysis": false,
+    "new_research_pair_executed_on_kaggle": true,
+    "original_historical_checkpoint_reselection": false
+  },
+  "configured_peak_full_prediction_state_audit": {
+    "status": "passed",
+    "scope": "full returned records, predictions and restricted tensor-state audit",
+    "archives": [
+      {
+        "file": "ACML_Peak_First_RESULTS.zip",
+        "bytes": 10103218,
+        "sha256": "705940e513cf0c21858726488c509f904124b978269776b73eeb003cf00b1110",
+        "verified_members": 49
+      },
+      {
+        "file": "ACML_Peak_First_PREDICTIONS.zip",
+        "bytes": 109388801,
+        "sha256": "43e1d3759d15a76ba2356ec8230c3a9363b2b1e22252f5b4f4fb6470d360e83f",
+        "verified_members": 42
+      },
+      {
+        "file": "ACML_Peak_First_STATES.zip",
+        "bytes": 404524970,
+        "sha256": "f32574f81b1097e01978febe6d78f83a634ab3c67fefa9aa183e44ec880c2592",
+        "verified_members": 5
+      }
+    ],
+    "paired_transitions": 49999,
+    "consumed_lr_fields_checked": 99998,
+    "sampler_batches_checked": 49999,
+    "evaluation_records": 42,
+    "online_training_blocks_checked": 1000,
+    "fixed_split_verified": true,
+    "same_source_config_data_environment_as_preflight": true,
+    "failure_or_resume_events": 0,
+    "closed_session_active_seconds": 4969.857002546,
+    "first_transition": {
+      "event": "paired_step",
+      "step": 1,
+      "epoch": 0,
+      "sampler_cursor": 32,
+      "batch_indices_sha256": "577bde7674896e549558755ebd7c9228afb9a44a2646d389c619a1d9d8aabc2e",
+      "batch_sha256": "b6dd4464e458203c4ff2e4a6562c1739e13b91c9cb428d6a26221b429a73cb2b",
+      "arms": {
+        "clean": {
+          "lr_consumed": [
+            1.2500000000000001e-08
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 6.603961943503159e-08,
+          "instrumented_training_seconds": 0.43773331199997756
+        },
+        "peak_first": {
+          "lr_consumed": [
+            0.0001
+          ],
+          "online_batch_ce": 3.2366724014282227,
+          "examples": 32,
+          "candidate_and_committed_ratio": 0.0005065598757595089,
+          "instrumented_training_seconds": 0.18758080700001756
+        }
+      }
+    },
+    "primary_validation_ce_difference": 4.695263706736008e-06,
+    "research_training_by_this_analysis": false,
+    "new_research_pair_executed_on_kaggle": true,
+    "original_historical_checkpoint_reselection": false,
+    "prediction_files_independently_recomputed": 42,
+    "maximum_absolute_ce_recomputation_difference": 7.993605777301127e-15,
+    "full_paired_checkpoint_files_checked": 5,
+    "first_step_moments_equal_weights_differ": true,
+    "final_and_latest_scientific_states_match": true
+  },
+  "dataset_validation_layout": [
+    {
+      "dataset": "ag_news",
+      "validation_examples": "18000",
+      "validation_batch_size": "32",
+      "validation_full_batches": "562",
+      "validation_batches": "563",
+      "validation_final_batch_examples": "16",
+      "validation_has_partial_batch": "True",
+      "validation_batch_weighting_matches_example_weighting": "False",
+      "final_batch_example_influence_ratio": "1.9982238010657194",
+      "partial_batch_selection_effect_status": "unknown_without_candidate_epoch_assets"
+    },
+    {
+      "dataset": "dbpedia_14",
+      "validation_examples": "84000",
+      "validation_batch_size": "32",
+      "validation_full_batches": "2625",
+      "validation_batches": "2625",
+      "validation_final_batch_examples": "32",
+      "validation_has_partial_batch": "False",
+      "validation_batch_weighting_matches_example_weighting": "True",
+      "final_batch_example_influence_ratio": "1.0",
+      "partial_batch_selection_effect_status": "not_applicable_full_validation_batches"
+    }
+  ],
+  "research_training_performed": true,
+  "analysis_launched_training": false,
+  "new_prediction_evaluation_performed": true,
+  "cpu_optimizer_fixtures_executed": true,
+  "cpu_resume_fixture_executed": true,
+  "actual_training_device_resume_verified": true,
+  "actual_device_resume_scope": "new configured-peak runner on Kaggle T4; not historical rollback",
+  "cuda_amp_distributed_tested": false,
+  "replay_contract": "v2: finite-state validation, at most one revalidated replay; rejected replay has no committed transition",
+  "archived_executor_preserved": true,
+  "archived_checkpoint_selections_preserved": true,
+  "shared_step_summaries": 95,
+  "shared_step_seed_pairs": 475,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "guard_primary_detected": 35,
+  "guard_primary_groups": 40,
+  "WNUT_misses": 5,
+  "assertion_detected_pretrained": 20,
+  "model_checkpoints_available_in_results_zip": false,
+  "new_pair_model_checkpoints_available": true,
+  "guard_overhead_measured": false,
+  "title_unchanged": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "package_versions": {
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.21.4",
+    "reportlab": "4.4.9"
+  },
+  "displayed_numeric_cells_checked": 560,
+  "discrepancies": 0,
+  "basis": "original October result/history/trace JSON; historical per-seed notebook extraction; regenerated sensitivity rows; raw shared-step history reconstruction",
+  "independent_saved_evidence_audit": {
+    "audit_date": "2026-11-07",
+    "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+    "independent_of_analysis_builders": true,
+    "shared_step_summary_rows": 95,
+    "paired_seed_rows": 475,
+    "summary_numeric_fields_checked": 855,
+    "source_pair_numeric_fields_checked": 2850,
+    "coverage_groups": 12,
+    "all_shared_steps_retained": true,
+    "scientific_records": 240,
+    "trained_test_endpoints": 180,
+    "scientific_trace_files": 240,
+    "scientific_trace_rows": 55535,
+    "nonfinite_trace_fields": [],
+    "stable_family_runs_crossing_zero": {
+      "ag_news": 9,
+      "dbpedia_14": 20
+    },
+    "DBpedia_equal_consecutive_postzero_losses": 91,
+    "stable_family_selected_epoch_at_or_after_zero": 14,
+    "WNUT_candidate_to_fold_safe_max_factors": [
+      2.038965040774801,
+      2.0391606471176824,
+      2.1031328721698044,
+      2.038728845957353,
+      2.039432518798453
+    ],
+    "WNUT_mean_factor": 2.051883984963619,
+    "WNUT_primary_threshold_misses": 5,
+    "discrepancies": [],
+    "research_training": false
+  },
+  "pdf_page_counts": {
+    "All_Seed_Results_and_Provenance": 20,
+    "Research_Manuscript": 22
+  },
+  "pdf_visual_review": "pending",
+  "test_log": "evidence/verification/submission_plan_test_log.txt"
+}

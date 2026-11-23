@@ -1,0 +1,54 @@
+{
+  "supplied_zip_sha256": "d05ace110f0d702aee6842a81d215a9aa1ffbc9eb279079178a6b46243479a7d",
+  "patch_script_sha256": "1efd6a7f6c9ec6bfbe7d9fe9e5512e1f19a0626910f165f7eb53ed1b6b43e0a6",
+  "status": "passed",
+  "wrappers": [
+    {
+      "dataset": "AG_News",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/AG_News/run_full_agnews.py",
+      "original_sha256": "0442d9cfd6c819753ea83897cb94c11226de276ae0d9463c8344b1cd1f146249",
+      "reconstructed_sha256": "1b67b2f3f4a0df53dc61cbe978ae349e3e72f0673a937fac83f34bd2f2bc26bd",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "DBPedia",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/DBPedia/run_full_dbpedia.py",
+      "original_sha256": "c743992a438ebb2aee2d777a94768b54b069402eca6fdbdd987d83fccb3ea19c",
+      "reconstructed_sha256": "16f832ef9da6b11010c7acc453d23dbdfde7f5c42e33892f958c8f5cbc71d81d",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "WNUT_17",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/WNUT_17/run_full_wnut17.py",
+      "original_sha256": "1616671560aeb4c62c0d2e01b5d17821bfe01a62e112ffd2c2c98cf1a82b64a9",
+      "reconstructed_sha256": "f0eadbfcec3f665531e5775918b2dc1182746d476aea6fff259e32bf544596f3",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    },
+    {
+      "dataset": "CIFAR_10",
+      "original_member": "ACML_ALL_DATASETS_ONE_COMMAND/datasets/CIFAR_10/run_full_cifar10.py",
+      "original_sha256": "6c3a582bf5299836bd4de65b23e905f662ab6f46f0b9ad0b80a3e2efeed84c1c",
+      "reconstructed_sha256": "51eb8bd6d5eb6f9231bb4f66d3b0867fca78e6cc1a4e6ee9ea9a9bd3b269c3d7",
+      "idempotent": true,
+      "syntax_valid": true,
+      "dataset_scope_before_enumeration": true,
+      "queue_unwrap_present": true
+    }
+  ],
+  "scope": "Pure patch function applied to original launcher text in memory; syntax and idempotence checks only. No launcher, original hotfix main, or training executed.",
+  "source_modules_changed": false,
+  "observed_log_failures_addressed": [
+    "Two tuple-versus-dictionary queue failures",
+    "Cross-dataset DBpedia threshold lookup from AG News launcher"
+  ],
+  "not_proven": "No final original-host patch application log or execution-time source digest was supplied; reconstructed wrappers are not recovered executed files."
+}

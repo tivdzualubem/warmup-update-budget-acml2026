@@ -1,0 +1,23 @@
+note: Running TeX ...
+note: Running BibTeX on Research_Manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Running xdvipdfmx ...
+note: Writing `Research_Manuscript.blg` (208 B)
+note: Writing `Research_Manuscript.bbl` (6.177734375 KiB)
+note: Writing `Research_Manuscript.out` (2.37890625 KiB)
+note: Writing `Research_Manuscript.pdf` (171.5009765625 KiB)
+note: Writing `Research_Manuscript.log` (15.2294921875 KiB)
+note: Writing `Research_Manuscript.aux` (11.0810546875 KiB)
+
+Fontconfig error: Cannot load default config file: No such file: (null)
+warning: Research_Manuscript.tex:134: Underfull \hbox (badness 10000) in paragraph at lines 133--134
+warning: Research_Manuscript.tex:162: Underfull \hbox (badness 1038) in paragraph at lines 161--162
+warning: Research_Manuscript.tex:233: Underfull \hbox (badness 2057) in paragraph at lines 232--233
+warning: Research_Manuscript.tex:317: Underfull \vbox (badness 5036) has occurred while \output is active
+warning: Research_Manuscript.bbl:91: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: Research_Manuscript.tex:134: Underfull \hbox (badness 10000) in paragraph at lines 133--134
+warning: Research_Manuscript.tex:162: Underfull \hbox (badness 1038) in paragraph at lines 161--162
+warning: Research_Manuscript.tex:233: Underfull \hbox (badness 2057) in paragraph at lines 232--233
+warning: Research_Manuscript.tex:317: Underfull \vbox (badness 5036) has occurred while \output is active
+warning: Research_Manuscript.bbl:91: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

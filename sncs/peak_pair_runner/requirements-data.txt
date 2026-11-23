@@ -1,0 +1,4 @@
+# Starting versions from the preserved adapter environment, not a tested new host lock.
+# Install in addition to a suitable torch build and numpy, then run the real-data preflight.
+datasets==5.0.0
+huggingface-hub==1.33.0

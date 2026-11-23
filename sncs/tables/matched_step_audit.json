@@ -1,0 +1,21 @@
+{
+  "archive_sha256": "b05f9d4545b9377429ddaf3c9d5d778b5125d85fb9921f32768b7a478c6944a7",
+  "seed_set": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "contrast_settings": 12,
+  "summary_rows": 95,
+  "paired_seed_rows": 475,
+  "scientific_records": 240,
+  "trained_test_endpoints": 180,
+  "recorded_numerical_failures": 0,
+  "interpolation": false,
+  "carry_forward": false,
+  "reselected_checkpoints": false,
+  "loss_recomputed_from_predictions": false,
+  "model_training": false
+}

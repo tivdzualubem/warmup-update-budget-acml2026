@@ -1,0 +1,981 @@
+{
+  "threshold_export_cells_filled": 80,
+  "threshold_export_cells_remaining_blank": 0,
+  "loso_groups_verified": 40,
+  "sensitivity_rows_regenerated": 400,
+  "guard_window_steps": 100,
+  "kappa_grid": [
+    1.1,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    100.0,
+    200.0,
+    500.0,
+    1000.0
+  ],
+  "audit": [
+    {
+      "family": "pretrained",
+      "dataset": "ag_news",
+      "model": "distilbert",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 1.700513180533623e-05,
+      "primary_threshold": 0.00017005131805336232,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed123/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed456/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed789/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "ag_news",
+      "model": "distilbert",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 1.7014089272976025e-05,
+      "primary_threshold": 0.00017014089272976025,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed42/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed456/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed789/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "ag_news",
+      "model": "distilbert",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 1.7014089272976025e-05,
+      "primary_threshold": 0.00017014089272976025,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed42/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed123/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed789/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "ag_news",
+      "model": "distilbert",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 1.7014089272976025e-05,
+      "primary_threshold": 0.00017014089272976025,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed42/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed123/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed456/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "ag_news",
+      "model": "distilbert",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 1.7014089272976025e-05,
+      "primary_threshold": 0.00017014089272976025,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed42/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed123/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed456/safe_correct_order/trace.json",
+        "datasets/AG_News/publication_expansion/results/pretrained/ag_news/seed789/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "cifar10",
+      "model": "deit-tiny",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 5.0956300359133586e-05,
+      "primary_threshold": 0.0005095630035913359,
+      "source_manifest": "datasets/CIFAR_10/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed123/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed456/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed789/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "cifar10",
+      "model": "deit-tiny",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 5.0956300359133586e-05,
+      "primary_threshold": 0.0005095630035913359,
+      "source_manifest": "datasets/CIFAR_10/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed42/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed456/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed789/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "cifar10",
+      "model": "deit-tiny",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 5.0287942725242645e-05,
+      "primary_threshold": 0.0005028794272524265,
+      "source_manifest": "datasets/CIFAR_10/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed42/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed123/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed789/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "cifar10",
+      "model": "deit-tiny",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 5.0956300359133586e-05,
+      "primary_threshold": 0.0005095630035913359,
+      "source_manifest": "datasets/CIFAR_10/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed42/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed123/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed456/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "cifar10",
+      "model": "deit-tiny",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 5.0956300359133586e-05,
+      "primary_threshold": 0.0005095630035913359,
+      "source_manifest": "datasets/CIFAR_10/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed42/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed123/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed456/safe_correct_order/trace.json",
+        "datasets/CIFAR_10/publication_expansion/results/pretrained/cifar10/seed789/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "dbpedia_14",
+      "model": "distilbert",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.137937142785073e-06,
+      "primary_threshold": 3.137937142785073e-05,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed123/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed456/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed789/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "dbpedia_14",
+      "model": "distilbert",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.137937142785073e-06,
+      "primary_threshold": 3.137937142785073e-05,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed42/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed456/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed789/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "dbpedia_14",
+      "model": "distilbert",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 3.137937142785073e-06,
+      "primary_threshold": 3.137937142785073e-05,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed42/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed123/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed789/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "dbpedia_14",
+      "model": "distilbert",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 3.1145242355846805e-06,
+      "primary_threshold": 3.1145242355846804e-05,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed42/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed123/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed456/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "dbpedia_14",
+      "model": "distilbert",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 3.137937142785073e-06,
+      "primary_threshold": 3.137937142785073e-05,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed42/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed123/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed456/safe_correct_order/trace.json",
+        "datasets/DBPedia/publication_expansion/results/pretrained/dbpedia_14/seed789/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "wnut_17",
+      "model": "distilbert",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 0.00015346190256891455,
+      "primary_threshold": 0.0015346190256891453,
+      "source_manifest": "datasets/WNUT_17/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed123/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed456/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed789/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "wnut_17",
+      "model": "distilbert",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 0.00015346190256891455,
+      "primary_threshold": 0.0015346190256891453,
+      "source_manifest": "datasets/WNUT_17/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed42/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed456/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed789/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "wnut_17",
+      "model": "distilbert",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 0.00014886383018701505,
+      "primary_threshold": 0.0014886383018701504,
+      "source_manifest": "datasets/WNUT_17/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed42/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed123/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed789/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "wnut_17",
+      "model": "distilbert",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 0.00015346190256891455,
+      "primary_threshold": 0.0015346190256891453,
+      "source_manifest": "datasets/WNUT_17/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed42/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed123/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed456/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed2026/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "pretrained",
+      "dataset": "wnut_17",
+      "model": "distilbert",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 0.00015346190256891455,
+      "primary_threshold": 0.0015346190256891453,
+      "source_manifest": "datasets/WNUT_17/publication_expansion/results/pretrained/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed42/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed123/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed456/safe_correct_order/trace.json",
+        "datasets/WNUT_17/publication_expansion/results/pretrained/wnut_17/seed789/safe_correct_order/trace.json"
+      ],
+      "heldout_safe_n": 100
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "large-6",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.105472577645864e-05,
+      "primary_threshold": 0.00031054725776458636,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "large-6",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.0469347739674084e-05,
+      "primary_threshold": 0.0003046934773967408,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "large-6",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 3.105472577645864e-05,
+      "primary_threshold": 0.00031054725776458636,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "large-6",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 3.105472577645864e-05,
+      "primary_threshold": 0.00031054725776458636,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "large-6",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 3.105472577645864e-05,
+      "primary_threshold": 0.00031054725776458636,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/large-6/seed789/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 2.4926353982082637e-05,
+      "primary_threshold": 0.0002492635398208264,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 2.4926353982082637e-05,
+      "primary_threshold": 0.0002492635398208264,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 2.4926353982082637e-05,
+      "primary_threshold": 0.0002492635398208264,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 2.4926353982082637e-05,
+      "primary_threshold": 0.0002492635398208264,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "ag_news",
+      "model": "medium-4",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 2.4617275627801895e-05,
+      "primary_threshold": 0.00024617275627801896,
+      "source_manifest": "datasets/AG_News/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/AG_News/publication_expansion/results/scratch/ag_news/medium-4/seed789/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.65777460210719e-05,
+      "primary_threshold": 0.000365777460210719,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 3.65777460210719e-05,
+      "primary_threshold": 0.000365777460210719,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 3.456107313336487e-05,
+      "primary_threshold": 0.00034561073133364874,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 3.65777460210719e-05,
+      "primary_threshold": 0.000365777460210719,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "large-6",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 3.65777460210719e-05,
+      "primary_threshold": 0.000365777460210719,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/large-6/seed789/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "heldout_seed": 42,
+      "calibration_seeds": [
+        123,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 2.8980249494996678e-05,
+      "primary_threshold": 0.0002898024949499668,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "heldout_seed": 123,
+      "calibration_seeds": [
+        42,
+        456,
+        789,
+        2026
+      ],
+      "safe_max": 2.8980249494996678e-05,
+      "primary_threshold": 0.0002898024949499668,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "heldout_seed": 456,
+      "calibration_seeds": [
+        42,
+        123,
+        789,
+        2026
+      ],
+      "safe_max": 2.8980249494996678e-05,
+      "primary_threshold": 0.0002898024949499668,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "heldout_seed": 789,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        2026
+      ],
+      "safe_max": 2.763454228410506e-05,
+      "primary_threshold": 0.00027634542284105064,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed2026/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    },
+    {
+      "family": "scratch",
+      "dataset": "dbpedia_14",
+      "model": "medium-4",
+      "heldout_seed": 2026,
+      "calibration_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "safe_max": 2.8980249494996678e-05,
+      "primary_threshold": 0.0002898024949499668,
+      "source_manifest": "datasets/DBPedia/publication_expansion/results/scratch/loso_thresholds.json",
+      "calibration_trace_sources": [
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed42/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed123/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed456/fixed_order_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/stable_with_guard/trace.json",
+        "datasets/DBPedia/publication_expansion/results/scratch/dbpedia_14/medium-4/seed789/fixed_order_with_guard/trace.json"
+      ],
+      "heldout_safe_n": 200
+    }
+  ]
+}

@@ -1,14 +1,14 @@
-# SN Computer Science submission preparation, 23 November 2026
+# SN Computer Science submission preparation, 24 November 2026
 
-This revision includes the completed configured-peak pair requested in the 8 November feedback, independently checked against all returned logs, predictions and retained full states. It preserves the title and all historical selections. The selected venue is SN Computer Science. This edition retains the Springer SVJour3 class, adds the required structured abstract and updates journal identification. Scientific results and title are unchanged. All three author affiliations and institutional emails, corresponding-author details and the user-confirmed competing-interest declaration are included.
+This revision includes the completed configured-peak pair requested in the 8 November feedback, independently checked against all returned logs, predictions and retained full states. It preserves the title and all historical selections. The selected venue is SN Computer Science. This edition uses the recommended Springer Nature sn-jnl template (official December 2024 package), with the referee option, numbered mathematical-sciences references, a structured abstract and full author details. Scientific results and title are unchanged. All three author affiliations and institutional emails, corresponding-author details and the user-confirmed competing-interest declaration are included.
 
 The title and archived checkpoint selections are unchanged. Main and supplement are in manuscript/, as Markdown, complete LaTeX and compiled PDFs. references.bib supplies the bibliography; figures/ contains the images and make_figures.py, make_submission_figures.py and make_peak_figures.py and make_computing_figures.py regenerate them. Historical evidence limits remain explicit in the supplement and ARTIFACT_AVAILABILITY.md.
 
 ## Versioned repository
 
-https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23
+https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-24
 
-The `sncs/` directory contains this SN Computer Science edition. The manuscript links directly to the supplementary PDF and complete reproducibility ZIP under `submission/sncs-2026-11-23/`. The earlier Computing tag and `computing/` directory remain preserved. This edition changes only supplementary access wording and associated sources/metadata from the checked 20 November delivery; no scientific results, title or original checkpoint selections are changed. Repository publication does not imply completed journal submission or acceptance.
+The `sncs/` directory contains this SN Computer Science edition. The manuscript links directly to the supplementary PDF and complete reproducibility ZIP under `submission/sncs-2026-11-24/`. The earlier Computing tag and `computing/` directory remain preserved. This edition migrates the main manuscript to the recommended Springer Nature template and synchronizes supplementary links and sources from the checked 23 November delivery; no scientific results, title or original checkpoint selections are changed. Repository publication does not imply completed journal submission or acceptance.
 
 ## Reproduction commands
 

@@ -29,3 +29,4 @@ artifacts/source_archives/
 !sncs/**/*.zip
 !submission/sncs-2026-11-20/*.zip
 !submission/sncs-2026-11-23/*.zip
+!submission/sncs-2026-11-24/*.zip

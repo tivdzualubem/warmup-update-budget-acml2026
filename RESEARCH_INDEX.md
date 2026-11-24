@@ -1,6 +1,6 @@
 # Research code, evidence and reproduction index
 
-Current journal edition: **SN Computer Science**, tag **sncs-submission-2026-11-23**. Start with sncs/README_REPRODUCE.md. Scientific downloads are under submission/sncs-2026-11-23/. The computing/ snapshot and all earlier tags remain preserved.
+Current journal edition: **SN Computer Science**, tag **sncs-submission-2026-11-24**. Start with sncs/README_REPRODUCE.md. Scientific downloads are under submission/sncs-2026-11-24/. The computing/ snapshot and all earlier tags remain preserved.
 
 | Research stage | Repository location | What is available |
 |---|---|---|
@@ -15,7 +15,7 @@ Current journal edition: **SN Computer Science**, tag **sncs-submission-2026-11-
 | Kaggle execution checks | execution/kaggle/ | Delivered standalone checks/launch wrappers and both returned preflight reports |
 | Current paper analysis | sncs/*.py; sncs/tests/; sncs/examples/ | All saved-record analyses, first-two-step example, optimizer/evaluation checks and figure/source generation |
 | Current paper and supplementary results | sncs/manuscript/; sncs/figures/; sncs/tables/ | Main/supplement PDFs, editable Markdown/LaTeX/BibTeX, figures, all seed tables and budgets |
-| Flat journal source downloads | submission/sncs-2026-11-23/ (current); submission/ (Computing) | Main and supplement source ZIPs, with no subfolders inside each ZIP |
+| Flat journal source downloads | submission/sncs-2026-11-24/ (current); submission/ (Computing) | Main and supplement source ZIPs, with no subfolders inside each ZIP |
 | Larger companion evidence | computing/EXTERNAL_EVIDENCE.json | Author-retained predictions and full states, hashes and full-audit instructions |
 | Historical raw archives | historical/DRIVE_RESEARCH_REGISTER.csv | Recorded Drive URLs, sizes and known hashes; access has not been changed |
 
@@ -27,4 +27,6 @@ All 51 current tests and 560 displayed numeric checks passed in a clean extracti
 
 ## Preserve this version
 
-The current repository version is sncs-submission-2026-11-23. The checked PDFs cite this SNCS version and directly link to Online Resources 1 and 2. The earlier Computing scientific snapshot remains preserved at computing-submission-2026-11-18-r2. Future corrections should use a new version rather than moving this tag. The original acml2026-artifacts-v1 tag and earlier branches remain unchanged. Scientific cohort labels and historical selections must stay separate.
+The current repository version is sncs-submission-2026-11-24. The checked PDFs cite this SNCS version and directly link to Online Resources 1 and 2. The earlier Computing scientific snapshot remains preserved at computing-submission-2026-11-18-r2. Future corrections should use a new version rather than moving this tag. The original acml2026-artifacts-v1 tag and earlier branches remain unchanged. Scientific cohort labels and historical selections must stay separate.
+
+The 24 November edition uses the official recommended Springer Nature sn-jnl template with referee spacing. Main manuscript: 31 pages. The prior SNCS editions remain accessible through their dated tags and download folders.

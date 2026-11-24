@@ -367,7 +367,10 @@
   },
   "pdf_page_counts": {
     "All_Seed_Results_and_Provenance": 20,
-    "Research_Manuscript": 22
+    "Fig1": 1,
+    "Fig2": 1,
+    "Fig3": 1,
+    "Research_Manuscript": 31
   },
   "pdf_visual_review": "pending",
   "test_log": "evidence/verification/submission_plan_test_log.txt"

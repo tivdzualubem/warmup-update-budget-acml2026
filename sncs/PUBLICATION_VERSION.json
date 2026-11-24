@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/tivdzualubem/warmup-update-budget-acml2026",
-  "version": "sncs-submission-2026-11-23",
+  "version": "sncs-submission-2026-11-24",
   "package_directory": "sncs",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "historical_missing_evidence": "ARTIFACT_AVAILABILITY.md",
   "large_companions": "EXTERNAL_EVIDENCE.json",
   "base_scientific_release": {
@@ -15,6 +15,7 @@
     "large_companions": "EXTERNAL_EVIDENCE.json"
   },
   "base_scientific_release_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/computing-submission-2026-11-18-r2",
-  "version_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23",
-  "delivery": "Supplementary materials linked from the manuscript as instructed by journal support"
+  "version_url": "https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-24",
+  "delivery": "Supplementary materials linked from the manuscript as instructed by journal support",
+  "template": "Springer Nature sn-jnl, December 2024"
 }

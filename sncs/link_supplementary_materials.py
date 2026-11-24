@@ -1,10 +1,10 @@
 """Apply the journal-approved linked-supplement delivery wording."""
 from pathlib import Path
 R=Path(__file__).resolve().parent
-VERSION='sncs-submission-2026-11-23'
+VERSION='sncs-submission-2026-11-24'
 REPO='https://github.com/tivdzualubem/warmup-update-budget-acml2026'
 URL=REPO+'/tree/'+VERSION
-DOWNLOAD=REPO+'/raw/refs/tags/'+VERSION+'/submission/sncs-2026-11-23/'
+DOWNLOAD=REPO+'/raw/refs/tags/'+VERSION+'/submission/sncs-2026-11-24/'
 def build():
     p=R/'manuscript/Research_Manuscript.md'
     s=p.read_text(encoding='utf8')

@@ -51,6 +51,6 @@ test_incomplete_sampler_or_identity_is_rejected (test_submission_plan_v2.ResumeC
 test_stochastic_forward_and_mid_permutation_resume_match_cpu (test_submission_plan_v2.ResumeCPU.test_stochastic_forward_and_mid_permutation_resume_match_cpu) ... ok
 
 ----------------------------------------------------------------------
-Ran 51 tests in 5.122s
+Ran 51 tests in 5.249s
 
 OK

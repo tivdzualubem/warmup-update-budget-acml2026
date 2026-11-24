@@ -8,7 +8,7 @@ Authors: Tivdzua Lubem Noah; Bader Rasheed; Dmitriy S. Vatolin.
 
 Corresponding author: Tivdzua Lubem Noah, Innopolis University, Innopolis, Russia; l.tivdzua@innopolis.university.
 
-Research code, retained records and editable sources: [version sncs-submission-2026-11-23](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-23). [Download Online Resource 2: reproducibility package](https://github.com/tivdzualubem/warmup-update-budget-acml2026/raw/refs/tags/sncs-submission-2026-11-23/submission/sncs-2026-11-23/ESM_2.zip).
+Research code, retained records and editable sources: [version sncs-submission-2026-11-24](https://github.com/tivdzualubem/warmup-update-budget-acml2026/tree/sncs-submission-2026-11-24). [Download Online Resource 2: reproducibility package](https://github.com/tivdzualubem/warmup-update-budget-acml2026/raw/refs/tags/sncs-submission-2026-11-24/submission/sncs-2026-11-24/ESM_2.zip).
 
 
 Tables S1-S8 report saved test metrics from validation-selected checkpoints; Tables S9-S12 report paired differences. Scratch values are accuracy; pretrained AG News/DBpedia use macro-F1, WNUT entity F1 and CIFAR accuracy. All entries are percentages. Diagnostic fail-fast/LR-assertion arms have no primary test endpoint and remain n.a. in the 240-job CSV. Original validation-only selection is unchanged.

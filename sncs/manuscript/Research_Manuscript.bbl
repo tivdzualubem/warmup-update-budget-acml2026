@@ -1,138 +1,341 @@
-\begin{thebibliography}{10}
-\providecommand{\url}[1]{{#1}}
-\providecommand{\urlprefix}{URL }
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+%% BioMed_Central_Bib_Style_v1.01
 
-\bibitem{abuduweili2025initial}
-Abuduweili, A., Liu, C.: Revisiting the initial steps in adaptive gradient
-  descent optimization.
-\newblock In: Conference on Parsimony and Learning, \emph{Proceedings of
-  Machine Learning Research}, vol. 280, pp. 305--322. PMLR (2025).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v280/abuduweili25a.html}
+\begin{thebibliography}{17}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
 
-\bibitem{alimisis2026warmup}
-Alimisis, F., Islamov, R., Lucchi, A.: Why do we need warm-up? {A} theoretical
-  perspective.
-\newblock In: Proceedings of the 43rd International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol. 306, pp.
-  1909--1980. PMLR (2026).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v306/alimisis26a.html}
+%%% 1
+\bibitem[\protect\citeauthoryear{Gotmare et~al.}{2019}]{gotmare2019heuristics}
+\begin{bchapter}
+\bauthor{\bsnm{Gotmare}, \binits{A.}},
+\bauthor{\bsnm{Keskar}, \binits{N.S.}},
+\bauthor{\bsnm{Xiong}, \binits{C.}},
+\bauthor{\bsnm{Socher}, \binits{R.}}:
+\bctitle{A closer look at deep learning heuristics: Learning rate restarts,
+  warmup and distillation}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2019}).
+\burl{https://arxiv.org/abs/1810.13243}
+\end{bchapter}
+\endbibitem
 
-\bibitem{bai2026spikes}
-Bai, Z., Zhou, Z., Zhao, J., Li, X., Li, Z., Xiong, F., Yang, H., Zhang, Y.,
-  Xu, Z.Q.J.: Adaptive preconditioners trigger loss spikes in {Adam}.
-\newblock In: Proceedings of the 43rd International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol. 306, pp.
-  5566--5601. PMLR (2026).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v306/bai26o.html}
+%%% 2
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2020}]{liu2020variance}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{L.}},
+\bauthor{\bsnm{Jiang}, \binits{H.}},
+\bauthor{\bsnm{He}, \binits{P.}},
+\bauthor{\bsnm{Chen}, \binits{W.}},
+\bauthor{\bsnm{Liu}, \binits{X.}},
+\bauthor{\bsnm{Gao}, \binits{J.}},
+\bauthor{\bsnm{Han}, \binits{J.}}:
+\bctitle{On the variance of the adaptive learning rate and beyond}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2020}).
+\burl{https://arxiv.org/abs/1908.03265}
+\end{bchapter}
+\endbibitem
 
-\bibitem{benbraiek2023deepchecker}
-Ben~Braiek, H., Khomh, F.: Testing feedforward neural networks training
-  programs.
-\newblock ACM Transactions on Software Engineering and Methodology
-  \textbf{32}(4), 1--61 (2023).
-\newblock \doi{10.1145/3529318}.
-\newblock \urlprefix\url{https://doi.org/10.1145/3529318}
+%%% 3
+\bibitem[\protect\citeauthoryear{Ma and Yarats}{2021}]{ma2021untuned}
+\begin{barticle}
+\bauthor{\bsnm{Ma}, \binits{J.}},
+\bauthor{\bsnm{Yarats}, \binits{D.}}:
+\batitle{On the adequacy of untuned warmup for adaptive optimization}.
+\bjtitle{Proceedings of the AAAI Conference on Artificial Intelligence}
+\bvolume{35}(\bissue{10}),
+\bfpage{8828}--\blpage{8836}
+(\byear{2021})
+\doiurl{10.1609/aaai.v35i10.17069}
+\end{barticle}
+\endbibitem
 
-\bibitem{gotmare2019heuristics}
-Gotmare, A., Keskar, N.S., Xiong, C., Socher, R.: A closer look at deep
-  learning heuristics: Learning rate restarts, warmup and distillation.
-\newblock In: International Conference on Learning Representations (2019).
-\newblock \urlprefix\url{https://arxiv.org/abs/1810.13243}
+%%% 4
+\bibitem[\protect\citeauthoryear{Kalra and Barkeshli}{2024}]{kalra2024warmup}
+\begin{bchapter}
+\bauthor{\bsnm{Kalra}, \binits{D.S.}},
+\bauthor{\bsnm{Barkeshli}, \binits{M.}}:
+\bctitle{Why warmup the learning rate? underlying mechanisms and improvements}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{37}
+(\byear{2024}).
+\doiurl{10.52202/079017-3549} .
+\burl{https://proceedings.neurips.cc/paper_files/paper/2024/hash/ca98452d4e9ecbc18c40da2aa0da8b98-Abstract-Conference.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{guo2017calibration}
-Guo, C., Pleiss, G., Sun, Y., Weinberger, K.Q.: On calibration of modern neural
-  networks.
-\newblock In: Proceedings of the 34th International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol.~70, pp.
-  1321--1330. PMLR (2017).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v70/guo17a.html}
+%%% 5
+\bibitem[\protect\citeauthoryear{Abuduweili and
+  Liu}{2025}]{abuduweili2025initial}
+\begin{bchapter}
+\bauthor{\bsnm{Abuduweili}, \binits{A.}},
+\bauthor{\bsnm{Liu}, \binits{C.}}:
+\bctitle{Revisiting the initial steps in adaptive gradient descent
+  optimization}.
+In: \bbtitle{Conference on Parsimony and Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{280},
+pp. \bfpage{305}--\blpage{322}.
+\bpublisher{PMLR}
+(\byear{2025}).
+\burl{https://proceedings.mlr.press/v280/abuduweili25a.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{huang2020initialization}
-Huang, X.S., Perez, F., Ba, J., Volkovs, M.: Improving {Transformer}
-  optimization through better initialization.
-\newblock In: Proceedings of the 37th International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol. 119, pp.
-  4475--4483. PMLR (2020).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v119/huang20f.html}
+%%% 6
+\bibitem[\protect\citeauthoryear{Kingma and Ba}{2015}]{kingma2015adam}
+\begin{bchapter}
+\bauthor{\bsnm{Kingma}, \binits{D.P.}},
+\bauthor{\bsnm{Ba}, \binits{J.}}:
+\bctitle{{Adam}: A method for stochastic optimization}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2015}).
+\burl{https://arxiv.org/abs/1412.6980}
+\end{bchapter}
+\endbibitem
 
-\bibitem{kalra2024warmup}
-Kalra, D.S., Barkeshli, M.: Why warmup the learning rate? underlying mechanisms
-  and improvements.
-\newblock In: Advances in Neural Information Processing Systems, vol.~37
-  (2024).
-\newblock \doi{10.52202/079017-3549}.
-\newblock
-  \urlprefix\url{https://proceedings.neurips.cc/paper_files/paper/2024/hash/ca98452d4e9ecbc18c40da2aa0da8b98-Abstract-Conference.html}
+%%% 7
+\bibitem[\protect\citeauthoryear{Shazeer and
+  Stern}{2018}]{shazeer2018adafactor}
+\begin{bchapter}
+\bauthor{\bsnm{Shazeer}, \binits{N.}},
+\bauthor{\bsnm{Stern}, \binits{M.}}:
+\bctitle{Adafactor: Adaptive learning rates with sublinear memory cost}.
+In: \bbtitle{Proceedings of the 35th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{80},
+pp. \bfpage{4596}--\blpage{4604}.
+\bpublisher{PMLR}
+(\byear{2018}).
+\burl{https://proceedings.mlr.press/v80/shazeer18a.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{kingma2015adam}
-Kingma, D.P., Ba, J.: {Adam}: A method for stochastic optimization.
-\newblock In: International Conference on Learning Representations (2015).
-\newblock \urlprefix\url{https://arxiv.org/abs/1412.6980}
+%%% 8
+\bibitem[\protect\citeauthoryear{Kosson et~al.}{2024}]{kosson2024warmup}
+\begin{bchapter}
+\bauthor{\bsnm{Kosson}, \binits{A.}},
+\bauthor{\bsnm{Messmer}, \binits{B.}},
+\bauthor{\bsnm{Jaggi}, \binits{M.}}:
+\bctitle{Analyzing \& reducing the need for learning rate warmup in {GPT}
+  training}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{37}
+(\byear{2024}).
+\doiurl{10.52202/079017-0096} .
+\burl{https://proceedings.neurips.cc/paper_files/paper/2024/hash/059445c2d5b3ef918079851628fef1d6-Abstract-Conference.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{kosson2024warmup}
-Kosson, A., Messmer, B., Jaggi, M.: Analyzing \& reducing the need for learning
-  rate warmup in {GPT} training.
-\newblock In: Advances in Neural Information Processing Systems, vol.~37
-  (2024).
-\newblock \doi{10.52202/079017-0096}.
-\newblock
-  \urlprefix\url{https://proceedings.neurips.cc/paper_files/paper/2024/hash/059445c2d5b3ef918079851628fef1d6-Abstract-Conference.html}
+%%% 9
+\bibitem[\protect\citeauthoryear{Ben~Braiek and
+  Khomh}{2023}]{benbraiek2023deepchecker}
+\begin{barticle}
+\bauthor{\bsnm{Ben~Braiek}, \binits{H.}},
+\bauthor{\bsnm{Khomh}, \binits{F.}}:
+\batitle{Testing feedforward neural networks training programs}.
+\bjtitle{ACM Transactions on Software Engineering and Methodology}
+\bvolume{32}(\bissue{4}),
+\bfpage{1}--\blpage{61}
+(\byear{2023})
+\doiurl{10.1145/3529318}
+\end{barticle}
+\endbibitem
 
-\bibitem{liu2020variance}
-Liu, L., Jiang, H., He, P., Chen, W., Liu, X., Gao, J., Han, J.: On the
-  variance of the adaptive learning rate and beyond.
-\newblock In: International Conference on Learning Representations (2020).
-\newblock \urlprefix\url{https://arxiv.org/abs/1908.03265}
+%%% 10
+\bibitem[\protect\citeauthoryear{Wardat et~al.}{2022}]{wardat2022deepdiagnosis}
+\begin{bchapter}
+\bauthor{\bsnm{Wardat}, \binits{M.}},
+\bauthor{\bsnm{Cruz}, \binits{B.D.}},
+\bauthor{\bsnm{Le}, \binits{W.}},
+\bauthor{\bsnm{Rajan}, \binits{H.}}:
+\bctitle{{DeepDiagnosis}: Automatically diagnosing faults and recommending
+  actionable fixes in deep learning programs}.
+In: \bbtitle{Proceedings of the 44th International Conference on Software
+  Engineering},
+pp. \bfpage{561}--\blpage{572}.
+\bpublisher{ACM}
+(\byear{2022}).
+\doiurl{10.1145/3510003.3510071} .
+\burl{https://doi.org/10.1145/3510003.3510071}
+\end{bchapter}
+\endbibitem
 
-\bibitem{loshchilov2019decoupled}
-Loshchilov, I., Hutter, F.: Decoupled weight decay regularization.
-\newblock In: International Conference on Learning Representations (2019).
-\newblock \urlprefix\url{https://arxiv.org/abs/1711.05101}
+%%% 11
+\bibitem[\protect\citeauthoryear{Bai et~al.}{2026}]{bai2026spikes}
+\begin{bchapter}
+\bauthor{\bsnm{Bai}, \binits{Z.}},
+\bauthor{\bsnm{Zhou}, \binits{Z.}},
+\bauthor{\bsnm{Zhao}, \binits{J.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{Li}, \binits{Z.}},
+\bauthor{\bsnm{Xiong}, \binits{F.}},
+\bauthor{\bsnm{Yang}, \binits{H.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Xu}, \binits{Z.-Q.J.}}:
+\bctitle{Adaptive preconditioners trigger loss spikes in {Adam}}.
+In: \bbtitle{Proceedings of the 43rd International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{306},
+pp. \bfpage{5566}--\blpage{5601}.
+\bpublisher{PMLR}
+(\byear{2026}).
+\burl{https://proceedings.mlr.press/v306/bai26o.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{ma2021untuned}
-Ma, J., Yarats, D.: On the adequacy of untuned warmup for adaptive
-  optimization.
-\newblock Proceedings of the AAAI Conference on Artificial Intelligence
-  \textbf{35}(10), 8828--8836 (2021).
-\newblock \doi{10.1609/aaai.v35i10.17069}.
-\newblock \urlprefix\url{https://arxiv.org/abs/1910.04209}
+%%% 12
+\bibitem[\protect\citeauthoryear{Alimisis et~al.}{2026}]{alimisis2026warmup}
+\begin{bchapter}
+\bauthor{\bsnm{Alimisis}, \binits{F.}},
+\bauthor{\bsnm{Islamov}, \binits{R.}},
+\bauthor{\bsnm{Lucchi}, \binits{A.}}:
+\bctitle{Why do we need warm-up? {A} theoretical perspective}.
+In: \bbtitle{Proceedings of the 43rd International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{306},
+pp. \bfpage{1909}--\blpage{1980}.
+\bpublisher{PMLR}
+(\byear{2026}).
+\burl{https://proceedings.mlr.press/v306/alimisis26a.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{shazeer2018adafactor}
-Shazeer, N., Stern, M.: Adafactor: Adaptive learning rates with sublinear
-  memory cost.
-\newblock In: Proceedings of the 35th International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol.~80, pp.
-  4596--4604. PMLR (2018).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v80/shazeer18a.html}
+%%% 13
+\bibitem[\protect\citeauthoryear{Guo et~al.}{2017}]{guo2017calibration}
+\begin{bchapter}
+\bauthor{\bsnm{Guo}, \binits{C.}},
+\bauthor{\bsnm{Pleiss}, \binits{G.}},
+\bauthor{\bsnm{Sun}, \binits{Y.}},
+\bauthor{\bsnm{Weinberger}, \binits{K.Q.}}:
+\bctitle{On calibration of modern neural networks}.
+In: \bbtitle{Proceedings of the 34th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{70},
+pp. \bfpage{1321}--\blpage{1330}.
+\bpublisher{PMLR}
+(\byear{2017}).
+\burl{https://proceedings.mlr.press/v70/guo17a.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{vaswani2017attention}
-Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N.,
-  Kaiser, {\L}., Polosukhin, I.: Attention is all you need.
-\newblock In: Advances in Neural Information Processing Systems, vol.~30
-  (2017).
-\newblock
-  \urlprefix\url{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}
+%%% 14
+\bibitem[\protect\citeauthoryear{Vaswani et~al.}{2017}]{vaswani2017attention}
+\begin{bchapter}
+\bauthor{\bsnm{Vaswani}, \binits{A.}},
+\bauthor{\bsnm{Shazeer}, \binits{N.}},
+\bauthor{\bsnm{Parmar}, \binits{N.}},
+\bauthor{\bsnm{Uszkoreit}, \binits{J.}},
+\bauthor{\bsnm{Jones}, \binits{L.}},
+\bauthor{\bsnm{Gomez}, \binits{A.N.}},
+\bauthor{\bsnm{Kaiser}, \binits{{\L}.}},
+\bauthor{\bsnm{Polosukhin}, \binits{I.}}:
+\bctitle{Attention is all you need}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{30}
+(\byear{2017}).
+\burl{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{wardat2022deepdiagnosis}
-Wardat, M., Cruz, B.D., Le, W., Rajan, H.: {DeepDiagnosis}: Automatically
-  diagnosing faults and recommending actionable fixes in deep learning
-  programs.
-\newblock In: Proceedings of the 44th International Conference on Software
-  Engineering, pp. 561--572. ACM (2022).
-\newblock \doi{10.1145/3510003.3510071}.
-\newblock \urlprefix\url{https://doi.org/10.1145/3510003.3510071}
+%%% 15
+\bibitem[\protect\citeauthoryear{Huang et~al.}{2020}]{huang2020initialization}
+\begin{bchapter}
+\bauthor{\bsnm{Huang}, \binits{X.S.}},
+\bauthor{\bsnm{Perez}, \binits{F.}},
+\bauthor{\bsnm{Ba}, \binits{J.}},
+\bauthor{\bsnm{Volkovs}, \binits{M.}}:
+\bctitle{Improving {Transformer} optimization through better initialization}.
+In: \bbtitle{Proceedings of the 37th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{119},
+pp. \bfpage{4475}--\blpage{4483}.
+\bpublisher{PMLR}
+(\byear{2020}).
+\burl{https://proceedings.mlr.press/v119/huang20f.html}
+\end{bchapter}
+\endbibitem
 
-\bibitem{xiong2020layernorm}
-Xiong, R., Yang, Y., He, D., Zheng, K., Zheng, S., Xing, C., Zhang, H., Lan,
-  Y., Wang, L., Liu, T.: On layer normalization in the {Transformer}
-  architecture.
-\newblock In: Proceedings of the 37th International Conference on Machine
-  Learning, \emph{Proceedings of Machine Learning Research}, vol. 119, pp.
-  10524--10533. PMLR (2020).
-\newblock \urlprefix\url{https://proceedings.mlr.press/v119/xiong20b.html}
+%%% 16
+\bibitem[\protect\citeauthoryear{Xiong et~al.}{2020}]{xiong2020layernorm}
+\begin{bchapter}
+\bauthor{\bsnm{Xiong}, \binits{R.}},
+\bauthor{\bsnm{Yang}, \binits{Y.}},
+\bauthor{\bsnm{He}, \binits{D.}},
+\bauthor{\bsnm{Zheng}, \binits{K.}},
+\bauthor{\bsnm{Zheng}, \binits{S.}},
+\bauthor{\bsnm{Xing}, \binits{C.}},
+\bauthor{\bsnm{Zhang}, \binits{H.}},
+\bauthor{\bsnm{Lan}, \binits{Y.}},
+\bauthor{\bsnm{Wang}, \binits{L.}},
+\bauthor{\bsnm{Liu}, \binits{T.}}:
+\bctitle{On layer normalization in the {Transformer} architecture}.
+In: \bbtitle{Proceedings of the 37th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{119},
+pp. \bfpage{10524}--\blpage{10533}.
+\bpublisher{PMLR}
+(\byear{2020}).
+\burl{https://proceedings.mlr.press/v119/xiong20b.html}
+\end{bchapter}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Loshchilov and
+  Hutter}{2019}]{loshchilov2019decoupled}
+\begin{bchapter}
+\bauthor{\bsnm{Loshchilov}, \binits{I.}},
+\bauthor{\bsnm{Hutter}, \binits{F.}}:
+\bctitle{Decoupled weight decay regularization}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2019}).
+\burl{https://arxiv.org/abs/1711.05101}
+\end{bchapter}
+\endbibitem
 
 \end{thebibliography}
